@@ -41,7 +41,8 @@ button {
 
 button:focus-visible,
 a:focus-visible,
-input:focus-visible {
+input:focus-visible,
+select:focus-visible {
   outline: 2px solid var(--accent-bright);
   outline-offset: 3px;
 }
@@ -259,6 +260,60 @@ input:focus-visible {
   font-size: 11px;
 }
 
+.boss-region-filter {
+  position: relative;
+  display: block;
+  height: 44px;
+  margin-bottom: 10px;
+  border: 1px solid #3b4035;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(211, 182, 94, 0.08), transparent 62%), #141713;
+  transition: border-color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.boss-region-filter:hover {
+  border-color: #696044;
+  background-color: #191b16;
+}
+
+.boss-region-filter:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(211, 182, 94, 0.12);
+}
+
+.boss-region-filter select {
+  width: 100%;
+  height: 100%;
+  padding: 0 38px 0 13px;
+  appearance: none;
+  border: 0;
+  border-radius: inherit;
+  outline: 0;
+  background: transparent;
+  color: #e8e9df;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.boss-region-filter::after {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  border-right: 1.5px solid var(--accent);
+  border-bottom: 1.5px solid var(--accent);
+  content: "";
+  pointer-events: none;
+}
+
+.boss-region-filter option {
+  background: #181b18;
+}
+
 .search-box {
   display: flex;
   height: 42px;
@@ -365,6 +420,14 @@ input:focus-visible {
   border-color: #364d48;
   background: linear-gradient(145deg, #263d37, #202822);
   color: #9dc8a3;
+}
+
+.item-name {
+  text-transform: lowercase;
+}
+
+.item-name::first-letter {
+  text-transform: uppercase;
 }
 
 .game-graphic {
@@ -511,6 +574,56 @@ input:focus-visible {
   color: #9bc5a1;
 }
 
+.boss-badge {
+  border-color: rgba(211, 182, 94, 0.45);
+  color: var(--accent-bright);
+}
+
+.boss-description {
+  margin-top: 24px;
+  padding: 18px 20px;
+  border: 1px solid #30372e;
+  border-radius: 7px;
+  background: #1c201c;
+}
+
+.boss-description > p:last-child {
+  margin: 10px 0 0;
+  color: #c4c9bd;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.boss-loot-button {
+  display: flex;
+  width: 100%;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 16px;
+  padding: 0 14px;
+  border: 1px solid rgba(211, 182, 94, 0.4);
+  border-radius: 6px;
+  background: rgba(211, 182, 94, 0.08);
+  color: var(--accent-bright);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.boss-loot-button:hover {
+  border-color: rgba(211, 182, 94, 0.7);
+  background: rgba(211, 182, 94, 0.16);
+}
+
+.boss-loot-button small {
+  color: #a7a28c;
+  font-size: 10px;
+  font-weight: 500;
+}
+
 .stat-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -614,15 +727,52 @@ input:focus-visible {
   border: 1px solid transparent;
   border-bottom-color: #2a3029;
   background: transparent;
+  --loot-hover-border: #3a4438;
+  --loot-hover-background: #20251f;
   text-align: left;
   cursor: pointer;
 }
 
 .loot-row:hover,
 .source-row:hover {
-  border-color: #3a4438;
+  border-color: var(--loot-hover-border, #3a4438);
   border-radius: 5px;
-  background: #20251f;
+  background: var(--loot-hover-background, #20251f);
+}
+
+.loot-row-zawsze {
+  --loot-hover-border: #aeb8ad;
+  --loot-hover-background: rgba(230, 238, 230, 0.12);
+}
+
+.loot-row-bardzo-czesto {
+  --loot-hover-border: #4b8d5a;
+  --loot-hover-background: rgba(62, 132, 75, 0.24);
+}
+
+.loot-row-czesto {
+  --loot-hover-border: #3a6945;
+  --loot-hover-background: rgba(48, 96, 58, 0.26);
+}
+
+.loot-row-srednio {
+  --loot-hover-border: #82712f;
+  --loot-hover-background: rgba(190, 159, 53, 0.19);
+}
+
+.loot-row-rzadko {
+  --loot-hover-border: #955d2d;
+  --loot-hover-background: rgba(201, 119, 43, 0.2);
+}
+
+.loot-row-bardzo-rzadko {
+  --loot-hover-border: #754995;
+  --loot-hover-background: rgba(151, 88, 190, 0.2);
+}
+
+.loot-row-niespotykanie-rzadko {
+  --loot-hover-border: #963f48;
+  --loot-hover-background: rgba(145, 39, 49, 0.3);
 }
 
 .loot-icon {
@@ -652,24 +802,53 @@ input:focus-visible {
 .frequency {
   min-width: 94px;
   padding: 5px 7px;
-  border: 1px solid #3c4338;
+  border: 1px solid;
   border-radius: 4px;
-  color: #a5b88d;
   font-size: 9px;
   text-align: center;
   white-space: nowrap;
 }
 
-.frequency-rzadko,
-.frequency-bardzo-rzadko,
-.frequency-niespotykanie-rzadko {
-  border-color: #514337;
-  color: #c6a579;
+.frequency-zawsze {
+  border-color: #aeb8ad;
+  background: rgba(230, 238, 230, 0.1);
+  color: #ffffff;
 }
 
-.frequency-zawsze {
-  border-color: #3c5143;
-  color: #a5c596;
+.frequency-bardzo-czesto {
+  border-color: #4b8d5a;
+  background: rgba(62, 132, 75, 0.2);
+  color: #9bd0a0;
+}
+
+.frequency-czesto {
+  border-color: #3a6945;
+  background: rgba(48, 96, 58, 0.22);
+  color: #82b68a;
+}
+
+.frequency-srednio {
+  border-color: #82712f;
+  background: rgba(190, 159, 53, 0.13);
+  color: #e4d27b;
+}
+
+.frequency-rzadko {
+  border-color: #955d2d;
+  background: rgba(201, 119, 43, 0.14);
+  color: #edb16f;
+}
+
+.frequency-bardzo-rzadko {
+  border-color: #754995;
+  background: rgba(151, 88, 190, 0.15);
+  color: #d3a0ed;
+}
+
+.frequency-niespotykanie-rzadko {
+  border-color: #963f48;
+  background: rgba(145, 39, 49, 0.22);
+  color: #f08a91;
 }
 
 .row-chevron {
@@ -848,6 +1027,8 @@ input:focus-visible {
 
   .intro-stats span {
     flex: 1;
+    min-width: 0;
+    padding: 12px 10px;
   }
 
   .section-tabs {

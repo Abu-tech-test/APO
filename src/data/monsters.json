@@ -23038,5 +23038,558 @@
     "exp": 5,
     "loot": [],
     "id": 325
+  },
+  {
+    "name": "Main Composer",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 326
+  },
+  {
+    "name": "Stiff",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 327
+  },
+  {
+    "name": "Saint Peter",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 328
+  },
+  {
+    "name": "Infernal Atom",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 329
+  },
+  {
+    "name": "Abaddon",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 330
+  },
+  {
+    "name": "Satan",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 331
+  },
+  {
+    "name": "Son of Satan",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 332
+  },
+  {
+    "name": "Noun",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 333
+  },
+  {
+    "name": "Bonzo",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 334
+  },
+  {
+    "name": "Mysterious Shaman",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 335
+  },
+  {
+    "name": "Ahmed",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 336
+  },
+  {
+    "name": "Raging Mage",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 337
+  },
+  {
+    "name": "Invincible",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 338
+  },
+  {
+    "name": "Minosfatum",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 339
+  },
+  {
+    "name": "Death Wish",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 340
+  },
+  {
+    "name": "Ancient God",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 341
+  },
+  {
+    "name": "Rook Composer",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 342
+  },
+  {
+    "name": "Ahmed",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 343
+  },
+  {
+    "name": "Savage Cyclops",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 344
+  },
+  {
+    "name": "Basakiel",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 345
+  },
+  {
+    "name": "Rook King",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 346
+  },
+  {
+    "name": "Guzuroth",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 347
+  },
+  {
+    "name": "Moonaron",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 348
+  },
+  {
+    "name": "Histeol",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 349
+  },
+  {
+    "name": "Nistelo",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 350
+  },
+  {
+    "name": "Seti",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 351
+  },
+  {
+    "name": "Lios",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 352
+  },
+  {
+    "name": "Heapster",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 353
+  },
+  {
+    "name": "Quoerses",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 354
+  },
+  {
+    "name": "Crazy Orc",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 355
+  },
+  {
+    "name": "Aruatonim",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 356
+  },
+  {
+    "name": "Busor",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 357
+  },
+  {
+    "name": "Cursed Rabbit",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 358
+  },
+  {
+    "name": "Koorhas",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 359
+  },
+  {
+    "name": "Radgan",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 360
+  },
+  {
+    "name": "Tanur",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 361
+  },
+  {
+    "name": "Undead Warrior",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 362
+  },
+  {
+    "name": "Lube",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 363
+  },
+  {
+    "name": "Blaze",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 364
+  },
+  {
+    "name": "Rook Destroyer",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 365
+  },
+  {
+    "name": "Ant King",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 366
+  },
+  {
+    "name": "Ramzes",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 367
+  },
+  {
+    "name": "Tutanchamon",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 368
+  },
+  {
+    "name": "White Wolf",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 369
+  },
+  {
+    "name": "Dasher",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 370
+  },
+  {
+    "name": "Cupid",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 371
+  },
+  {
+    "name": "Dancer",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 372
+  },
+  {
+    "name": "Donner",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 373
+  },
+  {
+    "name": "Comet",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 374
+  },
+  {
+    "name": "Holy",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 375
+  },
+  {
+    "name": "Poor Man",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 376
+  },
+  {
+    "name": "Magi",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 377
+  },
+  {
+    "name": "Frau Perchta",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 378
+  },
+  {
+    "name": "El Caganer",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 379
+  },
+  {
+    "name": "Scrooge",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 380
+  },
+  {
+    "name": "Kevin",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 381
+  },
+  {
+    "name": "Steffan",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 382
+  },
+  {
+    "name": "Christmas Elf",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 383
+  },
+  {
+    "name": "Carol Singer",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 384
+  },
+  {
+    "name": "Angel",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 385
+  },
+  {
+    "name": "Frozen Man",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 386
+  },
+  {
+    "name": "Frosty",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 387
+  },
+  {
+    "name": "Bauble",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 388
+  },
+  {
+    "name": "Lonely Bear",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 389
+  },
+  {
+    "name": "Jack Frost",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 390
+  },
+  {
+    "name": "Rudolph",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 391
+  },
+  {
+    "name": "Grinch",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 392
+  },
+  {
+    "name": "Valentina",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 393
+  },
+  {
+    "name": "Nightmare Halloween",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 394
+  },
+  {
+    "name": "Scared",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 395
+  },
+  {
+    "name": "Rotten Warrior",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 396
+  },
+  {
+    "name": "Dead Bones",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 397
+  },
+  {
+    "name": "Mutated Pumpkin",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 398
+  },
+  {
+    "name": "Casper",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 399
+  },
+  {
+    "name": "Melchior",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 400
+  },
+  {
+    "name": "Baltasar",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 401
+  },
+  {
+    "name": "Anniversary Pinata",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 402
+  },
+  {
+    "name": "Krampus",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 403
+  },
+  {
+    "name": "Christmas Tree",
+    "hp": 0,
+    "exp": 0,
+    "loot": [],
+    "id": 404
   }
 ]

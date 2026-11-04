@@ -1,19 +1,46 @@
 import { useEffect, useMemo, useState } from "react";
+import bossData from "./data/bosses.json";
 import graphics from "./data/graphics.json";
 import monsterData from "./data/monsters.json";
 import type { Item, Monster } from "./types";
 
 const monsters: Monster[] = monsterData;
+type BossRegionData = {
+  name: string;
+  bosses: {
+    name: string;
+    lookType: number;
+    outfitColors: { head: number; body: number; legs: number; feet: number };
+    description: string;
+    image?: string;
+  }[];
+};
+type Boss = BossRegionData["bosses"][number] & { region: string };
+const bossRegions: BossRegionData[] = bossData;
+const bosses: Boss[] = bossRegions.flatMap((region) =>
+  region.bosses.map((boss) => ({ ...boss, region: region.name })),
+);
 const graphicsByName: {
   monsters: Record<string, string>;
+  monsterVariants: Record<number, string>;
   items: Record<string, string>;
 } = graphics;
 const pageSize = 10;
+const lootFrequencyOrder: Record<string, number> = {
+  Zawsze: 0,
+  "Bardzo czesto": 1,
+  Czesto: 2,
+  Srednio: 3,
+  Rzadko: 4,
+  "Bardzo rzadko": 5,
+  "Niespotykanie rzadko": 6,
+};
 
-type Section = "monsters" | "items";
+type Section = "monsters" | "items" | "bosses";
 type CatalogEntry =
   | { section: "monsters"; name: string; caption: string; monster: Monster }
-  | { section: "items"; name: string; caption: string; item: Item };
+  | { section: "items"; name: string; caption: string; item: Item }
+  | { section: "bosses"; name: string; caption: string; boss: Boss };
 
 function formatNumber(value: number) {
   return new Intl.NumberFormat("pl-PL").format(value);
@@ -28,12 +55,20 @@ function getInitials(name: string) {
     .toUpperCase();
 }
 
-function getMonsterImage(name: string) {
-  return graphicsByName.monsters[name];
+function getMonsterImage(monster: Pick<Monster, "id" | "name">) {
+  return graphicsByName.monsterVariants[monster.id] ?? graphicsByName.monsters[monster.name];
+}
+
+function getBossImage(boss: Boss) {
+  return graphicsByName.monsters[boss.name] ?? boss.image;
 }
 
 function getItemImage(name: string) {
   return graphicsByName.items[name.toLocaleLowerCase("pl")];
+}
+
+function getBossRegionLabel(region: string) {
+  return region === "OKOLICZNOSCIOWE" ? "Okolicznościowe" : region;
 }
 
 function Graphic({
@@ -50,6 +85,7 @@ function Graphic({
       {image && (
         <img
           alt=""
+          key={image}
           onError={(event) => {
             event.currentTarget.hidden = true;
           }}
@@ -67,6 +103,8 @@ function App() {
   const [page, setPage] = useState(1);
   const [selectedMonster, setSelectedMonster] = useState<Monster>(monsters[0]);
   const [selectedItemName, setSelectedItemName] = useState("");
+  const [selectedBossRegion, setSelectedBossRegion] = useState(bossRegions[0].name);
+  const [selectedBoss, setSelectedBoss] = useState<Boss>(bosses[0]);
 
   const items = useMemo<Item[]>(() => {
     const itemMap = new Map<string, Item>();
@@ -105,13 +143,22 @@ function App() {
             caption: `${formatNumber(monster.hp)} HP`,
             monster,
           }))
-        : items.map((item) => ({
+        : section === "items"
+        ? items.map((item) => ({
             section: "items",
             name: item.name,
             caption: `${item.drops.length} źródeł`,
             item,
-          })),
-    [items, section],
+          }))
+        : bosses
+            .filter((boss) => boss.region === selectedBossRegion)
+            .map((boss) => ({
+              section: "bosses",
+              name: boss.name,
+              caption: getBossRegionLabel(boss.region),
+              boss,
+            })),
+    [items, section, selectedBossRegion],
   );
   const filteredList = useMemo(() => {
     const normalizedQuery = query.trim().toLocaleLowerCase("pl");
@@ -129,7 +176,7 @@ function App() {
 
   useEffect(() => {
     setPage(1);
-  }, [section, query]);
+  }, [section, query, selectedBossRegion]);
 
   useEffect(() => {
     if (section === "monsters") {
@@ -142,7 +189,7 @@ function App() {
       if (!currentSelectionVisible && firstMonster?.section === "monsters") {
         setSelectedMonster(firstMonster.monster);
       }
-    } else {
+    } else if (section === "items") {
       const currentSelectionVisible = filteredList.some(
         (entry) =>
           entry.section === "items" && entry.item.name === selectedItem?.name,
@@ -151,8 +198,26 @@ function App() {
       if (!currentSelectionVisible && firstItem?.section === "items") {
         setSelectedItemName(firstItem.item.name.toLocaleLowerCase("pl"));
       }
+    } else {
+      const currentSelectionVisible = filteredList.some(
+        (entry) =>
+          entry.section === "bosses" &&
+          entry.boss.region === selectedBossRegion &&
+          entry.boss.name === selectedBoss.name,
+      );
+      const firstBoss = filteredList[0];
+      if (!currentSelectionVisible && firstBoss?.section === "bosses") {
+        setSelectedBoss(firstBoss.boss);
+      }
     }
-  }, [filteredList, section, selectedItem?.name, selectedMonster.id]);
+  }, [
+    filteredList,
+    section,
+    selectedItem?.name,
+    selectedMonster.id,
+    selectedBoss.name,
+    selectedBossRegion,
+  ]);
 
   function openSection(nextSection: Section) {
     setSection(nextSection);
@@ -170,6 +235,12 @@ function App() {
     setSection("items");
     setQuery("");
   }
+
+  const selectedBossLootMonster = monsters.find(
+    (monster) =>
+      monster.name.toLocaleLowerCase("pl") === selectedBoss.name.toLocaleLowerCase("pl") &&
+      monster.loot.length > 0,
+  );
 
   return (
     <main className="app-shell">
@@ -198,6 +269,7 @@ function App() {
         <div className="intro-stats" aria-label="Zawartość bazy">
           <span><strong>{monsters.length}</strong> potworów</span>
           <span><strong>{items.length}</strong> przedmiotów</span>
+          <span><strong>{bosses.length}</strong> bossów</span>
         </div>
       </section>
 
@@ -218,23 +290,51 @@ function App() {
           <span className="tab-icon">◆</span> Przedmioty
           <span className="tab-count">{items.length}</span>
         </button>
+        <button
+          className={section === "bosses" ? "tab active" : "tab"}
+          onClick={() => openSection("bosses")}
+          type="button"
+        >
+          <span className="tab-icon">☠</span> Bossy
+          <span className="tab-count">{bosses.length}</span>
+        </button>
       </nav>
 
       <section className="workspace">
         <aside className="catalog">
           <div className="catalog-heading">
             <div>
-              <p className="eyebrow">{section === "monsters" ? "BESTIARIUSZ" : "KOLEKCJA"}</p>
-              <h2>{section === "monsters" ? "Potwory" : "Przedmioty"}</h2>
+              <p className="eyebrow">
+                {section === "monsters" ? "BESTIARIUSZ" : section === "items" ? "KOLEKCJA" : "UNIKALNE POTWORY"}
+              </p>
+              <h2>{section === "monsters" ? "Potwory" : section === "items" ? "Przedmioty" : "Bossy"}</h2>
             </div>
             <span className="result-count">{filteredList.length}</span>
           </div>
+          {section === "bosses" && (
+            <label className="boss-region-filter">
+              <select
+                aria-label="Wybierz krainę bossów"
+                onChange={(event) => {
+                  setSelectedBossRegion(event.target.value);
+                  setQuery("");
+                }}
+                value={selectedBossRegion}
+              >
+                {bossRegions.map((region) => (
+                  <option key={region.name} value={region.name}>
+                    {getBossRegionLabel(region.name)}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
           <label className="search-box">
             <span aria-hidden="true">⌕</span>
             <input
-              aria-label={`Szukaj ${section === "monsters" ? "potwora" : "przedmiotu"}`}
+              aria-label={`Szukaj ${section === "monsters" ? "potwora" : section === "items" ? "przedmiotu" : "bossa"}`}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder={`Szukaj ${section === "monsters" ? "potwora" : "przedmiotu"}...`}
+              placeholder={`Szukaj ${section === "monsters" ? "potwora" : section === "items" ? "przedmiotu" : "bossa"}...`}
               type="search"
               value={query}
             />
@@ -255,31 +355,46 @@ function App() {
               const isSelected =
                 entry.section === "monsters"
                   ? selectedMonster.id === entry.monster.id
-                  : selectedItem?.name === entry.name;
+                  : entry.section === "items"
+                  ? selectedItem?.name === entry.name
+                  : selectedBoss.region === entry.boss.region &&
+                    selectedBoss.name === entry.boss.name;
 
               return (
                 <button
                   aria-current={isSelected ? "true" : undefined}
                   className={isSelected ? "entry selected" : "entry"}
-                  key={entry.section === "monsters" ? entry.monster.id : entry.name}
+                  key={
+                    entry.section === "monsters"
+                      ? entry.monster.id
+                      : entry.section === "items"
+                      ? entry.name
+                      : `${entry.boss.region}-${entry.boss.name}`
+                  }
                   onClick={() =>
                     entry.section === "monsters"
                       ? setSelectedMonster(entry.monster)
-                      : setSelectedItemName(entry.item.name.toLocaleLowerCase("pl"))
+                      : entry.section === "items"
+                      ? setSelectedItemName(entry.item.name.toLocaleLowerCase("pl"))
+                      : setSelectedBoss(entry.boss)
                   }
                   type="button"
                 >
                   <Graphic
-                    className={`entry-icon ${entry.section === "monsters" ? "creature-icon" : "item-icon"}`}
+                    className={`entry-icon ${entry.section === "items" ? "item-icon" : "creature-icon"}`}
                     image={
                       entry.section === "monsters"
-                        ? getMonsterImage(entry.name)
-                        : getItemImage(entry.name)
+                        ? getMonsterImage(entry.monster)
+                        : entry.section === "items"
+                        ? getItemImage(entry.name)
+                        : getBossImage(entry.boss)
                     }
                     name={entry.name}
                   />
                   <span className="entry-text">
-                    <strong>{entry.name}</strong>
+                    <strong className={entry.section === "items" ? "item-name" : undefined}>
+                      {entry.name}
+                    </strong>
                     <small>{entry.caption}</small>
                   </span>
                   <span aria-hidden="true" className="entry-chevron">›</span>
@@ -321,18 +436,27 @@ function App() {
         <section className="details" aria-live="polite">
           {section === "monsters" ? (
             <MonsterDetails
-              image={getMonsterImage(selectedMonster.name)}
+              image={getMonsterImage(selectedMonster)}
               monster={selectedMonster}
               onOpenItem={openItem}
             />
-          ) : selectedItem ? (
+          ) : section === "items" && selectedItem ? (
             <ItemDetails
               image={getItemImage(selectedItem.name)}
               item={selectedItem}
               onOpenMonster={openMonster}
             />
+          ) : section === "bosses" ? (
+            <BossDetails
+              image={getBossImage(selectedBoss)}
+              boss={selectedBoss}
+              lootMonster={selectedBossLootMonster}
+              onOpenMonster={openMonster}
+            />
           ) : (
-            <div className="empty-detail">Wybierz przedmiot z listy.</div>
+            <div className="empty-detail">
+              {section === "items" ? "Wybierz przedmiot z listy." : "Wybierz bossa z listy."}
+            </div>
           )}
         </section>
       </section>
@@ -354,6 +478,12 @@ function MonsterDetails({
   monster: Monster;
   onOpenItem: (name: string) => void;
 }) {
+  const sortedLoot = [...monster.loot].sort(
+    (a, b) =>
+      (lootFrequencyOrder[a.frequency] ?? Number.MAX_SAFE_INTEGER) -
+      (lootFrequencyOrder[b.frequency] ?? Number.MAX_SAFE_INTEGER),
+  );
+
   return (
     <article>
       <div className="detail-hero">
@@ -400,9 +530,9 @@ function MonsterDetails({
       </div>
 
       <div className="loot-list">
-        {monster.loot.map((loot) => (
+        {sortedLoot.map((loot) => (
           <button
-            className="loot-row"
+            className={`loot-row loot-row-${loot.frequency.toLowerCase().replace(/\s+/g, "-")}`}
             key={`${loot.name}-${loot.frequency}`}
             onClick={() => onOpenItem(loot.name)}
             type="button"
@@ -412,7 +542,7 @@ function MonsterDetails({
               image={getItemImage(loot.name)}
               name={loot.name}
             />
-            <span className="loot-name">{loot.name}</span>
+            <span className="loot-name item-name">{loot.name}</span>
             <span className="loot-amount">× {formatNumber(loot.amount)}</span>
             <span className={`frequency frequency-${loot.frequency.toLowerCase().replace(/\s+/g, "-")}`}>
               {loot.frequency}
@@ -444,7 +574,7 @@ function ItemDetails({
         />
         <div className="detail-title">
           <p className="eyebrow">KARTA PRZEDMIOTU</p>
-          <h2>{item.name}</h2>
+          <h2 className="item-name">{item.name}</h2>
           <p className="detail-caption">Potwory, z których można zdobyć ten przedmiot</p>
         </div>
         <span className="data-badge item-badge">PRZEDMIOT</span>
@@ -479,7 +609,7 @@ function ItemDetails({
           >
             <Graphic
               className="entry-icon creature-icon"
-              image={getMonsterImage(monster.name)}
+              image={getMonsterImage(monster)}
               name={monster.name}
             />
             <span className="source-name">
@@ -494,6 +624,53 @@ function ItemDetails({
           </button>
         ))}
       </div>
+    </article>
+  );
+}
+
+function BossDetails({
+  image,
+  boss,
+  lootMonster,
+  onOpenMonster,
+}: {
+  image?: string;
+  boss: Boss;
+  lootMonster?: Monster;
+  onOpenMonster: (monster: Monster) => void;
+}) {
+  return (
+    <article>
+      <div className="detail-hero">
+        <Graphic
+          className="detail-emblem creature-emblem"
+          image={image}
+          name={boss.name}
+        />
+        <div className="detail-title">
+          <p className="eyebrow">KARTA BOSSA</p>
+          <h2>{boss.name}</h2>
+          <p className="detail-caption">{getBossRegionLabel(boss.region)}</p>
+        </div>
+        <span className="data-badge boss-badge">UNIKALNY BOSS</span>
+      </div>
+
+      <section className="boss-description">
+        <p className="eyebrow">OPIS</p>
+        <p>{boss.description}</p>
+      </section>
+      {lootMonster && (
+        <button
+          className="boss-loot-button"
+          onClick={() => onOpenMonster(lootMonster)}
+          type="button"
+        >
+          <span aria-hidden="true">◇</span>
+          Zobacz łup
+          <small>{lootMonster.loot.length}</small>
+          <span aria-hidden="true">↗</span>
+        </button>
+      )}
     </article>
   );
 }
