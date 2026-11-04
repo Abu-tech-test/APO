@@ -594,6 +594,36 @@ select:focus-visible {
   line-height: 1.75;
 }
 
+.npc-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.npc-meta > div {
+  display: flex;
+  min-width: min(220px, 100%);
+  flex: 1;
+  flex-direction: column;
+  gap: 7px;
+  padding: 14px 16px;
+  border: 1px solid #30372e;
+  border-radius: 7px;
+  background: #1c201c;
+}
+
+.npc-meta strong {
+  color: #d7dbd0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.npc-description {
+  margin-top: 14px;
+}
+
 .boss-loot-button {
   display: flex;
   width: 100%;

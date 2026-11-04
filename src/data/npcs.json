@@ -1,0 +1,1852 @@
+[
+  {
+    "id": 1,
+    "name": "Fargum",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Capital City",
+    "profession": "Przewoznik",
+    "description": "Fargum oferuje podroznikom rejs na Wyspe Amazonek, Zamek, Senje, Ville, POH, Expgard, Evul lub Soran.",
+    "image": "./images/shared/e6aab5744f39a5ae878a1435fa16b149d828b23be8eb928c1b1ff4fb91aeefb9.png"
+  },
+  {
+    "id": 2,
+    "name": "Capitan Delgrin",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Capital City",
+    "profession": "Przewoznik",
+    "description": "Capitan Delgrin moze zaoferowac nam rejs do City of Dreams.",
+    "image": "./images/shared/bbea34711e81ce457eda0d9a1ac6b4a3eb17cd9f21a3d9447d11ecde3ce04b4c.png"
+  },
+  {
+    "id": 3,
+    "name": "ShaShaSha",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Bambo Camp, City of the Sky",
+    "profession": "Przewoznik",
+    "description": "ShaShaSha oferuje rejs swoim statkiem do Bamboo Camp. ShaShaSha oferuje rejs swoim statkiem do City of the Sky, Canyon of Damned lub Ankaros.",
+    "image": "./images/shared/e6aab5744f39a5ae878a1435fa16b149d828b23be8eb928c1b1ff4fb91aeefb9.png"
+  },
+  {
+    "id": 4,
+    "name": "Capitan Jackal",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Evul",
+    "profession": "Przewoznik",
+    "description": "Capitan Jackal oferuje podroznikom rejs na Capital City, Wyspe Amazonek, Zamek, Senje, Ville, POH, Expgard lub Soran.",
+    "image": "./images/shared/e6aab5744f39a5ae878a1435fa16b149d828b23be8eb928c1b1ff4fb91aeefb9.png"
+  },
+  {
+    "id": 5,
+    "name": "Jin",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "City of the Sky",
+    "profession": "Przewoznik",
+    "description": "Jin za pomoca swojego latajacego dywanu moze transportowac podroznikow do Darkness Island, Ankaros lub City of Dreams.",
+    "image": "./images/shared/fba9c8bc50f2fdc84c2ceec1f9b8b63aa8e5f6668e89fd927f2701ca347fd3be.png"
+  },
+  {
+    "id": 6,
+    "name": "Yoshi",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Canyon of damned",
+    "profession": "Przewoznik",
+    "description": "Yoshi za drobna oplata oferuje rejs do Bamboo Camp lub Magic Islands.",
+    "image": "./images/npcs/yoshi_main.png"
+  },
+  {
+    "id": 7,
+    "name": "Captain Hash",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Evul",
+    "profession": "Przewoznik",
+    "description": "Captain Hash oferuje przeprawe swoim statkiem na wyspe piratow oraz powrot do evul. Podroz bez odpowiedniego wspomagania moze jednak potrwac znacznie dluzej. Aby skrocic czas podrozy, potrzebne sa 4x Dried Cannabis. Bez nich ster mozna uzywac co 15 minut..",
+    "image": "./images/shared/e6aab5744f39a5ae878a1435fa16b149d828b23be8eb928c1b1ff4fb91aeefb9.png"
+  },
+  {
+    "id": 8,
+    "name": "Marwin",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Ankaros",
+    "profession": "Przewoznik",
+    "description": "Statek Marwin'a moze za drobna oplata zabrac podroznika do Bamboo Camp lub City of Dreams.",
+    "image": "./images/shared/e6aab5744f39a5ae878a1435fa16b149d828b23be8eb928c1b1ff4fb91aeefb9.png"
+  },
+  {
+    "id": 9,
+    "name": "Anakin",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Ankaros",
+    "profession": "Przewoznik",
+    "description": "Djinn Anakin za pomoca swego latajacego dywanu przenosi podroznikow do City of the Sky, badz City of Dreams.",
+    "image": "./images/shared/fba9c8bc50f2fdc84c2ceec1f9b8b63aa8e5f6668e89fd927f2701ca347fd3be.png"
+  },
+  {
+    "id": 10,
+    "name": "Andari",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "City of Dreams",
+    "profession": "Przewoznik",
+    "description": "Djinn Andari za pomoca swego latajacego dywanu przenosi podroznikow do City of the Sky, badz Ankaros.",
+    "image": "./images/shared/fba9c8bc50f2fdc84c2ceec1f9b8b63aa8e5f6668e89fd927f2701ca347fd3be.png"
+  },
+  {
+    "id": 11,
+    "name": "Dreamoon",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "City of Dreams",
+    "profession": "Przewoznik",
+    "description": "Dreamoon moze z nami plynac do Capital City, Ankaros lub Magic Islands.",
+    "image": "./images/shared/a9a01927670b43ed3a1eac1ed1d69660b887c0679ba8afce4555ba20c78eeb2d.png"
+  },
+  {
+    "id": 12,
+    "name": "Avar",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "City of Dreams",
+    "profession": null,
+    "description": "Avar przewozi graczy magicznym statkiem na wyspe, na ktorej wykonuje sie Quest Of The Nine. Cena podrozy zalezy od poziomu postaci. Sprzedaje tez karnety jednodniowe, tygodniowe i miesieczne, ktorych cena rowniez zalezy od poziomu.",
+    "image": "./images/npcs/avar_main.png"
+  },
+  {
+    "id": 13,
+    "name": "James",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Senja",
+    "profession": "Przewoznik",
+    "description": "James oferuje rejs do Capital City.",
+    "image": "./images/npcs/james_main.png"
+  },
+  {
+    "id": 14,
+    "name": "Sorlan",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Soran",
+    "profession": "Przewoznik",
+    "description": "Sorlan daje mozliwosc rejsu na Capital City, Wyspe Amazonek, Zamek, Senje, POH, Expgard, Evul lub Cyclopolis.",
+    "image": "./images/shared/011afbf9bac0435b876146773d18a6c495d9d5959acc7108ab7df7f225e1f9f1.png"
+  },
+  {
+    "id": 15,
+    "name": "Edgard",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Expgard",
+    "profession": "Przewoznik",
+    "description": "Edgard moze zabrac podroznikow na Capital City, Wyspe Amazonek, Zamek, Senje, POH, Evul lub Soran.",
+    "image": "./images/shared/e6aab5744f39a5ae878a1435fa16b149d828b23be8eb928c1b1ff4fb91aeefb9.png"
+  },
+  {
+    "id": 16,
+    "name": "Cyclon",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Cyclopolis",
+    "profession": "Przewoznik",
+    "description": "Cyclon ma do zaoferowania rejs do Soran.",
+    "image": "./images/shared/7f7d21a57df4c16c130e2f782fcd2d9e6b0d379754fec0f78dc411a4db8fb782.png"
+  },
+  {
+    "id": 17,
+    "name": "Voolco",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Cyclopolis",
+    "profession": "Przewoznik",
+    "description": "Statek Voolco'a kursuje do Volcano.",
+    "image": "./images/shared/e6aab5744f39a5ae878a1435fa16b149d828b23be8eb928c1b1ff4fb91aeefb9.png"
+  },
+  {
+    "id": 18,
+    "name": "Hermesis",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "POH",
+    "profession": "Przewoznik",
+    "description": "Hermesis oferuje rejs do Capital City.",
+    "image": "./images/shared/efc52d6912ed6c3309e96aa424ea84a06cab4ee6d13cd6296cac283f1aff3534.png"
+  },
+  {
+    "id": 19,
+    "name": "Amazer",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Amazon Camp",
+    "profession": "Przewoznik",
+    "description": "Amazer oferuje rejs do Capital City.",
+    "image": "./images/shared/ecd4d18027d1f756d1bb4f220e02a0f6eaf7ad3c29624930ed9d112b28bf81f8.png"
+  },
+  {
+    "id": 20,
+    "name": "Vill",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Villa",
+    "profession": "Przewoznik",
+    "description": "Vill oferuje rejs do Capital City.",
+    "image": "./images/shared/ecd4d18027d1f756d1bb4f220e02a0f6eaf7ad3c29624930ed9d112b28bf81f8.png"
+  },
+  {
+    "id": 21,
+    "name": "Dark",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Darkness Island",
+    "profession": "Przewoznik",
+    "description": "Dark moze nas przetransportowac swoim statkiem na Soran.",
+    "image": "./images/shared/e6aab5744f39a5ae878a1435fa16b149d828b23be8eb928c1b1ff4fb91aeefb9.png"
+  },
+  {
+    "id": 22,
+    "name": "Capitan Magican",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Magic Islands",
+    "profession": "Przewoznik",
+    "description": "Capitan Magican oferuje transport do Canyon of Damned lub City of Dreams.",
+    "image": "./images/npcs/capitan_magican_main.png"
+  },
+  {
+    "id": 23,
+    "name": "Dead Head",
+    "region": "MAIN",
+    "category": "Przewoźnicy",
+    "location": "Volcano",
+    "profession": "Przewoznik",
+    "description": "Dead Head moze nas przetransportowac swoim statkiem do Capital City.",
+    "image": "./images/shared/70d3c54b26eaed81b8c92f6a8bab6a960b2c59caad911b12e9fd68cb5a01ec60.png"
+  },
+  {
+    "id": 24,
+    "name": "Popi",
+    "region": "MAIN",
+    "category": "Łowcy",
+    "location": "Jungle - Na poludnie od Desert City",
+    "profession": "Mistrz questow",
+    "description": "Popi oferuje rozne zadania lowieckie. Zadania sa zalezne od poziomu postaci. Za wykonane zadanie, NPC nagradza punktami doswiadczenia oraz pieniedzmi - Nagroda rowniez jest zalezna od naszego poziomu. Wazne! Zeby moc zaczac wykonywac zadania, musimy wykonac misje.",
+    "image": "./images/npcs/popi_main.png"
+  },
+  {
+    "id": 25,
+    "name": "Alfar",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Nieopodal Amazon Camp",
+    "profession": "Skup przedmiotow",
+    "description": "Alfar chetnie odkupi od graczy wartosciowe przedmioty. Ceny skupu zmieniaja sie po kazdym restarcie serwera. Aby otrzymywac od niego lepsze ceny, nalezy wykonac misje.",
+    "image": "./images/npcs/alfar_main.png"
+  },
+  {
+    "id": 26,
+    "name": "Nordes",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Canyon of damned",
+    "profession": "Skup przedmiotow",
+    "description": "Nordes chetnie odkupi od graczy wartosciowe przedmioty. Ceny skupu zmieniaja sie po kazdym restarcie serwera. Aby otrzymywac od niego lepsze ceny, nalezy wykonac misje.",
+    "image": "./images/npcs/nordes_main.png"
+  },
+  {
+    "id": 27,
+    "name": "Delir",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Kazde miasto w swiecie APO",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Delir sprzedaje podstawowe elementy wyposazenia kazdego prawdziwego wojownika. Mozemy od niego kupic m.in. liny, plecaki, lopaty, a przede wszystkim napoje o ciekawych wlasciwosciach magicznych.",
+    "image": "./images/shared/228cc69589e423125eb98eea786119446494a540181285c4ee45c3175c28686e.png"
+  },
+  {
+    "id": 28,
+    "name": "Mad",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Kazde miasto w swiecie APO",
+    "profession": "Skup przedmiotow",
+    "description": "Mad chetnie skupuje wszystkie ilosci roznego rodzaju uzbrojenia m.in. mieczy, maczug, toporow, helmow, butow, nogawic, tarcz, zbroj i amuletow.",
+    "image": "./images/shared/f9f8ba08d46cd3efc04609c6e9ae9d6950bab619ff1c6096e6a9bddddd688113.png"
+  },
+  {
+    "id": 29,
+    "name": "Perac",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Kazde miasto w swiecie APO",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Perac posiada ciekawa oferte dla paladynow. Wojownicy o tej profesji moga zaopatrzyc sie u niego w amunicje dystansowa.",
+    "image": "./images/shared/a2e2e51e50855e0813da1c691bb0bac6666562cd11f3285b4c9f8c598900fdd5.png"
+  },
+  {
+    "id": 30,
+    "name": "Armorgorn",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Kazde miasto w swiecie APO",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Armorgorn kieruje swoja oferte do bardziej poczatkujacych graczy. Nowi wojownicy moga kupic od niego podstawowe uzbrojenie.",
+    "image": "./images/shared/011afbf9bac0435b876146773d18a6c495d9d5959acc7108ab7df7f225e1f9f1.png"
+  },
+  {
+    "id": 31,
+    "name": "Robin The Righteous",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Kazde miasto w swiecie APO",
+    "profession": "Listonosz",
+    "description": "Listonosz oferuje nam mozliwosc kupna paczek oraz listow. Listonosz oferuje nam mozliwosc kupna paczek, listow oraz amuletow, ktore ochronia nas przed strata ekwipunku po smierci.",
+    "image": "./images/shared/bfadb75e673916b5f7aa45466411a9031d9435ac25595f8d6e00f6a3720b0ed6.png"
+  },
+  {
+    "id": 32,
+    "name": "Dark Rodo",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Kazde miasto w swiecie APO",
+    "profession": "Sprzedawca run",
+    "description": "Ten handlarz moze nam zaoferowac wiele magicznych przedmiotow - poczynajac od run, konczac na wszelkiego rodzaju rozdzkach dla druidow i magow.",
+    "image": "./images/shared/a3bdf9e710077f8b52d0ebde063f1abd8bc134b486c7f4a334b48aca18fd890e.png"
+  },
+  {
+    "id": 33,
+    "name": "Masakrator",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Kazde miasto w swiecie APO",
+    "profession": "Sprzedawca zywnosci",
+    "description": "U Masakratora mozna nabyc zawsze swieze artykuly spozywcze.",
+    "image": "./images/shared/c9f0880df6d399375d542936ea360643ead715c88c2d584ff2c06be421d44b3f.png"
+  },
+  {
+    "id": 34,
+    "name": "Jubiler",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Kazde miasto w swiecie APO",
+    "profession": "Jubiler",
+    "description": "U tego NPC mozemy dostac wiele szlachetnych kamieni i innych drogocennych rzeczy po niezbyt wygorowanych cenach! Jubiler prowadzi takze skup klejnotow.",
+    "image": "./images/shared/40899ff8148ce9b3933cef6176c37d8a7bb2d39194b23d94dabb71d297340f61.png"
+  },
+  {
+    "id": 35,
+    "name": "Rino",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Kazde miasto w swiecie APO",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Rino sprzedaje pierscienie posiadajace ciekawe wlasciwosci magiczne.",
+    "image": "./images/shared/e71f47c98f3bf2231d5d09c4a73d2fd6313c7c1d4b67c173318d394aae818bcd.png"
+  },
+  {
+    "id": 36,
+    "name": "Pirat Jack",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Capital City",
+    "profession": "NPC Questowy",
+    "description": "U tego pirata mozemy dostac jeden z przedmiotow, ktory jest niezbedny do wykonania zadania.",
+    "image": "./images/shared/9762613a45a5b8e4361e3e71c9cee178b598659ba5de29138f143e8da9141ed9.png"
+  },
+  {
+    "id": 37,
+    "name": "Obi",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Kazde miasto w swiecie APO",
+    "profession": "Sprzedawca mebli",
+    "description": "Obi daje mozliwosc zakupu wyposazenia domkow. W jego ofercie znajduja sie krzesla, stoly, rosliny doniczkowe, pojemniki, poduszki i wiele innych.",
+    "image": "./images/shared/a3bdf9e710077f8b52d0ebde063f1abd8bc134b486c7f4a334b48aca18fd890e.png"
+  },
+  {
+    "id": 38,
+    "name": "Notariusz",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Capital City",
+    "profession": "Urzednik",
+    "description": "U notariusza mozna dostac akt, bez ktorego niemozliwe jest kupno jak i sprzedaz domku.",
+    "image": "./images/shared/168f06ddbc7f74af607e7b22c97654fd1bc28dcd98ef88a3688cf8f2f1cdc7b6.png"
+  },
+  {
+    "id": 39,
+    "name": "Grabur",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca zywnosci",
+    "description": "U Grabura mozna nabyc zawsze swieze i soczyste artykuly spozywcze",
+    "image": "./images/npcs/grabur_main.png"
+  },
+  {
+    "id": 40,
+    "name": "Haran",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca zywnosci",
+    "description": "U Haran'a mozna nabyc zawsze swieze artykuly spozywcze.",
+    "image": "./images/npcs/haran_main.png"
+  },
+  {
+    "id": 41,
+    "name": "Frank",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Expgard",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Frank sprzedaje podstawowe elementy wyposazenia kazdego prawdziwego wojownika. Mozemy od niego kupic m.in. liny, plecaki, lopaty, a przede wszystkim napoje o ciekawych wlasciwosciach magicznych.",
+    "image": "./images/shared/228cc69589e423125eb98eea786119446494a540181285c4ee45c3175c28686e.png"
+  },
+  {
+    "id": 42,
+    "name": "Morandil",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Morandil posiada ciekawa oferte dla paladynow. Wojownicy o tej profesji moga zaopatrzyc sie u niego w amunicje dystansowa.",
+    "image": "./images/npcs/morandil_main.png"
+  },
+  {
+    "id": 43,
+    "name": "Jeweler",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Jubiler",
+    "description": "U tego NPC mozemy dostac wiele szlachetnych kamieni i innych drogocennych rzeczy po niezbyt wygorowanych cenach! Jubiler prowadzi takze skup klejnotow.",
+    "image": "./images/npcs/jeweler_main.png"
+  },
+  {
+    "id": 44,
+    "name": "Peren",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Peren sprzedaje pierscienie posiadajace ciekawe wlasciwosci magiczne.",
+    "image": "./images/npcs/peren_main.png"
+  },
+  {
+    "id": 45,
+    "name": "Samael",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Capital City, City of the Sky",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Samael sprzedaje amulet o nazwie Starlight, ktory ochroni noszaca go osobe przed utrata doswiadczenia i ekwipunku po smierci.",
+    "image": "./images/npcs/samael_main.png"
+  },
+  {
+    "id": 46,
+    "name": "Zigrl",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Zigrl sprzedaje podstawowe elementy wyposazenia kazdego prawdziwego wojownika. Mozemy od niego kupic m.in. liny, plecaki, lopaty, a przede wszystkim napoje o ciekawych wlasciwosciach magicznych.",
+    "image": "./images/npcs/zigrl_main.png"
+  },
+  {
+    "id": 47,
+    "name": "Tapster",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Barman",
+    "description": "Podroznicy znuzeni ciaglymi polowaniami i misjami moga spozywajac napoje alkoholowe odpoczac w barze.",
+    "image": "./images/npcs/tapster_main.png"
+  },
+  {
+    "id": 48,
+    "name": "Fobos",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Expgard",
+    "profession": "Sprzedawca zywnosci",
+    "description": "U Fobos'a mozna nabyc zawsze swieze artykuly spozywcze.",
+    "image": "./images/shared/c9f0880df6d399375d542936ea360643ead715c88c2d584ff2c06be421d44b3f.png"
+  },
+  {
+    "id": 49,
+    "name": "Dwarf Delar",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca run",
+    "description": "Ten handlarz moze nam zaoferowac wiele magicznych przedmiotow - poczynajac od run, konczac na wszelkiego rodzaju rozdzkach dla druidow i magow.",
+    "image": "./images/npcs/dwarf_delar_main.png"
+  },
+  {
+    "id": 50,
+    "name": "Obskurny Dzony",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca zywnosci",
+    "description": "U Obskurnego Dzonego mozna nabyc zawsze swieze artykuly spozywcze.",
+    "image": "./images/shared/86989795b1296c034f425a24148eb2e0ea6aa9abe9e84b28718affbc4369ef59.png"
+  },
+  {
+    "id": 51,
+    "name": "Morvert",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Morvert sprzedaje podstawowe elementy wyposazenia kazdego prawdziwego wojownika. Mozemy od niego kupic m.in. liny, plecaki, lopaty, a przede wszystkim napoje o ciekawych wlasciwosciach magicznych.",
+    "image": "./images/npcs/morvert_main.png"
+  },
+  {
+    "id": 52,
+    "name": "Renrea",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Renrea sprzedaje pierscienie posiadajace ciekawe wlasciwosci magiczne.",
+    "image": "./images/shared/efc52d6912ed6c3309e96aa424ea84a06cab4ee6d13cd6296cac283f1aff3534.png"
+  },
+  {
+    "id": 53,
+    "name": "Mahdi",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca mebli",
+    "description": "Mahdi sprzedaje lozka, ktore mozna ustawic w swoim domku.",
+    "image": "./images/npcs/mahdi_main.png"
+  },
+  {
+    "id": 54,
+    "name": "Kaid",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca mebli",
+    "description": "Kaid daje mozliwosc zakupu wyposazenia domkow. W jego ofercie znajduja sie krzesla, stoly, rosliny doniczkowe, pojemniki, poduszki i wiele innych.",
+    "image": "./images/npcs/kaid_main.png"
+  },
+  {
+    "id": 55,
+    "name": "Scrapper",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Skup przedmiotow",
+    "description": "Scrapper chetnie skupuje wszystkie ilosci roznego rodzaju uzbrojenia m.in. mieczy, maczug, toporow, helmow, butow, nogawic, tarcz, zbroj i amuletow.",
+    "image": "./images/shared/3129ca67bb2aa05068d48fa003b47784d298850174deda7a36e73d66669632e3.png"
+  },
+  {
+    "id": 56,
+    "name": "Madman",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Expgard",
+    "profession": "Skup przedmiotow",
+    "description": "Madman chetnie skupuje wszystkie ilosci roznego rodzaju uzbrojenia m.in. mieczy, maczug, toporow, helmow, butow, nogawic, tarcz, zbroj i amuletow.",
+    "image": "./images/shared/f9f8ba08d46cd3efc04609c6e9ae9d6950bab619ff1c6096e6a9bddddd688113.png"
+  },
+  {
+    "id": 57,
+    "name": "Hagar",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca run",
+    "description": "Ten handlarz moze nam zaoferowac wiele magicznych przedmiotow - poczynajac od run, konczac na wszelkiego rodzaju rozdzkach dla druidow i magow.",
+    "image": "./images/npcs/hagar_main.png"
+  },
+  {
+    "id": 58,
+    "name": "Edward",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Expgard",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Edward posiada ciekawa oferte dla paladynow. Wojownicy o tej profesji moga zaopatrzyc sie u niego w amunicje dystansowa.",
+    "image": "./images/shared/a2e2e51e50855e0813da1c691bb0bac6666562cd11f3285b4c9f8c598900fdd5.png"
+  },
+  {
+    "id": 59,
+    "name": "Tigswaren",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca mebli",
+    "description": "Tigswaren daje mozliwosc zakupu wyposazenia domkow. W jego ofercie znajduja sie krzesla, stoly, rosliny doniczkowe, pojemniki, poduszki i wiele innych.",
+    "image": "./images/npcs/tigswaren_main.png"
+  },
+  {
+    "id": 60,
+    "name": "Helnin",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Skup przedmiotow",
+    "description": "Scrapper chetnie skupuje wszystkie ilosci roznego rodzaju uzbrojenia m.in. mieczy, maczug, toporow, helmow, butow, nogawic, tarcz, zbroj i amuletow.",
+    "image": "./images/shared/3129ca67bb2aa05068d48fa003b47784d298850174deda7a36e73d66669632e3.png"
+  },
+  {
+    "id": 61,
+    "name": "Yanai",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Yanai kieruje swoja oferte do bardziej poczatkujacych graczy. Nowi wojownicy moga kupic od niego podstawowe uzbrojenie.",
+    "image": "./images/npcs/yanai_main.png"
+  },
+  {
+    "id": 62,
+    "name": "Artlino",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca run",
+    "description": "Ten handlarz moze nam zaoferowac wiele magicznych przedmiotow - poczynajac od run, konczac na wszelkiego rodzaju rozdzkach dla druidow i magow.",
+    "image": "./images/npcs/artlino_main.png"
+  },
+  {
+    "id": 63,
+    "name": "Morgrin",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Morgrin sprzedaje podstawowe elementy wyposazenia kazdego prawdziwego wojownika. Mozemy od niego kupic m.in. liny, plecaki, lopaty, a przede wszystkim napoje o ciekawych wlasciwosciach magicznych.",
+    "image": "./images/npcs/morgrin_main.png"
+  },
+  {
+    "id": 64,
+    "name": "Kaorri",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Kaorri sprzedaje podstawowe elementy wyposazenia kazdego prawdziwego wojownika. Mozemy od niego kupic m.in. liny, plecaki, lopaty, a przede wszystkim napoje o ciekawych wlasciwosciach magicznych.",
+    "image": "./images/npcs/kaorri_main.png"
+  },
+  {
+    "id": 65,
+    "name": "Ellrond",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Ellrond posiada ciekawa oferte dla paladynow. Wojownicy o tej profesji moga zaopatrzyc sie u niego w amunicje dystansowa.",
+    "image": "./images/npcs/ellrond_main.png"
+  },
+  {
+    "id": 66,
+    "name": "Barrin",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Barrin sprzedaje podstawowe elementy wyposazenia kazdego prawdziwego wojownika. Mozemy od niego kupic m.in. liny, plecaki, lopaty, a przede wszystkim napoje o ciekawych wlasciwosciach magicznych.",
+    "image": "./images/npcs/barrin_main.png"
+  },
+  {
+    "id": 67,
+    "name": "Rzeznik",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Capital City, Evul, Soran",
+    "profession": "Sprzedawca zywnosci",
+    "description": "U Rzeznika mozna nabyc zawsze swieze artykuly spozywcze.",
+    "image": "./images/shared/252dfb52b5db51ef438884b0c2e8fbffa90a67af00b212377b9e0ca5ecc3ba2a.png"
+  },
+  {
+    "id": 68,
+    "name": "Hotass",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Soran",
+    "profession": "Skup przedmiotow",
+    "description": "Skupuje czesci do antycznego helmu: Helmet Ornament, Gem Holder, Left Horn, Right Horn, Damaged Helmet, Helmet Piece, Helmet Adorment oraz Bronzen Amulet.",
+    "image": "./images/shared/224fe34d84e1518c7ac4671cdb92bc0f8f7c682d54357ebf8d817cafd7dd48ef.png"
+  },
+  {
+    "id": 69,
+    "name": "Olkan",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Olkan posiada w ofercie kilka amuletow. Jednym z nich jest Amulet of Loss, ktory chroni noszaca go osobe przed utrata ekwipunku po smierci.",
+    "image": "./images/shared/c9f0880df6d399375d542936ea360643ead715c88c2d584ff2c06be421d44b3f.png"
+  },
+  {
+    "id": 70,
+    "name": "Acix",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Acix posiada w ofercie kilka amuletow. Jednym z nich jest Amulet of Loss, ktory chroni noszaca go osobe przed utrata ekwipunku po smierci.",
+    "image": "./images/shared/c9f0880df6d399375d542936ea360643ead715c88c2d584ff2c06be421d44b3f.png"
+  },
+  {
+    "id": 71,
+    "name": "Dahkan",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca run",
+    "description": "Ten handlarz moze nam zaoferowac wiele magicznych przedmiotow - poczynajac od run, konczac na wszelkiego rodzaju rozdzkach dla druidow i magow.",
+    "image": "./images/npcs/dahkan_main.png"
+  },
+  {
+    "id": 72,
+    "name": "Hogan",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Ankaros, Expgard",
+    "profession": "Sprzedawca mebli",
+    "description": "Hogan sprzedaje lozka, ktore mozna ustawic w swoim domku.",
+    "image": "./images/shared/0c1deece27e338870f91438a102c16d575a7fd5b3a1f188ca2f98599ab2a9eec.png"
+  },
+  {
+    "id": 73,
+    "name": "Barman Chlor",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Ankaros, Capital City, Evul, Expgard",
+    "profession": "Barman",
+    "description": "Podroznicy znuzeni ciaglymi polowaniami i misjami moga spozywajac napoje alkoholowe odpoczac w barze.",
+    "image": "./images/npcs/barman_chlor_main.png"
+  },
+  {
+    "id": 74,
+    "name": "Larlad",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Larlad posiada ciekawa oferte dla paladynow. Wojownicy o tej profesji moga zaopatrzyc sie u niego w amunicje dystansowa.",
+    "image": "./images/npcs/larlad_main.png"
+  },
+  {
+    "id": 75,
+    "name": "Drinz",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Drinz sprzedaje pierscienie posiadajace ciekawe wlasciwosci magiczne.",
+    "image": "./images/npcs/drinz_main.png"
+  },
+  {
+    "id": 76,
+    "name": "Bartender",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "City of Dreams",
+    "profession": "Barman",
+    "description": "Podroznicy znuzeni ciaglymi polowaniami i misjami moga spozywajac napoje alkoholowe odpoczac w barze.",
+    "image": "./images/npcs/bartender_main.png"
+  },
+  {
+    "id": 77,
+    "name": "Ronald",
+    "region": "MAIN",
+    "category": "Sklepy",
+    "location": "Expgard",
+    "profession": "Sprzedawca run",
+    "description": "Ten handlarz moze nam zaoferowac wiele magicznych przedmiotow - poczynajac od run, konczac na wszelkiego rodzaju rozdzkach dla druidow i magow.",
+    "image": "./images/shared/a3bdf9e710077f8b52d0ebde063f1abd8bc134b486c7f4a334b48aca18fd890e.png"
+  },
+  {
+    "id": 78,
+    "name": "Acalt",
+    "region": "MAIN",
+    "category": "Usługi",
+    "location": "City of Dreams",
+    "profession": "Listonosz",
+    "description": "Listonosz oferuje nam mozliwosc kupna paczek oraz listow.",
+    "image": "./images/shared/d1bd5169c57af3989ade239636f0251aed35315a19c6830feff6dd4a42fd1dda.png"
+  },
+  {
+    "id": 79,
+    "name": "Zooman",
+    "region": "MAIN",
+    "category": "Usługi",
+    "location": "City of Dreams",
+    "profession": "Uslugi",
+    "description": "Zooman pobiera oplaty za wstep do zoo.",
+    "image": "./images/npcs/zooman_main.png"
+  },
+  {
+    "id": 80,
+    "name": "Postman",
+    "region": "MAIN",
+    "category": "Usługi",
+    "location": "City of Dreams",
+    "profession": "Listonosz",
+    "description": "Listonosz oferuje nam mozliwosc kupna paczek oraz listow.",
+    "image": "./images/npcs/postman_main.png"
+  },
+  {
+    "id": 81,
+    "name": "Lukas",
+    "region": "MAIN",
+    "category": "Usługi",
+    "location": "Expgard",
+    "profession": "Listonosz",
+    "description": "Listonosz oferuje nam mozliwosc kupna paczek, listow oraz amuletow, ktore ochronia nas przed strata ekwipunku po smierci.",
+    "image": "./images/npcs/lukas_main.png"
+  },
+  {
+    "id": 82,
+    "name": "Yarkay",
+    "region": "MAIN",
+    "category": "Usługi",
+    "location": "City of Dreams",
+    "profession": "Listonosz",
+    "description": "Listonosz oferuje nam mozliwosc kupna paczek oraz listow.",
+    "image": "./images/npcs/yarkay_main.png"
+  },
+  {
+    "id": 83,
+    "name": "Orlan",
+    "region": "MAIN",
+    "category": "Usługi",
+    "location": "Capital City, City of Dreams, Expgard",
+    "profession": "Urzednik",
+    "description": "Orlan dostarcza informacji na temat sposobu uzyskania promocyjnego konta.",
+    "image": "./images/npcs/orlan_main.png"
+  },
+  {
+    "id": 84,
+    "name": "Kolatil",
+    "region": "MAIN",
+    "category": "Usługi",
+    "location": "City of Dreams",
+    "profession": "Listonosz",
+    "description": "Listonosz oferuje nam mozliwosc kupna paczek oraz listow.",
+    "image": "./images/shared/d1bd5169c57af3989ade239636f0251aed35315a19c6830feff6dd4a42fd1dda.png"
+  },
+  {
+    "id": 85,
+    "name": "Besidius",
+    "region": "MAIN",
+    "category": "Usługi",
+    "location": "City of Dreams",
+    "profession": "Listonosz",
+    "description": "Listonosz oferuje nam mozliwosc kupna paczek oraz listow.",
+    "image": "./images/shared/d1bd5169c57af3989ade239636f0251aed35315a19c6830feff6dd4a42fd1dda.png"
+  },
+  {
+    "id": 86,
+    "name": "Ward Robe",
+    "region": "MAIN",
+    "category": "Specjalne",
+    "location": "Capital City",
+    "profession": null,
+    "description": "Ward Robe ma nam do zaoferowania calkiem obszerna garderobe w sam raz na Halloween, oferuje nam: Kostium wampira, czarownicy, nekromanty, bialego szkieletu, brazowego trolla, ducha, nieumarlaka, diabelka, czerwonego szkieletu, niebieskiego trolla, mumii oraz kaplanki. ",
+    "image": "./images/shared/05ad2f538012ef6262f5087724a06db8a966a31d57bc60757a90f8dbab0c318c.png"
+  },
+  {
+    "id": 87,
+    "name": "Bagger",
+    "region": "MAIN",
+    "category": "Specjalne",
+    "location": "Doslownie wszedzie",
+    "profession": null,
+    "description": "Specjalny NPC, ktory pozwala odzyskac zgubiony worek, potrzebny do zadan u NPC Ahmed Martwy Terrorysta. Trzeba jednak pamietac, ze Bagger lubi czesto zmieniac Swoja lokalizacje. Mozecie go znalezc doslownie wszedzie.",
+    "image": "./images/shared/86989795b1296c034f425a24148eb2e0ea6aa9abe9e84b28718affbc4369ef59.png"
+  },
+  {
+    "id": 88,
+    "name": "Old Baker",
+    "region": "MAIN",
+    "category": "Specjalne",
+    "location": "Senja",
+    "profession": null,
+    "description": "Stary piekarz oferuje nam ciekawa wymiane. Jesli zaoferujemy mu pysznego piernika \"gingerbread\", Staruszek przedstawi nam Swoja oferte wymiany: W zamian za 4 pierniki moge podarowac Ci pewna ksiazke! Jesli masz ich 10 to dam Ci wyjatkowy helm, natomiast jesli masz ich 15 to co Ci podaruje to bedzie niespodzianka, ale na pewno nie bedziesz zawiedziony!. No chyba, ze jestes jednym z tych gagatkow ktorzy zerwali Grinchowi szalik... Wtedy jesli go masz to jestem w stanie zrobic cos wiecej! - Komplet 23 piernikow i szalik Grincha za zostanie legenda! Pierniki zdobywamy podczas trwania eventu LEGENDY GRINCH'a w okresie Swiat Bozego Narodzenia.",
+    "image": "./images/shared/e3afcf3f21055ed22b8b5bb0d5df5191215f11d414cc59b98025764dce5e2f4e.png"
+  },
+  {
+    "id": 89,
+    "name": "Doctor",
+    "region": "MAIN",
+    "category": "Specjalne",
+    "location": "Kazde miasto w swiecie APO",
+    "profession": "Uslugi",
+    "description": "Doktor zajmuje sie bardzo skomplikowanymi operacjami; poczynajac na zmianie plci konczac na zmianie rasy.",
+    "image": "./images/shared/526667c2ba3ad5a88c44dd4c35f105c97c7a544acb18ce35a3f0e6607c6dfe2d.png"
+  },
+  {
+    "id": 90,
+    "name": "Santa Claus",
+    "region": "MAIN",
+    "category": "Specjalne",
+    "location": "Senja",
+    "profession": "Mikolaj",
+    "description": "Santa Claus pojawia sie tylko raz do roku - A dokladniej 6 grudnia. Jesli bylo sie grzecznym caly rok, mozna dostac od niego prezent.",
+    "image": "./images/shared/71793f0b8892eb95a0cbd4fc15f11460ee7774ea336c4d69b571ec538e20dc8f.png"
+  },
+  {
+    "id": 91,
+    "name": "Blesser",
+    "region": "MAIN",
+    "category": "Specjalne",
+    "location": "Sky",
+    "profession": "Bless",
+    "description": "Blesser to specjalny NPC, u ktorego mozna kupic blessy. Chronia one przed utrata doswiadczenia oraz ekwipunku po smierci. Blessy dzialaja wylacznie dla graczy posiadajacych PACC. Maksymalnie mozna kupic 100 blessow, a cena kazdego z nich zalezy od poziomu postaci.",
+    "image": "./images/shared/f22e8d2a7dfc041ee2a9adcde7e339b0e0f3b6ccd2f6e22e3c24df4a1f2fe55b.png"
+  },
+  {
+    "id": 92,
+    "name": "Ahmed Martwy Terrorysta",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Desert City",
+    "profession": null,
+    "description": "Ahmed oferuje nam \"potezne\" nagrody za wykonanie u niego 100 misjii. Za kazda wykonana misje, mozna odebrac nagrode. Informacja, ktora moze Wam sie przydac: Tak wiec na poczatek chce Ci powiedziec o magicznych wlasciwosciach pewnego przedmiotu. KlejNutka potrafi zwiekszyc Twoje mozliwosci oraz ulatwiac zadania. Druga wazna informacja: Do kazdego zadania mozesz uzyc 5 KlejNutek, jednak musisz ich uzyc przed zadaniem! Dlatego teraz uzyj ich jesli chcesz, jesli nie chcesz to napisz, ze jestes gotowy.",
+    "image": "./images/shared/86989795b1296c034f425a24148eb2e0ea6aa9abe9e84b28718affbc4369ef59.png"
+  },
+  {
+    "id": 93,
+    "name": "Dao",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Cyclopolis",
+    "profession": null,
+    "description": "Dao zleca graczowi serie wymagajacych misji, ktore trzeba wykonac krok po kroku. Ukonczenie wszystkich zadan odblokowuje dostep do bardzo trudnego questa, ktorego nagroda jest Shaman Skirt.",
+    "image": "./images/shared/224fe34d84e1518c7ac4671cdb92bc0f8f7c682d54357ebf8d817cafd7dd48ef.png"
+  },
+  {
+    "id": 94,
+    "name": "Old Wizard",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Magic Island",
+    "profession": null,
+    "description": "Old Wizard pomaga graczom przedostac sie na wyspe, na ktorej znajduja sie potwory o nazwie Returned oraz quest na Scroll of Escape. Dodatkowo pelni role tlumacza dokumentow.",
+    "image": "./images/npcs/old_wizard_main.png"
+  },
+  {
+    "id": 95,
+    "name": "Daron",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Wyspa Piratow",
+    "profession": null,
+    "description": "Daron jest bylym marynarzem, ktorego statek zostal zniszczony przez piratow. Od tamtej pory pracuje na ich wyspie, czekajac na okazje do zemsty. Zleca graczom misje zwiazane z walka z piratami, a w zamian za ich pomoc obiecuje zdradzic swoje sekrety..",
+    "image": "./images/shared/9762613a45a5b8e4361e3e71c9cee178b598659ba5de29138f143e8da9141ed9.png"
+  },
+  {
+    "id": 96,
+    "name": "Mala",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Wyspa Piratow",
+    "profession": null,
+    "description": "Mala zajmuje sie handlem alkoholem na wyspie piratow i dostarcza rum Daronowi. Wykonujac jego misje, gracz pomaga mu zdobyc skladniki potrzebne do przygotowania nowego trunku, a w zamian Mala odwdziecza sie pomoca w dostarczeniu rumu Daronowi.",
+    "image": "./images/shared/228cc69589e423125eb98eea786119446494a540181285c4ee45c3175c28686e.png"
+  },
+  {
+    "id": 97,
+    "name": "Kian",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Wyspa Piratow",
+    "profession": null,
+    "description": "Kian zajmuje sie przygotowaniem graczy do regularnej walki z piratami. Wykonuje sie u niego serie coraz trudniejszych misji, ktore polegaja na eliminowaniu kolejnych grup piratow i zmniejszaniu ich liczebnosci na wyspie.",
+    "image": "./images/shared/f9f8ba08d46cd3efc04609c6e9ae9d6950bab619ff1c6096e6a9bddddd688113.png"
+  },
+  {
+    "id": 98,
+    "name": "Stheo",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Wyspa Piratow",
+    "profession": null,
+    "description": "Stheo pilnuje przejscia i pozwala graczom korzystac z niego po rozwiazaniu przygotowanej przez niego zagadki. Wykonujac jego zadanie, gracz musi wykazac sie logicznym mysleniem, a poprawna odpowiedz zapewnia mu staly dostep do przejscia..",
+    "image": "./images/shared/228cc69589e423125eb98eea786119446494a540181285c4ee45c3175c28686e.png"
+  },
+  {
+    "id": 99,
+    "name": "Unknown Mage",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Ankaros",
+    "profession": null,
+    "description": "Unknown Mage to tajemniczy mag, ktory posluguje sie niezrozumialym jezykiem i jest zwiazany z tajemniczym czarem Adite Asha. Rozmowa z nim wymaga znajomosci odpowiednich slow, a jego prawdziwe zamiary pozostaja niejasne.",
+    "image": "./images/shared/fba9c8bc50f2fdc84c2ceec1f9b8b63aa8e5f6668e89fd927f2701ca347fd3be.png"
+  },
+  {
+    "id": 100,
+    "name": "Ots Guard",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "OTS QUEST II",
+    "profession": null,
+    "description": "Straznik pilnuje przejscia do dalszej czesci terenu i przepuszcza jedynie osoby, ktore oddadza nalezna czesc wladcy. Aby rozpocznac rozmowe i uzyskac dostep, nalezy powiedziec do niego \"hail to the emperor\".",
+    "image": "./images/shared/d3fd89e5f16e804b0e50efddd2e9ee224da3989dc651b9595473b05019d2c663.png"
+  },
+  {
+    "id": 101,
+    "name": "Sergeant Of Empire",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "OTS QUEST II",
+    "profession": null,
+    "description": "Tego straznika mozna spotkac dwa razy podczas przechodzenia dalszej czesci terenu. Za pierwszym razem przepusci gracza dopiero po uiszczeniu odpowiedniej oplaty. Przy kolejnym spotkaniu, juz blizej koncowego etapu przejscia, zamiast pieniedzy oczekuje od nas piwa.",
+    "image": "./images/shared/65d524c45cff2a66926e1120c09ef25d2f11761e7899df49fea36f5a0b095ba2.png"
+  },
+  {
+    "id": 102,
+    "name": "Jobs",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Siedziba elfow",
+    "profession": null,
+    "description": "NPC, ktory pozwala rozpoczac misje na przedmiot o nazwie Shaman Armor. Czeka nas kilka etapow misji. Musimy jednak pamietac, ze jesli zaczniemy sluzyc elfom, nie mozemy zrezygnowac z tej decyzji, az do ukonczenia wszystkich misji oraz questu na Shaman Armor.",
+    "image": "./images/npcs/jobs_main.png"
+  },
+  {
+    "id": 103,
+    "name": "Orc Shaman",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Evul - Forteca orcow",
+    "profession": null,
+    "description": "NPC, ktory zdradza nam, jak dostac sie do jednego z pomieszczen w siedzibie dwarfow. Kontynuuacja misji u NPC Jobs.",
+    "image": "./images/shared/c191d18820734630beacf80a6321e5d48e335dd62f0f0123dbc5ffca4a4b2ca2.png"
+  },
+  {
+    "id": 104,
+    "name": "Coorvaah",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "City of the Dreams",
+    "profession": "Mistrz questow",
+    "description": "Coorvaah prowadzi sklep dostepny tylko dla osob, ktore wypelnily misje HOTA u Santorr'a. Sklep ten zawiera bardzo interesujacy asortyment. Coorvaah prowadzi sklep dostepny tylko dla osob, ktore wypelnily misje 'Last bonus' oraz 'Sklep' u Santorr'a. Sklep ten zawiera bardzo interesujacy asortyment.",
+    "image": "./images/npcs/coorvaah_main.png"
+  },
+  {
+    "id": 105,
+    "name": "Marthen",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Soran",
+    "profession": "Mistrz questow",
+    "description": "Marthen jest kluczowy przy wykonywaniu misji do NPC Popi.",
+    "image": "./images/shared/d1bd5169c57af3989ade239636f0251aed35315a19c6830feff6dd4a42fd1dda.png"
+  },
+  {
+    "id": 106,
+    "name": "Rabin",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Volcano",
+    "profession": "Mistrz questow",
+    "description": "Rabin moze nam pomoc w wykonaniu tego questa. Rabin moze nam zlecic zadania, od ktorych wykonania zalezy ukonczenie \"Queen Quest\". Moze nas takze przeniesc do labiryntu.",
+    "image": "./images/npcs/rabin_main.png"
+  },
+  {
+    "id": 107,
+    "name": "Starzec",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Canyon of damned",
+    "profession": "Mistrz questow",
+    "description": "Starzec za skromna sumke udziela dostepu do wlasciwej czesci zadania. Starzec moze przydac sie wojownikom, ktorzy chca stoczyc walke z poteznym czarodziejem o bardzo wartosciowy przedmiot.",
+    "image": "./images/npcs/starzec_main.png"
+  },
+  {
+    "id": 108,
+    "name": "Erdo",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Soran",
+    "profession": "Mistrz questow",
+    "description": "Erdo jest kluczowy przy wykonywaniu misji do NPC Popi.",
+    "image": "./images/npcs/erdo_main.png"
+  },
+  {
+    "id": 109,
+    "name": "Katius",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Magic Islands - Jungle",
+    "profession": "Mistrz questow",
+    "description": "Katius jest pomocny przy wykonywaniu zadania \"Quest of Destiny\". Katius w zamian za zlozona ofiare podaruje nam pewien cenny przedmiot.",
+    "image": "./images/shared/2849a9b4aab790959bfa277af9e7d61061a92bd02f41f415a71efbdb709b2937.png"
+  },
+  {
+    "id": 110,
+    "name": "Szafir",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Ankaros",
+    "profession": "Mistrz questow",
+    "description": "Szafir chetnie zamieni nogawice za bardzo cenny klejnot. U szafira za drobna oplata mozemy nadac dodatkowe wlasciwosci zwyklemu sapphire helmet. U Szafira mozna zamienic bardzo wartosciowy przedmiot na wspaniale nogawice posiadajace magiczne wlasciwosci.",
+    "image": "./images/shared/8f2ad3933774a7dee1184be61771b6c7f495cbd9eda3f1532ff1b3f008f4b559.png"
+  },
+  {
+    "id": 111,
+    "name": "Rodo",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Capital City",
+    "profession": "Mistrz questow",
+    "description": "Rodo zleca misje niezbedne do wykonania \"Magic Axe Quest\". Po wykonaniu owych misji mozna nabyc u niego cala game run. Rodo zleci nam zadanie do wykonania, ktore do latwych nie nalezy. Jednak na jednym zadaniu sie nie skonczy. Bedziemy musieli np. zdobyc dla niego rune, pomoc jego bratu i nie tylko...",
+    "image": "./images/npcs/rodo_main.png"
+  },
+  {
+    "id": 112,
+    "name": "Gronshar",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Darkness Island",
+    "profession": "NPC Questowy",
+    "description": "Demon posiadajacy wiedze niezbedna przy wykonywaniu zadania \"Winged Helmet Quest\".",
+    "image": "./images/shared/dfdf176b1598488b936fb182669e47b6b5fe99c63a78a7eb1c6bb215b84199c0.png"
+  },
+  {
+    "id": 113,
+    "name": "Salim",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "City of Dreams",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "U Salim'a mozna dostac bardzo cenne amulety o poteznych wlasciwosciach magicznych. Kazdy z nich posiada dodatkowo wlasciwosci Starlight&apos;a. U Salim'a mozemy nie tylko kupic amulet Starlight, ale rowniez zrobic pewna misje, w ktorej nagrodami sa: Mozliwosc tworzenia specjalnych amuletow, oraz dostep do terenow z Ward'ami.",
+    "image": "./images/shared/2136c9a025f3ec0920eaf9067af1f974c3edb601338b365fe3e397b4ca36614f.png"
+  },
+  {
+    "id": 114,
+    "name": "Cobriana",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Volcano",
+    "profession": "Mistrz questow",
+    "description": "Cobriana to klucz do jednej z zagadek zadania \"Queen Quest\". Cobriana niewatpliwie posiada informacje, ktore sa niezbedne do wykonania questa.",
+    "image": "./images/shared/d42a6066f9c7a1ae896557f926170b7b83c71de73bca5874176f1d84d5052e63.png"
+  },
+  {
+    "id": 115,
+    "name": "David",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Cyclopolis",
+    "profession": "Mistrz questow",
+    "description": "Bez pomocy Davida nie rozpoczniemy questa. David moze byc pomocny w wykonaniu zadania \"Quest of Destiny\".",
+    "image": "./images/shared/70d3c54b26eaed81b8c92f6a8bab6a960b2c59caad911b12e9fd68cb5a01ec60.png"
+  },
+  {
+    "id": 116,
+    "name": "Monkan",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Volcano",
+    "profession": "Mistrz questow",
+    "description": "Ta malpa moze nam pomoc w wykonaniu zadania. Monkan pomaga w jednej z misji zadania \"Queen Quest\".",
+    "image": "./images/shared/64627964eb69b283a9f549b8b34fee2a96073b58f379ba927c4c495dd4a0d452.png"
+  },
+  {
+    "id": 117,
+    "name": "Quiver",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Canyon of damned",
+    "profession": "Mistrz questow",
+    "description": "Wykonanie misji zleconych przez tego npc jest niezbedne do ukonczenia \"Magic Axe Quest\". Aby dostac sie do Quiver'a, nalezy miec ze soba ciezka maczete, by moc sciac zarosla zagradzajace wejscie do jaskini. Quiver wyglada na dosc sympatycznego staruszka, jednak nie daj sie zwiesc pozorom!",
+    "image": "./images/npcs/quiver_main.png"
+  },
+  {
+    "id": 118,
+    "name": "Szaleniec",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Volcano",
+    "profession": "Mistrz questow",
+    "description": "W zamian za oddana przysluge otrzymamy mozliwosc dostepu do tajemnych respow. Szaleniec sowicie wynagrodzi tego, kto przyniesie mu pewien bardzo wazny dla niego przedmiot.",
+    "image": "./images/shared/f22e8d2a7dfc041ee2a9adcde7e339b0e0f3b6ccd2f6e22e3c24df4a1f2fe55b.png"
+  },
+  {
+    "id": 119,
+    "name": "Pustelnik",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Canyon of damned",
+    "profession": "Mistrz questow",
+    "description": "Na pozor niepotrzebny Pustelnik moze okazac sie niezbedny w trakcie poszukiwan krysztalowej strzaly. Mozemy wyswiadczyc pustelnikowi pewna przysluge, za ktora dostaniemy przedmiot, ktory moze nam sie przydac.",
+    "image": "./images/npcs/pustelnik_main.png"
+  },
+  {
+    "id": 120,
+    "name": "Punisher",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Ankaros",
+    "profession": "Uslugi",
+    "description": "Punisher walesa sie po calym miescie Ankaros. Musisz go poszukac! Punisher za spora oplata moze zlikwidowac czerwona czaszke - oznake wielokrotnych morderstw. Punisher zwykly jest spacerowac po ulicach Ankaros, jego lokalizacja jest zmienna.",
+    "image": "./images/shared/168f06ddbc7f74af607e7b22c97654fd1bc28dcd98ef88a3688cf8f2f1cdc7b6.png"
+  },
+  {
+    "id": 121,
+    "name": "Lony",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "POH",
+    "profession": "Mistrz questow",
+    "description": "Lony pozwala zabijac potwory na swoim terenie.",
+    "image": "./images/shared/8aff6ee157c9e514a31ef5c976f9072f7101ccfe76109cfeef3ed992415f534a.png"
+  },
+  {
+    "id": 122,
+    "name": "Sonia",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Volcano",
+    "profession": "Skup przedmiotow",
+    "description": "Sonia zajmuje sie skupowaniem bardzo wartosciowych przedmiotow. Sonia zajmuje sie skupem lepszych przedmiotow, jednak posiada ona rowniez na sprzedaz Mlot Hefajstosa.",
+    "image": "./images/shared/95bb9a5e0dcda78d76dbd02f491facf42e1dc52a929c0bd56c208d03b81d947b.png"
+  },
+  {
+    "id": 123,
+    "name": "Beliar",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Darkness Island",
+    "profession": "Mistrz questow",
+    "description": "Za drobna oplata Beliar moze przeniesc podroznika \"Winged Helmet Quest\".",
+    "image": "./images/shared/dfdf176b1598488b936fb182669e47b6b5fe99c63a78a7eb1c6bb215b84199c0.png"
+  },
+  {
+    "id": 124,
+    "name": "Luminela",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Evul",
+    "profession": "Mistrz questow",
+    "description": "Luminela pomoze kazdemu kto dazy do zdobycia miekkich butow. U Lumineli musisz kupic zloty klucz niezbedny do wykonania questa.",
+    "image": "./images/shared/95bb9a5e0dcda78d76dbd02f491facf42e1dc52a929c0bd56c208d03b81d947b.png"
+  },
+  {
+    "id": 125,
+    "name": "Wiezien",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Darkness Island",
+    "profession": "Mistrz questow",
+    "description": "U wieznia nalezy zaczac wykonywanie questu. Wiezien to jedna z kluczowych postaci przy wykonywaniu \"Winged Helmet Quest\".",
+    "image": "./images/shared/228cc69589e423125eb98eea786119446494a540181285c4ee45c3175c28686e.png"
+  },
+  {
+    "id": 126,
+    "name": "Robin z Doliny lalek",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Capital City",
+    "profession": "Listonosz",
+    "description": "Kup mape labiryntu za jedyne 500 krysztalowych monet, z pewnoscia sie nam przyda! Listonosz oferuje nam mozliwosc kupna paczek, listow oraz amuletow, ktore ochronia nas przed strata ekwipunku po smierci.",
+    "image": "./images/shared/bfadb75e673916b5f7aa45466411a9031d9435ac25595f8d6e00f6a3720b0ed6.png"
+  },
+  {
+    "id": 127,
+    "name": "Johen",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Evul",
+    "profession": "Mistrz questow",
+    "description": "Johen to mag posiadajacy ogromna wiedze, ktora nie raz moze sie komus przydac.",
+    "image": "./images/npcs/johen_main.png"
+  },
+  {
+    "id": 128,
+    "name": "Sfinks",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Darkness Island",
+    "profession": "Mistrz questow",
+    "description": "Po rozwiazaniu zagadki Sfinksa moze on przeniesc podroznika do pomieszczenia z nagroda. W razie podania zlej odpowiedzi na jego zagadke zabija.",
+    "image": "./images/npcs/sfinks_main.png"
+  },
+  {
+    "id": 129,
+    "name": "Pustelnik Ahmed",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Ankaros",
+    "profession": "Mistrz questow",
+    "description": "Ahmed pomaga w wykonaniu misji \"Second Weapon\", ktora zleca Santorr. Ahmed pomaga w niejednej misji tego zadania. Niestety jak to pustelnik - lubi wedrowac. Moze znajdowac sie na calej pustyni wokol miasta Ankaros.",
+    "image": "./images/npcs/pustelnik_ahmed_main.png"
+  },
+  {
+    "id": 130,
+    "name": "Snaken",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Volcano",
+    "profession": "Mistrz questow",
+    "description": "Snaken niewatpliwie posiada informacje, ktore sa niezbedne do wykonania questa. Snaken to niezwykly waz. Moze sie okazac przydatny w trakcie wykonywania zadania \"Queen Quest\".",
+    "image": "./images/shared/373f8ed0dd9e66c10324f7de0e0322f6fdaff20d53de07fec79865deaa2429c9.png"
+  },
+  {
+    "id": 131,
+    "name": "Burnin",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Volcano",
+    "profession": "Mistrz questow",
+    "description": "Burnin w zamian za przysluge udziela dostepu do nowych respawn'ow.",
+    "image": "./images/npcs/burnin_main.png"
+  },
+  {
+    "id": 132,
+    "name": "Vordor",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Volcano",
+    "profession": "Mistrz questow",
+    "description": "Podroznik po ukonczeniu pewnych zadan oraz po okazaniu specjalnego dokumentu moze zostac przeniesiony przez Vordor'a do labiryntu. Vordor - straznik wejscia do labiryntu, mimo tego, ze jest mumia i nie wyglada raczej przyjemnie, moze nas przepuscic jesli mamy mape, wczesniej zakupiona u Robina.",
+    "image": "./images/shared/7e6f405f9a3b6c35e9d11d9ce287c629f547278b840254b04bb8446df44af9dd.png"
+  },
+  {
+    "id": 133,
+    "name": "Witch",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "POH",
+    "profession": "Mistrz questow",
+    "description": "Wojownicy o niskim doswiadczeniu moga w zamian za pomoc otrzymac od tej czarownicy krysztalowe monety.",
+    "image": "./images/shared/4283af8675e06e235b4bd0e9f62c9ef280e99e48e200a8daa882e8a3acb096f6.png"
+  },
+  {
+    "id": 134,
+    "name": "Santorr",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Evul",
+    "profession": "Mistrz questow",
+    "description": "Mozemy u niego wykonac wiele przeroznych misji. Nagrody sa tego warte! Santorr zleca wiele misji o roznym stopniu trudnosci. Kazdy podroznik zdola wykonac ktoras z nich. Kazda zakonczona misja niesie ze soba ciekawe nagrody.",
+    "image": "./images/npcs/santorr_main.png"
+  },
+  {
+    "id": 135,
+    "name": "Aqar",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Volcano",
+    "profession": "Mistrz questow",
+    "description": "W tym pomieszczeniu znajduje sie Aqar, brat Roda. Pomoz mu sie wydostac z tego labiryntu! Aqar stoi przy wejsciu do labiryntu. U niego takze mozna wykonac jedna z misji do \"Magic Axe Quest\".",
+    "image": "./images/shared/d1bd5169c57af3989ade239636f0251aed35315a19c6830feff6dd4a42fd1dda.png"
+  },
+  {
+    "id": 136,
+    "name": "Straznik",
+    "region": "MAIN",
+    "category": "Questowe",
+    "location": "Volcano",
+    "profession": "Mistrz questow",
+    "description": "Podroznik po okazaniu pewnego dokumentu Straznikowi moze dostac sie do starozytnego oltarza. Po okazaniu odpowiedniego dokumentu straznikowi, moze on nas przepuscic do tajemnych korytarzy labiryntu.",
+    "image": "./images/shared/8aff6ee157c9e514a31ef5c976f9072f7101ccfe76109cfeef3ed992415f534a.png"
+  },
+  {
+    "id": 137,
+    "name": "Guild Master",
+    "region": "MAIN",
+    "category": "Pozostali",
+    "location": "Kazde miasto w swiecie APO",
+    "profession": "Guild Master",
+    "description": "Za posrednictwem Guild Mastera liderzy i vice liderzy moga zarzadzac gildia.",
+    "image": "./images/shared/f22e8d2a7dfc041ee2a9adcde7e339b0e0f3b6ccd2f6e22e3c24df4a1f2fe55b.png"
+  },
+  {
+    "id": 138,
+    "name": "Cody",
+    "region": "MAIN",
+    "category": "Pozostali",
+    "location": "Expgard",
+    "profession": "Inne",
+    "description": "Cody sprzedaje klucz do drzwi prowadzacych w wiele niebezpiecznych miejsc.",
+    "image": "./images/npcs/cody_main.png"
+  },
+  {
+    "id": 139,
+    "name": "Andy",
+    "region": "MAIN",
+    "category": "Pozostali",
+    "location": "Capital City",
+    "profession": "Inne",
+    "description": "Andy ma swietne poczucie humoru. Kazdemu rozmowcy opowiada rozne dowcipy i anegdoty.",
+    "image": "./images/npcs/andy_main.png"
+  },
+  {
+    "id": 140,
+    "name": "Double",
+    "region": "MAIN",
+    "category": "Pozostali",
+    "location": "Volcano",
+    "profession": "Inne",
+    "description": "Double zajmuje sie wymiana motyli. Oferuje graczom wyjatkowego, martwego motyla w zamian za trzy inne motyle oraz odpowiednia ilosc Scarab Coins.",
+    "image": "./images/shared/70728661fb3822d108fa025bc4007debe62d73f16064bebd81d160f05a176f79.png"
+  },
+  {
+    "id": 141,
+    "name": "Rodriguez",
+    "region": "ROOK",
+    "category": "Przewoźnicy",
+    "location": "Rook - Poludnie od swiatyni",
+    "profession": null,
+    "description": "Rodriguez oferuje nam podroz jego statkiem do miasta Tropicano. Koszt podrozy rozni sie w zaleznosci od naszego poziomu doswiadczenia.",
+    "image": "./images/npcs/rodriguez_rook.png"
+  },
+  {
+    "id": 142,
+    "name": "Endiergo",
+    "region": "ROOK",
+    "category": "Przewoźnicy",
+    "location": "Rookgaard",
+    "profession": "Przewoznik",
+    "description": "Endiergo za drobna oplata badz usluge przenosi w miejsce, ktore idealnie nadaje sie do polowania.",
+    "image": "./images/npcs/endiergo_rook.png"
+  },
+  {
+    "id": 143,
+    "name": "Captain Nemo",
+    "region": "ROOK",
+    "category": "Przewoźnicy",
+    "location": "Rookgaard - Antyczne Miasto",
+    "profession": "Przewoznik",
+    "description": "Captain Nemo oferuje graczom mozliwosc korzystania ze swojej lodki. W zamian za dostarczenie mu jego ulubionego jedzenia odblokowuje graczowi mozliwosc podrozowania lodka..",
+    "image": "./images/npcs/captain_nemo_rook.png"
+  },
+  {
+    "id": 144,
+    "name": "Daramaniano",
+    "region": "ROOK",
+    "category": "Przewoźnicy",
+    "location": "Rookgaard - Tropicano",
+    "profession": "Przewoznik",
+    "description": "Daramaniano oferuje nam przeprawe na tajemnicza bagienna wyspe, gdzie czekaja potezne bestie. Za odnalezienie 4 mitycznych przedmiotow, mozna zmierzyc sie z ich wladca. Informacja, ktora moze Wam sie przydac: Tak wiec na poczatek chce Ci powiedziec o ogromnej sile kreatur, ktore nie oszczedzaja graczy z niskim poziomem. Druga wazna informacja: Aby Cie tam przeprawic, bedziesz potrzebowal daramanian waraxe w ilosci rownej polowie Twojego poziomu! Dlatego teraz idz je zdobadz i dobrze sie wyposaz, a jesli jestes gotowy, to daj mu znac.",
+    "image": "./images/npcs/daramaniano_rook.png"
+  },
+  {
+    "id": 145,
+    "name": "Azen",
+    "region": "ROOK",
+    "category": "Przewoźnicy",
+    "location": "Rookgaard - Tropicano",
+    "profession": "Przewoznik",
+    "description": "Azen oferuje nam podroz jego lodzia do glownego miasta rook. Koszt podrozy rozni sie w zaleznosci od naszego poziomu doswiadczenia.",
+    "image": "./images/npcs/azen_rook.png"
+  },
+  {
+    "id": 146,
+    "name": "Hunter Urlich",
+    "region": "ROOK",
+    "category": "Łowcy",
+    "location": "Rookgaard",
+    "profession": null,
+    "description": "Urlich oferuje rozne zadania lowieckie. Zadania sa zalezne od poziomu postaci. Za wykonane zadanie, NPC nagradza punktami doswiadczenia oraz pieniedzmi - Nagroda rowniez jest zalezna od naszego poziomu.",
+    "image": "./images/shared/9b512929a5a784615664a966bf32daab268e5d96023f3117daea08456fd9c32e.png"
+  },
+  {
+    "id": 147,
+    "name": "Regrubmah",
+    "region": "ROOK",
+    "category": "Łowcy",
+    "location": "Rookgaard",
+    "profession": null,
+    "description": "Regrubmah oferuje rozne zadania lowieckie na terenie Antycznego Miasta. Za wykonane zadanie, NPC nagradza specjalnym przedmiotem, ktory mozna wykorzystac w Antycznym Miescie.",
+    "image": "./images/npcs/regrubmah_rook.png"
+  },
+  {
+    "id": 148,
+    "name": "Psychol",
+    "region": "ROOK",
+    "category": "Sklepy",
+    "location": "Rookgaard",
+    "profession": "Inne",
+    "description": "Psychol skupuje ciala martwych zwierzat. Mozna takze wykonac u niego \"IH Quest\". Misje zaczynamy u Psychola. Zleci nam on 3 dosc latwe zadania do wykonania, polegajace glownie na przyniesieniu mu pewnych rzeczy. Gdy juz wykonamy zlecone nam zadania, nalezy odczekac rowne 2h. Teraz mamy 10 min. na dotarcie do Zinaba.",
+    "image": "./images/npcs/psychol_rook.png"
+  },
+  {
+    "id": 149,
+    "name": "Sally",
+    "region": "ROOK",
+    "category": "Sklepy",
+    "location": "Rookgaard - Depo",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Sally kieruje swoja oferte do bardziej poczatkujacych graczy. Nowi wojownicy moga kupic od niej podstawowe uzbrojenie.",
+    "image": "./images/npcs/sally_rook.png"
+  },
+  {
+    "id": 150,
+    "name": "Besomer",
+    "region": "ROOK",
+    "category": "Sklepy",
+    "location": "Rookgaard - Antyczne Miasto",
+    "profession": "Sprzedawca narzedzi",
+    "description": "Besomer prowadzi sklep z miotlami oraz lopatami.",
+    "image": "./images/npcs/besomer_rook.png"
+  },
+  {
+    "id": 151,
+    "name": "Bazin",
+    "region": "ROOK",
+    "category": "Sklepy",
+    "location": "Rookgaard - Antyczne Miasto",
+    "profession": "Sprzedawca run",
+    "description": "Besomer posiada w sojej ofercie runy IH (Intense Healing). Zeby moc kupowac runy, trzeba wykonac misje.",
+    "image": "./images/npcs/bazin_rook.png"
+  },
+  {
+    "id": 152,
+    "name": "Dunia",
+    "region": "ROOK",
+    "category": "Sklepy",
+    "location": "Rookgaard",
+    "profession": "Skup przedmiotow",
+    "description": "Dunia prowadzi skup elementow ekwipunku! Ta handlarka chetnie nabedzie przedmioty zdobyte przez wojownikow po bardzo rozsadnych cenach.",
+    "image": "./images/shared/95bb9a5e0dcda78d76dbd02f491facf42e1dc52a929c0bd56c208d03b81d947b.png"
+  },
+  {
+    "id": 153,
+    "name": "Spider",
+    "region": "ROOK",
+    "category": "Sklepy",
+    "location": "Rookgaard",
+    "profession": "Skup przedmiotow",
+    "description": "Spider prowadzi skup elementow ekwipunku! Ten handlarz chetnie nabedzie przedmioty zdobyte przez wojownikow po bardzo rozsadnych cenach.",
+    "image": "./images/shared/b8289b868ba4809ef429cc4bf9c1a55c83d0f1087a36297b4967f2a284a23277.png"
+  },
+  {
+    "id": 154,
+    "name": "Rino",
+    "region": "ROOK",
+    "category": "Sklepy",
+    "location": "Rookgaard",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Rino sprzedaje pierscienie posiadajace ciekawe wlasciwosci magiczne.",
+    "image": "./images/shared/e71f47c98f3bf2231d5d09c4a73d2fd6313c7c1d4b67c173318d394aae818bcd.png"
+  },
+  {
+    "id": 155,
+    "name": "Raider",
+    "region": "ROOK",
+    "category": "Sklepy",
+    "location": "Rookgaard",
+    "profession": "Sprzedawca ekwipunku",
+    "description": "Raider sprzedaje podstawowe elementy wyposazenia kazdego prawdziwego wojownika. Mozemy od niego kupic m.in. liny, plecaki, lopaty, a przede wszystkim napoje o ciekawych wlasciwosciach magicznych.",
+    "image": "./images/npcs/raider_rook.png"
+  },
+  {
+    "id": 156,
+    "name": "Mad",
+    "region": "ROOK",
+    "category": "Sklepy",
+    "location": "Rookgaard",
+    "profession": "Skup przedmiotow",
+    "description": "Mad chetnie skupuje wszystkie ilosci roznego rodzaju uzbrojenia m.in. mieczy, maczug, toporow, helmow, butow, nogawic, tarcz, zbroj i amuletow.",
+    "image": "./images/shared/f9f8ba08d46cd3efc04609c6e9ae9d6950bab619ff1c6096e6a9bddddd688113.png"
+  },
+  {
+    "id": 157,
+    "name": "Obi",
+    "region": "ROOK",
+    "category": "Sklepy",
+    "location": "Rookgaard",
+    "profession": "Sprzedawca mebli",
+    "description": "Obi daje mozliwosc zakupu wyposazenia domkow. W jego ofercie znajduja sie krzesla, stoly, rosliny doniczkowe, pojemniki, poduszki i wiele innych.",
+    "image": "./images/shared/a3bdf9e710077f8b52d0ebde063f1abd8bc134b486c7f4a334b48aca18fd890e.png"
+  },
+  {
+    "id": 158,
+    "name": "Rzeznik",
+    "region": "ROOK",
+    "category": "Sklepy",
+    "location": "Rookgaard",
+    "profession": "Sprzedawca zywnosci",
+    "description": "U Rzeznika mozna nabyc zawsze swieze artykuly spozywcze.",
+    "image": "./images/shared/252dfb52b5db51ef438884b0c2e8fbffa90a67af00b212377b9e0ca5ecc3ba2a.png"
+  },
+  {
+    "id": 159,
+    "name": "Roobiler",
+    "region": "ROOK",
+    "category": "Sklepy",
+    "location": "Rookgaard",
+    "profession": "Jubiler",
+    "description": "Po wykonaniu zadania Roobilera mozna u niego sprzedawac jak i kupowac drogocenne klejnoty.",
+    "image": "./images/shared/40899ff8148ce9b3933cef6176c37d8a7bb2d39194b23d94dabb71d297340f61.png"
+  },
+  {
+    "id": 160,
+    "name": "Hogan",
+    "region": "ROOK",
+    "category": "Sklepy",
+    "location": "Rookgard",
+    "profession": "Sprzedawca mebli",
+    "description": "Hogan sprzedaje lozka, ktore mozna ustawic w swoim domku.",
+    "image": "./images/shared/0c1deece27e338870f91438a102c16d575a7fd5b3a1f188ca2f98599ab2a9eec.png"
+  },
+  {
+    "id": 161,
+    "name": "Guild Master",
+    "region": "ROOK",
+    "category": "Usługi",
+    "location": "Rookgard",
+    "profession": "Guild Master",
+    "description": "Za posrednictwem Guild Mastera liderzy i vice liderzy moga zarzadzac gildia.",
+    "image": "./images/shared/f22e8d2a7dfc041ee2a9adcde7e339b0e0f3b6ccd2f6e22e3c24df4a1f2fe55b.png"
+  },
+  {
+    "id": 162,
+    "name": "Notariusz",
+    "region": "ROOK",
+    "category": "Usługi",
+    "location": "Rookgard",
+    "profession": "Urzednik",
+    "description": "U notariusza mozna dostac akt, bez ktorego niemozliwe jest kupno jak i sprzedaz domku.",
+    "image": "./images/shared/168f06ddbc7f74af607e7b22c97654fd1bc28dcd98ef88a3688cf8f2f1cdc7b6.png"
+  },
+  {
+    "id": 163,
+    "name": "Ward Robe",
+    "region": "ROOK",
+    "category": "Specjalne",
+    "location": "Rookgaard - Za polnocna brama",
+    "profession": null,
+    "description": "Ward Robe ma nam do zaoferowania calkiem obszerna garderobe w sam raz na Halloween, oferuje nam: Kostium wampira, czarownicy, nekromanty, bialego szkieletu, brazowego trolla, ducha, nieumarlaka, diabelka, czerwonego szkieletu, niebieskiego trolla, mumii oraz kaplanki. ",
+    "image": "./images/shared/05ad2f538012ef6262f5087724a06db8a966a31d57bc60757a90f8dbab0c318c.png"
+  },
+  {
+    "id": 164,
+    "name": "The Oracle",
+    "region": "ROOK",
+    "category": "Specjalne",
+    "location": "Rookgaard",
+    "profession": "Urzednik",
+    "description": "Oracle przenosi wojownikow gotowych na wybor profesji do ktoregos z glownych miast.",
+    "image": "./images/npcs/the_oracle_rook.png"
+  },
+  {
+    "id": 165,
+    "name": "Old Baker",
+    "region": "ROOK",
+    "category": "Specjalne",
+    "location": "Rookgaard",
+    "profession": null,
+    "description": "Stary piekarz oferuje nam ciekawa wymiane. Jesli zaoferujemy mu pysznego piernika \"gingerbread\", Staruszek przedstawi nam Swoja oferte wymiany: W zamian za 4 pierniki moge podarowac Ci pewna ksiazke! Jesli masz ich 10 to dam Ci wyjatkowy helm, natomiast jesli masz ich 15 to co Ci podaruje to bedzie niespodzianka, ale na pewno nie bedziesz zawiedziony!. No chyba, ze jestes jednym z tych gagatkow ktorzy zerwali Grinchowi szalik... Wtedy jesli go masz to jestem w stanie zrobic cos wiecej! - Komplet 23 piernikow i szalik Grincha za zostanie legenda! Pierniki zdobywamy podczas trwania eventu LEGENDY GRINCH'a w okresie Swiat Bozego Narodzenia.",
+    "image": "./images/shared/e3afcf3f21055ed22b8b5bb0d5df5191215f11d414cc59b98025764dce5e2f4e.png"
+  },
+  {
+    "id": 166,
+    "name": "Rookstayer",
+    "region": "ROOK",
+    "category": "Specjalne",
+    "location": "Rookgaard",
+    "profession": "Uslugi",
+    "description": "Rookstayer za drobna oplata nadaje miano mieszkanca Rookgardu.",
+    "image": "./images/npcs/rookstayer_rook.png"
+  },
+  {
+    "id": 167,
+    "name": "Doctor",
+    "region": "ROOK",
+    "category": "Specjalne",
+    "location": "Rookgard - PACC",
+    "profession": null,
+    "description": "Doktor zajmuje sie bardzo skomplikowanymi operacjami; poczynajac na zmianie plci konczac na zmianie rasy..",
+    "image": "./images/shared/526667c2ba3ad5a88c44dd4c35f105c97c7a544acb18ce35a3f0e6607c6dfe2d.png"
+  },
+  {
+    "id": 168,
+    "name": "Santa Claus",
+    "region": "ROOK",
+    "category": "Specjalne",
+    "location": "Rookard - Przy polnocnej bramie",
+    "profession": "Mikolaj",
+    "description": "Santa Claus pojawia sie tylko raz do roku - A dokladniej 6 grudnia. Jesli bylo sie grzecznym caly rok, mozna dostac od niego prezent.",
+    "image": "./images/shared/71793f0b8892eb95a0cbd4fc15f11460ee7774ea336c4d69b571ec538e20dc8f.png"
+  },
+  {
+    "id": 169,
+    "name": "Ahmed Martwy Terrorysta",
+    "region": "ROOK",
+    "category": "Questowe",
+    "location": "Rookgaard - Za polnocna brama",
+    "profession": null,
+    "description": "Ahmed oferuje nam \"potezne\" nagrody za wykonanie u niego 100 misjii. Za kazda wykonana misje, mozna odebrac nagrode. Informacja, ktora moze Wam sie przydac: Tak wiec na poczatek chce Ci powiedziec o magicznych wlasciwosciach pewnego przedmiotu. KlejNutka potrafi zwiekszyc Twoje mozliwosci oraz ulatwiac zadania. Druga wazna informacja: Do kazdego zadania mozesz uzyc 5 KlejNutek, jednak musisz ich uzyc przed zadaniem! Dlatego teraz uzyj ich jesli chcesz, jesli nie chcesz to napisz, ze jestes gotowy.",
+    "image": "./images/shared/86989795b1296c034f425a24148eb2e0ea6aa9abe9e84b28718affbc4369ef59.png"
+  },
+  {
+    "id": 170,
+    "name": "Archeologist",
+    "region": "ROOK",
+    "category": "Questowe",
+    "location": "Rookgaard",
+    "profession": null,
+    "description": "Archeologist zajmuje sie badaniem tajemnic Antycznego Miasta. Jest zwiazany z Ramzes Helmet Quest i pomaga graczowi w poznawaniu sekretow miasta, prowadzac go przez kolejne etapy potrzebne do zdobycia Ramzes Helmet.",
+    "image": "./images/shared/bbea34711e81ce457eda0d9a1ac6b4a3eb17cd9f21a3d9447d11ecde3ce04b4c.png"
+  },
+  {
+    "id": 171,
+    "name": "Clergyman",
+    "region": "ROOK",
+    "category": "Questowe",
+    "location": "Rookgaard - Antyczne Miasto",
+    "profession": null,
+    "description": "Clergyman jest jednym z kluczowych NPC zwiazanych z Antycznym Miastem. Zleca graczowi serie misji, ktore trzeba wykonywac w trakcie dalszej eksploracji miasta i postepu w zadaniach prowadzacych do Ramzes Helmet Quest. Dodatkowo przyjmuje Brooches, za pomoca ktorych mozna odnawiac ladunki Perfect Amuletu.",
+    "image": "./images/shared/2849a9b4aab790959bfa277af9e7d61061a92bd02f41f415a71efbdb709b2937.png"
+  },
+  {
+    "id": 172,
+    "name": "Epigrapher",
+    "region": "ROOK",
+    "category": "Questowe",
+    "location": "Rookgaard",
+    "profession": null,
+    "description": "Epigrapher prowadzi badania archeologiczne w Antycznym Miescie i zleca graczowi pomoc przy badaniach.",
+    "image": "./images/npcs/epigrapher_rook.png"
+  },
+  {
+    "id": 173,
+    "name": "Excellent",
+    "region": "ROOK",
+    "category": "Questowe",
+    "location": "Rookgaard - PACC",
+    "profession": null,
+    "description": "Excellent oferuje nam ulepszone sale treningowe. Lecz aby moc z nich korzystac, musimy wykonac u niego liste zadan.. Na liscie znajduje sie: \"jedzenie\", \"kosztownosci\", \"amunicja\", \"amulety\", \"pierscienie\", \"helmy\", \"pancerze\", \"nogawice\", \"buty\", \"tarcze\", \"bronie\", \"inne\", \"kasa\".",
+    "image": "./images/shared/a9a01927670b43ed3a1eac1ed1d69660b887c0679ba8afce4555ba20c78eeb2d.png"
+  },
+  {
+    "id": 174,
+    "name": "Banana Joe",
+    "region": "ROOK",
+    "category": "Questowe",
+    "location": "Rookgaard",
+    "profession": null,
+    "description": "Banana Joe otwiera kraty prowadzace do dalszej czesci terenu w zamian za 100 bananow. Po wykonaniu zadania gracz moze skorzystac z przejscia.",
+    "image": "./images/shared/44908334f31508ebc4ed3b7c9215b890a42e535d83e69e05705833926aad1d4e.png"
+  },
+  {
+    "id": 175,
+    "name": "Elvo",
+    "region": "ROOK",
+    "category": "Questowe",
+    "location": "Rookgaard - Tropicano",
+    "profession": null,
+    "description": "Elvo oferuje graczowi darmowa przeprawe na druga strone. Po wyrazeniu zgody NPC przenosi gracza na za kraty.",
+    "image": "./images/npcs/elvo_rook.png"
+  },
+  {
+    "id": 176,
+    "name": "General Grab",
+    "region": "ROOK",
+    "category": "Questowe",
+    "location": "Rookgard",
+    "profession": "Mistrz questow",
+    "description": "General Wielkiej Armii Swietych Znakow APO. General Grab potrzebuje zapasow dla swojego wojska. Pomoz mu je zebrac, a odwdzieczy Ci sie punktami doswiadczenia.",
+    "image": "./images/shared/a9a01927670b43ed3a1eac1ed1d69660b887c0679ba8afce4555ba20c78eeb2d.png"
+  },
+  {
+    "id": 177,
+    "name": "Zinab",
+    "region": "ROOK",
+    "category": "Questowe",
+    "location": "Rookgard",
+    "profession": "Mistrz questow",
+    "description": "Po wykonaniu wszystkich zadan Zinab'a dostajemy mozliwosc zaopatrywania sie u niego w Intense Healing Rune. Dostarczamy mu danie w ciagu 10min. Gdy to uczynimy, bedziemy mogli kupowac od niego plecaki z runami \"Intense Healing Rune\".",
+    "image": "./images/shared/c9f0880df6d399375d542936ea360643ead715c88c2d584ff2c06be421d44b3f.png"
+  },
+  {
+    "id": 178,
+    "name": "Stuart",
+    "region": "ROOK",
+    "category": "Questowe",
+    "location": "Rookgard",
+    "profession": "Mistrz questow",
+    "description": "Stuart zleci Ci zdobycie malo wartosciowych przedmiotow, w celu sprawdzenia czy jestes gotow zmierzyc sie z Lordem Demonow. Jesli tak, otrzymasz klucz, ktory pozwoli Ci podjac to wyzwanie.",
+    "image": "./images/shared/224fe34d84e1518c7ac4671cdb92bc0f8f7c682d54357ebf8d817cafd7dd48ef.png"
+  },
+  {
+    "id": 179,
+    "name": "Natasha the Beggar",
+    "region": "ROOK",
+    "category": "Pozostali",
+    "location": "Rookgard",
+    "profession": "Mistrz questow",
+    "description": "Zebraczka szwendajaca sie w podziemiach miasta.",
+    "image": "./images/shared/bcb3b225a5cc29fe936153c1732b5861524abf4773583e42f46f30a84635c23b.png"
+  },
+  {
+    "id": 180,
+    "name": "Warrior",
+    "region": "ROOK",
+    "category": "Pozostali",
+    "location": "Rookgard",
+    "profession": "Mistrz questow",
+    "description": "Straznik generala Wielkiej Armii Swietych Znakow APO.",
+    "image": "./images/shared/70d3c54b26eaed81b8c92f6a8bab6a960b2c59caad911b12e9fd68cb5a01ec60.png"
+  },
+  {
+    "id": 181,
+    "name": "Raisin",
+    "region": "ROOK",
+    "category": "Pozostali",
+    "location": "Rookgard",
+    "profession": "Przekaznik",
+    "description": "Rasin - NPC wyznaczony do przekazywania wiadomosci, dzialajacy jako posrednik, co pozwala nam efektywnie dostarczyc mu informacje od Bazina.",
+    "image": "./images/shared/f22e8d2a7dfc041ee2a9adcde7e339b0e0f3b6ccd2f6e22e3c24df4a1f2fe55b.png"
+  },
+  {
+    "id": 182,
+    "name": "Jack The Psychopath",
+    "region": "ROOK",
+    "category": "Pozostali",
+    "location": "Rookgard",
+    "profession": "Psychopata",
+    "description": "Jack The Psychopath skrywa swoj sekret zwiazany z Antori Minite. W szalenczym monologu wspomina o mrowkach w mrowisku i ostrzega gracza, by sie ich bal.",
+    "image": "./images/npcs/jack_the_psychopath_rook.png"
+  },
+  {
+    "id": 183,
+    "name": "Ant Guard",
+    "region": "ROOK",
+    "category": "Pozostali",
+    "location": "Rookgard",
+    "profession": "Straznik",
+    "description": "Ant Guard nie pozwala graczowi wejsc do mrowiska bez odpowiedniego przedmiotu. W zamian za przyniesienie tego, czego potrzebuje, zgadza sie wpuscic gracza do srodka..",
+    "image": "./images/shared/8bb2b369f8c6b0ec23ef51d9f294c0ee4c1594b8b23bc73d51c0963fd1fb4d5c.png"
+  },
+  {
+    "id": 184,
+    "name": "Allo",
+    "region": "ROOK",
+    "category": "Pozostali",
+    "location": "Rookgard",
+    "profession": "Szachista",
+    "description": "Allo oferuje nam nagrode za odnalezienie jego skradzionych szachow, ktore zabralo stado groznych kreatur. Za kazdy odnaleziony element szachownicy mozna otrzymac zaplate. Informacja, ktora moze Wam sie przydac: Tak wiec na poczatek chce Ci powiedziec o sposobie zwracania zgub. Jesli znajdziesz jakis element, musisz stanac na odpowiednim polu szachownicy i go uzyc. Druga wazna informacja: Wszystkie biale krolowe zostaly wrzucone do rzeki i sa nie do odzyskania, jednak NPC Spider posiada takie same! Dlatego teraz musisz udac sie do Spidera i spytac go o te figury, a jesli jestes gotowy, to ruszaj na poszukiwania pozostalych czesci.",
+    "image": "./images/npcs/allo_rook.png"
+  },
+  {
+    "id": 185,
+    "name": "Royal Servant",
+    "region": "ROOK",
+    "category": "Pozostali",
+    "location": "Rookgard - PACC",
+    "profession": "Inny",
+    "description": "Royal Servant potrzebuje pomocy w odzyskaniu fanfary, ktora skradly mu demony. Informacja, ktora moze Wam sie przydac: Tak wiec na poczatek chce Ci powiedziec, ze przedmiot ten sluga otrzymal od samego krola. Druga wazna informacja: Musisz odnalezc te zgube i przyniesc ja sludze! Dlatego teraz sprawdz czy juz ja masz, a jesli nie to napisz, ze jestes gotowy by jej szukac.",
+    "image": "./images/npcs/royal_servant_rook.png"
+  }
+]

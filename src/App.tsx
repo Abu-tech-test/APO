@@ -2,9 +2,21 @@ import { useEffect, useMemo, useState } from "react";
 import bossData from "./data/bosses.json";
 import graphics from "./data/graphics.json";
 import monsterData from "./data/monsters.json";
+import npcData from "./data/npcs.json";
 import type { Item, Monster } from "./types";
 
 const monsters: Monster[] = monsterData;
+type NPC = {
+  id: number;
+  name: string;
+  region: string;
+  category: string;
+  location: string;
+  profession?: string | null;
+  description: string;
+  image: string;
+};
+const npcs: NPC[] = npcData;
 type BossRegionData = {
   name: string;
   bosses: {
@@ -36,11 +48,12 @@ const lootFrequencyOrder: Record<string, number> = {
   "Niespotykanie rzadko": 6,
 };
 
-type Section = "monsters" | "items" | "bosses";
+type Section = "monsters" | "items" | "bosses" | "npcs";
 type CatalogEntry =
   | { section: "monsters"; name: string; caption: string; monster: Monster }
   | { section: "items"; name: string; caption: string; item: Item }
-  | { section: "bosses"; name: string; caption: string; boss: Boss };
+  | { section: "bosses"; name: string; caption: string; boss: Boss }
+  | { section: "npcs"; name: string; caption: string; npc: NPC };
 
 function formatNumber(value: number) {
   return new Intl.NumberFormat("pl-PL").format(value);
@@ -105,6 +118,9 @@ function App() {
   const [selectedItemName, setSelectedItemName] = useState("");
   const [selectedBossRegion, setSelectedBossRegion] = useState(bossRegions[0].name);
   const [selectedBoss, setSelectedBoss] = useState<Boss>(bosses[0]);
+  const [selectedNpcRegion, setSelectedNpcRegion] = useState("MAIN");
+  const [selectedNpcCategory, setSelectedNpcCategory] = useState("all");
+  const [selectedNpc, setSelectedNpc] = useState<NPC>();
 
   const items = useMemo<Item[]>(() => {
     const itemMap = new Map<string, Item>();
@@ -134,6 +150,15 @@ function App() {
     items.find(
       (item) => item.name.toLocaleLowerCase("pl") === selectedItemName,
     ) ?? items[0];
+  const npcCategories = useMemo(
+    () =>
+      [...new Set(
+        npcs
+          .filter((npc) => npc.region === selectedNpcRegion)
+          .map((npc) => npc.category),
+      )],
+    [npcs, selectedNpcRegion],
+  );
   const sourceList = useMemo<CatalogEntry[]>(
     () =>
       section === "monsters"
@@ -150,15 +175,29 @@ function App() {
             caption: `${item.drops.length} źródeł`,
             item,
           }))
-        : bosses
+        : section === "bosses"
+        ? bosses
             .filter((boss) => boss.region === selectedBossRegion)
             .map((boss) => ({
               section: "bosses",
               name: boss.name,
               caption: getBossRegionLabel(boss.region),
               boss,
+            }))
+        : npcs
+            .filter(
+              (npc) =>
+                npc.region === selectedNpcRegion &&
+                (selectedNpcCategory === "all" ||
+                  npc.category === selectedNpcCategory),
+            )
+            .map((npc) => ({
+              section: "npcs",
+              name: npc.name,
+              caption: npc.category,
+              npc,
             })),
-    [items, section, selectedBossRegion],
+    [items, npcs, section, selectedBossRegion, selectedNpcRegion, selectedNpcCategory],
   );
   const filteredList = useMemo(() => {
     const normalizedQuery = query.trim().toLocaleLowerCase("pl");
@@ -176,7 +215,7 @@ function App() {
 
   useEffect(() => {
     setPage(1);
-  }, [section, query, selectedBossRegion]);
+  }, [section, query, selectedBossRegion, selectedNpcRegion, selectedNpcCategory]);
 
   useEffect(() => {
     if (section === "monsters") {
@@ -198,7 +237,7 @@ function App() {
       if (!currentSelectionVisible && firstItem?.section === "items") {
         setSelectedItemName(firstItem.item.name.toLocaleLowerCase("pl"));
       }
-    } else {
+    } else if (section === "bosses") {
       const currentSelectionVisible = filteredList.some(
         (entry) =>
           entry.section === "bosses" &&
@@ -209,6 +248,15 @@ function App() {
       if (!currentSelectionVisible && firstBoss?.section === "bosses") {
         setSelectedBoss(firstBoss.boss);
       }
+    } else {
+      const currentSelectionVisible = filteredList.some(
+        (entry) =>
+          entry.section === "npcs" && entry.npc.id === selectedNpc?.id,
+      );
+      const firstNpc = filteredList[0];
+      if (!currentSelectionVisible && firstNpc?.section === "npcs") {
+        setSelectedNpc(firstNpc.npc);
+      }
     }
   }, [
     filteredList,
@@ -217,6 +265,7 @@ function App() {
     selectedMonster.id,
     selectedBoss.name,
     selectedBossRegion,
+    selectedNpc?.id,
   ]);
 
   function openSection(nextSection: Section) {
@@ -270,6 +319,7 @@ function App() {
           <span><strong>{monsters.length}</strong> potworów</span>
           <span><strong>{items.length}</strong> przedmiotów</span>
           <span><strong>{bosses.length}</strong> bossów</span>
+          <span><strong>{npcs.length}</strong> NPC</span>
         </div>
       </section>
 
@@ -298,6 +348,14 @@ function App() {
           <span className="tab-icon">☠</span> Bossy
           <span className="tab-count">{bosses.length}</span>
         </button>
+        <button
+          className={section === "npcs" ? "tab active" : "tab"}
+          onClick={() => openSection("npcs")}
+          type="button"
+        >
+          <span className="tab-icon">♙</span> NPC
+          <span className="tab-count">{npcs.length}</span>
+        </button>
       </nav>
 
       <section className="workspace">
@@ -305,9 +363,9 @@ function App() {
           <div className="catalog-heading">
             <div>
               <p className="eyebrow">
-                {section === "monsters" ? "BESTIARIUSZ" : section === "items" ? "KOLEKCJA" : "UNIKALNE POTWORY"}
+                {section === "monsters" ? "BESTIARIUSZ" : section === "items" ? "KOLEKCJA" : section === "bosses" ? "UNIKALNE POTWORY" : "POSTACIE NIEZALEŻNE"}
               </p>
-              <h2>{section === "monsters" ? "Potwory" : section === "items" ? "Przedmioty" : "Bossy"}</h2>
+              <h2>{section === "monsters" ? "Potwory" : section === "items" ? "Przedmioty" : section === "bosses" ? "Bossy" : "NPC"}</h2>
             </div>
             <span className="result-count">{filteredList.length}</span>
           </div>
@@ -329,12 +387,47 @@ function App() {
               </select>
             </label>
           )}
+          {section === "npcs" && (
+            <>
+              <label className="boss-region-filter">
+                <select
+                  aria-label="Wybierz krainę NPC"
+                  onChange={(event) => {
+                    setSelectedNpcRegion(event.target.value);
+                    setSelectedNpcCategory("all");
+                    setQuery("");
+                  }}
+                  value={selectedNpcRegion}
+                >
+                  <option value="MAIN">MAIN</option>
+                  <option value="ROOK">ROOK</option>
+                </select>
+              </label>
+              <label className="boss-region-filter">
+                <select
+                  aria-label="Wybierz kategorię NPC"
+                  onChange={(event) => {
+                    setSelectedNpcCategory(event.target.value);
+                    setQuery("");
+                  }}
+                  value={selectedNpcCategory}
+                >
+                  <option value="all">Wszystkie kategorie</option>
+                  {npcCategories.map((category) => (
+                    <option key={category} value={category}>
+                      {category.toLocaleUpperCase("pl")}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            </>
+          )}
           <label className="search-box">
             <span aria-hidden="true">⌕</span>
             <input
-              aria-label={`Szukaj ${section === "monsters" ? "potwora" : section === "items" ? "przedmiotu" : "bossa"}`}
+              aria-label={`Szukaj ${section === "monsters" ? "potwora" : section === "items" ? "przedmiotu" : section === "bosses" ? "bossa" : "NPC"}`}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder={`Szukaj ${section === "monsters" ? "potwora" : section === "items" ? "przedmiotu" : "bossa"}...`}
+              placeholder={`Szukaj ${section === "monsters" ? "potwora" : section === "items" ? "przedmiotu" : section === "bosses" ? "bossa" : "NPC"}...`}
               type="search"
               value={query}
             />
@@ -357,8 +450,10 @@ function App() {
                   ? selectedMonster.id === entry.monster.id
                   : entry.section === "items"
                   ? selectedItem?.name === entry.name
-                  : selectedBoss.region === entry.boss.region &&
-                    selectedBoss.name === entry.boss.name;
+                  : entry.section === "bosses"
+                  ? selectedBoss.region === entry.boss.region &&
+                    selectedBoss.name === entry.boss.name
+                  : selectedNpc?.id === entry.npc.id;
 
               return (
                 <button
@@ -369,14 +464,18 @@ function App() {
                       ? entry.monster.id
                       : entry.section === "items"
                       ? entry.name
-                      : `${entry.boss.region}-${entry.boss.name}`
+                      : entry.section === "bosses"
+                      ? `${entry.boss.region}-${entry.boss.name}`
+                      : entry.npc.id
                   }
                   onClick={() =>
                     entry.section === "monsters"
                       ? setSelectedMonster(entry.monster)
                       : entry.section === "items"
                       ? setSelectedItemName(entry.item.name.toLocaleLowerCase("pl"))
-                      : setSelectedBoss(entry.boss)
+                      : entry.section === "bosses"
+                      ? setSelectedBoss(entry.boss)
+                      : setSelectedNpc(entry.npc)
                   }
                   type="button"
                 >
@@ -387,7 +486,9 @@ function App() {
                         ? getMonsterImage(entry.monster)
                         : entry.section === "items"
                         ? getItemImage(entry.name)
-                        : getBossImage(entry.boss)
+                        : entry.section === "bosses"
+                        ? getBossImage(entry.boss)
+                        : entry.npc.image
                     }
                     name={entry.name}
                   />
@@ -453,9 +554,11 @@ function App() {
               lootMonster={selectedBossLootMonster}
               onOpenMonster={openMonster}
             />
+          ) : section === "npcs" && selectedNpc ? (
+            <NPCDetails image={selectedNpc.image} npc={selectedNpc} />
           ) : (
             <div className="empty-detail">
-              {section === "items" ? "Wybierz przedmiot z listy." : "Wybierz bossa z listy."}
+              {section === "items" ? "Wybierz przedmiot z listy." : section === "npcs" ? "Wybierz NPC z listy." : "Wybierz bossa z listy."}
             </div>
           )}
         </section>
@@ -671,6 +774,44 @@ function BossDetails({
           <span aria-hidden="true">↗</span>
         </button>
       )}
+    </article>
+  );
+}
+
+function NPCDetails({ image, npc }: { image?: string; npc: NPC }) {
+  return (
+    <article>
+      <div className="detail-hero">
+        <Graphic
+          className="detail-emblem creature-emblem"
+          image={image}
+          name={npc.name}
+        />
+        <div className="detail-title">
+          <p className="eyebrow">KARTA NPC</p>
+          <h2>{npc.name}</h2>
+          <p className="detail-caption">{npc.region} · {npc.category}</p>
+        </div>
+        <span className="data-badge">{npc.region}</span>
+      </div>
+
+      <section className="npc-meta" aria-label="Informacje o NPC">
+        <div>
+          <span className="eyebrow">LOKALIZACJA</span>
+          <strong>{npc.location}</strong>
+        </div>
+        {npc.profession && (
+          <div>
+            <span className="eyebrow">FUNKCJA</span>
+            <strong>{npc.profession}</strong>
+          </div>
+        )}
+      </section>
+
+      <section className="boss-description npc-description">
+        <p className="eyebrow">OPIS</p>
+        <p>{npc.description}</p>
+      </section>
     </article>
   );
 }
