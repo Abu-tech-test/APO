@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import bossData from "./data/bosses.json";
 import graphics from "./data/graphics.json";
 import informationData from "./data/information.json";
@@ -74,6 +74,12 @@ function formatNumber(value: number) {
 
 function formatLootAmount(amount: number) {
   return amount > 1 ? `1–${formatNumber(amount)}` : "1";
+}
+
+function sortByName<T extends { name: string }>(entries: T[]) {
+  return [...entries].sort((a, b) =>
+    a.name.localeCompare(b.name, "pl", { sensitivity: "base" }),
+  );
 }
 
 function getInitials(name: string) {
@@ -167,17 +173,22 @@ function App() {
   const [section, setSection] = useState<Section>("monsters");
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(1);
-  const [selectedMonster, setSelectedMonster] = useState<Monster>(monsters[0]);
+  const [selectedMonster, setSelectedMonster] = useState<Monster>(
+    () => sortByName(monsters)[0],
+  );
   const [selectedItemName, setSelectedItemName] = useState("");
   const [selectedItemZone, setSelectedItemZone] = useState<ZoneFilter>("all");
   const [selectedBossRegion, setSelectedBossRegion] = useState("all");
-  const [selectedBoss, setSelectedBoss] = useState<Boss>(bosses[0]);
+  const [selectedBoss, setSelectedBoss] = useState<Boss>(
+    () => sortByName(bosses)[0],
+  );
   const [selectedNpcRegion, setSelectedNpcRegion] = useState("all");
   const [selectedNpcCategory, setSelectedNpcCategory] = useState("all");
   const [selectedNpc, setSelectedNpc] = useState<NPC>();
   const [selectedInformationName, setSelectedInformationName] = useState(
     informationCategories[0].name,
   );
+  const skipNextPageReset = useRef(false);
 
   const items = useMemo<Item[]>(() => {
     const itemMap = new Map<string, Item>(
@@ -278,11 +289,12 @@ function App() {
   );
   const filteredList = useMemo(() => {
     const normalizedQuery = query.trim().toLocaleLowerCase("pl");
-    if (!normalizedQuery) return sourceList;
-
-    return sourceList.filter((entry) =>
-      entry.name.toLocaleLowerCase("pl").includes(normalizedQuery),
-    );
+    const matches = normalizedQuery
+      ? sourceList.filter((entry) =>
+          entry.name.toLocaleLowerCase("pl").includes(normalizedQuery),
+        )
+      : sourceList;
+    return sortByName(matches);
   }, [query, sourceList]);
   const pageCount = Math.max(1, Math.ceil(filteredList.length / pageSize));
   const visibleEntries = filteredList.slice(
@@ -291,6 +303,11 @@ function App() {
   );
 
   useEffect(() => {
+    if (skipNextPageReset.current) {
+      skipNextPageReset.current = false;
+      return;
+    }
+
     setPage(1);
   }, [section, query, selectedBossRegion, selectedItemZone, selectedNpcRegion, selectedNpcCategory]);
 
@@ -302,7 +319,10 @@ function App() {
           entry.monster.id === selectedMonster.id,
       );
       const firstMonster = filteredList[0];
-      if (!currentSelectionVisible && firstMonster?.section === "monsters") {
+      if (
+        !currentSelectionVisible &&
+        firstMonster?.section === "monsters"
+      ) {
         setSelectedMonster(firstMonster.monster);
       }
     } else if (section === "items") {
@@ -311,7 +331,10 @@ function App() {
           entry.section === "items" && entry.item.name === selectedItem?.name,
       );
       const firstItem = filteredList[0];
-      if (!currentSelectionVisible && firstItem?.section === "items") {
+      if (
+        !currentSelectionVisible &&
+        firstItem?.section === "items"
+      ) {
         setSelectedItemName(firstItem.item.name.toLocaleLowerCase("pl"));
       }
     } else if (section === "bosses") {
@@ -323,7 +346,10 @@ function App() {
           entry.boss.name === selectedBoss.name,
       );
       const firstBoss = filteredList[0];
-      if (!currentSelectionVisible && firstBoss?.section === "bosses") {
+      if (
+        !currentSelectionVisible &&
+        firstBoss?.section === "bosses"
+      ) {
         setSelectedBoss(firstBoss.boss);
       }
     } else if (section === "npcs") {
@@ -332,7 +358,10 @@ function App() {
           entry.section === "npcs" && entry.npc.id === selectedNpc?.id,
       );
       const firstNpc = filteredList[0];
-      if (!currentSelectionVisible && firstNpc?.section === "npcs") {
+      if (
+        !currentSelectionVisible &&
+        firstNpc?.section === "npcs"
+      ) {
         setSelectedNpc(firstNpc.npc);
       }
     }
@@ -347,11 +376,47 @@ function App() {
   ]);
 
   function openSection(nextSection: Section) {
+    if (nextSection === "monsters") {
+      setSelectedMonster(sortByName(monsters)[0]);
+    } else if (nextSection === "items") {
+      const firstItem = visibleItems[0];
+      if (firstItem) {
+        setSelectedItemName(firstItem.name.toLocaleLowerCase("pl"));
+      }
+    } else if (nextSection === "bosses") {
+      const firstBoss = sortByName(
+        bosses.filter(
+          (boss) =>
+            selectedBossRegion === "all" ||
+            boss.region === selectedBossRegion,
+        ),
+      )[0];
+      if (firstBoss) setSelectedBoss(firstBoss);
+    } else if (nextSection === "npcs") {
+      const firstNpc = sortByName(
+        npcs.filter(
+          (npc) =>
+            (selectedNpcRegion === "all" ||
+              npc.region === selectedNpcRegion) &&
+            (selectedNpcCategory === "all" ||
+              npc.category === selectedNpcCategory),
+        ),
+      )[0];
+      if (firstNpc) setSelectedNpc(firstNpc);
+    }
+
     setSection(nextSection);
     setQuery("");
   }
 
   function openMonster(monster: Monster) {
+    const sortedMonsters = sortByName(monsters);
+    const monsterIndex = sortedMonsters.findIndex(
+      (entry) => entry.id === monster.id,
+    );
+
+    skipNextPageReset.current = monsterIndex >= 0;
+    setPage(Math.max(1, Math.floor(monsterIndex / pageSize) + 1));
     setSelectedMonster(monster);
     setSection("monsters");
     setQuery("");
@@ -362,13 +427,22 @@ function App() {
     const item = items.find(
       (candidate) => candidate.name.toLocaleLowerCase("pl") === normalizedName,
     );
-    if (
+    const targetZone =
       item?.zones?.length &&
       selectedItemZone !== "all" &&
       !item.zones.includes(selectedItemZone)
-    ) {
-      setSelectedItemZone(item.zones[0]);
-    }
+        ? item.zones[0]
+        : selectedItemZone;
+    const itemIndex = items
+      .filter((candidate) => itemMatchesZone(candidate, targetZone))
+      .findIndex(
+        (candidate) =>
+          candidate.name.toLocaleLowerCase("pl") === normalizedName,
+      );
+
+    skipNextPageReset.current = itemIndex >= 0;
+    setPage(Math.max(1, Math.floor(itemIndex / pageSize) + 1));
+    if (targetZone !== selectedItemZone) setSelectedItemZone(targetZone);
     setSelectedItemName(normalizedName);
     setSection("items");
     setQuery("");
