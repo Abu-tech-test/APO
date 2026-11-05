@@ -1,0 +1,7009 @@
+[
+  {
+    "name": "Full Helmet of The Ancients",
+    "clientId": 3230,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Gracz noszacy ten helm bedzie o 10% szybciej zdobywal punkty doswiadczenia. Helm zwieksza rowniez obrazenia o 3%, oraz obrone - o taka sama wartosc."
+    }
+  },
+  {
+    "name": "Ramzes Helmet",
+    "clientId": 3230,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Najlepszy helm na Rooku. Posiada arm:11. Gracz noszacy ten helm bedzie o 10% szybciej zdobywal punkty doswiadczenia. Helm zwieksza rowniez obrazenia o 3%, oraz obrone - o taka sama wartosc."
+    }
+  },
+  {
+    "name": "Magic Sapphire Helmet",
+    "clientId": 3395,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Helm, ktory w polaczeniu z Sapphire Armor i Sapphire Legs, zwieksza ataki magiczne o 6% oraz zmniejsza otrzymywane obrazenia od magii o 10%. Posiada Arm:14."
+    }
+  },
+  {
+    "name": "Winged Helmet",
+    "clientId": 3368,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Jeden z lepszych helmow na serwerze Arm:13. Dodaje predkosc jak BOH'y."
+    }
+  },
+  {
+    "name": "Post Officers Hat",
+    "clientId": 3576,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Czapka przyspieszajaca 5x tak, jak winged helmet."
+    }
+  },
+  {
+    "name": "Sapphire Helmet",
+    "clientId": 3396,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Jeden z lepszych helmow dostepny z zagadkowego questu. Posiada Arm:13."
+    }
+  },
+  {
+    "name": "Shaman Mask",
+    "clientId": 3403,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Potezna maska szamanow. Zwieksza ataki magiczne o 7% i zmniejsza otrzymywane obrazenia od magii o 5%."
+    }
+  },
+  {
+    "name": "Cursed Cowl",
+    "clientId": 3575,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Przeklety kaptur, posiada Arm:6, zwieksza ataki magiczne o 6%, zmniejsza otrzymywane obrazenia od magii o 6%."
+    }
+  },
+  {
+    "name": "Helmet of The Ancients",
+    "clientId": 3229,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Jeden z lepszych dostepnych helmow, ktory posiada arm:10. Gracz noszacy ten helm bedzie o 5% szybciej zdobywal punkty doswiadczenia."
+    }
+  },
+  {
+    "name": "Demon Helmet",
+    "clientId": 3387,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Jeden z lepszych dostepnych helmow. Posiada arm:10."
+    }
+  },
+  {
+    "name": "Mystic Turban",
+    "clientId": 3574,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Gdy nosisz go na glowie zwiekszaja sie Twoje ataki magiczne o 3%."
+    }
+  },
+  {
+    "name": "Golden Helmet",
+    "clientId": 3365,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Horned Helmet",
+    "clientId": 3390,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Royal Helmet",
+    "clientId": 3392,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Dragon Scale Helmet",
+    "clientId": 3400,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Warrior Helmet",
+    "clientId": 3369,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Crusader Helmet",
+    "clientId": 3391,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Devil Helmet",
+    "clientId": 3356,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Crown Helmet",
+    "clientId": 3385,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Steel Helmet",
+    "clientId": 3351,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Dark Helmet",
+    "clientId": 3384,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Strange Helmet",
+    "clientId": 3373,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Iron Helmet",
+    "clientId": 3353,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Soldier Helmet",
+    "clientId": 3375,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Legion Helmet",
+    "clientId": 3374,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Viking Helmet",
+    "clientId": 3367,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Brass Helmet",
+    "clientId": 3354,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Studded Helmet",
+    "clientId": 3376,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Chain Helmet",
+    "clientId": 3352,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Leather Helmet",
+    "clientId": 3355,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Cape of Invisibility",
+    "clientId": 3571,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Peleryna niewidka, umozliwiajaca rzucanie czaru \"utana vid\" bez wymaganego magicznego poziomu. Arm:3."
+    }
+  },
+  {
+    "name": "Beholder Helmet",
+    "clientId": 3408,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Charmer Tiara",
+    "clientId": 3407,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Helmet Adorment",
+    "clientId": 3228,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Helmet Ornament",
+    "clientId": 3222,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Helmet Piece",
+    "clientId": 3227,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Steal Helmet",
+    "clientId": 3351,
+    "subType": 0,
+    "categories": [
+      "helmy"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Shaman Armor",
+    "clientId": 3443,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Zbroja, ktora przez stulecia byla w posiadaniu krasnoludow, posiada Arm:22. Zmniejsza rowniez obrazenia od magii o 10%. Najlepsza zbroja na serwerze."
+    }
+  },
+  {
+    "name": "Pandemonium Armor",
+    "clientId": 3404,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Jedna z najlepszych zbroi na serwerze, Arm:20. Zmniejsza obrazenia od magii o 10%."
+    }
+  },
+  {
+    "name": "Sapphire Armor",
+    "clientId": 3397,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Jedna z najlepszych zbroji. Posiada Arm:20."
+    }
+  },
+  {
+    "name": "Demon Armor",
+    "clientId": 3388,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Najlepsza dostepna zbroja. Posiada arm:16."
+    }
+  },
+  {
+    "name": "Dragon Scale Mail",
+    "clientId": 3386,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Jedna z najlepszych zbroi. Arm:15."
+    }
+  },
+  {
+    "name": "Elven Armor",
+    "clientId": 3399,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Jedna z najlepszych zbroi. Arm:15."
+    }
+  },
+  {
+    "name": "Magic Plate Armor",
+    "clientId": 3366,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Golden Armor",
+    "clientId": 3360,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Crown Armor",
+    "clientId": 3381,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Blue Robe",
+    "clientId": 3567,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Zwieksza Twoje ataki magiczne o 3%."
+    }
+  },
+  {
+    "name": "Knight Armor",
+    "clientId": 3370,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Plate Armor",
+    "clientId": 3357,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Brass Armor",
+    "clientId": 3359,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Chain Armor",
+    "clientId": 3358,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Leather Armor",
+    "clientId": 3361,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Coat",
+    "clientId": 3562,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Dark Armor",
+    "clientId": 3383,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Noble Armor",
+    "clientId": 3380,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Red Robe",
+    "clientId": 3566,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Scale Armor",
+    "clientId": 3377,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Simple Dress",
+    "clientId": 4836,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Studded Armor",
+    "clientId": 3378,
+    "subType": 0,
+    "categories": [
+      "zbroje"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Sapphire Legs",
+    "clientId": 3398,
+    "subType": 0,
+    "categories": [
+      "legi"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Najlepsze spodnie na serwerze. Posiadaja Arm:11."
+    }
+  },
+  {
+    "name": "Shaman Skirt",
+    "clientId": 3560,
+    "subType": 0,
+    "categories": [
+      "legi"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Niepozorna slomiana kiecka, ktora zostala zakleta przez poteznych szamanow. Posiada Arm:3, zwieksza ataki magiczne o 3% i zmniejsza otrzymywane obrazenia od magii rowniez o 3%."
+    }
+  },
+  {
+    "name": "Demon Legs",
+    "clientId": 3389,
+    "subType": 0,
+    "categories": [
+      "legi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Najlepsze dostepne spodnie. Posiadaja arm:9."
+    }
+  },
+  {
+    "name": "Dragon Scale Legs",
+    "clientId": 3363,
+    "subType": 0,
+    "categories": [
+      "legi"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Elven Legs",
+    "clientId": 3401,
+    "subType": 0,
+    "categories": [
+      "legi"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Golden Legs",
+    "clientId": 3364,
+    "subType": 0,
+    "categories": [
+      "legi"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Crown Legs",
+    "clientId": 3382,
+    "subType": 0,
+    "categories": [
+      "legi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Knight Legs",
+    "clientId": 3371,
+    "subType": 0,
+    "categories": [
+      "legi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Plate Legs",
+    "clientId": 3557,
+    "subType": 0,
+    "categories": [
+      "legi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Brass Legs",
+    "clientId": 3372,
+    "subType": 0,
+    "categories": [
+      "legi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Chain Legs",
+    "clientId": 3558,
+    "subType": 0,
+    "categories": [
+      "legi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Studded Legs",
+    "clientId": 3362,
+    "subType": 0,
+    "categories": [
+      "legi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Leather Trousers",
+    "clientId": 3559,
+    "subType": 0,
+    "categories": [
+      "legi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Shaman Boots",
+    "clientId": 3550,
+    "subType": 0,
+    "categories": [
+      "buty"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Maja panczerz rowny 4 oraz regeneruja mane i zycie lepiej niz Soft Boots. Zwiekszaja rowniez ataki magiczne o 7%."
+    }
+  },
+  {
+    "name": "Magic Bunny Slippers",
+    "clientId": 3553,
+    "subType": 0,
+    "categories": [
+      "buty"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Zwiekszaja szybkosc chodzenia dwa razy jak BOH'y. Zwiekszaja ataki magiczne o 6%."
+    }
+  },
+  {
+    "name": "Soft Boots",
+    "clientId": 3246,
+    "subType": 0,
+    "categories": [
+      "buty"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Maja panczerz rowny 5 oraz regeneruja mane i zycie."
+    }
+  },
+  {
+    "name": "Rook Boots",
+    "clientId": 3549,
+    "subType": 0,
+    "categories": [
+      "buty"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Maja panczerz rowny 4 oraz regeneruja mane i zycie."
+    }
+  },
+  {
+    "name": "Golden Boots",
+    "clientId": 3555,
+    "subType": 0,
+    "categories": [
+      "buty"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Steel Boots",
+    "clientId": 3554,
+    "subType": 0,
+    "categories": [
+      "buty"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Buty te posiadaja Arm:3. Mozna je zdobyc z trudnego questu."
+    }
+  },
+  {
+    "name": "Boots of Haste",
+    "clientId": 3079,
+    "subType": 0,
+    "categories": [
+      "buty"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Zwiekszaja szybkosc chodzenia."
+    }
+  },
+  {
+    "name": "Crocodile Boots",
+    "clientId": 3556,
+    "subType": 0,
+    "categories": [
+      "buty"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Leather Boots",
+    "clientId": 3552,
+    "subType": 0,
+    "categories": [
+      "buty"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "magician boots",
+    "clientId": 3079,
+    "subType": 0,
+    "categories": [
+      "buty"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Ultimate Weapon",
+    "clientId": 3249,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Bron ostateczna, ktora posiadaja jedynie nieliczni. Posiada Atk:100, Def:100 i +40% critical hit."
+    }
+  },
+  {
+    "name": "Magic Axe",
+    "clientId": 3342,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Topor majacy zasieg dwoch sqm. (jednoreczny). Atk:61 Def:44."
+    }
+  },
+  {
+    "name": "Crystal Wand",
+    "clientId": 3068,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Rozdzka posiadajaca Atk:60 i Def:45. Posiada rowniez critical hit 30%."
+    }
+  },
+  {
+    "name": "Silver Wand",
+    "clientId": 3312,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Najlepsza rozdzka. Strzela magia o obszarze 9 sqm. Posiada Atk:60 i Def:45."
+    }
+  },
+  {
+    "name": "Magic Mace",
+    "clientId": 3340,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Maczuga majaca zasieg dwoch sqm. (jednoreczna). Atk:60 Def:45."
+    }
+  },
+  {
+    "name": "The Pharao Sword",
+    "clientId": 3334,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Miecz posiadajacy 55 punktow ataku i 40 punktow obrony. Ma on rowniez Critical hit 13%."
+    }
+  },
+  {
+    "name": "Magic Longsword",
+    "clientId": 3278,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Miecz majacy zasieg dwoch sqm. (dwureczny). Atk:55 Def:40."
+    }
+  },
+  {
+    "name": "Sprite Wand",
+    "clientId": 3341,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Rozdzka posiadajaca Atk:55 i Def:45."
+    }
+  },
+  {
+    "name": "Ripper Lance",
+    "clientId": 3346,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Bron dla paladyna, podobna do Hunting Spear. Posiada Atk:50 i Def:15 oraz critical hit 15%."
+    }
+  },
+  {
+    "name": "Stonecutter's axe",
+    "clientId": 3319,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Magic Sword",
+    "clientId": 3288,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Thunder Hammer",
+    "clientId": 3309,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Great Axe",
+    "clientId": 3303,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Warlord Sword",
+    "clientId": 3296,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Great Halberd",
+    "clientId": 3331,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Najlepszy dwureczny topor. Atk:48 i def:14."
+    }
+  },
+  {
+    "name": "Hammer of Warth",
+    "clientId": 3332,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Najlepsza bron obuchowa. Atk:48 i def:12."
+    }
+  },
+  {
+    "name": "Giant Sword",
+    "clientId": 3281,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Posiada 46 punktow ataku oraz 22 punkty obrony. Najlepszy dwureczny miecz na Rooku."
+    }
+  },
+  {
+    "name": "War Hammer",
+    "clientId": 3279,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Najlepsza dwureczna bron obuchowa. Atk:45 i def:10."
+    }
+  },
+  {
+    "name": "Djinn Blade",
+    "clientId": 3339,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Jeden z najlepszych jednorecznych mieczy na Rooku. Posiada atk:38 i def:22."
+    }
+  },
+  {
+    "name": "Crystal Mace",
+    "clientId": 3333,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Jedna z najlepszych dostepnych jednorecznych broni obuchowych. Atk:38 i def:16."
+    }
+  },
+  {
+    "name": "Hunting Spear",
+    "clientId": 3347,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Niekonczacy sie spear."
+    }
+  },
+  {
+    "name": "Crystal Arrow",
+    "clientId": 3239,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Niekonczaca sie strzala."
+    }
+  },
+  {
+    "name": "Golden Bolt",
+    "clientId": 3325,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Niekonczacy sie magiczny bolt. Strzela magia o obszarze 9 sqm."
+    }
+  },
+  {
+    "name": "Dragon Lance",
+    "clientId": 3302,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Fire Axe",
+    "clientId": 3320,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Fire Sword",
+    "clientId": 3280,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Bright Sword",
+    "clientId": 3295,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Jeden z najlepszych jednorecznych mieczy na Rooku. Posiada atk:36 i def:30."
+    }
+  },
+  {
+    "name": "Spike Sword",
+    "clientId": 3271,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Two-handed Sword",
+    "clientId": 3265,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Sword",
+    "clientId": 3264,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Hatchet",
+    "clientId": 3276,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Hatchet Lizard",
+    "clientId": 3344,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Heavy Machete",
+    "clientId": 3330,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Ice Rapier",
+    "clientId": 3284,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Katana",
+    "clientId": 3300,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Machete",
+    "clientId": 3308,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Morning Star",
+    "clientId": 3282,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Scimitar",
+    "clientId": 3307,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Rapier",
+    "clientId": 3272,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Sabre",
+    "clientId": 3273,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Naginata",
+    "clientId": 3314,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Axe",
+    "clientId": 3274,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Club",
+    "clientId": 3270,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Daramanian Waraxe",
+    "clientId": 3328,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Najlepszy jednoreczny topor. Atk:39 i def:15."
+    }
+  },
+  {
+    "name": "Magic Staff",
+    "clientId": 3321,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Silver Dagger",
+    "clientId": 3290,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Wand of Dragonbreath",
+    "clientId": 3075,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Arrow",
+    "clientId": 3447,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Battle Axe",
+    "clientId": 3266,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Bolt",
+    "clientId": 3446,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Bow",
+    "clientId": 3350,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Broad Sword",
+    "clientId": 3301,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Burst Arrow",
+    "clientId": 3449,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Carlin Sword",
+    "clientId": 3282,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Clerical Mace",
+    "clientId": 3311,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Combat Knife",
+    "clientId": 3292,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Crossbow",
+    "clientId": 3349,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Dagger",
+    "clientId": 3267,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Daramanian Mace",
+    "clientId": 3327,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Double Axe",
+    "clientId": 3275,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Guardian Halberd",
+    "clientId": 3315,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Halberd",
+    "clientId": 3269,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Hand Axe",
+    "clientId": 3268,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "improved longsword",
+    "clientId": 3285,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Knife",
+    "clientId": 3291,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Knight Axe",
+    "clientId": 3318,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Liche Staff",
+    "clientId": 3343,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Longsword",
+    "clientId": 3285,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Mace",
+    "clientId": 3286,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Moonlight Rod",
+    "clientId": 3070,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Obsidian Lance",
+    "clientId": 3313,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Orcish Axe",
+    "clientId": 3316,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Poison Arrow",
+    "clientId": 3448,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Poison Dagger",
+    "clientId": 3299,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Power Bolt",
+    "clientId": 3450,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Quagmire Rod",
+    "clientId": 3065,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Serpent Sword",
+    "clientId": 3297,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Short Sword",
+    "clientId": 3294,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Small Axe",
+    "clientId": 3329,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Snakebite Rod",
+    "clientId": 3066,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Staff",
+    "clientId": 3289,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Studded Club",
+    "clientId": 3336,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Tempest Rod",
+    "clientId": 3067,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Throwing Knife",
+    "clientId": 3298,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Volcanic Rod",
+    "clientId": 3069,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Wand of Cosmic Energy",
+    "clientId": 3073,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Wand of Inferno",
+    "clientId": 3071,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Wand of Plague",
+    "clientId": 3072,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Wand of Vortex",
+    "clientId": 3074,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Dragon Hammer",
+    "clientId": 3322,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Golden Sickle",
+    "clientId": 3306,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Battle Hammer",
+    "clientId": 3305,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Bone Club",
+    "clientId": 3337,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Bone Sword",
+    "clientId": 3338,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Dwarfish Axe",
+    "clientId": 3323,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Hammer of Wrath",
+    "clientId": 3332,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Hefajstos Hammer",
+    "clientId": 3305,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Skull Staff",
+    "clientId": 3324,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Spear",
+    "clientId": 3277,
+    "subType": 0,
+    "categories": [
+      "bronie"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Shield of Empire",
+    "clientId": 3442,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Najlepsza tarcza na serwerze. Jej magiczne wlasciwosci pozwalaja na korzystanie z wielu dostepnych trybow w zaleznosci od potrzeb gracza. Mozna ja zdobyc wykonujac trudny quest."
+    }
+  },
+  {
+    "name": "Burning Heart",
+    "clientId": 3240,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Jedna z lepszych tarcz na serwerze Def:50."
+    }
+  },
+  {
+    "name": "Eagle Shield",
+    "clientId": 3438,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Jedna z lepszych tarcz. Posiada Def:48."
+    }
+  },
+  {
+    "name": "Demon Shield",
+    "clientId": 3420,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Najlepsza tarcza na rooku."
+    }
+  },
+  {
+    "name": "Phoenix Shield",
+    "clientId": 3439,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Blessed Shield",
+    "clientId": 3423,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Great Shield",
+    "clientId": 3422,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Mastermind Shield",
+    "clientId": 3414,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Vampire Shield",
+    "clientId": 3434,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Dragon Shield",
+    "clientId": 3416,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Crown Shield",
+    "clientId": 3419,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Tower Shield",
+    "clientId": 3428,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Battle Shield",
+    "clientId": 3413,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Steel Shield",
+    "clientId": 3409,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Brass Shield",
+    "clientId": 3411,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Wooden Shield",
+    "clientId": 3412,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Ancient Shield",
+    "clientId": 3432,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Beholder Shield",
+    "clientId": 3418,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Black Shield",
+    "clientId": 3429,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Castle Shield",
+    "clientId": 3435,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Copper Shield",
+    "clientId": 3430,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Dwarven Shield",
+    "clientId": 3425,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Griffin Shield",
+    "clientId": 3433,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Guardians Shield",
+    "clientId": 3415,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Medusa Shield",
+    "clientId": 3436,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Plate Shield",
+    "clientId": 3410,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Rose Shield",
+    "clientId": 3427,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Scarab Shield",
+    "clientId": 3440,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Sentinel Shield",
+    "clientId": 3444,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Studded Shield",
+    "clientId": 3426,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Viking Shield",
+    "clientId": 3431,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Bone Shield",
+    "clientId": 3441,
+    "subType": 0,
+    "categories": [
+      "tarcze"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Amulet of Ultimate Protection",
+    "clientId": 3013,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Ten znakomity amulet chroni przed skutkami smierci w kazdej sytuacji. Mozna go zdobyc wykonujac quest Annihilator III. Dziala jedynie na postaciach posiadajacych PACC."
+    }
+  },
+  {
+    "name": "Perfect Amulet",
+    "clientId": 3014,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Osoba posiadajaca ten znakomity amulet po smierci nie traci punktow doswiadczenia, ani ekwipunku. Dziala on tylko noszony przez graczy posiadajacych PACC. Skupia w sobie wszystkie wlasciwosci powyzszych amuletow, co czyni gracza, ktory go nosi - o wiele silniejszym. Po zdobyciu ma az sto ladunkow. Mozna go doladowac ofiarujac Salimowi brooches.",
+      "rook": "Osoba posiadajaca ten znakomity amulet po smierci nie traci punktow doswiadczenia, ani ekwipunku. Dziala on tylko noszony przez graczy posiadajacych PACC. Skupia w sobie wszystkie wlasciwosci powyzszych amuletow, co czyni gracza, ktory go nosi - o wiele silniejszym. Po zdobyciu ma az sto ladunkow. Mozna go doladowac ofiarujac Clergymanowi brooches."
+    }
+  },
+  {
+    "name": "Pandemonium Amulet",
+    "clientId": 3014,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Magia zbroi, z ktorej zostal wykonany zapewnia osobie, ktora go nosi o wiele wieksza wytrzymalosc na bol. Ten lekki amulet posiada polowe wlasciwosci Pandemonium Armor. Chroni on rowniez przed stratami zwiazanymi ze smiercia. Aby dzialal - potrzebny jest PACC. Mozna go doladowac za 100 krysztalowych monet.",
+      "rook": "Magia zbroi, z ktorej zostal wykonany zapewnia osobie, ktora go nosi o wiele wieksza wytrzymalosc na bol. Ten lekki amulet posiada polowe wlasciwosci Pandemonium Armor. Chroni on rowniez przed stratami zwiazanymi ze smiercia. Aby dzialal - potrzebny jest PACC. Mozna go doladowac za 1000 krysztalowych monet oraz 1 starlight."
+    }
+  },
+  {
+    "name": "Yeah Bunny Amulet",
+    "clientId": 3014,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Magiczne klapki zapomnienia sprawily, ze amulet ten pomaga o wiele efektywniej atakowac wrogow. Jesli tylko osoba, ktora go nosi - posiada PACC - chroni on przed skutkami smierci. Mozna go doladowac za 100 krysztalowych monet.",
+      "rook": "Magiczne klapki zapomnienia sprawily, ze amulet ten pomaga o wiele efektywniej atakowac wrogow. Jesli tylko osoba, ktora go nosi - posiada PACC - chroni on przed skutkami smierci. Mozna go doladowac za 1000 krysztalowych monet oraz 1 starlight."
+    }
+  },
+  {
+    "name": "Winged Amulet",
+    "clientId": 3014,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Lekkosc skrzydlatego helmu zapewnia osobie noszacej ten amulet o wiele wieksza predkosc. Amulet ten rowniez chroni od strat podczas smierci osoby posiadajace PACC. Mozna go doladowac za 100 krysztalowych monet.",
+      "rook": "Lekkosc skrzydlatego helmu zapewnia osobie noszacej ten amulet o wiele wieksza predkosc. Amulet ten rowniez chroni od strat podczas smierci osoby posiadajace PACC. Mozna go doladowac za 1000 krysztalowych monet oraz 1 starlight."
+    }
+  },
+  {
+    "name": "Soft Amulet",
+    "clientId": 3014,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Dzieki temu amuletowi przy smierci mozna zachowac swoj cenny ekwipunek oraz zdobyte punkty doswiadczenia. Dodaje on HP oraz MP, mozna go doladowywac za 100 krysztalowych monet. Moga go uzywac jedynie osoby posiadajace PACC.",
+      "rook": "Dzieki temu amuletowi przy smierci mozna zachowac swoj cenny ekwipunek oraz zdobyte punkty doswiadczenia. Dodaje on HP oraz MP, mozna go doladowywac za 1000 krysztalowych monet oraz 1 starlight. Moga go uzywac jedynie osoby posiadajace PACC."
+    }
+  },
+  {
+    "name": "Starlight",
+    "clientId": 3021,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Gracz, ktory posiada ten amulet, jesli tylko posiada PACC - po smierci nie traci punktow doswiadczenia, ani ekwipunku."
+    }
+  },
+  {
+    "name": "Stone Skin Amulet",
+    "clientId": 3081,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Zmniejsza obrazenia o 15%."
+    }
+  },
+  {
+    "name": "Critical Talisman",
+    "clientId": 3019,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Talizman, ktory noszony przez gracza znacznie zwieksza jego szczescie. Zwieksza rowniez krytyczne ciosy oraz odpornosc na obrazania z Ultimate Weapon."
+    }
+  },
+  {
+    "name": "Elven Amulet",
+    "clientId": 3082,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Zmniejsza obrazenia o 10%."
+    }
+  },
+  {
+    "name": "Protection Amulet",
+    "clientId": 3084,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Zmniejsza obrazenia o 5%."
+    }
+  },
+  {
+    "name": "Platinum Amulet",
+    "clientId": 3055,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Posiada: Arm:2."
+    }
+  },
+  {
+    "name": "Garlic Necklace",
+    "clientId": 3083,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Zmniejsza straty od 'life drain' o polowe."
+    }
+  },
+  {
+    "name": "Silver Amulet",
+    "clientId": 3054,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Zmniejsza obrazenia od trucizny o 10%."
+    }
+  },
+  {
+    "name": "Strange Talisman",
+    "clientId": 3045,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Zmniejsza obrazenia od atakow energia o 10%."
+    }
+  },
+  {
+    "name": "Crystal Necklace",
+    "clientId": 3008,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Kto posiada ten amulet ma wieksze szanse zdobycia dobrego loot'u. +30."
+    }
+  },
+  {
+    "name": "Amulet of loss",
+    "clientId": 3057,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Kto posiada ten amulet nie traci ekwipunku w przypadku smierci."
+    }
+  },
+  {
+    "name": "Ancient Amulet",
+    "clientId": 3025,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Dragon Necklace",
+    "clientId": 3085,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Eagle Amulet",
+    "clientId": 3024,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Bronze Amulet",
+    "clientId": 3056,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Scarab Amulet",
+    "clientId": 3018,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "toxic necklace",
+    "clientId": 3085,
+    "subType": 0,
+    "categories": [
+      "amulety"
+    ],
+    "zones": [
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Gold Ring",
+    "clientId": 3063,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Zloty pierscien zwieksza obrazenia zadawane przez gracza o 15% przez 10 minut."
+    }
+  },
+  {
+    "name": "Ring of the Sky",
+    "clientId": 3006,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Kto posiada ten pierscien ma wieksze szanse zdobycia dobrego loot'u. +120."
+    }
+  },
+  {
+    "name": "Magic Emerald Ring",
+    "clientId": 3010,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Zwieksza poziom magiczny. Knight +1, Palladyn +2, Sorcerer/Druid +3."
+    }
+  },
+  {
+    "name": "Crystal Ring",
+    "clientId": 3007,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Kto posiada ten pierscien ma wieksze szanse zdobycia dobrego loot'u. +60."
+    }
+  },
+  {
+    "name": "Might Ring",
+    "clientId": 3048,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Zmniejsza dowolny rodzaj obrazen o 10%."
+    }
+  },
+  {
+    "name": "Energy Ring",
+    "clientId": 3051,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Po otrzymaniu obrazen tracimy mane zamiast zycia. Dziala przez 10 minut."
+    }
+  },
+  {
+    "name": "Ring Of Healing",
+    "clientId": 3098,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Pierscien ten zwieksza mana points i zycie w bardzo krotkim czasie. Dziala przez 10 minut."
+    }
+  },
+  {
+    "name": "Life Ring",
+    "clientId": 3052,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Pierscien ten zwieksza mana points i zycie w bardzo krotkim czasie. Dziala przez 10 minut."
+    }
+  },
+  {
+    "name": "Time ring",
+    "clientId": 3053,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Pierscien ten zwieksza szybkosc. Dziala przez 10 minut."
+    }
+  },
+  {
+    "name": "Stealth Ring",
+    "clientId": 3049,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Po zalozeniu tego pierscienia postac staje sie niewidzialna na 10 min."
+    }
+  },
+  {
+    "name": "Sword Ring",
+    "clientId": 3092,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Zwieksza Sword Fighting +4."
+    }
+  },
+  {
+    "name": "Axe Ring",
+    "clientId": 3091,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Zwieksza Axe Fighting +4."
+    }
+  },
+  {
+    "name": "Club Ring",
+    "clientId": 3093,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Zwieksza Club Fighting +4."
+    }
+  },
+  {
+    "name": "Power Ring",
+    "clientId": 3050,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Zwieksza Fist Fighting +6."
+    }
+  },
+  {
+    "name": "Dwarven ring",
+    "clientId": 3097,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Chroni przed upiciem sie."
+    }
+  },
+  {
+    "name": "Wedding Ring",
+    "clientId": 3004,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "ring of Lios",
+    "clientId": 3007,
+    "subType": 0,
+    "categories": [
+      "ringi"
+    ],
+    "zones": [
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Annihilator Token",
+    "clientId": 3102,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Royal Fanfare",
+    "clientId": 2956,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Przedmiot, ktory mozna zdobyc po wykonaniu Annihilator II. Przedmiot ten przyda nam sie podczas wykonywania misji z Demon Setem."
+    }
+  },
+  {
+    "name": "Brooches",
+    "clientId": 3005,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Broszka potrzebna do wykonania questu na Sapphire Legs. Potrzebna do odnowienia Perfect Amuletu."
+    }
+  },
+  {
+    "name": "Bronzen Amulet",
+    "clientId": 3009,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Zmniejsza straty od 'mana drain' o polowe. Potrzebny do wykonania questu."
+    }
+  },
+  {
+    "name": "Egipcian Present",
+    "clientId": 3020,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Potrzebny do wykonania questu."
+    }
+  },
+  {
+    "name": "Quest Log",
+    "clientId": 2845,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Pokazuje postep questow na danej postaci."
+    }
+  },
+  {
+    "name": "Quest Log Rook",
+    "clientId": 2850,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Pokazuje postep questow na danej postaci."
+    }
+  },
+  {
+    "name": "Silver Brooch",
+    "clientId": 3017,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Magician Hat",
+    "clientId": 3573,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "crystal of mystery",
+    "clientId": 3061,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "dead black demonic sheep",
+    "clientId": 4095,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "dead white demonic sheep",
+    "clientId": 4086,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Gem Holder",
+    "clientId": 3223,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Damaged Helmet",
+    "clientId": 3226,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Dirty Cape",
+    "clientId": 3122,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "left horn of vampire's cap",
+    "clientId": 3224,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "necromancers cape",
+    "clientId": 3565,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "right horn of vampire's cap",
+    "clientId": 3225,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vampire's rotten cape",
+    "clientId": 3122,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "witches cape",
+    "clientId": 3565,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "witches hat",
+    "clientId": 3210,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "priestess dress",
+    "clientId": 3569,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "witches robe",
+    "clientId": 3566,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "broken necromancers shoes",
+    "clientId": 3123,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "broken vampire boots",
+    "clientId": 3550,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "destroyed priestesses shoes",
+    "clientId": 3123,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Histeol wand",
+    "clientId": 3073,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "wand of Heapster",
+    "clientId": 3075,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "wand of Seti",
+    "clientId": 3327,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "amulet of Nistelo",
+    "clientId": 3025,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "blue bale of material",
+    "clientId": 2659,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "green bale of material",
+    "clientId": 2647,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "inkwell of red paint",
+    "clientId": 3509,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Left Horn",
+    "clientId": 3224,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "marsh plant",
+    "clientId": 3674,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "natural fibre",
+    "clientId": 3003,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "pieces of iron",
+    "clientId": 3110,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "purple bale of material",
+    "clientId": 2644,
+    "subType": 0,
+    "categories": [
+      "zadaniowe",
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "red bale of material",
+    "clientId": 2656,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Right Horn",
+    "clientId": 3225,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "white bale of material",
+    "clientId": 2667,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "sickle of Quoerses",
+    "clientId": 3306,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "bone of Moonaron",
+    "clientId": 3115,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "bottle of black liquid",
+    "clientId": 4828,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "bottle of dark beer",
+    "clientId": 4828,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "bottle of white liquid",
+    "clientId": 4828,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "bristle worm",
+    "clientId": 4188,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "flower of giant's leaf",
+    "clientId": 3655,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "orange bale of material",
+    "clientId": 2653,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "rotten meat",
+    "clientId": 3112,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "skeleton bone",
+    "clientId": 3116,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "small skeleton bone",
+    "clientId": 3115,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of experimental glue",
+    "clientId": 2874,
+    "subType": 1,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of green poisoning pigment",
+    "clientId": 2874,
+    "subType": 4,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of invisible liquid",
+    "clientId": 2874,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of liquid nitrogen",
+    "clientId": 2874,
+    "subType": 6,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of medulla",
+    "clientId": 2874,
+    "subType": 6,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of red hot paint",
+    "clientId": 2874,
+    "subType": 2,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of stolen honey",
+    "clientId": 2874,
+    "subType": 5,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of white blood",
+    "clientId": 2874,
+    "subType": 6,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "bottle of banana nectar",
+    "clientId": 2885,
+    "subType": 0,
+    "categories": [
+      "zadaniowe"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Book of Experience",
+    "clientId": 3101,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Po kliknieciu ksiega ta podwaja nasze doswiadczenie na 30 minut."
+    }
+  },
+  {
+    "name": "Spy Report",
+    "clientId": 3232,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Noszony w miejscu, w ktorym trzyma sie strzaly - dodaje +20% critical hita."
+    }
+  },
+  {
+    "name": "Rabbit Present",
+    "clientId": 3242,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Noszony w miejscu, w ktorym trzyma sie strzaly - dodaje +10% critical hita."
+    }
+  },
+  {
+    "name": "Dragon Egg",
+    "clientId": 3215,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Jajo smoka. Dodaje +50% many i hp."
+    }
+  },
+  {
+    "name": "Stone of magical equality",
+    "clientId": 3235,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Starozytna Runa... jej potezna, magiczna moc pozwala trwale podniesc sile postaci, na ktorej zostanie uzyta. Dodaje kazdej profesji magicznej +1 hp/lvl oraz kazdemu paladynowi/knightowi +1 mp/lvl."
+    }
+  },
+  {
+    "name": "Fanfare of grace",
+    "clientId": 2955,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Pozwala zmienic standardowy wyglad glownych czarow kazdej profesji. Po uzyciu przypisana jest do gracza i pozwala mu na zakup run paralizujacych."
+    }
+  },
+  {
+    "name": "Scroll of Escape",
+    "clientId": 4846,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Magiczny pergamin pozwalajacy na powrot do swiatyni. Mozna go uzyc kilka razy w ciagu 24h."
+    }
+  },
+  {
+    "name": "Butterfly Conservation Kit",
+    "clientId": 4865,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Wlasciwosci tego przedmiotu pozwalaja zmienic motyle na soki. Wystepuja rozne rodzaje tego przedmiotu dajace rozne szanse na udana zmiane."
+    }
+  },
+  {
+    "name": "Whip's Wolf",
+    "clientId": 4832,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Po wykonaniu questu umozliwia szybsze poruszanie sie na duzym wilku."
+    }
+  },
+  {
+    "name": "Broken Hilt",
+    "clientId": 3237,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Najlepszy miecz. Niestety zostal uszkodzony i teraz, pomimo wysokiego critical hita - jest praktycznie bezuzyteczny."
+    }
+  },
+  {
+    "name": "Cobrafang Dagger",
+    "clientId": 3238,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {
+      "main": "Ozdoba."
+    }
+  },
+  {
+    "name": "Panda Bear",
+    "clientId": 5080,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Mozesz nazwac ta maskotke jak chcesz. Do zdobycia u NPC."
+    }
+  },
+  {
+    "name": "Magic Wall",
+    "clientId": 3180,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Magiczna sciana, przez kilka sekund pozostawia na mapie energie - przez ktora nie mozna przejsc."
+    }
+  },
+  {
+    "name": "PACC Runa",
+    "clientId": 3162,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "main": "Gracz, ktory uzyje tej runy otrzyma +35 dni PACC na swoje konto."
+    }
+  },
+  {
+    "name": "Crystal Ball",
+    "clientId": 3076,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "wise wand",
+    "clientId": 3321,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Golden Butterfly",
+    "clientId": 5013,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Golden Mug",
+    "clientId": 2903,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Great Fireball Rune",
+    "clientId": 3191,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Heavy Magic Missile Rune",
+    "clientId": 3174,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "improved shadow crystal",
+    "clientId": 3062,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Life Crystal",
+    "clientId": 3061,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "magic broom",
+    "clientId": 3454,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Shadow Crystal",
+    "clientId": 3062,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Small Sapphire",
+    "clientId": 3029,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Ultimate Healing Rune",
+    "clientId": 3157,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Magic Lightwand",
+    "clientId": 3046,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Blue Exotic Butterfly",
+    "clientId": 4993,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "adevo grav tera",
+    "clientId": 3180,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Adura Gran",
+    "clientId": 3152,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Amphora",
+    "clientId": 2893,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "annihilation teddy bear",
+    "clientId": 3213,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "ape fur",
+    "clientId": 3106,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Apocalipsis",
+    "clientId": 3326,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Ball Gown",
+    "clientId": 3570,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Besom",
+    "clientId": 3454,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Big Emerald",
+    "clientId": 3038,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Big Ruby",
+    "clientId": 3039,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Black Pawn",
+    "clientId": 3541,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Blank Rune",
+    "clientId": 3147,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Blue Gem",
+    "clientId": 3041,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "blue rose",
+    "clientId": 3659,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Blueberry",
+    "clientId": 3588,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Broch",
+    "clientId": 3205,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Candy Cane",
+    "clientId": 3599,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Cape",
+    "clientId": 3565,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Cherry",
+    "clientId": 3590,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Cleaver",
+    "clientId": 3471,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Closed Trap",
+    "clientId": 3481,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Coconut",
+    "clientId": 3589,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Crowbar",
+    "clientId": 3304,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Dead Snake",
+    "clientId": 4259,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "destroyed 14th sheet of Wolfgang's Diary",
+    "clientId": 2815,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "destroyed 18th sheet of Wolfgang's Diary",
+    "clientId": 2815,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "destroyed 28th sheet of Wolfgang's Diary",
+    "clientId": 2815,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "destroyed 39th sheet of Wolfgang's Diary",
+    "clientId": 2815,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "destroyed 40th sheet of Wolfgang's Diary",
+    "clientId": 2815,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "destroyed 42th sheet of Wolfgang's Diary",
+    "clientId": 2815,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "destroyed 48th sheet of Wolfgang's Diary",
+    "clientId": 2815,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "destroyed 4th sheet of Wolfgang's Diary",
+    "clientId": 2815,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "destroyed 50th sheet of Wolfgang's Diary",
+    "clientId": 2815,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "destroyed 7th sheet of Wolfgang's Diary",
+    "clientId": 2815,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Dirty Fur",
+    "clientId": 3105,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Doll",
+    "clientId": 2991,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Dress",
+    "clientId": 3569,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "dried cannabis",
+    "clientId": 3131,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Egg",
+    "clientId": 3606,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Exotic Butterfly",
+    "clientId": 4991,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Explosion Rune",
+    "clientId": 3200,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Fern",
+    "clientId": 3737,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Flute",
+    "clientId": 2948,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Goat Grass",
+    "clientId": 3674,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Gold Nugget",
+    "clientId": 3040,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Green Tunic",
+    "clientId": 3563,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Inkwell",
+    "clientId": 3509,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "key to the St. Peters gate",
+    "clientId": 2969,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 1%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 10%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 11%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 12%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 13%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 14%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 15%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 16%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 17%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 18%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 19%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 2%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 3%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 4%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 5%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 6%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 7%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 8%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "KlejNutka 9%!",
+    "clientId": 3236,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Lamp",
+    "clientId": 2933,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Letter",
+    "clientId": 3505,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Lyre",
+    "clientId": 2949,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Melon",
+    "clientId": 3593,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "minotaur horn",
+    "clientId": 3225,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Mysterious Fetish",
+    "clientId": 3078,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Orb",
+    "clientId": 3060,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Piggy Bank",
+    "clientId": 2995,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Pink Exotic Butterfly",
+    "clientId": 4992,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "pitch fork",
+    "clientId": 3451,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Red Rose",
+    "clientId": 3658,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "sacral ankh",
+    "clientId": 3077,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Salmon",
+    "clientId": 3579,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Sandals",
+    "clientId": 3551,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Scarf",
+    "clientId": 3572,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Shrimp",
+    "clientId": 3581,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Small Diamond",
+    "clientId": 3028,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Small Emerald",
+    "clientId": 3032,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Small Oil Lamp",
+    "clientId": 2932,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Small Ruby",
+    "clientId": 3030,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Snowball",
+    "clientId": 2992,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Strange Symbol",
+    "clientId": 3058,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Strawberry",
+    "clientId": 3591,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Sudden Death Rune",
+    "clientId": 3150,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Talon",
+    "clientId": 3034,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Teddy Bear",
+    "clientId": 2993,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Tulip",
+    "clientId": 3668,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Violet Gem",
+    "clientId": 3036,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Wheat",
+    "clientId": 3605,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "White Castle",
+    "clientId": 3536,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "White Knight",
+    "clientId": 3537,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "White Pawn",
+    "clientId": 3535,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Wolves Teeth Chain",
+    "clientId": 3012,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Yellow Gem",
+    "clientId": 3037,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Exurune",
+    "clientId": 3168,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {
+      "rook": "Runa leczaca. Dziala podobnie jak czar \"Exura\"."
+    }
+  },
+  {
+    "name": "Crystal Coin",
+    "clientId": 3043,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Dragon Ham",
+    "clientId": 3583,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Golden Backpack",
+    "clientId": 2871,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Golden Bag",
+    "clientId": 2863,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Ultimate Coin",
+    "clientId": 3287,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Apple",
+    "clientId": 3585,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Backpack",
+    "clientId": 2854,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Bag",
+    "clientId": 2853,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Banana",
+    "clientId": 3587,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Big Bone",
+    "clientId": 3116,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Big Fish",
+    "clientId": 3580,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Blood Herb",
+    "clientId": 3734,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Blue Backpack",
+    "clientId": 2869,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Blue Bag",
+    "clientId": 2861,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Blue Bottle",
+    "clientId": 2875,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Bone",
+    "clientId": 3115,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Book",
+    "clientId": 2829,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Bread",
+    "clientId": 3600,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Brown Bread",
+    "clientId": 3602,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Brown Mushroom",
+    "clientId": 3725,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Bucket",
+    "clientId": 2873,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Carrot",
+    "clientId": 3595,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Cheese",
+    "clientId": 3607,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Cookie",
+    "clientId": 3598,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Dark Mushroom",
+    "clientId": 3728,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "dracula's bone",
+    "clientId": 3115,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "empty vial",
+    "clientId": 2874,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Fire Mushroom",
+    "clientId": 3731,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Fish",
+    "clientId": 3578,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Gold Coin",
+    "clientId": 3031,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Grape",
+    "clientId": 3592,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Grave Flower",
+    "clientId": 3661,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Green Backpack",
+    "clientId": 2865,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Green Bag",
+    "clientId": 2857,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Green Mushroom",
+    "clientId": 3732,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Grey Backpack",
+    "clientId": 2870,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Grey Bag",
+    "clientId": 2862,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Ham",
+    "clientId": 3582,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Meat",
+    "clientId": 3577,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Moldy Cheese",
+    "clientId": 3120,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Mushroom",
+    "clientId": 3727,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Orange",
+    "clientId": 3586,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Pears",
+    "clientId": 3584,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Pick",
+    "clientId": 3456,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Platinum Coin",
+    "clientId": 3035,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Purple Backpack",
+    "clientId": 2868,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Purple Bag",
+    "clientId": 2860,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Red Backpack",
+    "clientId": 2867,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Red Bag",
+    "clientId": 2859,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Red Mushroom",
+    "clientId": 3724,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Roll",
+    "clientId": 3601,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Rope",
+    "clientId": 3003,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Scarab Coin",
+    "clientId": 3042,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Shadow Herb",
+    "clientId": 3740,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Shovel",
+    "clientId": 3457,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Skull",
+    "clientId": 3207,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Sling Herb",
+    "clientId": 3738,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Small Stone",
+    "clientId": 1781,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Spellbook",
+    "clientId": 3059,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Stone",
+    "clientId": 1782,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Tomato",
+    "clientId": 3596,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Torch",
+    "clientId": 2920,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Troll Green",
+    "clientId": 3741,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of blue rotten syrup",
+    "clientId": 2874,
+    "subType": 1,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of blue strong thinner",
+    "clientId": 2874,
+    "subType": 1,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of dirty butterfly juice",
+    "clientId": 2874,
+    "subType": 3,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of lifefluid",
+    "clientId": 2874,
+    "subType": 2,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of rum",
+    "clientId": 2874,
+    "subType": 3,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of soul mixture",
+    "clientId": 2874,
+    "subType": 5,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of tropical essence of dead butterfly",
+    "clientId": 2874,
+    "subType": 5,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of virgin blood",
+    "clientId": 2874,
+    "subType": 2,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "vial of water",
+    "clientId": 2874,
+    "subType": 1,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "White Gamestone",
+    "clientId": 3534,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "White Mushroom",
+    "clientId": 3723,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Worm",
+    "clientId": 3492,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Yellow Backpack",
+    "clientId": 2866,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Yellow Bag",
+    "clientId": 2858,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Bowl",
+    "clientId": 2902,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Fishing Rod",
+    "clientId": 3483,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Scythe",
+    "clientId": 3453,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Sickle",
+    "clientId": 3293,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "big black pirate pearl",
+    "clientId": 3062,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Black Pearl",
+    "clientId": 3027,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Scroll",
+    "clientId": 2815,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "White Pearl",
+    "clientId": 3026,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "White Pirate Pearl",
+    "clientId": 5021,
+    "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  }
+]

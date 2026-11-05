@@ -23043,21 +23043,264 @@
     "name": "Main Composer",
     "hp": 0,
     "exp": 0,
-    "loot": [],
+    "loot": [
+      {
+        "name": "Magic Sword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 5
+      },
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 34
+      },
+      {
+        "name": "Fire Sword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Tomato",
+        "frequency": "Unknown",
+        "amount": 7
+      },
+      {
+        "name": "Spear",
+        "frequency": "Unknown",
+        "amount": 8
+      },
+      {
+        "name": "KlejNutka 12%!",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Apple",
+        "frequency": "Unknown",
+        "amount": 25
+      },
+      {
+        "name": "Demon Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "KlejNutka 16%!",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Mastermind Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Demon Legs",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Golden Butterfly",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "War Hammer",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Crystal Arrow",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "KlejNutka 14%!",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Axe Ring",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Dragon Egg",
+        "frequency": "Unknown",
+        "amount": 2
+      }
+    ],
     "id": 326
   },
   {
     "name": "Stiff",
     "hp": 0,
     "exp": 0,
-    "loot": [],
+    "loot": [
+      {
+        "name": "Dragon Egg",
+        "frequency": "Unknown",
+        "amount": 3
+      },
+      {
+        "name": "adevo grav tera",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Demon Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Great Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Magic Sword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Dragon Scale Legs",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 9
+      },
+      {
+        "name": "Meat",
+        "frequency": "Unknown",
+        "amount": 34
+      },
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 73
+      },
+      {
+        "name": "Starlight",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Golden Boots",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Mastermind Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Golden Legs",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Horned Helmet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "natural fibre",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Magic Plate Armor",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Sprite Wand",
+        "frequency": "Unknown",
+        "amount": 1
+      }
+    ],
     "id": 327
   },
   {
     "name": "Saint Peter",
     "hp": 0,
     "exp": 0,
-    "loot": [],
+    "loot": [
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 11
+      },
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 78
+      },
+      {
+        "name": "Fire Sword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Shrimp",
+        "frequency": "Unknown",
+        "amount": 23
+      },
+      {
+        "name": "key to the St. Peters gate",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Knight Armor",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Blessed Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Starlight",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Blue Robe",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Eagle Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of dirty butterfly juice",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Dragon Egg",
+        "frequency": "Unknown",
+        "amount": 2
+      },
+      {
+        "name": "Blue Exotic Butterfly",
+        "frequency": "Unknown",
+        "amount": 1
+      }
+    ],
     "id": 328
   },
   {
@@ -23078,42 +23321,688 @@
     "name": "Satan",
     "hp": 0,
     "exp": 0,
-    "loot": [],
+    "loot": [
+      {
+        "name": "Demon Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Golden Butterfly",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 88
+      },
+      {
+        "name": "Demon Legs",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Fire Sword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Fire Axe",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Tomato",
+        "frequency": "Unknown",
+        "amount": 91
+      },
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 17
+      },
+      {
+        "name": "Crystal Ball",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Starlight",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Thunder Hammer",
+        "frequency": "Unknown",
+        "amount": 1
+      }
+    ],
     "id": 331
   },
   {
     "name": "Son of Satan",
     "hp": 0,
     "exp": 0,
-    "loot": [],
+    "loot": [
+      {
+        "name": "Magic Longsword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Leather Boots",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Gold Nugget",
+        "frequency": "Unknown",
+        "amount": 59
+      },
+      {
+        "name": "Demon Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Candy Cane",
+        "frequency": "Unknown",
+        "amount": 35
+      },
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 62
+      },
+      {
+        "name": "vial of soul mixture",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Golden Butterfly",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Fire Axe",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 6
+      },
+      {
+        "name": "lady armor",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Demon Legs",
+        "frequency": "Unknown",
+        "amount": 1
+      }
+    ],
     "id": 332
   },
   {
     "name": "Noun",
     "hp": 0,
     "exp": 0,
-    "loot": [],
+    "loot": [
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 98
+      },
+      {
+        "name": "Starlight",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Big Fish",
+        "frequency": "Unknown",
+        "amount": 30
+      },
+      {
+        "name": "Great Axe",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "adevo grav tera",
+        "frequency": "Unknown",
+        "amount": 15
+      },
+      {
+        "name": "Brown Bread",
+        "frequency": "Unknown",
+        "amount": 30
+      },
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 5
+      },
+      {
+        "name": "Demon Legs",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Magic Plate Armor",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Mastermind Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Blessed Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Dragon Scale Legs",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Stonecutter's axe",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Magic Sword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Rabbit Present",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Big Ruby",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of dirty butterfly juice",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Magic Longsword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Dragon Egg",
+        "frequency": "Unknown",
+        "amount": 3
+      },
+      {
+        "name": "Sapphire Armor",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Crowbar",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of soul mixture",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of pink butterfly lemonade",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Golden Butterfly",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Eagle Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Golden Boots",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of blue rotten syrup",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Ultimate Coin",
+        "frequency": "Unknown",
+        "amount": 4
+      },
+      {
+        "name": "Winged Helmet",
+        "frequency": "Unknown",
+        "amount": 1
+      }
+    ],
     "id": 333
   },
   {
     "name": "Bonzo",
     "hp": 0,
     "exp": 0,
-    "loot": [],
+    "loot": [
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 10
+      },
+      {
+        "name": "Golden Helmet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Banana",
+        "frequency": "Unknown",
+        "amount": 10
+      },
+      {
+        "name": "Dragon Egg",
+        "frequency": "Unknown",
+        "amount": 5
+      },
+      {
+        "name": "Demon Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "adevo grav tera",
+        "frequency": "Unknown",
+        "amount": 25
+      },
+      {
+        "name": "Magic Longsword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Strawberry",
+        "frequency": "Unknown",
+        "amount": 20
+      },
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 98
+      },
+      {
+        "name": "Blue Exotic Butterfly",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Golden Legs",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Exotic Butterfly",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of blue rotten syrup",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "natural fibre",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of pink butterfly lemonade",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Great Axe",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of soul mixture",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of tropical essence of dead butterfly",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of dirty butterfly juice",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Golden Boots",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Winged Helmet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Shadow Crystal",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Blessed Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Crystal Arrow",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "pumpkin",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Soft Boots",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Gold Ring",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Ultimate Coin",
+        "frequency": "Unknown",
+        "amount": 11
+      },
+      {
+        "name": "Golden Butterfly",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Magic Axe",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "The Pharao Sword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Crystal Wand",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Starlight",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Big Fish",
+        "frequency": "Unknown",
+        "amount": 2
+      },
+      {
+        "name": "Brown Bread",
+        "frequency": "Unknown",
+        "amount": 25
+      }
+    ],
     "id": 334
   },
   {
     "name": "Mysterious Shaman",
     "hp": 0,
     "exp": 0,
-    "loot": [],
+    "loot": [
+      {
+        "name": "Golden Helmet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "adana ani",
+        "frequency": "Unknown",
+        "amount": 15
+      },
+      {
+        "name": "Tomato",
+        "frequency": "Unknown",
+        "amount": 15
+      },
+      {
+        "name": "Coconut",
+        "frequency": "Unknown",
+        "amount": 20
+      },
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 11
+      },
+      {
+        "name": "crystal coin [x10]",
+        "frequency": "Unknown",
+        "amount": 83
+      },
+      {
+        "name": "Great Axe",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 90
+      },
+      {
+        "name": "Blessed Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Sprite Wand",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Crystal Wand",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Dragon Egg",
+        "frequency": "Unknown",
+        "amount": 6
+      },
+      {
+        "name": "vial of pink butterfly lemonade",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of soul mixture",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Spy Report",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Winged Helmet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of tropical essence of dead butterfly",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Magic Mace",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "brooches of manadrain",
+        "frequency": "Unknown",
+        "amount": 1
+      }
+    ],
     "id": 335
   },
   {
     "name": "Ahmed",
     "hp": 0,
     "exp": 0,
-    "loot": [],
+    "loot": [
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 32
+      },
+      {
+        "name": "adana ani",
+        "frequency": "Unknown",
+        "amount": 19
+      },
+      {
+        "name": "Orange",
+        "frequency": "Unknown",
+        "amount": 14
+      },
+      {
+        "name": "Salmon",
+        "frequency": "Unknown",
+        "amount": 19
+      },
+      {
+        "name": "Blessed Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "adevo grav tera",
+        "frequency": "Unknown",
+        "amount": 55
+      },
+      {
+        "name": "vial of soul mixture",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Dragon Egg",
+        "frequency": "Unknown",
+        "amount": 10
+      },
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 100
+      },
+      {
+        "name": "Great Axe",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Golden Helmet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of dirty butterfly juice",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of blue rotten syrup",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of pink butterfly lemonade",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Gold Ring",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "The Pharao Sword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Cursed Cowl",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Blue Robe",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Ripper Lance",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Sprite Wand",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Winged Helmet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Ultimate Coin",
+        "frequency": "Unknown",
+        "amount": 22
+      }
+    ],
     "id": 336
   },
   {
@@ -23127,7 +24016,33 @@
     "name": "Invincible",
     "hp": 0,
     "exp": 0,
-    "loot": [],
+    "loot": [
+      {
+        "name": "Crystal Wand",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "KlejNutka 11%!",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "KlejNutka 10%!",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Ultimate Coin",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 28
+      }
+    ],
     "id": 338
   },
   {
@@ -23162,7 +24077,118 @@
     "name": "Ahmed",
     "hp": 0,
     "exp": 0,
-    "loot": [],
+    "loot": [
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 32
+      },
+      {
+        "name": "adana ani",
+        "frequency": "Unknown",
+        "amount": 19
+      },
+      {
+        "name": "Orange",
+        "frequency": "Unknown",
+        "amount": 14
+      },
+      {
+        "name": "Salmon",
+        "frequency": "Unknown",
+        "amount": 19
+      },
+      {
+        "name": "Blessed Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "adevo grav tera",
+        "frequency": "Unknown",
+        "amount": 55
+      },
+      {
+        "name": "vial of soul mixture",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Dragon Egg",
+        "frequency": "Unknown",
+        "amount": 10
+      },
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 100
+      },
+      {
+        "name": "Great Axe",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Golden Helmet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of dirty butterfly juice",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of blue rotten syrup",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of pink butterfly lemonade",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Gold Ring",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "The Pharao Sword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Cursed Cowl",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Blue Robe",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Ripper Lance",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Sprite Wand",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Winged Helmet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Ultimate Coin",
+        "frequency": "Unknown",
+        "amount": 22
+      }
+    ],
     "id": 343
   },
   {
@@ -23591,5 +24617,619 @@
     "exp": 0,
     "loot": [],
     "id": 404
+  },
+  {
+    "name": "Sicarius Terrosus",
+    "hp": 0,
+    "exp": 0,
+    "loot": [
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 99
+      },
+      {
+        "name": "Cherry",
+        "frequency": "Unknown",
+        "amount": 8
+      },
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 37
+      },
+      {
+        "name": "Great Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Wand of Plague",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Starlight",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Crusader Helmet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Time ring",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "natural fibre",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Golden Helmet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of pink butterfly lemonade",
+        "frequency": "Unknown",
+        "amount": 1
+      }
+    ],
+    "id": 405
+  },
+  {
+    "name": "Fallen Lord",
+    "hp": 0,
+    "exp": 0,
+    "loot": [
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 74
+      },
+      {
+        "name": "Dragon Scale Mail",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Starlight",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Shrimp",
+        "frequency": "Unknown",
+        "amount": 7
+      },
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 32
+      },
+      {
+        "name": "Elven Amulet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Dwarven ring",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Crown Armor",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Boots of Haste",
+        "frequency": "Unknown",
+        "amount": 1
+      }
+    ],
+    "id": 406
+  },
+  {
+    "name": "Foe",
+    "hp": 0,
+    "exp": 0,
+    "loot": [
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 50
+      },
+      {
+        "name": "Magic Longsword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Starlight",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Blessed Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "small skeleton bone",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Steel Boots",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of blue rotten syrup",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Crowbar",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Big Fish",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Dragon Lance",
+        "frequency": "Unknown",
+        "amount": 1
+      }
+    ],
+    "id": 407
+  },
+  {
+    "name": "Farengor",
+    "hp": 0,
+    "exp": 0,
+    "loot": [
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 31
+      },
+      {
+        "name": "KlejNutka 16%!",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 37
+      },
+      {
+        "name": "Golden Butterfly",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Starlight",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Ultimate Coin",
+        "frequency": "Unknown",
+        "amount": 10
+      },
+      {
+        "name": "Winged Helmet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "small skeleton bone",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Magic Plate Armor",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Coconut",
+        "frequency": "Unknown",
+        "amount": 4
+      },
+      {
+        "name": "skeleton bone",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Blessed Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "adana ani",
+        "frequency": "Unknown",
+        "amount": 2
+      },
+      {
+        "name": "Great Axe",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Dragon Scale Legs",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Exotic Butterfly",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Magic Longsword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Mastermind Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Helmet of The Ancients",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Wand of Dragonbreath",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "KlejNutka 13%!",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Warlord Sword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Dwarven ring",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Stealth Ring",
+        "frequency": "Unknown",
+        "amount": 1
+      }
+    ],
+    "id": 408
+  },
+  {
+    "name": "Enchanted Marid",
+    "hp": 0,
+    "exp": 0,
+    "loot": [
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 19
+      },
+      {
+        "name": "Stealth Ring",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Mastermind Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Pears",
+        "frequency": "Unknown",
+        "amount": 5
+      },
+      {
+        "name": "crystal of probability",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Magic Plate Armor",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Blue Robe",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Fire Axe",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "vial of blue rotten syrup",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "crystal of cost",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "KlejNutka 15%!",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Starlight",
+        "frequency": "Unknown",
+        "amount": 1
+      }
+    ],
+    "id": 409
+  },
+  {
+    "name": "Furious Lion",
+    "hp": 0,
+    "exp": 0,
+    "loot": [
+      {
+        "name": "Double Axe",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Wand of Cosmic Energy",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 79
+      },
+      {
+        "name": "small skeleton bone",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Ham",
+        "frequency": "Unknown",
+        "amount": 9
+      },
+      {
+        "name": "Royal Helmet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Dragon Scale Mail",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "skeleton bone",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "natural fibre",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Eagle Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Great Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      }
+    ],
+    "id": 410
+  },
+  {
+    "name": "Esmermina",
+    "hp": 0,
+    "exp": 0,
+    "loot": [
+      {
+        "name": "Burst Arrow",
+        "frequency": "Unknown",
+        "amount": 76
+      },
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 2
+      },
+      {
+        "name": "Royal Helmet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Starlight",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Magic Longsword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Ring of the Sky",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Apple",
+        "frequency": "Unknown",
+        "amount": 6
+      },
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 98
+      },
+      {
+        "name": "Demon Legs",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Blessed Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Elven Amulet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Spike Sword",
+        "frequency": "Unknown",
+        "amount": 1
+      }
+    ],
+    "id": 411
+  },
+  {
+    "name": "Sfenoron",
+    "hp": 0,
+    "exp": 0,
+    "loot": [
+      {
+        "name": "Crystal Coin",
+        "frequency": "Unknown",
+        "amount": 34
+      },
+      {
+        "name": "Ice Rapier",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Time ring",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Might Ring",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "improved skull",
+        "frequency": "Unknown",
+        "amount": 10
+      },
+      {
+        "name": "skeleton bone",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "White Mushroom",
+        "frequency": "Unknown",
+        "amount": 10
+      },
+      {
+        "name": "Crowbar",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Scarab Coin",
+        "frequency": "Unknown",
+        "amount": 5
+      },
+      {
+        "name": "Fire Sword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Mastermind Shield",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Starlight",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "crystal of range",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Stone Skin Amulet",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Magic Sword",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "crystal of cost",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Strange Symbol",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Golden Boots",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "crystal of exhaustion",
+        "frequency": "Unknown",
+        "amount": 1
+      }
+    ],
+    "id": 412
   }
 ]

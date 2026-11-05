@@ -1,0 +1,1008 @@
+[
+  {
+    "name": "EXP Stage",
+    "kind": "expstage",
+    "stages": [
+      [
+        "1 - 100",
+        "x15"
+      ],
+      [
+        "100 - 200",
+        "x12"
+      ],
+      [
+        "200 - 300",
+        "x9"
+      ],
+      [
+        "300 - 400",
+        "x7"
+      ],
+      [
+        "400 - 500",
+        "x6"
+      ],
+      [
+        "500+",
+        "x5"
+      ]
+    ]
+  },
+  {
+    "name": "Przyrost HP / MP",
+    "kind": "vocationgain",
+    "gains": [
+      [
+        "ROOKSTAYER",
+        "+5",
+        "+5"
+      ],
+      [
+        "SORCERER",
+        "+13",
+        "+29"
+      ],
+      [
+        "DRUID",
+        "+13",
+        "+29"
+      ],
+      [
+        "PALADYN",
+        "+21",
+        "+21"
+      ],
+      [
+        "KNIGHT",
+        "+31",
+        "+11"
+      ]
+    ],
+    "trivia": {
+      "name": "Stone of magical equality",
+      "clientId": 3235,
+      "subType": 0,
+      "desc": "Starozytna Runa... jej potezna, magiczna moc pozwala trwale podniesc sile postaci, na ktorej zostanie uzyta. Dodaje Sorcererowi i Druidowi +1 HP/lvl oraz Paladynowi i Knightowi +1 MP/lvl. Mozna ja zdobyc wykonujac Annihilator III na Main."
+    }
+  },
+  {
+    "name": "Czary",
+    "kind": "spells",
+    "professions": {
+      "rook": {
+        "name": "ROOK",
+        "spells": [
+          [
+            "Invisible",
+            "utana vid",
+            "210",
+            "0"
+          ],
+          [
+            "Light",
+            "utevo lux",
+            "20",
+            "0"
+          ],
+          [
+            "Antidote",
+            "exana pox",
+            "30",
+            "0"
+          ],
+          [
+            "Greater Light",
+            "utevo gran lux",
+            "60",
+            "3"
+          ]
+        ],
+        "soul": [
+          [
+            "adite heal",
+            "35",
+            "Tworzy rune IH x10."
+          ],
+          [
+            "adite crit rook",
+            "30",
+            "Zwieksza Critical Hit przez 1h."
+          ],
+          [
+            "ancient porta",
+            "20 lub 2",
+            "Otwiera portal do Antycznego Miasta. Nieudana proba kosztuje 2 Soul Point."
+          ],
+          [
+            "ultimo nutti",
+            "30",
+            "Laczy dwie identyczne KlejNutki w jedna lepsza."
+          ],
+          [
+            "might addict",
+            "15",
+            "Laczy dwa Might Ringi w jeden."
+          ],
+          [
+            "adeto mas grav",
+            "25",
+            "Pozwala Rookstayerom tworzyc rune adito grav usuwajaca ogien."
+          ],
+          [
+            "summo addict",
+            "15 lub 3",
+            "Pozwala laczyc dwie identyczne runy w jedna. Z Blue Robe of Dark Mystery koszt wynosi 3 Soul Point."
+          ],
+          [
+            "exani tera rook",
+            "1",
+            "Magiczna lina."
+          ]
+        ]
+      },
+      "sorcerer": {
+        "name": "SORCERER",
+        "spells": [
+          [
+            "Invisible",
+            "utana vid",
+            "210",
+            "0"
+          ],
+          [
+            "Light",
+            "utevo lux",
+            "20",
+            "0"
+          ],
+          [
+            "Create Food",
+            "exevo pan",
+            "30",
+            "0"
+          ],
+          [
+            "Antidote",
+            "exana pox",
+            "30",
+            "0"
+          ],
+          [
+            "Light Healing",
+            "exura",
+            "25",
+            "1"
+          ],
+          [
+            "Force Strike",
+            "exori mort",
+            "20",
+            "2"
+          ],
+          [
+            "Greater Light",
+            "utevo gran lux",
+            "60",
+            "3"
+          ],
+          [
+            "Flame Strike",
+            "exori flam",
+            "20",
+            "3"
+          ],
+          [
+            "Energy Strike",
+            "exori vis",
+            "20",
+            "3"
+          ],
+          [
+            "Intense Healing",
+            "exura gran",
+            "40",
+            "4"
+          ],
+          [
+            "Mana Shield",
+            "utamo vita",
+            "50",
+            "4"
+          ],
+          [
+            "Haste",
+            "utani hur",
+            "60",
+            "4"
+          ],
+          [
+            "Fire Wave",
+            "exevo flam hur",
+            "80",
+            "7"
+          ],
+          [
+            "Ultimate Healing",
+            "exura vita",
+            "80",
+            "8"
+          ],
+          [
+            "Strong Haste",
+            "utani gran hur",
+            "100",
+            "8"
+          ],
+          [
+            "Creature Illusion",
+            "utevo res ina",
+            "100",
+            "10"
+          ],
+          [
+            "Ultimate Light",
+            "utevo vis lux",
+            "140",
+            "12"
+          ],
+          [
+            "Great Energy Beam",
+            "exevo gran vis lux",
+            "200",
+            "14"
+          ],
+          [
+            "Incredible Healing",
+            "exura max",
+            "200",
+            "15"
+          ],
+          [
+            "Energy Wave",
+            "exevo mort hur",
+            "250",
+            "20"
+          ],
+          [
+            "Water Beam",
+            "exevo vis hur",
+            "350",
+            "30"
+          ],
+          [
+            "Dragonbreath",
+            "exevo mas flam hur",
+            "470",
+            "30"
+          ],
+          [
+            "Ultimate Energy Explosion",
+            "exevo gran vis",
+            "900",
+            "40"
+          ],
+          [
+            "Ultimate Explosion",
+            "exevo gran mas vis",
+            "1000",
+            "50"
+          ],
+          [
+            "Strong Fire Explosion",
+            "exevo gran mas flam",
+            "800",
+            "75"
+          ],
+          [
+            "Greater Ultimate Explosion",
+            "exevo gran mas vita vis",
+            "1500",
+            "100"
+          ],
+          [
+            "Killing Explosion",
+            "exevo incendium",
+            "900",
+            "130"
+          ]
+        ],
+        "soul": [
+          [
+            "adite mana",
+            "70",
+            "Przez 1h manafluidy dzialaja ze zwiekszona sila."
+          ],
+          [
+            "adite ulti",
+            "130",
+            "Po 15 sekundach od uzycia pozwala skorzystac z obszarowego ataku Ultimate Weapon."
+          ],
+          [
+            "adite grav",
+            "25",
+            "Tworzy rune Magic Wall."
+          ],
+          [
+            "adite grav max",
+            "5",
+            "Laczy runy Magic Wall."
+          ],
+          [
+            "adite mana max",
+            "50",
+            "Odnawia polowe many postaci."
+          ],
+          [
+            "adite crit",
+            "70",
+            "Zwieksza Critical Hit na 1h."
+          ],
+          [
+            "extendo mero",
+            "10",
+            "Poswieca Emerald Ringi i zamienia je na Gold Ring."
+          ],
+          [
+            "ultimo nutti",
+            "30",
+            "Laczy dwie identyczne KlejNutki w jedna lepsza."
+          ],
+          [
+            "might addict",
+            "15",
+            "Laczy dwa Might Ringi w jeden."
+          ],
+          [
+            "extendo mort",
+            "25",
+            "Zamienia Ots King w Hardened Ots King."
+          ]
+        ]
+      },
+      "druid": {
+        "name": "DRUID",
+        "spells": [
+          [
+            "Invisible",
+            "utana vid",
+            "210",
+            "0"
+          ],
+          [
+            "Light",
+            "utevo lux",
+            "20",
+            "0"
+          ],
+          [
+            "Create Food",
+            "exevo pan",
+            "30",
+            "0"
+          ],
+          [
+            "Antidote",
+            "exana pox",
+            "30",
+            "0"
+          ],
+          [
+            "Light Healing",
+            "exura",
+            "25",
+            "1"
+          ],
+          [
+            "Force Strike",
+            "exori mort",
+            "20",
+            "2"
+          ],
+          [
+            "Greater Light",
+            "utevo gran lux",
+            "60",
+            "3"
+          ],
+          [
+            "Flame Strike",
+            "exori flam",
+            "20",
+            "3"
+          ],
+          [
+            "Energy Strike",
+            "exori vis",
+            "20",
+            "3"
+          ],
+          [
+            "Haste",
+            "utani hur",
+            "60",
+            "4"
+          ],
+          [
+            "Intense Healing",
+            "exura gran",
+            "40",
+            "4"
+          ],
+          [
+            "Mana Shield",
+            "utamo vita",
+            "50",
+            "4"
+          ],
+          [
+            "Conjure Fruits",
+            "exevo vis pan",
+            "150",
+            "6"
+          ],
+          [
+            "Heal Friend",
+            "exura sio",
+            "50",
+            "7"
+          ],
+          [
+            "Ultimate Healing",
+            "exura vita",
+            "80",
+            "8"
+          ],
+          [
+            "Strong Haste",
+            "utani gran hur",
+            "100",
+            "8"
+          ],
+          [
+            "Creature Illusion",
+            "utevo res ina",
+            "100",
+            "10"
+          ],
+          [
+            "Ultimate Light",
+            "utevo vis lux",
+            "140",
+            "12"
+          ],
+          [
+            "Healing Wave",
+            "exura mas hur",
+            "100",
+            "14"
+          ],
+          [
+            "Incredible Healing",
+            "exura max",
+            "200",
+            "15"
+          ],
+          [
+            "Mass Healing",
+            "exura gran mas res",
+            "150",
+            "19"
+          ],
+          [
+            "Poison Dust",
+            "exevo mas pox",
+            "300",
+            "20"
+          ],
+          [
+            "Death Beam",
+            "exevo death hur",
+            "450",
+            "40"
+          ],
+          [
+            "Poison Storm",
+            "exevo gran mas pox",
+            "600",
+            "40"
+          ],
+          [
+            "Snow Storm",
+            "exevo gran res",
+            "900",
+            "40"
+          ],
+          [
+            "Conjure Death",
+            "exevo mas mort",
+            "1000",
+            "50"
+          ],
+          [
+            "Strong Fire Explosion",
+            "exevo gran mas flam",
+            "800",
+            "75"
+          ],
+          [
+            "Imminent Death",
+            "exevo gran mas mort",
+            "1400",
+            "95"
+          ],
+          [
+            "Big Strike",
+            "exevo letum",
+            "900",
+            "130"
+          ]
+        ],
+        "soul": [
+          [
+            "adite mana",
+            "70",
+            "Przez 1h manafluidy dzialaja ze zwiekszona sila."
+          ],
+          [
+            "adite ulti",
+            "130",
+            "Po 15 sekundach od uzycia pozwala skorzystac z obszarowego ataku Ultimate Weapon."
+          ],
+          [
+            "adite grav",
+            "25",
+            "Tworzy rune Magic Wall."
+          ],
+          [
+            "adite grav max",
+            "5",
+            "Laczy runy Magic Wall."
+          ],
+          [
+            "adite mana max",
+            "50",
+            "Odnawia polowe many postaci."
+          ],
+          [
+            "adite crit",
+            "70",
+            "Zwieksza Critical Hit na 1h."
+          ],
+          [
+            "extendo mero",
+            "10",
+            "Poswieca Emerald Ringi i zamienia je na Gold Ring."
+          ],
+          [
+            "ultimo nutti",
+            "30",
+            "Laczy dwie identyczne KlejNutki w jedna lepsza."
+          ],
+          [
+            "might addict",
+            "15",
+            "Laczy dwa Might Ringi w jeden."
+          ],
+          [
+            "extendo mort",
+            "25",
+            "Zamienia Ots King w Hardened Ots King."
+          ]
+        ]
+      },
+      "paladin": {
+        "name": "PALADIN",
+        "spells": [
+          [
+            "Invisible",
+            "utana vid",
+            "210",
+            "0"
+          ],
+          [
+            "Light",
+            "utevo lux",
+            "20",
+            "0"
+          ],
+          [
+            "Create Food",
+            "exevo pan",
+            "30",
+            "0"
+          ],
+          [
+            "Antidote",
+            "exana pox",
+            "30",
+            "0"
+          ],
+          [
+            "Light Healing",
+            "exura",
+            "25",
+            "1"
+          ],
+          [
+            "Conjure Arrow",
+            "exevo con",
+            "40",
+            "2"
+          ],
+          [
+            "Greater Light",
+            "utevo gran lux",
+            "60",
+            "3"
+          ],
+          [
+            "Mana Shield",
+            "utamo vita",
+            "50",
+            "4"
+          ],
+          [
+            "Haste",
+            "utani hur",
+            "60",
+            "4"
+          ],
+          [
+            "Intense Healing",
+            "exura gran",
+            "40",
+            "4"
+          ],
+          [
+            "Poison Arrow",
+            "exevo con pox",
+            "70",
+            "5"
+          ],
+          [
+            "Conjure Bolt",
+            "exevo con mort",
+            "70",
+            "6"
+          ],
+          [
+            "Ultimate Healing",
+            "exura vita",
+            "80",
+            "8"
+          ],
+          [
+            "Fire Exori",
+            "exori gran flam",
+            "600",
+            "8"
+          ],
+          [
+            "Burst Arrow",
+            "exevo con flam",
+            "120",
+            "10"
+          ],
+          [
+            "Conjure 100 Bolts",
+            "exevo con mort vis",
+            "500",
+            "12"
+          ],
+          [
+            "Energy Sparks",
+            "exevo hur",
+            "250",
+            "13"
+          ],
+          [
+            "Power Bolt",
+            "exevo con vis",
+            "200",
+            "14"
+          ],
+          [
+            "Energy Berserk",
+            "exori erex",
+            "350",
+            "15"
+          ],
+          [
+            "Ultimate Explosion Source",
+            "exevo mas vis",
+            "450",
+            "18"
+          ],
+          [
+            "Strong Energy Berserk",
+            "exori max erex",
+            "900",
+            "25"
+          ],
+          [
+            "Deadly Arrow",
+            "exevo sagitta",
+            "900",
+            "40"
+          ]
+        ],
+        "soul": [
+          [
+            "adite mana",
+            "70",
+            "Przez 1h manafluidy dzialaja ze zwiekszona sila."
+          ],
+          [
+            "adite ulti",
+            "130",
+            "Po 15 sekundach od uzycia pozwala skorzystac z obszarowego ataku Ultimate Weapon."
+          ],
+          [
+            "adite grav",
+            "25",
+            "Tworzy rune Magic Wall."
+          ],
+          [
+            "adite grav max",
+            "5",
+            "Laczy runy Magic Wall."
+          ],
+          [
+            "adite mana max",
+            "50",
+            "Odnawia polowe many postaci."
+          ],
+          [
+            "adite crit",
+            "70",
+            "Zwieksza Critical Hit na 1h."
+          ],
+          [
+            "extendo mero",
+            "10",
+            "Poswieca Emerald Ringi i zamienia je na Gold Ring."
+          ],
+          [
+            "ultimo nutti",
+            "30",
+            "Laczy dwie identyczne KlejNutki w jedna lepsza."
+          ],
+          [
+            "might addict",
+            "15",
+            "Laczy dwa Might Ringi w jeden."
+          ],
+          [
+            "extendo mort",
+            "25",
+            "Zamienia Ots King w Hardened Ots King."
+          ]
+        ]
+      },
+      "knight": {
+        "name": "KNIGHT",
+        "spells": [
+          [
+            "Light",
+            "utevo lux",
+            "20",
+            "0"
+          ],
+          [
+            "Create Food",
+            "exevo pan",
+            "30",
+            "0"
+          ],
+          [
+            "Antidote",
+            "exana pox",
+            "30",
+            "0"
+          ],
+          [
+            "Light Healing",
+            "exura",
+            "25",
+            "1"
+          ],
+          [
+            "Greater Light",
+            "utevo gran lux",
+            "60",
+            "3"
+          ],
+          [
+            "Haste",
+            "utani hur",
+            "60",
+            "4"
+          ],
+          [
+            "Watch Out!",
+            "exura vid",
+            "150",
+            "4"
+          ],
+          [
+            "Scream of Fury",
+            "exori tera",
+            "75",
+            "4"
+          ],
+          [
+            "Berserk",
+            "exori",
+            "100",
+            "5"
+          ],
+          [
+            "Challenge",
+            "exeta res",
+            "90",
+            "5"
+          ],
+          [
+            "Rage of Berserk",
+            "exori gran",
+            "200",
+            "6"
+          ],
+          [
+            "Power Berserk",
+            "exori max",
+            "700",
+            "7"
+          ],
+          [
+            "Fire Exori",
+            "exori gran flam",
+            "600",
+            "8"
+          ],
+          [
+            "Sword Shoot",
+            "exevo gladius",
+            "900",
+            "13"
+          ]
+        ],
+        "soul": [
+          [
+            "adite mana",
+            "70",
+            "Przez 1h manafluidy dzialaja ze zwiekszona sila."
+          ],
+          [
+            "adite ulti",
+            "130",
+            "Po 15 sekundach od uzycia pozwala skorzystac z obszarowego ataku Ultimate Weapon."
+          ],
+          [
+            "adite grav",
+            "25",
+            "Tworzy rune Magic Wall."
+          ],
+          [
+            "adite grav max",
+            "5",
+            "Laczy runy Magic Wall."
+          ],
+          [
+            "adite mana max",
+            "50",
+            "Odnawia polowe many postaci."
+          ],
+          [
+            "adite crit",
+            "70",
+            "Zwieksza Critical Hit na 1h."
+          ],
+          [
+            "extendo mero",
+            "10",
+            "Poswieca Emerald Ringi i zamienia je na Gold Ring."
+          ],
+          [
+            "ultimo nutti",
+            "30",
+            "Laczy dwie identyczne KlejNutki w jedna lepsza."
+          ],
+          [
+            "might addict",
+            "15",
+            "Laczy dwa Might Ringi w jeden."
+          ],
+          [
+            "extendo mort",
+            "25",
+            "Zamienia Ots King w Hardened Ots King."
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "name": "Komendy",
+    "kind": "commands",
+    "commands": [
+      [
+        "!bless",
+        "Pokazuje ilosc posiadanych blessow."
+      ],
+      [
+        "!speed",
+        "Zwieksza bonus EXP na godzine od 5% do 50%. Aby osiagnac 50%, komenda powinna byc wpisywana codziennie."
+      ],
+      [
+        "!uh",
+        "Uzywa Ultimate Healing Rune na postaci."
+      ],
+      [
+        "!ih",
+        "Uzywa Intense Healing Rune na postaci."
+      ],
+      [
+        "!mm",
+        "Uzywa Mega Manas na postaci."
+      ],
+      [
+        "!m",
+        "Uzywa Manas na postaci."
+      ],
+      [
+        "!lf",
+        "Uzywa Life Fluid na postaci."
+      ],
+      [
+        "!exp",
+        "Pokazuje ile punktow doswiadczenia brakuje do nastepnego poziomu."
+      ],
+      [
+        "!rs",
+        "Pokazuje czas pozostaly do znikniecia Red Skulla."
+      ],
+      [
+        "!mana",
+        "Pokazuje ile many trzeba jeszcze spalic do nastepnego Magic Levela."
+      ],
+      [
+        "!online",
+        "Pokazuje liczbe oraz liste graczy aktualnie online."
+      ],
+      [
+        "!frags",
+        "Pokazuje liczbe fragow gracza oraz czas pozostaly do zakonczenia fraga."
+      ],
+      [
+        "!quest",
+        "Uruchamia losowa misje dopasowana do poziomu gracza."
+      ],
+      [
+        "!anuluj",
+        "Pokazuje ile poziomow potrzeba do anulowania misji z !quest. Po spelnieniu wymagania anuluje misje."
+      ],
+      [
+        "/pos",
+        "Pokazuje aktualna pozycje gracza. Przydatne przy zglaszaniu konkretnej lokalizacji ekipie."
+      ]
+    ]
+  },
+  {
+    "name": "Informacje dla graczy",
+    "kind": "links",
+    "links": [
+      {
+        "name": "Informacje dla graczy",
+        "info": "Dzial forum z najwazniejszymi informacjami dla graczy.",
+        "url": "https://forum.toproste.pl/forumdisplay.php?151-Informacje-dla-graczy"
+      },
+      {
+        "name": "Ogloszenia ofert sprzedazy, kupna i wymiany postaci",
+        "info": "Temat do ogloszen zwiazanych z handlem i wymiana postaci.",
+        "url": "https://forum.toproste.pl/showthread.php?135474-Og%B3oszenia-ofert-sprzeda%BFy-kupna-i-wymiany-postaci!"
+      }
+    ]
+  }
+]

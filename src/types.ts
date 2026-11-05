@@ -17,7 +17,14 @@ export interface ItemDrop {
   loot: LootEntry;
 }
 
+export type ItemZone = "main" | "rook";
+
 export interface Item {
   name: string;
   drops: ItemDrop[];
+  clientId?: number;
+  subType?: number;
+  categories?: string[];
+  zones?: ItemZone[];
+  descriptions?: Partial<Record<ItemZone, string>>;
 }
