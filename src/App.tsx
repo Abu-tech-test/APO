@@ -5,6 +5,7 @@ import informationData from "./data/information.json";
 import itemCatalogData from "./data/items.json";
 import monsterData from "./data/monsters.json";
 import npcData from "./data/npcs.json";
+import systemData from "./data/systems.json";
 import type { Item, ItemZone, Monster } from "./types";
 
 const monsters: Monster[] = monsterData;
@@ -20,6 +21,13 @@ type NPC = {
   locationImage?: string;
 };
 const npcs: NPC[] = npcData;
+type GameSystem = {
+  name: string;
+  category: string;
+  desc: string;
+  info: string[];
+};
+const systems: GameSystem[] = systemData;
 type CostumeInfo = {
   name: string;
   appearanceMonster: string;
@@ -90,7 +98,7 @@ function compareLootFrequency(a: { frequency: string }, b: { frequency: string }
   );
 }
 
-type Section = "monsters" | "items" | "bosses" | "npcs" | "info";
+type Section = "monsters" | "items" | "bosses" | "npcs" | "info" | "systems";
 type ZoneFilter = "all" | ItemZone;
 type CatalogEntry =
   | { section: "monsters"; name: string; caption: string; monster: Monster }
@@ -218,6 +226,7 @@ function App() {
   const [selectedInformationName, setSelectedInformationName] = useState(
     informationCategories[0].name,
   );
+  const [selectedSystemName, setSelectedSystemName] = useState(systems[0]?.name ?? "");
   const skipNextPageReset = useRef(false);
 
   const items = useMemo<Item[]>(() => {
@@ -446,6 +455,8 @@ function App() {
         ),
       )[0];
       if (firstNpc) setSelectedNpc(firstNpc);
+    } else if (nextSection === "systems") {
+      setSelectedSystemName(sortByName(systems)[0]?.name ?? "");
     }
 
     setSection(nextSection);
@@ -508,6 +519,20 @@ function App() {
   const selectedInformation =
     filteredInformation.find((category) => category.name === selectedInformationName) ??
     filteredInformation[0];
+  const filteredSystems = useMemo(() => {
+    const normalizedQuery = query.trim().toLocaleLowerCase("pl");
+    const matchingSystems = normalizedQuery
+      ? systems.filter((system) =>
+          `${system.name} ${system.category} ${system.desc} ${system.info.join(" ")}`
+            .toLocaleLowerCase("pl")
+            .includes(normalizedQuery),
+        )
+      : systems;
+    return sortByName(matchingSystems);
+  }, [query]);
+  const selectedSystem =
+    filteredSystems.find((system) => system.name === selectedSystemName) ??
+    filteredSystems[0];
 
   return (
     <main className="app-shell">
@@ -582,6 +607,14 @@ function App() {
           <span className="tab-icon">ⓘ</span> Informacje
           <span className="tab-count">{informationCategories.length}</span>
         </button>
+        <button
+          className={section === "systems" ? "tab active" : "tab"}
+          onClick={() => openSection("systems")}
+          type="button"
+        >
+          <span className="tab-icon">⚙</span> Systemy
+          <span className="tab-count">{systems.length}</span>
+        </button>
       </nav>
 
       {section === "info" ? (
@@ -592,6 +625,14 @@ function App() {
           onSelect={setSelectedInformationName}
           query={query}
           selectedCategory={selectedInformation}
+        />
+      ) : section === "systems" ? (
+        <SystemsWorkspace
+          onQueryChange={setQuery}
+          onSelect={setSelectedSystemName}
+          query={query}
+          selectedSystem={selectedSystem}
+          systems={filteredSystems}
         />
       ) : (
       <section className="workspace">
@@ -929,6 +970,107 @@ function InformationWorkspace({
           />
         ) : (
           <div className="empty-detail">Wybierz kategorię z listy.</div>
+        )}
+      </section>
+    </section>
+  );
+}
+
+function SystemsWorkspace({
+  onQueryChange,
+  onSelect,
+  query,
+  selectedSystem,
+  systems: visibleSystems,
+}: {
+  onQueryChange: (query: string) => void;
+  onSelect: (name: string) => void;
+  query: string;
+  selectedSystem?: GameSystem;
+  systems: GameSystem[];
+}) {
+  return (
+    <section className="workspace">
+      <aside className="catalog">
+        <div className="catalog-heading">
+          <div>
+            <p className="eyebrow">BAZA SYSTEMÓW</p>
+            <h2>Systemy</h2>
+          </div>
+          <span className="result-count">{visibleSystems.length}</span>
+        </div>
+
+        <label className="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input
+            aria-label="Szukaj systemów"
+            onChange={(event) => onQueryChange(event.target.value)}
+            placeholder="Szukaj systemów..."
+            type="search"
+            value={query}
+          />
+          {query && (
+            <button
+              aria-label="Wyczyść wyszukiwanie"
+              className="clear-search"
+              onClick={() => onQueryChange("")}
+              type="button"
+            >
+              ×
+            </button>
+          )}
+        </label>
+
+        <div className="entry-list" aria-live="polite">
+          {visibleSystems.map((system) => (
+            <button
+              aria-current={selectedSystem?.name === system.name ? "true" : undefined}
+              className={selectedSystem?.name === system.name ? "entry selected" : "entry"}
+              key={system.name}
+              onClick={() => onSelect(system.name)}
+              type="button"
+            >
+              <span aria-hidden="true" className="entry-icon info-entry-icon">⚙</span>
+              <span className="entry-text">
+                <strong>{system.name}</strong>
+                <small>{system.category}</small>
+              </span>
+              <span aria-hidden="true" className="entry-chevron">›</span>
+            </button>
+          ))}
+          {visibleSystems.length === 0 && (
+            <div className="empty-state">
+              <span>⌕</span>
+              <strong>Brak wyników</strong>
+              <p>Spróbuj innej nazwy lub wyczyść wyszukiwanie.</p>
+            </div>
+          )}
+        </div>
+      </aside>
+
+      <section className="details info-details" aria-live="polite">
+        {selectedSystem ? (
+          <article>
+            <div className="info-detail-heading">
+              <p className="eyebrow">SYSTEM APO</p>
+              <h2>{selectedSystem.name}</h2>
+            </div>
+            <span className="system-category-badge">{selectedSystem.category}</span>
+            <section className="info-section">
+              <h3>Opis</h3>
+              <p className="system-description">{selectedSystem.desc}</p>
+            </section>
+            {selectedSystem.info.length > 0 && (
+              <section className="info-section">
+                <h3>Informacje</h3>
+                <ul className="information-rules system-info-list">
+                  {selectedSystem.info.map((detail) => <li key={detail}>{detail}</li>)}
+                </ul>
+              </section>
+            )}
+          </article>
+        ) : (
+          <div className="empty-detail">Wybierz system z listy.</div>
         )}
       </section>
     </section>

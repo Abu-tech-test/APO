@@ -1,0 +1,304 @@
+[
+  {
+    "name": "Przerabianie motyli na soki",
+    "category": "PRZEDMIOTY",
+    "desc": "Butterfly Conservation Kit pozwala przerabiac motyle na soki. Na APO istnieja rozne wersje tego przedmiotu, ktore maja rozne szanse na udana przemiane.",
+    "info": [
+      "Do przerabiania uzywa sie Butterfly Conservation Kit.",
+      "Rozne wersje kitu daja rozne szanse na udana zamiane motyla w sok.",
+      "Istnieje specjalna wersja 80%+10%: 80% szansy na sok, a po nieudanej probie 10% szansy na Soul Mixture."
+    ]
+  },
+  {
+    "name": "Zadania lowieckie",
+    "category": "TASK",
+    "desc": "W swiecie APO znajduja sie NPC, ktorzy zlecaja zadania za ktore nagradzaja punktami doswiadczenia, pieniedzmi oraz spejalnymi przedmiotami.",
+    "info": [
+      "Na Main znajduje sie NPC o nazwie Popi. Zeby wykonac u niego zadanie, trzeba wykonac misje.",
+      "Na Rook znajduja sie 2 NPC od zadan: Hunter Urlich oraz Regrubmah.",
+      "Hunter Urlich nagradza punktami doswiadczenia oraz pieniedzmi. Regrubmah nagradza specjalnymi przedmiotami w Antycznym miescie."
+    ]
+  },
+  {
+    "name": "System szczescia i lepszego loota",
+    "category": "LOOT",
+    "desc": "Na APO wybrane przedmioty zwiekszaja szczescie gracza i jego szanse na zdobycie lepszego loota z potworow.",
+    "info": [
+      "Ring of the Sky daje +120 szczescia.",
+      "Crystal Ring daje +60 szczescia.",
+      "Crystal Necklace daje +30 szczescia.",
+      "Crown daje +150 szczescia.",
+      "Critical Talisman rowniez zwieksza szczescie."
+    ]
+  },
+  {
+    "name": "System Critical Hit",
+    "category": "WALKA",
+    "desc": "Czesc broni i przedmiotow na APO posiada dodatkowa szanse na mocniejszy, krytyczny cios. Bonus moze wynikac z broni albo z przedmiotu noszonego w ekwipunku.",
+    "info": [
+      "The Pharao Sword posiada 13% critical hit.",
+      "Ripper Lance posiada 15% critical hit.",
+      "Crystal Wand posiada 30% critical hit.",
+      "Ultimate Weapon posiada +40% critical hit.",
+      "Rabbit Present daje +10% critical hit, a Spy Report +20%.",
+      "Critical Talisman zwieksza krytyczne ciosy i odpornosc na obrazenia z Ultimate Weapon."
+    ]
+  },
+  {
+    "name": "Magiczne amulety",
+    "category": "PRZEDMIOTY",
+    "desc": "Na APO istnieje kilka specjalnych amuletow, ktore lacza ochrone po smierci z dodatkowymi bonusami do postaci. Najmocniejszym z nich jest Perfect Amulet.",
+    "info": [
+      "Starlight chroni gracza z PACC przed utrata expa i ekwipunku po smierci.",
+      "Soft Amulet chroni przed stratami i dodaje HP oraz MP.",
+      "Winged Amulet dodatkowo zwieksza predkosc.",
+      "Pandemonium Amulet posiada czesc wlasciwosci Pandemonium Armor.",
+      "Yeah Bunny Amulet pomaga zwiekszac skutecznosc ataku.",
+      "Perfect Amulet laczy wlasciwosci pozostalych magicznych amuletow."
+    ]
+  },
+  {
+    "name": "Ladowanie magicznych amuletow",
+    "category": "PRZEDMIOTY",
+    "desc": "Specjalne amulety maja ladunki i po ich zuzyciu mozna je ponownie doladowywac. Koszt zalezy od rodzaju amuletu i wyspy.",
+    "info": [
+      "Perfect Amulet po zdobyciu posiada 100 ladunkow.",
+      "Perfect Amulet mozna odnawiac za Brooches.",
+      "Na Rook wybrane magiczne amulety wymagaja wiekszej liczby Crystal Coins oraz Starlight."
+    ]
+  },
+  {
+    "name": "Amulet of Ultimate Protection",
+    "category": "OCHRONA",
+    "desc": "Specjalny amulet z Annihilator III, ktory chroni przed skutkami smierci w kazdej sytuacji. Dziala na postaciach posiadajacych PACC.",
+    "info": [
+      "Jest jedna z nagrod do wyboru z Annihilator III Quest.",
+      "Chroni przed skutkami smierci.",
+      "Do dzialania wymaga Premium Account."
+    ]
+  },
+  {
+    "name": "Shield of Empire - tryby tarczy",
+    "category": "WALKA",
+    "desc": "Shield of Empire to specjalna tarcza posiadajaca wiele trybow. Gracz moze korzystac z roznych ustawien tarczy zalezne od aktualnych potrzeb.",
+    "info": [
+      "Tarcza jest jedna z najlepszych na serwerze.",
+      "Posiada kilka dostepnych trybow dzialania.",
+      "Mozna ja zdobyc wykonujac trudny quest Ots Quest II."
+    ]
+  },
+  {
+    "name": "Fanfare of Grace",
+    "category": "CZARY",
+    "desc": "Fanfare of Grace zmienia standardowy wyglad glownych czarow profesji. Po uzyciu jest przypisana do gracza i odblokowuje dodatkowa mozliwosc zakupu run paralizujacych.",
+    "info": [
+      "Pozwala zmienic wyglad glownych czarow.",
+      "Po uzyciu zostaje przypisana do postaci.",
+      "Odblokowuje mozliwosc kupowania run paralizujacych.",
+      "Jest jedna z nagrod Annihilator III Quest."
+    ]
+  },
+  {
+    "name": "Bonus EXP z ekwipunku",
+    "category": "ROZWOJ POSTACI",
+    "desc": "Wybrane przedmioty przyspieszaja zdobywanie punktow doswiadczenia. Bonus dziala podczas noszenia konkretnego przedmiotu.",
+    "info": [
+      "Full Helmet of The Ancients na Main przyspiesza zdobywanie EXP o 10%.",
+      "Helmet of The Ancients na Rook przyspiesza zdobywanie EXP o 5%.",
+      "Crown przyspiesza zdobywanie EXP o 10%."
+    ]
+  },
+  {
+    "name": "Whip's Wolf - szybkie poruszanie",
+    "category": "RUCH",
+    "desc": "Po wykonaniu Whip's Wolf Quest gracz otrzymuje mozliwosc szybszego poruszania sie na duzym wilku.",
+    "info": [
+      "System jest odblokowywany przez Whip's Wolf Quest.",
+      "Pozwala poruszac sie szybciej na specjalnym wilku."
+    ]
+  },
+  {
+    "name": "Scroll of Escape",
+    "category": "PODROZE",
+    "desc": "Magiczny pergamin pozwalajacy szybko wrocic do swiatyni. Liczba uzyc jest ograniczona w ciagu jednej doby.",
+    "info": [
+      "Przenosi gracza do swiatyni.",
+      "Mozna go uzyc tylko kilka razy w ciagu 24 godzin."
+    ]
+  },
+  {
+    "name": "Ahmed - misje, areny i trening",
+    "category": "MISJE",
+    "desc": "Ahmed Quest Main daje dostep do rozbudowanego systemu misji. W trakcie wykonywania zadan gracz otrzymuje drobne nagrody i odblokowuje dodatkowa zawartosc.",
+    "info": [
+      "Misje Ahmeda daja drobne nagrody za kolejne etapy.",
+      "System daje dostep do unikalnych aren.",
+      "System daje dostep do specjalnych sal treningowych."
+    ]
+  },
+  {
+    "name": "Quest of the Nine - rozwoj profesji",
+    "category": "QUESTY",
+    "desc": "Quest of the Nine odblokowuje dodatkowe elementy rozwoju postaci powiazane z profesja i nagrodami z Annihilator III.",
+    "info": [
+      "Pozwala ponownie wziac nagrode z Annihilator III Quest.",
+      "Odblokowuje nowy tytul profesji.",
+      "Odblokowuje nowe czary zadajace procentowe obrazenia."
+    ]
+  },
+  {
+    "name": "Tworzenie magicznych amuletow",
+    "category": "QUESTY",
+    "desc": "Po wykonaniu Perfect Quest gracz uzyskuje mozliwosc tworzenia specjalnych magicznych amuletow.",
+    "info": [
+      "System jest powiazany z Perfect Quest.",
+      "Quest odblokowuje mozliwosc tworzenia magicznych amuletow."
+    ]
+  },
+  {
+    "name": "Eventy PvP",
+    "category": "EVENTY",
+    "desc": "APO posiada stale Eventy PvP uruchamiane wedlug rozpiski. Kazdy event ma okreslona godzine oraz przedzial levelowy graczy, ktorzy moga w nim uczestniczyc.",
+    "info": [
+      "Eventy odbywaja sie codziennie.",
+      "Na stronie znajduje sie rozpiska godzin dla kazdego dnia tygodnia.",
+      "Kazda godzina ma przypisany przedzial levelowy.",
+      "Rozpiska obejmuje miedzy innymi godziny 10:00, 12:00, 14:00, 16:00, 18:00, 19:00, 20:00, 21:00 i 22:00."
+    ]
+  },
+  {
+    "name": "Event EXP x2",
+    "category": "EVENTY",
+    "desc": "Podczas specjalnych wydarzen administracja moze wlaczyc podwojone zdobywanie doswiadczenia ze wszystkich potworow.",
+    "info": [
+      "Podczas eventu zdobywane EXP jest podwojone.",
+      "Event jest uruchamiany czasowo przy specjalnych okazjach."
+    ]
+  },
+  {
+    "name": "Event Loot x2",
+    "category": "EVENTY",
+    "desc": "Podczas specjalnych wydarzen zwiekszana jest czestotliwosc zdobywania loota z potworow, co ulatwia zdobywanie rzadkich przedmiotow.",
+    "info": [
+      "Szanse na zdobycie przedmiotow z potworow sa zwiekszone.",
+      "Event jest uruchamiany czasowo podczas specjalnych okazji."
+    ]
+  },
+  {
+    "name": "Event Skille x2 i Mlvl x2",
+    "category": "EVENTY",
+    "desc": "Specjalny event przyspieszajacy trening postaci. Podczas jego trwania umiejetnosci oraz magic level rozwijaja sie dwa razy szybciej.",
+    "info": [
+      "Skille otrzymuja podwojone punkty.",
+      "Magic Level otrzymuje podwojone punkty.",
+      "Event jest uruchamiany okresowo."
+    ]
+  },
+  {
+    "name": "Naloty kreatur",
+    "category": "EVENTY",
+    "desc": "Podczas specjalnych wydarzen na Main i Rook pojawiaja sie duze naloty potworow. Administracja zapowiada je na stronie lub w innych kanalch APO.",
+    "info": [
+      "Naloty moga odbywac sie jednoczesnie na Main i Rook.",
+      "Sa czesto czescia wydarzen okolicznosciowych.",
+      "Moga pojawiac sie specjalne lub bardzo mocne kreatury."
+    ]
+  },
+  {
+    "name": "Eventy Halloween",
+    "category": "EVENTY",
+    "desc": "Halloween na APO jest wydarzeniem okolicznosciowym z upiornymi potworami, najazdami oraz dodatkowymi atrakcjami dla graczy.",
+    "info": [
+      "Pojawiaja sie specjalne potwory i najazdy.",
+      "Gracze przebierajacy postacie moga brac udzial w dodatkowych zabawach.",
+      "Na Main istnieje tez Halloween Quest dajacy nowe outfity postaci."
+    ]
+  },
+  {
+    "name": "Swiateczne choinki i kalendarz adwentowy",
+    "category": "EVENTY",
+    "desc": "W okresie swiatecznym na APO mozna sadzic i podlewac choinki. W miastach i domkach pojawiaja sie tez swiateczne atrakcje oraz codzienne okienka adwentowe.",
+    "info": [
+      "Wlasciciel domku moze posadzic w nim choinke.",
+      "Choinki trzeba regularnie podlewac, aby nie uschly.",
+      "Z choinek miejskich gracze moga odbierac prezenty.",
+      "Kazdego dnia pojawia sie nowe okienko adwentowe.",
+      "W okresie swiatecznym pojawiaja sie mini-eventy, najazdy, pierniki, Mikolaj, Krampus i dodatkowy EXP."
+    ]
+  },
+  {
+    "name": "Wielkanocne wydarzenia",
+    "category": "EVENTY",
+    "desc": "W okresie wielkanocnym APO uruchamia dodatkowe atrakcje, w tym wydarzenia z jajkami EXP oraz nagrodami dla najbardziej aktywnych graczy.",
+    "info": [
+      "Mozna zdobywac wielkanocne jajka EXP.",
+      "Za najlepsze wyniki moga byc przyznawane bonusy EXP i przedmioty okolicznosciowe.",
+      "Wydarzeniu moga towarzyszyc zwiekszony EXP, loot i losowania PACC."
+    ]
+  },
+  {
+    "name": "Maraton Expa",
+    "category": "EVENTY",
+    "desc": "Specjalne wydarzenie organizowane przez administracje, podczas ktorego gracze wspolnie biora udzial w czasowym Maratonie Expa.",
+    "info": [
+      "Godzina startu jest oglaszana przed wydarzeniem.",
+      "Wydarzenie odbywa sie w wyznaczonym przedziale czasu.",
+      "Moze mu towarzyszyc losowanie Premium Account."
+    ]
+  },
+  {
+    "name": "Trzej Krolowie i czar stargate",
+    "category": "EVENTY",
+    "desc": "Podczas wydarzenia Trzech Kroli na swiecie APO pojawiaja sie Casper, Melchior i Baltasar. Do ich odnalezienia sluzy specjalny czar stargate.",
+    "info": [
+      "Czar stargate przywoluje gwiazde prowadzaca gracza.",
+      "System jest aktywny podczas wydarzenia Trzech Kroli."
+    ]
+  },
+  {
+    "name": "Domki - licytacje i wymagania",
+    "category": "DOMKI",
+    "desc": "Domki na APO posiadaja wlasne zasady zakupu, licytacji i utrzymania. Wymagania roznia sie pomiedzy Main i Rook.",
+    "info": [
+      "Jedna osoba moze posiadac tylko jeden domek.",
+      "Na Main wymagany jest minimum 300 level do kupna i licytacji domku.",
+      "Na Rook wymagany jest minimum 150 level do kupna i licytacji domku.",
+      "Domek bez wlasciciela moze trafic na licytacje."
+    ]
+  },
+  {
+    "name": "Bezpieczna sprzedaz domku",
+    "category": "DOMKI",
+    "desc": "Domek mozna bezpiecznie sprzedac innemu graczowi za pomoca NPC Notariusz i specjalnego Aktu wlasnosci.",
+    "info": [
+      "Akt wlasnosci kupuje sie u NPC Notariusz za 10k.",
+      "W domku wlasciciel uzywa Aktu i wybiera trade z kupujacym.",
+      "Po zaakceptowaniu trade nowym wlascicielem zostaje kupujacy.",
+      "Kupujacy nie moze posiadac innego domku i musi miec minimum 100 level.",
+      "Obie postacie musza miec miejsce i capacity potrzebne do przeprowadzenia transakcji."
+    ]
+  },
+  {
+    "name": "Uprawnienia i czary do domkow",
+    "category": "DOMKI",
+    "desc": "Wlasciciel domku moze zarzadzac goscmi, subownerami i dostepem do drzwi za pomoca standardowych inkantacji domkowych.",
+    "info": [
+      "aleta sio - lista gosci.",
+      "aleta sio duo - druga lista gosci.",
+      "aleta grav - lista osob majacych dostep do danych drzwi.",
+      "aleta som - lista subownerow.",
+      "alana sio - wyjscie z domku.",
+      "alana sio nick - wyrzucenie wskazanej osoby z domku."
+    ]
+  },
+  {
+    "name": "Premium Account i PACC Runa",
+    "category": "KONTO",
+    "desc": "Premium Account odblokowuje dodatkowe mozliwosci serwera i jest wymagany do dzialania czesci specjalnych przedmiotow. PACC Runa dodaje czas premium bezposrednio do konta.",
+    "info": [
+      "PACC Runa dodaje 35 dni Premium Account.",
+      "Czesc najlepszych amuletow ochronnych wymaga aktywnego PACC.",
+      "Premium Account jest rowniez rozdawany w niektorych wydarzeniach i losowaniach."
+    ]
+  }
+]

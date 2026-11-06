@@ -1100,6 +1100,29 @@ select:focus-visible {
   margin-top: 22px !important;
 }
 
+.system-category-badge {
+  display: inline-flex;
+  padding: 5px 8px;
+  border: 1px solid #82712f;
+  border-radius: 4px;
+  background: rgba(190, 159, 53, 0.1);
+  color: #e4d27b;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.system-description {
+  margin: 0;
+  color: #c4c9bd;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.system-info-list {
+  margin-top: 0;
+}
+
 .information-table-wrap {
   overflow: auto;
   border: 1px solid #30372e;
