@@ -1903,7 +1903,7 @@ function MapWorkspace({
             draggable={false}
             onError={() => setImageError(true)}
             onLoad={() => setImageError(false)}
-            src={`/maps/${imageName}`}
+            src={`././maps/${imageName}`}
           />
           {positions
             .filter((position) => position.floor === floor)
