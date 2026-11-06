@@ -98,13 +98,32 @@ function compareLootFrequency(a: { frequency: string }, b: { frequency: string }
   );
 }
 
-type Section = "monsters" | "items" | "bosses" | "npcs" | "info" | "systems";
+type Section =
+  | "map"
+  | "monsters"
+  | "items"
+  | "bosses"
+  | "npcs"
+  | "info"
+  | "systems";
 type ZoneFilter = "all" | ItemZone;
+type MapNpcPosition = {
+  npcId: number;
+  floor: number;
+  x: number;
+  y: number;
+};
 type CatalogEntry =
   | { section: "monsters"; name: string; caption: string; monster: Monster }
   | { section: "items"; name: string; caption: string; item: Item }
   | { section: "bosses"; name: string; caption: string; boss: Boss }
   | { section: "npcs"; name: string; caption: string; npc: NPC };
+
+const mapNpcPositions: MapNpcPosition[] = [
+  { npcId: 78, floor: 0, x: 340, y: 260 },
+];
+const mapFloors = Array.from({ length: 15 }, (_, index) => 7 - index);
+const mapDimensions = { width: 2048, height: 1280 };
 
 function formatNumber(value: number) {
   return new Intl.NumberFormat("pl-PL").format(value);
@@ -208,7 +227,7 @@ function Graphic({
 }
 
 function App() {
-  const [section, setSection] = useState<Section>("monsters");
+  const [section, setSection] = useState<Section>("map");
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(1);
   const [selectedMonster, setSelectedMonster] = useState<Monster>(
@@ -555,7 +574,7 @@ function App() {
           <p className="eyebrow">Wszystko o świecie Apo</p>
           <h1>Odkrywaj. Poluj. Zbieraj.</h1>
           <p className="intro-copy">
-            Bestiariusz i przedmioty — sprawdź, co kryje świat gry.
+            Przeglądaj mapę świata, bestiariusz, przedmioty i postacie NPC.
           </p>
         </div>
         <div className="intro-stats" aria-label="Zawartość bazy">
@@ -567,6 +586,13 @@ function App() {
       </section>
 
       <nav className="section-tabs" aria-label="Kategorie">
+        <button
+          className={section === "map" ? "tab active" : "tab"}
+          onClick={() => openSection("map")}
+          type="button"
+        >
+          <span className="tab-icon">⌖</span> Mapa
+        </button>
         <button
           className={section === "monsters" ? "tab active" : "tab"}
           onClick={() => openSection("monsters")}
@@ -617,7 +643,9 @@ function App() {
         </button>
       </nav>
 
-      {section === "info" ? (
+      {section === "map" ? (
+        <MapWorkspace npcs={npcs} positions={mapNpcPositions} />
+      ) : section === "info" ? (
         <InformationWorkspace
           categories={filteredInformation}
           onOpenItem={openItem}
@@ -1584,6 +1612,347 @@ function NPCDetails({ image, npc }: { image?: string; npc: NPC }) {
         <p>{npc.description}</p>
       </section>
     </article>
+  );
+}
+
+function MapWorkspace({
+  npcs,
+  positions,
+}: {
+  npcs: NPC[];
+  positions: MapNpcPosition[];
+}) {
+  const [floor, setFloor] = useState(0);
+  const [searchValue, setSearchValue] = useState("");
+  const [selectedNpcId, setSelectedNpcId] = useState(78);
+  const [searchMessage, setSearchMessage] = useState("");
+  const [zoom, setZoom] = useState(1);
+  const [pan, setPan] = useState({ x: 0, y: 0 });
+  const [imageError, setImageError] = useState(false);
+  const [focusRequest, setFocusRequest] = useState(0);
+  const viewRef = useRef({ zoom, pan });
+  viewRef.current = { zoom, pan };
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const canvasRef = useRef<HTMLDivElement>(null);
+  const dragRef = useRef<{
+    pointerId: number;
+    startX: number;
+    startY: number;
+    panX: number;
+    panY: number;
+  } | null>(null);
+  const focusPendingRef = useRef(false);
+  const selectedNpc = npcs.find((npc) => npc.id === selectedNpcId);
+  const selectedPosition = positions.find(
+    (position) => position.npcId === selectedNpcId,
+  );
+  const imageName =
+    floor === 0 ? "level_0.png" : `level_${floor > 0 ? `+${floor}` : floor}.png`;
+
+  useEffect(() => {
+    if (!focusPendingRef.current || selectedPosition?.floor !== floor) return;
+    focusPendingRef.current = false;
+
+    window.requestAnimationFrame(() => {
+      const viewport = viewportRef.current;
+      const canvas = canvasRef.current;
+      if (!viewport || !canvas) return;
+
+      const targetZoom = 2.5;
+      const canvasWidth = canvas.clientWidth;
+      const canvasHeight = canvas.clientHeight;
+      const canvasLeft = (viewport.clientWidth - canvasWidth) / 2;
+      const canvasTop = (viewport.clientHeight - canvasHeight) / 2;
+      const targetX = (selectedPosition.x / mapDimensions.width) * canvasWidth;
+      const targetY = (selectedPosition.y / mapDimensions.height) * canvasHeight;
+
+      setZoom(targetZoom);
+      setPan({
+        x: viewport.clientWidth / 2 - canvasLeft - targetX * targetZoom,
+        y: viewport.clientHeight / 2 - canvasTop - targetY * targetZoom,
+      });
+    });
+  }, [floor, focusRequest, selectedPosition]);
+
+  useEffect(() => {
+    function resetViewOnResize() {
+      setZoom(1);
+      setPan({ x: 0, y: 0 });
+    }
+
+    window.addEventListener("resize", resetViewOnResize);
+    return () => window.removeEventListener("resize", resetViewOnResize);
+  }, []);
+
+  useEffect(() => {
+    const viewport = viewportRef.current;
+    if (!viewport) return;
+    const mapViewport = viewport;
+
+    function handleWheel(event: WheelEvent) {
+      event.preventDefault();
+      const { zoom: currentZoom, pan: currentPan } = viewRef.current;
+      const nextZoom = Math.min(
+        8,
+        Math.max(0.5, currentZoom * (event.deltaY < 0 ? 1.15 : 1 / 1.15)),
+      );
+      const canvas = canvasRef.current;
+      if (!canvas) return;
+
+      const canvasLeft = (mapViewport.clientWidth - canvas.clientWidth) / 2;
+      const canvasTop = (mapViewport.clientHeight - canvas.clientHeight) / 2;
+      const centerX = mapViewport.clientWidth / 2;
+      const centerY = mapViewport.clientHeight / 2;
+      const mapX = (centerX - canvasLeft - currentPan.x) / currentZoom;
+      const mapY = (centerY - canvasTop - currentPan.y) / currentZoom;
+      setPan({
+        x: centerX - canvasLeft - mapX * nextZoom,
+        y: centerY - canvasTop - mapY * nextZoom,
+      });
+      setZoom(nextZoom);
+    }
+
+    mapViewport.addEventListener("wheel", handleWheel, { passive: false });
+    return () => mapViewport.removeEventListener("wheel", handleWheel);
+  }, []);
+
+  function chooseNpc(npc: NPC) {
+    setSelectedNpcId(npc.id);
+    setSearchValue(npc.name);
+    const position = positions.find((entry) => entry.npcId === npc.id);
+    if (!position) {
+      focusPendingRef.current = false;
+      setSearchMessage(`Brak współrzędnych NPC ${npc.name}.`);
+      return;
+    }
+
+    focusPendingRef.current = true;
+    setFocusRequest((request) => request + 1);
+    setFloor(position.floor);
+    setSearchMessage(
+      `${npc.name}: poziom ${position.floor}, pozycja ${position.x} × ${position.y}.`,
+    );
+  }
+
+  function searchNpc(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const normalizedName = searchValue.trim().toLocaleLowerCase("pl");
+    const npc = npcs.find(
+      (entry) => entry.name.toLocaleLowerCase("pl") === normalizedName,
+    );
+    if (!npc) {
+      setSearchMessage(`Nie znaleziono NPC „${searchValue.trim()}”.`);
+      return;
+    }
+    chooseNpc(npc);
+  }
+
+  function changeZoom(nextZoom: number) {
+    const boundedZoom = Math.min(8, Math.max(0.5, nextZoom));
+    const viewport = viewportRef.current;
+    const canvas = canvasRef.current;
+    if (!viewport || !canvas) {
+      setZoom(boundedZoom);
+      return;
+    }
+
+    const canvasLeft = (viewport.clientWidth - canvas.clientWidth) / 2;
+    const canvasTop = (viewport.clientHeight - canvas.clientHeight) / 2;
+    const centerX = viewport.clientWidth / 2;
+    const centerY = viewport.clientHeight / 2;
+    const mapX = (centerX - canvasLeft - pan.x) / zoom;
+    const mapY = (centerY - canvasTop - pan.y) / zoom;
+    setPan({
+      x: centerX - canvasLeft - mapX * boundedZoom,
+      y: centerY - canvasTop - mapY * boundedZoom,
+    });
+    setZoom(boundedZoom);
+  }
+
+  function handlePointerDown(event: React.PointerEvent<HTMLDivElement>) {
+    if (
+      event.button !== 0 ||
+      (event.target as HTMLElement).closest("button")
+    ) {
+      return;
+    }
+    dragRef.current = {
+      pointerId: event.pointerId,
+      startX: event.clientX,
+      startY: event.clientY,
+      panX: pan.x,
+      panY: pan.y,
+    };
+    event.currentTarget.setPointerCapture(event.pointerId);
+  }
+
+  function handlePointerMove(event: React.PointerEvent<HTMLDivElement>) {
+    const drag = dragRef.current;
+    if (!drag || drag.pointerId !== event.pointerId) return;
+    setPan({
+      x: drag.panX + event.clientX - drag.startX,
+      y: drag.panY + event.clientY - drag.startY,
+    });
+  }
+
+  function handlePointerUp(event: React.PointerEvent<HTMLDivElement>) {
+    if (dragRef.current?.pointerId !== event.pointerId) return;
+    dragRef.current = null;
+    event.currentTarget.releasePointerCapture(event.pointerId);
+  }
+
+  return (
+    <section className="map-workspace" aria-label="Interaktywna mapa świata">
+      <div className="map-toolbar">
+        <div className="map-heading">
+          <p className="eyebrow">MAPA ŚWIATA</p>
+          <h2>Interaktywna mapa</h2>
+        </div>
+        <div className="map-controls">
+          <label className="map-floor-select">
+            <span>Poziom</span>
+            <select
+              aria-label="Wybierz poziom mapy"
+              onChange={(event) => setFloor(Number(event.target.value))}
+              value={floor}
+            >
+              {mapFloors.map((level) => (
+                <option key={level} value={level}>
+                  {level > 0 ? `+${level}` : level}
+                </option>
+              ))}
+            </select>
+          </label>
+          <form className="map-search" onSubmit={searchNpc}>
+            <label className="map-search-field">
+              <span className="eyebrow">SZUKAJ NPC</span>
+              <input
+                aria-label="Wyszukaj NPC na mapie"
+                list="map-npc-names"
+                onChange={(event) => setSearchValue(event.target.value)}
+                placeholder="Wpisz nazwę NPC..."
+                type="search"
+                value={searchValue}
+              />
+              <datalist id="map-npc-names">
+                {npcs.map((npc) => (
+                  <option key={npc.id} value={npc.name} />
+                ))}
+              </datalist>
+            </label>
+            <button className="map-search-button" type="submit">
+              Pokaż
+            </button>
+          </form>
+          <div className="map-zoom-controls" aria-label="Sterowanie powiększeniem">
+            <button
+              aria-label="Powiększ mapę"
+              onClick={() => changeZoom(zoom * 1.25)}
+              type="button"
+            >
+              +
+            </button>
+            <span>{Math.round(zoom * 100)}%</span>
+            <button
+              aria-label="Pomniejsz mapę"
+              onClick={() => changeZoom(zoom / 1.25)}
+              type="button"
+            >
+              −
+            </button>
+            <button
+              className="map-reset-button"
+              onClick={() => {
+                setZoom(1);
+                setPan({ x: 0, y: 0 });
+              }}
+              type="button"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {(searchMessage || (selectedNpc && selectedPosition)) && (
+        <div className="map-status" aria-live="polite">
+          {searchMessage ||
+            `Testowa pozycja ${selectedNpc?.name}: poziom ${selectedPosition?.floor}, ${selectedPosition?.x} × ${selectedPosition?.y}.`}
+        </div>
+      )}
+
+      <div
+        aria-label={`Mapa poziomu ${floor > 0 ? `+${floor}` : floor}`}
+        className="map-viewport"
+        onPointerCancel={handlePointerUp}
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerUp}
+        ref={viewportRef}
+        role="region"
+      >
+        <div
+          className="map-canvas"
+          ref={canvasRef}
+          style={{
+            transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
+          }}
+        >
+          <img
+            alt={`Mapa poziomu ${floor > 0 ? `+${floor}` : floor}`}
+            draggable={false}
+            onError={() => setImageError(true)}
+            onLoad={() => setImageError(false)}
+            src={`/maps/${imageName}`}
+          />
+          {positions
+            .filter((position) => position.floor === floor)
+            .map((position) => {
+              const npc = npcs.find((entry) => entry.id === position.npcId);
+              if (!npc) return null;
+              return (
+                <button
+                  aria-label={`${npc.name}, pozycja ${position.x} × ${position.y}`}
+                  className={
+                    selectedNpcId === npc.id
+                      ? "map-marker selected"
+                      : "map-marker"
+                  }
+                  key={npc.id}
+                  onClick={() => chooseNpc(npc)}
+                  style={{
+                    left: `${(position.x / mapDimensions.width) * 100}%`,
+                    top: `${(position.y / mapDimensions.height) * 100}%`,
+                  }}
+                  type="button"
+                >
+                  <span className="map-marker-pin" aria-hidden="true" />
+                  <span className="map-marker-label">{npc.name}</span>
+                </button>
+              );
+            })}
+        </div>
+        {imageError && (
+          <p className="map-error" role="alert">
+            Nie udało się wczytać obrazu poziomu {floor}. Sprawdź pliki mapy w
+            folderze public/maps.
+          </p>
+        )}
+        {!imageError &&
+          selectedPosition &&
+          selectedPosition.floor !== floor &&
+          selectedNpc && (
+          <p className="map-floor-note">
+            {selectedNpc.name} znajduje się na poziomie{" "}
+            {selectedPosition.floor}.
+          </p>
+          )}
+      </div>
+      <p className="map-help">
+        Przeciągnij mapę, aby ją przesunąć. Użyj kółka myszy lub przycisków,
+        aby zmienić powiększenie.
+      </p>
+    </section>
   );
 }
 
