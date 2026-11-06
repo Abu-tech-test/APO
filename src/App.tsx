@@ -17,9 +17,32 @@ type NPC = {
   profession?: string | null;
   description: string;
   image: string;
+  locationImage?: string;
 };
 const npcs: NPC[] = npcData;
-type InformationCategory = (typeof informationData)[number];
+type CostumeInfo = {
+  name: string;
+  appearanceMonster: string;
+  description?: string;
+  items: { amount: string; name: string; note?: string }[];
+  reward?: string;
+};
+type InformationCategory = {
+  name: string;
+  kind: string;
+  stages?: string[][];
+  gains?: string[][];
+  trivia?: { name: string; clientId: number; subType: number; desc: string };
+  professions?: Record<string, {
+    name: string;
+    spells: string[][];
+    soul: string[][];
+  }>;
+  commands?: string[][];
+  links?: { name: string; info: string; url: string }[];
+  rules?: string[];
+  entries?: CostumeInfo[];
+};
 const informationCategories: InformationCategory[] = informationData;
 type ItemCatalogRecord = Omit<Item, "drops">;
 const itemCatalog: ItemCatalogRecord[] = itemCatalogData.map((item) => ({
@@ -59,6 +82,13 @@ const lootFrequencyOrder: Record<string, number> = {
   "Bardzo rzadko": 5,
   "Niespotykanie rzadko": 6,
 };
+
+function compareLootFrequency(a: { frequency: string }, b: { frequency: string }) {
+  return (
+    (lootFrequencyOrder[a.frequency] ?? Number.MAX_SAFE_INTEGER) -
+    (lootFrequencyOrder[b.frequency] ?? Number.MAX_SAFE_INTEGER)
+  );
+}
 
 type Section = "monsters" | "items" | "bosses" | "npcs" | "info";
 type ZoneFilter = "all" | ItemZone;
@@ -210,6 +240,19 @@ function App() {
             name: loot.name,
             drops: [{ monster, loot }],
           });
+        }
+      }
+    }
+
+    for (const category of informationCategories) {
+      if (category.kind !== "costumes" || !category.entries) continue;
+
+      for (const costume of category.entries) {
+        for (const costumeItem of costume.items) {
+          const key = costumeItem.name.toLocaleLowerCase("pl");
+          if (!itemMap.has(key)) {
+            itemMap.set(key, { name: costumeItem.name, drops: [] });
+          }
         }
       }
     }
@@ -427,8 +470,9 @@ function App() {
     const item = items.find(
       (candidate) => candidate.name.toLocaleLowerCase("pl") === normalizedName,
     );
+    if (!item) return;
     const targetZone =
-      item?.zones?.length &&
+      item.zones?.length &&
       selectedItemZone !== "all" &&
       !item.zones.includes(selectedItemZone)
         ? item.zones[0]
@@ -543,6 +587,7 @@ function App() {
       {section === "info" ? (
         <InformationWorkspace
           categories={filteredInformation}
+          onOpenItem={openItem}
           onQueryChange={setQuery}
           onSelect={setSelectedInformationName}
           query={query}
@@ -794,18 +839,21 @@ function getInformationCount(category: InformationCategory) {
       0,
     );
   }
+  if (category.kind === "costumes") return category.entries?.length ?? 0;
   if (category.commands) return category.commands.length;
   return category.links?.length ?? 0;
 }
 
 function InformationWorkspace({
   categories,
+  onOpenItem,
   onQueryChange,
   onSelect,
   query,
   selectedCategory,
 }: {
   categories: InformationCategory[];
+  onOpenItem: (name: string) => void;
   onQueryChange: (query: string) => void;
   onSelect: (name: string) => void;
   query: string;
@@ -853,7 +901,7 @@ function InformationWorkspace({
               type="button"
             >
               <span aria-hidden="true" className="entry-icon info-entry-icon">
-                {category.kind === "expstage" ? "✦" : category.kind === "vocationgain" ? "♥" : category.kind === "spells" ? "✧" : category.kind === "commands" ? "⌘" : "↗"}
+                {category.kind === "expstage" ? "✦" : category.kind === "vocationgain" ? "♥" : category.kind === "spells" ? "✧" : category.kind === "commands" ? "⌘" : category.kind === "costumes" ? "♙" : "↗"}
               </span>
               <span className="entry-text">
                 <strong>{category.name}</strong>
@@ -874,7 +922,11 @@ function InformationWorkspace({
 
       <section className="details info-details" aria-live="polite">
         {selectedCategory ? (
-          <InformationDetails category={selectedCategory} key={selectedCategory.name} />
+          <InformationDetails
+            category={selectedCategory}
+            key={selectedCategory.name}
+            onOpenItem={onOpenItem}
+          />
         ) : (
           <div className="empty-detail">Wybierz kategorię z listy.</div>
         )}
@@ -883,7 +935,13 @@ function InformationWorkspace({
   );
 }
 
-function InformationDetails({ category }: { category: InformationCategory }) {
+function InformationDetails({
+  category,
+  onOpenItem,
+}: {
+  category: InformationCategory;
+  onOpenItem: (name: string) => void;
+}) {
   const [selectedProfession, setSelectedProfession] = useState("rook");
 
   return (
@@ -997,6 +1055,71 @@ function InformationDetails({ category }: { category: InformationCategory }) {
               </div>
             ))}
         </>
+      ) : category.kind === "costumes" && category.entries && category.rules ? (
+        <>
+          <p className="costume-credit">
+            Poradnik został przygotowany przez <strong>Ektoplazma</strong>.
+          </p>
+          <section className="info-section">
+            <h3>Ważne informacje</h3>
+            <ul className="information-rules">
+              {category.rules.map((rule) => <li key={rule}>{rule}</li>)}
+            </ul>
+          </section>
+          {category.entries.map((costume) => {
+            const appearanceMonster = monsters.find(
+              (monster) => monster.name === costume.appearanceMonster,
+            );
+            return (
+              <section className="info-section" key={costume.name}>
+                <div className="costume-appearance">
+                  <Graphic
+                    className="entry-icon creature-icon"
+                    image={appearanceMonster ? getMonsterImage(appearanceMonster) : undefined}
+                    name={costume.appearanceMonster}
+                  />
+                </div>
+                <h3 className="costume-title">
+                  {costume.name}
+                </h3>
+                {costume.description && <p className="costume-description">{costume.description}</p>}
+                <div className="information-table-wrap">
+                  <table className="information-table">
+                    <thead>
+                      <tr><th>#</th><th>Ilość</th><th>Przedmiot</th><th>Uwagi</th></tr>
+                    </thead>
+                    <tbody>
+                      {costume.items.map((item, itemIndex) => (
+                        <tr key={`${item.name}-${itemIndex}`}>
+                          <td>{itemIndex + 1}</td>
+                          <td>{item.amount}</td>
+                          <td>
+                            <button
+                              className="costume-item-link"
+                              onClick={() => onOpenItem(item.name)}
+                              type="button"
+                            >
+                              {item.name}
+                            </button>
+                          </td>
+                          <td>{item.note ?? "—"}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                {costume.reward && (
+                  <div className="information-trivia costume-reward">
+                    <div>
+                      <p className="eyebrow">NAGRODA · KOSTIUM GRINCHA</p>
+                      <p>{costume.reward}</p>
+                    </div>
+                  </div>
+                )}
+              </section>
+            );
+          })}
+        </>
       ) : category.commands ? (
         <section className="info-section">
           <h3>Komendy dostępne w grze <span>{category.commands.length}</span></h3>
@@ -1042,11 +1165,7 @@ function MonsterDetails({
   monster: Monster;
   onOpenItem: (name: string) => void;
 }) {
-  const sortedLoot = [...monster.loot].sort(
-    (a, b) =>
-      (lootFrequencyOrder[a.frequency] ?? Number.MAX_SAFE_INTEGER) -
-      (lootFrequencyOrder[b.frequency] ?? Number.MAX_SAFE_INTEGER),
-  );
+  const sortedLoot = [...monster.loot].sort(compareLootFrequency);
 
   return (
     <article>
@@ -1130,6 +1249,10 @@ function ItemDetails({
   item: Item;
   onOpenMonster: (monster: Monster) => void;
 }) {
+  const sortedDrops = [...item.drops].sort((a, b) =>
+    compareLootFrequency(a.loot, b.loot),
+  );
+
   return (
     <article>
       <div className="detail-hero">
@@ -1192,7 +1315,7 @@ function ItemDetails({
           </div>
 
           <div className="source-list">
-            {item.drops.map(({ monster, loot }) => (
+            {sortedDrops.map(({ monster, loot }) => (
               <button
                 className="source-row"
                 key={`${monster.id}-${loot.frequency}`}
@@ -1209,8 +1332,12 @@ function ItemDetails({
                   <small>{formatNumber(monster.hp)} HP <span>·</span> {formatNumber(monster.exp)} EXP</small>
                 </span>
                 <span className="source-loot">
-                  <strong>{loot.frequency}</strong>
-                  <small>Ilość: {formatLootAmount(loot.amount)}</small>
+                  <span className="source-loot-amount">
+                    {formatLootAmount(loot.amount)} ×
+                  </span>
+                  <strong className={`frequency frequency-${loot.frequency.toLowerCase().replace(/\s+/g, "-")}`}>
+                    {loot.frequency}
+                  </strong>
                 </span>
                 <span aria-hidden="true" className="row-chevron">↗</span>
               </button>
@@ -1298,6 +1425,17 @@ function NPCDetails({ image, npc }: { image?: string; npc: NPC }) {
           </div>
         )}
       </section>
+
+      {npc.locationImage && (
+        <figure className="npc-location-figure">
+          <img
+            alt={`Mapa z trasą do NPC ${npc.name}`}
+            className="npc-location-image"
+            src={npc.locationImage}
+          />
+          <figcaption>Trasa do Ward Robe w Capital City</figcaption>
+        </figure>
+      )}
 
       <section className="boss-description npc-description">
         <p className="eyebrow">OPIS</p>

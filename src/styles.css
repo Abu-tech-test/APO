@@ -620,6 +620,31 @@ select:focus-visible {
   line-height: 1.6;
 }
 
+.npc-location-figure {
+  margin: 16px 0 0;
+  padding: 10px;
+  border: 1px solid #30372e;
+  border-radius: 6px;
+  background: rgba(15, 17, 15, 0.25);
+}
+
+.npc-location-image {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  max-height: 320px;
+  margin: 0 auto;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+.npc-location-figure figcaption {
+  margin-top: 8px;
+  color: #8e9589;
+  font-size: 10px;
+  text-align: center;
+}
+
 .npc-description {
   margin-top: 14px;
 }
@@ -786,8 +811,8 @@ select:focus-visible {
 }
 
 .loot-row-czesto {
-  --loot-hover-border: #3a6945;
-  --loot-hover-background: rgba(48, 96, 58, 0.26);
+  --loot-hover-border: #61733b;
+  --loot-hover-background: rgba(129, 143, 58, 0.24);
 }
 
 .loot-row-srednio {
@@ -863,9 +888,9 @@ select:focus-visible {
 }
 
 .frequency-czesto {
-  border-color: #3a6945;
-  background: rgba(48, 96, 58, 0.22);
-  color: #82b68a;
+  border-color: #61733b;
+  background: rgba(129, 143, 58, 0.18);
+  color: #becb75;
 }
 
 .frequency-srednio {
@@ -984,19 +1009,18 @@ select:focus-visible {
 }
 
 .source-loot {
-  min-width: 104px;
+  min-width: 124px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
   text-align: right;
 }
 
-.source-loot strong {
-  color: #b2c19c;
-  font-size: 10px;
-  font-weight: 600;
-}
-
-.source-loot small {
+.source-loot-amount {
   color: #80877b;
-  font-size: 9px;
+  font-size: 10px;
+  white-space: nowrap;
 }
 
 .empty-state {
@@ -1125,10 +1149,90 @@ select:focus-visible {
   color: #b7bdaf;
 }
 
+.costume-item-link {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #d7c47b;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  transition: color 130ms ease, text-decoration-color 130ms ease;
+}
+
+.costume-item-link:hover {
+  color: #f0dc91;
+  text-decoration-color: currentColor;
+}
+
+.costume-item-link:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid var(--accent-bright);
+  outline-offset: 3px;
+}
+
 .information-table code {
   color: #d7c47b;
   font-family: "Space Grotesk", monospace;
   font-size: 10px;
+}
+
+.information-rules {
+  margin: 0;
+  padding: 14px 16px 14px 32px;
+  border: 1px solid #30372e;
+  border-radius: 6px;
+  background: rgba(15, 17, 15, 0.25);
+  color: #b7bdaf;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+.costume-credit {
+  margin: 0 0 18px;
+  color: #aeb5a8;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(22px, 2.4vw, 29px);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.costume-credit strong {
+  color: #a000a0;
+  font-weight: 700;
+}
+
+.information-rules li + li {
+  margin-top: 6px;
+}
+
+.costume-description {
+  margin: -2px 0 10px;
+  color: #aeb5a8;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+.costume-appearance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -4px 0 7px;
+}
+
+.costume-appearance .game-graphic {
+  width: 42px;
+  height: 42px;
+  flex-basis: 42px;
+}
+
+.info-section h3.costume-title {
+  margin-bottom: 11px;
+  text-align: center;
 }
 
 .information-trivia {
@@ -1159,6 +1263,10 @@ select:focus-visible {
   color: #aeb5a8;
   font-size: 11px;
   line-height: 1.65;
+}
+
+.costume-reward {
+  margin-top: 10px;
 }
 
 .information-trivia small {
@@ -1409,11 +1517,8 @@ select:focus-visible {
   }
 
   .source-loot {
-    min-width: 78px;
-  }
-
-  .source-loot strong {
-    font-size: 9px;
+    min-width: 108px;
+    gap: 4px;
   }
 
   .footer {

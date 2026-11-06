@@ -855,6 +855,7 @@
     "region": "MAIN",
     "category": "Specjalne",
     "location": "Capital City",
+    "locationImage": "./images/npcs/ward-robe-main-location.png",
     "profession": null,
     "description": "Ward Robe ma nam do zaoferowania calkiem obszerna garderobe w sam raz na Halloween, oferuje nam: Kostium wampira, czarownicy, nekromanty, bialego szkieletu, brazowego trolla, ducha, nieumarlaka, diabelka, czerwonego szkieletu, niebieskiego trolla, mumii oraz kaplanki. ",
     "image": "./images/shared/05ad2f538012ef6262f5087724a06db8a966a31d57bc60757a90f8dbab0c318c.png"

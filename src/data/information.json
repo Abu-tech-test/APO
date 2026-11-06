@@ -932,6 +932,10 @@
         "Pokazuje ilosc posiadanych blessow."
       ],
       [
+        "!soul",
+        "Pokazuje potrzebną ilość potworów do zabicia w celu zdobycia kolejnego Soul Pointa."
+      ],
+      [
         "!speed",
         "Zwieksza bonus EXP na godzine od 5% do 50%. Aby osiagnac 50%, komenda powinna byc wpisywana codziennie."
       ],
@@ -1002,6 +1006,227 @@
         "name": "Ogloszenia ofert sprzedazy, kupna i wymiany postaci",
         "info": "Temat do ogloszen zwiazanych z handlem i wymiana postaci.",
         "url": "https://forum.toproste.pl/showthread.php?135474-Og%B3oszenia-ofert-sprzeda%BFy-kupna-i-wymiany-postaci!"
+      }
+    ]
+  },
+  {
+    "name": "Kostiumy",
+    "kind": "costumes",
+    "rules": [
+      "Przedmioty są wymienione w kolejności podanej u NPC i są takie same na obu wyspach.",
+      "Kostium może założyć tylko postać, która go wykonała. Tego samego kostiumu nie można wykonać ponownie na tej samej postaci.",
+      "Po oddaniu ostatniego przedmiotu na odbiór plecaka z kostiumem trzeba czekać godzinę.",
+      "Zadanie można anulować w dowolnym momencie, ale przy ponownym podejściu trzeba zacząć od pierwszego etapu.",
+      "W razie utraty plecaka z kostiumem można korzystać z plecaka innego gracza.",
+      "Zielony Troll był dostępny wyłącznie jako nagroda w konkursie „Legendy Grinch'a”."
+    ],
+    "entries": [
+      {
+        "name": "Kostium Vampira",
+        "appearanceMonster": "Vampire",
+        "description": "Jeden z najczęściej wybieranych kostiumów. Umożliwia wejście na resp Demented Dwarf.",
+        "items": [
+          { "amount": "1", "name": "Strange Helmet" },
+          { "amount": "1", "name": "Left Horn of Vampire's Cap" },
+          { "amount": "1", "name": "Right Horn of Vampire's Cap" },
+          { "amount": "1", "name": "Vampire's Rotten Cape" },
+          { "amount": "100", "name": "Natural Fibre", "note": "Leiurus, Wardy, Fiber Flower" },
+          { "amount": "100", "name": "Black Demonic Sheeps" },
+          { "amount": "1", "name": "Vampire's Boots" },
+          { "amount": "30", "name": "Pieces of Iron", "note": "Leżą na ziemi" },
+          { "amount": "10", "name": "Skeleton Bone" },
+          { "amount": "1", "name": "Vial of Virgin Blood" }
+        ]
+      },
+      {
+        "name": "Kostium Ducha",
+        "appearanceMonster": "Ghost",
+        "description": "Od poziomu 2700 umożliwia wejście na resp Soul Stealer.",
+        "items": [
+          { "amount": "1", "name": "Vial of Soul Mixture" },
+          { "amount": "1", "name": "Vial of Invisible Liquid" },
+          { "amount": "100", "name": "White Bale of Material" },
+          { "amount": "100", "name": "Blue Bale of Material", "note": "Saint Peter" },
+          { "amount": "100", "name": "Natural Fibre", "note": "Leiurus, Wardy, Fiber Flower" },
+          { "amount": "1", "name": "Vial of Blue Strong Thinner" },
+          { "amount": "1", "name": "Stealth Ring", "note": "Musi być założony i aktywny" },
+          { "amount": "1", "name": "Key to the St. Peters Gate" },
+          { "amount": "1", "name": "Life Crystal" },
+          { "amount": "1", "name": "Sandals" }
+        ]
+      },
+      {
+        "name": "Kostium Nekromanty",
+        "appearanceMonster": "Necromancer",
+        "description": "Od poziomu 3300 umożliwia wejście na resp Acolyte of Blood.",
+        "items": [
+          { "amount": "1", "name": "Necromancers Cape" },
+          { "amount": "1", "name": "Bottle of Black Liquid" },
+          { "amount": "100", "name": "Black Demonic Sheeps" },
+          { "amount": "100", "name": "Natural Fibre", "note": "Leiurus, Wardy, Fiber Flower" },
+          { "amount": "100", "name": "White Demonic Sheeps" },
+          { "amount": "1", "name": "Bottle of White Liquid" },
+          { "amount": "1", "name": "Broken Necromancers Shoes" },
+          { "amount": "1", "name": "Sacral Ankh" },
+          { "amount": "30", "name": "Pieces of Iron", "note": "Leżą na ziemi" },
+          { "amount": "1", "name": "Key to the St. Peters Gate" }
+        ]
+      },
+      {
+        "name": "Kostium Nieumarłego",
+        "appearanceMonster": "Ghoul",
+        "description": "Od poziomu 3700 umożliwia wejście na resp Arachnomorph.",
+        "items": [
+          { "amount": "1", "name": "Bottle of Black Liquid" },
+          { "amount": "100", "name": "Rotten Meat", "note": "Leiurus; część leży na ziemi" },
+          { "amount": "100", "name": "Black Demonic Sheeps" },
+          { "amount": "1", "name": "Dirty Cape" },
+          { "amount": "1", "name": "Orange Bale of Material" },
+          { "amount": "1", "name": "Bottle of Dark Beer" },
+          { "amount": "100", "name": "Dirty Fur", "note": "Leży na ziemi" },
+          { "amount": "100", "name": "Worm" },
+          { "amount": "1", "name": "Broken Boots" },
+          { "amount": "1000", "name": "Improved Skull" }
+        ]
+      },
+      {
+        "name": "Kostium Czarownicy",
+        "appearanceMonster": "Witch",
+        "description": "Od poziomu 4200 umożliwia wejście na resp Hydron.",
+        "items": [
+          { "amount": "1", "name": "Witches Hat" },
+          { "amount": "1", "name": "Witches Robe" },
+          { "amount": "1", "name": "Blue Robe" },
+          { "amount": "1", "name": "Witches Cape" },
+          { "amount": "100", "name": "Natural Fibre", "note": "Leiurus, Wardy, Fiber Flower" },
+          { "amount": "100", "name": "Black Demonic Sheeps" },
+          { "amount": "1", "name": "Bottle of Black Liquid" },
+          { "amount": "1", "name": "Magician Boots" },
+          { "amount": "30", "name": "Pieces of Iron", "note": "Leżą na ziemi" },
+          { "amount": "1", "name": "Magic Broom" }
+        ]
+      },
+      {
+        "name": "Kostium Białego Szkieletu",
+        "items": [
+          { "amount": "1000", "name": "Improved Skull" },
+          { "amount": "1", "name": "Vial of Experimental Glue" },
+          { "amount": "1", "name": "White Bale of Material" },
+          { "amount": "1", "name": "Vial of Invisible Liquid" },
+          { "amount": "100", "name": "Skeleton Bone" },
+          { "amount": "1000", "name": "Small Skeleton Bone" },
+          { "amount": "1", "name": "Vial of Medulla" },
+          { "amount": "30", "name": "Pieces of Iron", "note": "Leżą na ziemi" },
+          { "amount": "4", "name": "Improved Longsword" },
+          { "amount": "1", "name": "Vial of White Blood" }
+        ],
+        "appearanceMonster": "Skeleton"
+      },
+      {
+        "name": "Kostium Diabełka",
+        "appearanceMonster": "Bally",
+        "items": [
+          { "amount": "1", "name": "Inkwell of Red Paint" },
+          { "amount": "1000", "name": "Dead Deer", "note": "Jelenie można znaleźć m.in. w Senji, Soranie i Villi" },
+          { "amount": "100", "name": "Red Bale of Material" },
+          { "amount": "1", "name": "Vial of Red Hot Paint" },
+          { "amount": "100", "name": "Natural Fibre", "note": "Leiurus, Wardy" },
+          { "amount": "1", "name": "Left Horn" },
+          { "amount": "1", "name": "Right Horn" },
+          { "amount": "30", "name": "Pieces of Iron", "note": "Leżą na ziemi" },
+          { "amount": "10", "name": "Pitch Fork" },
+          { "amount": "1000", "name": "Red Mushroom" }
+        ]
+      },
+      {
+        "name": "Kostium Czerwonego Szkieletu",
+        "items": [
+          { "amount": "1", "name": "Red Bale of Material" },
+          { "amount": "1000", "name": "Small Skeleton Bone" },
+          { "amount": "100", "name": "Skeleton Bone" },
+          { "amount": "1000", "name": "Improved Skull" },
+          { "amount": "4", "name": "Improved Longsword" },
+          { "amount": "1", "name": "Vial of Experimental Glue" },
+          { "amount": "1", "name": "Vial of Medulla" },
+          { "amount": "1", "name": "Inkwell of Red Paint" },
+          { "amount": "1", "name": "Vial of Red Hot Paint" },
+          { "amount": "100", "name": "Fire Mushroom" }
+        ],
+        "appearanceMonster": "Demon Skeleton"
+      },
+      {
+        "name": "Kostium Trolla",
+        "appearanceMonster": "Troll",
+        "items": [
+          { "amount": "1", "name": "Vial of Dirty Butterfly Juice", "note": "Bossy lub inni gracze" },
+          { "amount": "100", "name": "Ape Fur", "note": "Do wycięcia z ciał małp" },
+          { "amount": "1", "name": "Sandals" },
+          { "amount": "1", "name": "Vial of Experimental Glue" },
+          { "amount": "100", "name": "Natural Fibre", "note": "Leiurus, Wardy, Fiber Flower" },
+          { "amount": "100", "name": "Rotten Meat", "note": "Leiurus; część leży na ziemi" },
+          { "amount": "1", "name": "Dirty Fur", "note": "Leży na ziemi" },
+          { "amount": "30", "name": "Pieces of Iron", "note": "Leżą na ziemi" },
+          { "amount": "100", "name": "Spear", "note": "NPC Perac" },
+          { "amount": "1", "name": "Wooden Shield" }
+        ]
+      },
+      {
+        "name": "Kostium Kapłanki",
+        "items": [
+          { "amount": "1", "name": "Priestess Dress" },
+          { "amount": "1", "name": "Bottle of Black Liquid" },
+          { "amount": "100", "name": "Black Demonic Sheeps" },
+          { "amount": "1", "name": "Red Bale of Material" },
+          { "amount": "100", "name": "Natural Fibre", "note": "Leiurus, Wardy" },
+          { "amount": "1", "name": "Inkwell of Red Paint" },
+          { "amount": "1", "name": "Destroyed Priestesses Shoes" },
+          { "amount": "30", "name": "Pieces of Iron", "note": "Leżą na ziemi" },
+          { "amount": "1", "name": "Crystal of Mystery" },
+          { "amount": "1", "name": "Sacral Ankh" }
+        ],
+        "appearanceMonster": "Priestess"
+      },
+      {
+        "name": "Kostium Mumii",
+        "appearanceMonster": "Mummy",
+        "items": [
+          { "amount": "1", "name": "Ancient Ring", "note": "Undead Mastah, Mummy" },
+          { "amount": "1000", "name": "White Mushroom" },
+          { "amount": "100", "name": "White Bale of Material" },
+          { "amount": "1", "name": "Vial of Medulla" },
+          { "amount": "100", "name": "Natural Fibre", "note": "Leiurus, Wardy, Fiber Flower" },
+          { "amount": "100", "name": "Bottle of White Liquid" },
+          { "amount": "1000", "name": "White Pirate Pearl" },
+          { "amount": "30", "name": "Crystal of Mystery" },
+          { "amount": "10", "name": "Improved Shadow Crystal", "note": "Soul Stealer" },
+          { "amount": "1", "name": "Very Old Moldy Cheese", "note": "Lucky Rat" }
+        ]
+      },
+      {
+        "name": "Kostium Niebieskiego Trolla",
+        "appearanceMonster": "Frost Troll",
+        "items": [
+          { "amount": "1", "name": "Vial of Blue Strong Thinner" },
+          { "amount": "100", "name": "Bottle of Blue Liquid", "note": "Ghost, Lizard Predator, Water Magician, Serpentarion, Frost Troll" },
+          { "amount": "100", "name": "Ape Fur", "note": "Do wycięcia z ciał małp" },
+          { "amount": "1000", "name": "Blueberry" },
+          { "amount": "1", "name": "Vial of Blue Rotten Syrup", "note": "Loot, bossy lub inni gracze" },
+          { "amount": "100", "name": "Blue Bale of Material", "note": "Saint Peter" },
+          { "amount": "100", "name": "Blue Robe" },
+          { "amount": "100", "name": "Natural Fibre", "note": "Leiurus, Wardy, Fiber Flower" },
+          { "amount": "1000", "name": "Snowball" },
+          { "amount": "100", "name": "Ice Rapier" }
+        ]
+      },
+      {
+        "name": "Kostium Grincha",
+        "appearanceMonster": "Swamp Troll",
+        "description": "Podczas wydarzenia można było codziennie zdobyć piernik od 1 do 23 grudnia i wymienić go razem z połówką szala Grincha na kostium. Wpis podaje, że kostium posiadały tylko cztery osoby.",
+        "items": [
+          { "amount": "1", "name": "Gingerbread", "note": "Do zdobycia każdego dnia od 1 do 23 grudnia" },
+          { "amount": "1", "name": "Half of the Grinch's Scarf" }
+        ],
+        "reward": "Po przebraniu się za Grincha postać staje się szybsza i zwiększa ilość łupów z potworów."
       }
     ]
   }
