@@ -565,14 +565,19 @@ select:focus-visible {
   outline-offset: 3px;
 }
 
+.map-popup-overlay {
+  position: absolute;
+  z-index: 8;
+  inset: 0;
+  pointer-events: none;
+}
+
 .map-house-popup,
 .map-npc-popup {
   position: absolute;
-  bottom: 21px;
-  left: 0;
   width: max-content;
-  min-width: 220px;
-  max-width: 250px;
+  min-width: min(220px, calc(100% - 16px));
+  max-width: min(250px, calc(100% - 16px));
   padding: 16px 34px 12px 12px;
   border: 1px solid rgba(0, 0, 0, 0.18);
   border-radius: 9px;
@@ -581,6 +586,15 @@ select:focus-visible {
   color: #202124;
   font-size: 13px;
   transform: translateX(-50%);
+}
+
+.map-popup-overlay > .map-npc-popup {
+  box-sizing: border-box;
+  pointer-events: auto;
+}
+
+.map-popup-content {
+  overflow-y: auto;
 }
 
 .map-house-popup::after,
@@ -595,6 +609,12 @@ select:focus-visible {
   background: #fff;
   content: "";
   transform: translateX(-50%) rotate(45deg);
+}
+
+.map-popup-below::after {
+  top: -9px;
+  bottom: auto;
+  transform: translateX(-50%) rotate(225deg);
 }
 
 .map-house-popup-heading {
@@ -1258,8 +1278,29 @@ select:focus-visible {
   color: #b7a05f;
 }
 
-.loot-symbol {
+.map-symbol {
   color: #92ae88;
+}
+
+.map-stat-card {
+  color: #e0e2d9;
+  text-align: left;
+}
+
+button.map-stat-card {
+  cursor: pointer;
+  transition: border-color 140ms ease, background 140ms ease;
+}
+
+button.map-stat-card:hover,
+button.map-stat-card:focus-visible {
+  border-color: rgba(211, 182, 94, 0.62);
+  background: #232820;
+}
+
+button.map-stat-card:focus-visible {
+  outline: 2px solid #d3b65e;
+  outline-offset: 2px;
 }
 
 .stat-label {
@@ -1395,14 +1436,14 @@ select:focus-visible {
   flex: 1;
   overflow: hidden;
   color: #d8dbd1;
-  font-size: 11px;
+  font-size: 14px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .loot-amount {
   color: #9da396;
-  font-size: 10px;
+  font-size: 14px;
   white-space: nowrap;
 }
 
@@ -1550,6 +1591,10 @@ select:focus-visible {
   flex: 1;
 }
 
+.source-name strong {
+  font-size: 14px;
+}
+
 .source-name small span {
   margin: 0 3px;
   color: #5e665b;
@@ -1566,7 +1611,7 @@ select:focus-visible {
 
 .source-loot-amount {
   color: #80877b;
-  font-size: 10px;
+  font-size: 14px;
   white-space: nowrap;
 }
 
@@ -2119,7 +2164,7 @@ select:focus-visible {
   }
 
   .loot-name {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .source-loot {
