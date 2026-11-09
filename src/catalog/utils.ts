@@ -54,7 +54,7 @@ export function getItemImage(name: string) {
 
 export function getCatalogItemImage(item: Item) {
   return item.clientId
-    ? `./images/items/${item.clientId}.png`
+    ? `./images/items/${item.clientId}.webp`
     : getItemImage(item.name);
 }
 

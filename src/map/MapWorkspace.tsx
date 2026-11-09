@@ -182,7 +182,7 @@ function MapWorkspace({
       ? undefined
       : locations.find((location) => location.id === selectedLocationId);
   const imageName =
-    floor === 0 ? "level_0.png" : `level_${floor > 0 ? `+${floor}` : floor}.png`;
+    floor === 0 ? "level_0.webp" : `level_${floor > 0 ? `+${floor}` : floor}.webp`;
 
   function getPopupPlacement(position: { x: number; y: number }): {
     style: CSSProperties;
@@ -936,6 +936,7 @@ function MapWorkspace({
         >
           <img
             alt={`Mapa poziomu ${floor > 0 ? `+${floor}` : floor}`}
+            decoding="async"
             draggable={false}
             onError={() => setImageError(true)}
             onLoad={() => setImageError(false)}

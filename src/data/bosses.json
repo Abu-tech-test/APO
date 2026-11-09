@@ -12,7 +12,7 @@
           "feet": 87
         },
         "description": "Boss pojawia sie losowo po restarcie serwera w swojej kryjowce na Volcano. Mozna go rowniez spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/main/main-composer.png"
+        "image": "./images/bosses/main/main-composer.webp"
       },
       {
         "name": "Stiff",
@@ -24,7 +24,7 @@
           "feet": 0
         },
         "description": "Boss pojawia sie losowo po restarcie serwera w swojej kryjowce na COD. Aby dostac sie na jego resp, trzeba posiadac przedmiot \"Magic Shovel\". Mozna go rowniez spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/c1dcebcc773573e67b86b8de5899be8f31a7f190b5313647fcd9434188fdc224.png"
+        "image": "./images/shared/c1dcebcc773573e67b86b8de5899be8f31a7f190b5313647fcd9434188fdc224.webp"
       },
       {
         "name": "Saint Peter",
@@ -36,7 +36,7 @@
           "feet": 50
         },
         "description": "Boss pojawia sie losowo po restarcie serwera w \"Niebie\" na Sky. Aby dostac sie do jego kryjowki, trzeba posiadac \"key to the St. Peters gate\". Uwaga: Saint Peter nigdy nie jest tam sam. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/fba9c8bc50f2fdc84c2ceec1f9b8b63aa8e5f6668e89fd927f2701ca347fd3be.png"
+        "image": "./images/shared/fba9c8bc50f2fdc84c2ceec1f9b8b63aa8e5f6668e89fd927f2701ca347fd3be.webp"
       },
       {
         "name": "Infernal Atom",
@@ -48,7 +48,7 @@
           "feet": 50
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Mozna go takze przywolac w piekle, uzywajac odpowiedniej kombinacji specjalnych przedmiotow. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/dfdf176b1598488b936fb182669e47b6b5fe99c63a78a7eb1c6bb215b84199c0.png"
+        "image": "./images/shared/dfdf176b1598488b936fb182669e47b6b5fe99c63a78a7eb1c6bb215b84199c0.webp"
       },
       {
         "name": "Abaddon",
@@ -60,7 +60,7 @@
           "feet": 50
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/dfdf176b1598488b936fb182669e47b6b5fe99c63a78a7eb1c6bb215b84199c0.png"
+        "image": "./images/shared/dfdf176b1598488b936fb182669e47b6b5fe99c63a78a7eb1c6bb215b84199c0.webp"
       },
       {
         "name": "Satan",
@@ -72,7 +72,7 @@
           "feet": 50
         },
         "description": "Jeden z najmocniejszych bossow na MAIN. Mozna go spotkac podczas najazdow organizowanych przez Administracje. Mozna go takze przywolac w piekle, uzywajac odpowiedniej kombinacji specjalnych przedmiotow. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/dfdf176b1598488b936fb182669e47b6b5fe99c63a78a7eb1c6bb215b84199c0.png"
+        "image": "./images/shared/dfdf176b1598488b936fb182669e47b6b5fe99c63a78a7eb1c6bb215b84199c0.webp"
       },
       {
         "name": "Son of Satan",
@@ -84,7 +84,7 @@
           "feet": 0
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/224fe34d84e1518c7ac4671cdb92bc0f8f7c682d54357ebf8d817cafd7dd48ef.png"
+        "image": "./images/shared/224fe34d84e1518c7ac4671cdb92bc0f8f7c682d54357ebf8d817cafd7dd48ef.webp"
       },
       {
         "name": "Noun",
@@ -96,7 +96,7 @@
           "feet": 0
         },
         "description": "Bossa mozna przywolac w zamku Ahmeda na Ank, ofiarujac przedmiot \"Pink Exotic Butterfly\". Dostep do zamku otrzymasz po wykonaniu wszystkich misji u NPC Ahmed Martwy Terrorysta, ktory znajduje sie na Pustyni w City. Noun moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/1d71fdeb1f01d859a415b74bdd1725e916795137e98d39e971fe9555c17a7fb4.png"
+        "image": "./images/shared/1d71fdeb1f01d859a415b74bdd1725e916795137e98d39e971fe9555c17a7fb4.webp"
       },
       {
         "name": "Bonzo",
@@ -108,7 +108,7 @@
           "feet": 0
         },
         "description": "Bossa mozna przywolac w zamku Ahmeda na Ank, ofiarujac przedmiot \"Eagle Shield\". Dostep do zamku otrzymasz po wykonaniu wszystkich misji u NPC Ahmed Martwy Terrorysta, ktory znajduje sie na Pustyni w City. Bonzo moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/f09c6a928c5f54ff7b36492d0fc13365f884bb6be6f6db21eaba596d89c48d8e.png"
+        "image": "./images/shared/f09c6a928c5f54ff7b36492d0fc13365f884bb6be6f6db21eaba596d89c48d8e.webp"
       },
       {
         "name": "Mysterious Shaman",
@@ -120,7 +120,7 @@
           "feet": 0
         },
         "description": "Bossa mozna przywolac w zamku Ahmeda na Ank, ofiarujac przedmiot \"Pandemonium Armor\". Dostep do zamku otrzymasz po wykonaniu wszystkich misji u NPC Ahmed Martwy Terrorysta, ktory znajduje sie na Pustyni w City. Mysterious Shaman moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/d478e9f690279e1986b1be24037836439fc39a8e0fab120c0e7e716ba25142e9.png"
+        "image": "./images/shared/d478e9f690279e1986b1be24037836439fc39a8e0fab120c0e7e716ba25142e9.webp"
       },
       {
         "name": "Ahmed",
@@ -133,7 +133,7 @@
           "feet": 114
         },
         "description": "Bossa mozna przywolac w zamku Ahmeda na Ank, ofiarujac przedmiot \"Niepelny Helmet of The Ancients\". Dostep do zamku otrzymasz po wykonaniu wszystkich misji u NPC Ahmed Martwy Terrorysta, ktory znajduje sie na Pustyni w City. Ahmed moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/ffcf629866314bcffe6b70239a63be8baa9e6be366d469567cb92ca3e51be002.png"
+        "image": "./images/shared/ffcf629866314bcffe6b70239a63be8baa9e6be366d469567cb92ca3e51be002.webp"
       },
       {
         "name": "Main Madness",
@@ -156,7 +156,7 @@
           "feet": 0
         },
         "description": "Jeden z najmocniejszych bossow na MAIN. Mozna go spotkac podczas najazdow organizowanych przez Administracje. Wedlug informacji w grze moze pojawic sie takze na respie Demented Dwarf na Ank po zabiciu okreslonej liczby potworow \"Demented Dwarf\". Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/460766db55f5c612fb355d0ffd6434aca684a9044758d2b98a39960f2b9d9d9d.png"
+        "image": "./images/shared/460766db55f5c612fb355d0ffd6434aca684a9044758d2b98a39960f2b9d9d9d.webp"
       },
       {
         "name": "Invincible",
@@ -168,7 +168,7 @@
           "feet": 0
         },
         "description": "Jeden z najmocniejszych bossow na MAIN. Mozna go spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa loot moze odebrac tylko jedna osoba.",
-        "image": "./images/shared/a31758ea2ea1c5ca194b3e6cdf47bde6834daec0a043b2215819ae96edf05449.png"
+        "image": "./images/shared/a31758ea2ea1c5ca194b3e6cdf47bde6834daec0a043b2215819ae96edf05449.webp"
       },
       {
         "name": "Minosfatum",
@@ -180,7 +180,7 @@
           "feet": 50
         },
         "description": "Jeden z najmocniejszych bossow na MAIN. Mozna go spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa loot moze odebrac tylko jedna osoba.",
-        "image": "./images/shared/52232f635315e347638b478bf887c204527b8c85fc70bdd4a32fa8fc1e5ad0f6.png"
+        "image": "./images/shared/52232f635315e347638b478bf887c204527b8c85fc70bdd4a32fa8fc1e5ad0f6.webp"
       },
       {
         "name": "Death Wish",
@@ -192,7 +192,7 @@
           "feet": 0
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Mozna go takze przywolac na respie potwora \"Soul Stealer\". Potrzebny jest \"ectoplasta container\" wypelniony duszami potwora \"Undead Human\" do poziomu 100/100. Po zabiciu bossa loot moze odebrac tylko jedna osoba.",
-        "image": "./images/shared/95bb9a5e0dcda78d76dbd02f491facf42e1dc52a929c0bd56c208d03b81d947b.png"
+        "image": "./images/shared/95bb9a5e0dcda78d76dbd02f491facf42e1dc52a929c0bd56c208d03b81d947b.webp"
       }
     ]
   },
@@ -209,7 +209,7 @@
           "feet": 114
         },
         "description": "Boss pojawia sie losowo po restarcie serwera w swojej kryjowce na Tropicano. Mozna go rowniez spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/2136c9a025f3ec0920eaf9067af1f974c3edb601338b365fe3e397b4ca36614f.png"
+        "image": "./images/shared/2136c9a025f3ec0920eaf9067af1f974c3edb601338b365fe3e397b4ca36614f.webp"
       },
       {
         "name": "Mutated Mummy",
@@ -232,7 +232,7 @@
           "feet": 114
         },
         "description": "Boss pojawia sie losowo po restarcie serwera w swojej kryjowce niedaleko NPC Zinab. Mozna go rowniez spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/rook/rook-composer.png"
+        "image": "./images/bosses/rook/rook-composer.webp"
       },
       {
         "name": "Ahmed",
@@ -245,7 +245,7 @@
           "feet": 114
         },
         "description": "Bossa mozna przywolac w zamku Ahmeda na Tropicano, ofiarujac przedmiot \"Blue Exotic Butterfly\". Dostep do zamku otrzymasz po wykonaniu wszystkich misji u NPC Ahmed Martwy Terrorysta, ktory znajduje sie za polnocna brama Rookgaardu. Ahmed moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/ffcf629866314bcffe6b70239a63be8baa9e6be366d469567cb92ca3e51be002.png"
+        "image": "./images/shared/ffcf629866314bcffe6b70239a63be8baa9e6be366d469567cb92ca3e51be002.webp"
       },
       {
         "name": "Savage Cyclops",
@@ -257,7 +257,7 @@
           "feet": 0
         },
         "description": "Bossa mozna przywolac w zamku Ahmeda na Tropicano, ofiarujac przedmiot \"Giant Sword\". Dostep do zamku otrzymasz po wykonaniu wszystkich misji u NPC Ahmed Martwy Terrorysta, ktory znajduje sie za polnocna brama Rookgaardu. Savage Cyclops moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/7f7d21a57df4c16c130e2f782fcd2d9e6b0d379754fec0f78dc411a4db8fb782.png"
+        "image": "./images/shared/7f7d21a57df4c16c130e2f782fcd2d9e6b0d379754fec0f78dc411a4db8fb782.webp"
       },
       {
         "name": "Basakiel",
@@ -269,7 +269,7 @@
           "feet": 114
         },
         "description": "Bossa mozna przywolac w zamku Ahmeda na Tropicano, ofiarujac przedmiot \"Dragon Scale Mail\". Dostep do zamku otrzymasz po wykonaniu wszystkich misji u NPC Ahmed Martwy Terrorysta, ktory znajduje sie za polnocna brama Rookgaardu. Basakiel moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/rook/basakiel.png"
+        "image": "./images/bosses/rook/basakiel.webp"
       },
       {
         "name": "Rook King",
@@ -281,7 +281,7 @@
           "feet": 0
         },
         "description": "Bossa mozna przywolac w zamku Ahmeda na Tropicano, ofiarujac przedmiot \"Rabbit Present\". Dostep do zamku otrzymasz po wykonaniu wszystkich misji u NPC Ahmed Martwy Terrorysta, ktory znajduje sie za polnocna brama Rookgaardu. Rook King moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/87b5947332bf6b292af526b440dfe9319cf7a6a50b562b7ed3790bb0121e6fe1.png"
+        "image": "./images/shared/87b5947332bf6b292af526b440dfe9319cf7a6a50b562b7ed3790bb0121e6fe1.webp"
       },
       {
         "name": "Rook Madness",
@@ -304,7 +304,7 @@
           "feet": 0
         },
         "description": "Bossa mozna przywolac na respie potworow Mudworm, Giant Leaf, Fender i Swamp Golem. Do przywolania potrzebne sa cztery przedmioty: \"flower of giant's leaf\", \"bristle worm\", \"marsh plant\" oraz \"toxic necklace\". Wszystkie wymagane przedmioty mozna zdobyc z potworow znajdujacych sie na tym respie. Guzuroth moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa loot moze odebrac tylko jedna osoba.",
-        "image": "./images/shared/0f05109fb9f7018cfc0499b42fcca91fda8ac4e7374a40d897838b2519d49f72.png"
+        "image": "./images/shared/0f05109fb9f7018cfc0499b42fcca91fda8ac4e7374a40d897838b2519d49f72.webp"
       },
       {
         "name": "Moonaron",
@@ -316,7 +316,7 @@
           "feet": 0
         },
         "description": "Bossa mozna przywolac w Antycznym Miescie na respie potwora \"Ancien Beast\", ofiarujac przedmiot \"Bone of Moonaron\". Aby dostac sie na ten resp, trzeba wykonac wszystkie wymagane misje u NPC Archeologist oraz NPC Captain Nemo. Przedmiot \"Bone of Moonaron\" mozna zdobyc z potwora \"Ancient Beast\". Moonaron moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.png"
+        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.webp"
       },
       {
         "name": "Histeol",
@@ -328,7 +328,7 @@
           "feet": 0
         },
         "description": "Bossa mozna przywolac w Antycznym Miescie na respie potwora \"Ancien Skeleton\", ofiarujac przedmiot \"Histeol Wand\". Aby dostac sie na ten resp, trzeba wykonac wszystkie wymagane misje u NPC Archeologist. Przedmiot \"Histeol Wand\" mozna zdobyc z potwora \"Ancient Skeleton\". Histeol moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.png"
+        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.webp"
       },
       {
         "name": "Nistelo",
@@ -340,7 +340,7 @@
           "feet": 0
         },
         "description": "Bossa mozna przywolac w Antycznym Miescie na respie potwora \"Ancien Shambler\", ofiarujac przedmiot \"Amulet of Nisteol\". Aby dostac sie na ten resp, trzeba wykonac wszystkie wymagane misje u NPC Archeologist. Przedmiot \"Amulet of Nisteol\" mozna zdobyc z potwora \"Ancient Shambler\". Nistelo moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.png"
+        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.webp"
       },
       {
         "name": "Seti",
@@ -352,7 +352,7 @@
           "feet": 0
         },
         "description": "Bossa mozna przywolac w Antycznym Miescie na respie potwora \"Ancien Mummy\", ofiarujac przedmiot \"Wand of Seti\". Aby dostac sie na ten resp, trzeba wykonac wszystkie wymagane misje u NPC Archeologist. Przedmiot \"Wand of Seti\" mozna zdobyc z potwora \"Ancient Mummy\". Seti moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.png"
+        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.webp"
       },
       {
         "name": "Lios",
@@ -364,7 +364,7 @@
           "feet": 0
         },
         "description": "Bossa mozna przywolac w Antycznym Miescie na respie potwora \"Ancien Djinn\", ofiarujac przedmiot \"Ring of Lios\". Aby dostac sie na ten resp, trzeba wykonac wszystkie wymagane misje u NPC Archeologist. Przedmiot \"Ring of Lios\" mozna zdobyc z potwora \"Ancient Djinn\". Lios moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.png"
+        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.webp"
       },
       {
         "name": "Heapster",
@@ -376,7 +376,7 @@
           "feet": 0
         },
         "description": "Bossa mozna przywolac w Antycznym Miescie na respie potwora \"Ancien Pharao\", ofiarujac przedmiot \"Wand of Heapster\". Aby dostac sie na ten resp, trzeba wykonac wszystkie wymagane misje u NPC Archeologist. Przedmiot \"Wand of Heapster\" mozna zdobyc z potwora \"Ancient Pharao\". Heapster moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.png"
+        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.webp"
       },
       {
         "name": "Quoerses",
@@ -388,7 +388,7 @@
           "feet": 0
         },
         "description": "Bossa mozna przywolac w Antycznym Miescie na respie potwora \"Ancien Demon\", ofiarujac przedmiot \"Sickle of Quoerses\". Aby dostac sie na ten resp, trzeba wykonac wszystkie wymagane misje u NPC Archeologist. Przedmiot \"Sickle of Quoerses\" mozna zdobyc z potwora \"Ancient Demon\". Quoerses moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.png"
+        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.webp"
       },
       {
         "name": "Crazy Orc",
@@ -400,7 +400,7 @@
           "feet": 50
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/a0a6462bff269c63223d2e43fccbaa1c9a8bf5a129a36b695571d602f044146e.png"
+        "image": "./images/shared/a0a6462bff269c63223d2e43fccbaa1c9a8bf5a129a36b695571d602f044146e.webp"
       },
       {
         "name": "Aruatonim",
@@ -412,7 +412,7 @@
           "feet": 50
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/2e4610aae10831a9e92b57ac07d95241e7acea206df4850a38726dda32a52490.png"
+        "image": "./images/shared/2e4610aae10831a9e92b57ac07d95241e7acea206df4850a38726dda32a52490.webp"
       },
       {
         "name": "Busor",
@@ -424,7 +424,7 @@
           "feet": 50
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/fcee160331844239f99b0760f434a3f794d77a4aa50fc9d976de68c248ec0787.png"
+        "image": "./images/shared/fcee160331844239f99b0760f434a3f794d77a4aa50fc9d976de68c248ec0787.webp"
       },
       {
         "name": "Cursed Rabbit",
@@ -436,7 +436,7 @@
           "feet": 50
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/2a3486662a1d7bd87f099afd9e894ee3228ca2b41c85650f13a81b015da9fb19.png"
+        "image": "./images/shared/2a3486662a1d7bd87f099afd9e894ee3228ca2b41c85650f13a81b015da9fb19.webp"
       },
       {
         "name": "Koorhas",
@@ -448,7 +448,7 @@
           "feet": 96
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/rook/koorhas.png"
+        "image": "./images/bosses/rook/koorhas.webp"
       },
       {
         "name": "Radgan",
@@ -460,7 +460,7 @@
           "feet": 113
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/2dca135ba49a2c68fbafa34b412eca5f60758e48b492117d11aedc537485d908.png"
+        "image": "./images/shared/2dca135ba49a2c68fbafa34b412eca5f60758e48b492117d11aedc537485d908.webp"
       },
       {
         "name": "Tanur",
@@ -472,7 +472,7 @@
           "feet": 96
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/rook/tanur.png"
+        "image": "./images/bosses/rook/tanur.webp"
       },
       {
         "name": "Undead Warrior",
@@ -484,7 +484,7 @@
           "feet": 50
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/86989795b1296c034f425a24148eb2e0ea6aa9abe9e84b28718affbc4369ef59.png"
+        "image": "./images/shared/86989795b1296c034f425a24148eb2e0ea6aa9abe9e84b28718affbc4369ef59.webp"
       },
       {
         "name": "Lube",
@@ -496,7 +496,7 @@
           "feet": 0
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/9548613ed0d4ecec5cfa05f6adee044b4c73cb2a9021124ab52c87dd856e9a72.png"
+        "image": "./images/shared/9548613ed0d4ecec5cfa05f6adee044b4c73cb2a9021124ab52c87dd856e9a72.webp"
       },
       {
         "name": "Blaze",
@@ -508,7 +508,7 @@
           "feet": 0
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/9548613ed0d4ecec5cfa05f6adee044b4c73cb2a9021124ab52c87dd856e9a72.png"
+        "image": "./images/shared/9548613ed0d4ecec5cfa05f6adee044b4c73cb2a9021124ab52c87dd856e9a72.webp"
       },
       {
         "name": "Rook Destroyer",
@@ -520,7 +520,7 @@
           "feet": 0
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/rook/rook-destroyer.png"
+        "image": "./images/bosses/rook/rook-destroyer.webp"
       },
       {
         "name": "Ant King",
@@ -532,7 +532,7 @@
           "feet": 0
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/rook/ant-king.png"
+        "image": "./images/bosses/rook/ant-king.webp"
       },
       {
         "name": "Ramzes",
@@ -544,7 +544,7 @@
           "feet": 0
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje oraz podczas questa na \"Ramzes Helmet\". Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.png"
+        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.webp"
       },
       {
         "name": "Tutanchamon",
@@ -556,7 +556,7 @@
           "feet": 0
         },
         "description": "Bossa mozna przywolac w Antycznym Miescie, ofiarujac wszystkie siedem czesci \"Ramzes Helmet\": od \"1st piece of ramzes helmet\" do \"7th piece of ramzes helmet\". Dostep do Antycznego Miasta uzyskasz po wykonaniu misji u NPC Archeologist. Poszczegolne czesci helmetu mozna zdobyc z bossow: Moonaron, Histeol, Nistelo, Seti, Lios, Heapster oraz Quoerses. Tutanchamon moze pojawic sie rowniez podczas najazdow organizowanych przez Administracje. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.png"
+        "image": "./images/shared/d213ac058b0afc57078a27d7bab18ad25c7cc9ddf1ec7697fc939da0a5b85974.webp"
       },
       {
         "name": "White Wolf",
@@ -568,7 +568,7 @@
           "feet": 50
         },
         "description": "White Wolf to 1. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 1st December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/f6d6decab6a28e61a5f98bb697c9ada0810abcb1310c28c08acd1f2dc7d4e08d.png"
+        "image": "./images/shared/f6d6decab6a28e61a5f98bb697c9ada0810abcb1310c28c08acd1f2dc7d4e08d.webp"
       },
       {
         "name": "Dasher",
@@ -580,7 +580,7 @@
           "feet": 50
         },
         "description": "Dasher to 2. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 2nd December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/04cfb8ea802a0181f987364451edf70c4eef280a2375814906389946fbe17b0f.png"
+        "image": "./images/shared/04cfb8ea802a0181f987364451edf70c4eef280a2375814906389946fbe17b0f.webp"
       },
       {
         "name": "Cupid",
@@ -592,7 +592,7 @@
           "feet": 50
         },
         "description": "Cupid to 3. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 3rd December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/444e8ccda38eb414a6e9b610107c76abf1614bf976a55bf67847f7f4a2181e65.png"
+        "image": "./images/shared/444e8ccda38eb414a6e9b610107c76abf1614bf976a55bf67847f7f4a2181e65.webp"
       },
       {
         "name": "Dancer",
@@ -604,7 +604,7 @@
           "feet": 57
         },
         "description": "Dancer to 4. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 4th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/rook/dancer.png"
+        "image": "./images/bosses/rook/dancer.webp"
       },
       {
         "name": "Donner",
@@ -616,7 +616,7 @@
           "feet": 57
         },
         "description": "Donner to 5. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 5th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/962d53b78b73e0b6827d451d94567eea372e623044f9d94d539b9da78f818e3d.png"
+        "image": "./images/shared/962d53b78b73e0b6827d451d94567eea372e623044f9d94d539b9da78f818e3d.webp"
       },
       {
         "name": "Comet",
@@ -628,7 +628,7 @@
           "feet": 57
         },
         "description": "Comet to 6. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 6th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/1ceca4cce9b47f2317d5cfdbb4802a66a71b47255a3e5f02b1e1ccebbbd511d7.png"
+        "image": "./images/shared/1ceca4cce9b47f2317d5cfdbb4802a66a71b47255a3e5f02b1e1ccebbbd511d7.webp"
       },
       {
         "name": "Holy",
@@ -640,7 +640,7 @@
           "feet": 57
         },
         "description": "Holy to 7. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 7th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/f22e8d2a7dfc041ee2a9adcde7e339b0e0f3b6ccd2f6e22e3c24df4a1f2fe55b.png"
+        "image": "./images/shared/f22e8d2a7dfc041ee2a9adcde7e339b0e0f3b6ccd2f6e22e3c24df4a1f2fe55b.webp"
       },
       {
         "name": "Poor Man",
@@ -652,7 +652,7 @@
           "feet": 117
         },
         "description": "Poor Man to 8. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 8th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/rook/poor-man.png"
+        "image": "./images/bosses/rook/poor-man.webp"
       },
       {
         "name": "Magi",
@@ -664,7 +664,7 @@
           "feet": 130
         },
         "description": "Magi to 9. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 9th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/rook/magi.png"
+        "image": "./images/bosses/rook/magi.webp"
       },
       {
         "name": "Frau Perchta",
@@ -676,7 +676,7 @@
           "feet": 130
         },
         "description": "Frau Perchta to 10. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 10th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/4283af8675e06e235b4bd0e9f62c9ef280e99e48e200a8daa882e8a3acb096f6.png"
+        "image": "./images/shared/4283af8675e06e235b4bd0e9f62c9ef280e99e48e200a8daa882e8a3acb096f6.webp"
       },
       {
         "name": "El Caganer",
@@ -688,7 +688,7 @@
           "feet": 116
         },
         "description": "El Caganer to 11. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 11th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/rook/el-caganer.png"
+        "image": "./images/bosses/rook/el-caganer.webp"
       },
       {
         "name": "Scrooge",
@@ -700,7 +700,7 @@
           "feet": 57
         },
         "description": "Scrooge to 12. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 12th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/rook/scrooge.png"
+        "image": "./images/bosses/rook/scrooge.webp"
       },
       {
         "name": "Kevin",
@@ -712,7 +712,7 @@
           "feet": 19
         },
         "description": "Kevin to 13. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 13th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/rook/kevin.png"
+        "image": "./images/bosses/rook/kevin.webp"
       },
       {
         "name": "Steffan",
@@ -724,7 +724,7 @@
           "feet": 19
         },
         "description": "Steffan to 14. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 14th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/c9a4f75e3be568db311ced92bab6e3b17a83f6e0dafe836e2809cc2f4b03873e.png"
+        "image": "./images/shared/c9a4f75e3be568db311ced92bab6e3b17a83f6e0dafe836e2809cc2f4b03873e.webp"
       },
       {
         "name": "Christmas Elf",
@@ -736,7 +736,7 @@
           "feet": 19
         },
         "description": "Christmas Elf to 15. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 15th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/70d3c54b26eaed81b8c92f6a8bab6a960b2c59caad911b12e9fd68cb5a01ec60.png"
+        "image": "./images/shared/70d3c54b26eaed81b8c92f6a8bab6a960b2c59caad911b12e9fd68cb5a01ec60.webp"
       },
       {
         "name": "Carol Singer",
@@ -748,7 +748,7 @@
           "feet": 19
         },
         "description": "Carol Singer to 16. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 16th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/f22e8d2a7dfc041ee2a9adcde7e339b0e0f3b6ccd2f6e22e3c24df4a1f2fe55b.png"
+        "image": "./images/shared/f22e8d2a7dfc041ee2a9adcde7e339b0e0f3b6ccd2f6e22e3c24df4a1f2fe55b.webp"
       },
       {
         "name": "Angel",
@@ -760,7 +760,7 @@
           "feet": 19
         },
         "description": "Angel to 17. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 17th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/ac53cb41ebc5efccc423a1fc199702e89da55cfde1199f1aee0a955e5c769885.png"
+        "image": "./images/shared/ac53cb41ebc5efccc423a1fc199702e89da55cfde1199f1aee0a955e5c769885.webp"
       },
       {
         "name": "Frozen Man",
@@ -772,7 +772,7 @@
           "feet": 85
         },
         "description": "Frozen Man to 18. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 18th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/rook/frozen-man.png"
+        "image": "./images/bosses/rook/frozen-man.webp"
       },
       {
         "name": "Frosty",
@@ -784,7 +784,7 @@
           "feet": 85
         },
         "description": "Frosty to 19. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 19th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/rook/frosty.png"
+        "image": "./images/bosses/rook/frosty.webp"
       },
       {
         "name": "Bauble",
@@ -796,7 +796,7 @@
           "feet": 85
         },
         "description": "Bauble to 20. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 20th December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/b56b1033cbed95d1bd7eefe24c9e607e62b0f28d9c6de20c5d09b1217dd47b94.png"
+        "image": "./images/shared/b56b1033cbed95d1bd7eefe24c9e607e62b0f28d9c6de20c5d09b1217dd47b94.webp"
       },
       {
         "name": "Lonely Bear",
@@ -808,7 +808,7 @@
           "feet": 85
         },
         "description": "Lonely Bear to 21. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 21st December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/0d4af4dd20ea25d0a131a3cc0ed48b5c2160b788f400c4d21520068fc5619e23.png"
+        "image": "./images/shared/0d4af4dd20ea25d0a131a3cc0ed48b5c2160b788f400c4d21520068fc5619e23.webp"
       },
       {
         "name": "Jack Frost",
@@ -820,7 +820,7 @@
           "feet": 85
         },
         "description": "Jack Frost to 22. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 22nd December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/a31758ea2ea1c5ca194b3e6cdf47bde6834daec0a043b2215819ae96edf05449.png"
+        "image": "./images/shared/a31758ea2ea1c5ca194b3e6cdf47bde6834daec0a043b2215819ae96edf05449.webp"
       },
       {
         "name": "Rudolph",
@@ -832,7 +832,7 @@
           "feet": 85
         },
         "description": "Rudolph to 23. boss z serii Legendy Grinch'a. Po jego pokonaniu mozna zdobyc specjalny piernik \"Gingerbread of 23rd December\". Piernik jest potrzebny do zdobycia kostiumu Grinch'a lub mozna go wykorzystac przy wymianie z NPC Old Baker. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/3f8043f0533113ebc08534b98b86c6a8714d6a13d84c4a6e33e7c857fb90faba.png"
+        "image": "./images/shared/3f8043f0533113ebc08534b98b86c6a8714d6a13d84c4a6e33e7c857fb90faba.webp"
       },
       {
         "name": "Grinch",
@@ -844,7 +844,7 @@
           "feet": 0
         },
         "description": "Ostatni boss z podstawowej serii Legendy Grinch'a. Mozna z niego zdobyc \"Half of the Grinch's scarf\", ktory jest potrzebny do ukonczenia kostiumu Grinch'a. Do pelnego kostiumu wymagane sa wszystkie 23 pierniki oraz szalik. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/48551aefb402db9689a8ae3e2c694dde2cd37ebeefb855c9a20d11b93e888209.png"
+        "image": "./images/shared/48551aefb402db9689a8ae3e2c694dde2cd37ebeefb855c9a20d11b93e888209.webp"
       }
     ]
   },
@@ -861,7 +861,7 @@
           "feet": 114
         },
         "description": "Boss pojawia sie podczas eventu walentynkowego, organizowanego z okazji Walentynek 14 lutego. W czasie eventu Administracja moze rowniez ukrywac na mapie Walentynkowe Serca do odnalezienia. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/okolicznosciowe/valentina.png"
+        "image": "./images/bosses/okolicznosciowe/valentina.webp"
       },
       {
         "name": "Nightmare Halloween",
@@ -873,7 +873,7 @@
           "feet": 114
         },
         "description": "Najmocniejszy boss pojawiajacy sie podczas eventu Halloween. Po jego pokonaniu mozna zdobyc szczegolnie cenne lupy. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/779227a3db0c8fc015206c09df23b7b6a282eea8327d7259cfc915c3c57cc1fb.png"
+        "image": "./images/shared/779227a3db0c8fc015206c09df23b7b6a282eea8327d7259cfc915c3c57cc1fb.webp"
       },
       {
         "name": "Scared",
@@ -885,7 +885,7 @@
           "feet": 0
         },
         "description": "Boss pojawia sie podczas eventu Halloween. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/bcb3b225a5cc29fe936153c1732b5861524abf4773583e42f46f30a84635c23b.png"
+        "image": "./images/shared/bcb3b225a5cc29fe936153c1732b5861524abf4773583e42f46f30a84635c23b.webp"
       },
       {
         "name": "Rotten Warrior",
@@ -897,7 +897,7 @@
           "feet": 0
         },
         "description": "Boss pojawia sie podczas eventu Halloween. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/c1dcebcc773573e67b86b8de5899be8f31a7f190b5313647fcd9434188fdc224.png"
+        "image": "./images/shared/c1dcebcc773573e67b86b8de5899be8f31a7f190b5313647fcd9434188fdc224.webp"
       },
       {
         "name": "Dead Bones",
@@ -909,7 +909,7 @@
           "feet": 0
         },
         "description": "Boss pojawia sie podczas eventu Halloween. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/bbea34711e81ce457eda0d9a1ac6b4a3eb17cd9f21a3d9447d11ecde3ce04b4c.png"
+        "image": "./images/shared/bbea34711e81ce457eda0d9a1ac6b4a3eb17cd9f21a3d9447d11ecde3ce04b4c.webp"
       },
       {
         "name": "Mutated Pumpkin",
@@ -921,7 +921,7 @@
           "feet": 0
         },
         "description": "Boss pojawia sie podczas eventu Halloween. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/okolicznosciowe/mutated-pumpkin.png"
+        "image": "./images/bosses/okolicznosciowe/mutated-pumpkin.webp"
       },
       {
         "name": "Casper",
@@ -933,7 +933,7 @@
           "feet": 0
         },
         "description": "Boss pojawia sie podczas eventu Swieta Trzech Kroli. Podczas jego poszukiwania pomocny jest czar \"stargate\", ktory wskazuje droge do bossa. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/87b5947332bf6b292af526b440dfe9319cf7a6a50b562b7ed3790bb0121e6fe1.png"
+        "image": "./images/shared/87b5947332bf6b292af526b440dfe9319cf7a6a50b562b7ed3790bb0121e6fe1.webp"
       },
       {
         "name": "Melchior",
@@ -945,7 +945,7 @@
           "feet": 0
         },
         "description": "Boss pojawia sie podczas eventu Swieta Trzech Kroli. Podczas jego poszukiwania pomocny jest czar \"stargate\", ktory wskazuje droge do bossa. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/87b5947332bf6b292af526b440dfe9319cf7a6a50b562b7ed3790bb0121e6fe1.png"
+        "image": "./images/shared/87b5947332bf6b292af526b440dfe9319cf7a6a50b562b7ed3790bb0121e6fe1.webp"
       },
       {
         "name": "Baltasar",
@@ -957,7 +957,7 @@
           "feet": 0
         },
         "description": "Najmocniejszy boss pojawiajacy sie podczas eventu Swieta Trzech Kroli. Podczas jego poszukiwania pomocny jest czar \"stargate\", ktory wskazuje droge do bossa. W walce Baltasar przywoluje do pomocy pozostalych dwoch Kroli: Casper i Melchior. Po jego pokonaniu mozna zdobyc szczegolnie cenny loot. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/2136c9a025f3ec0920eaf9067af1f974c3edb601338b365fe3e397b4ca36614f.png"
+        "image": "./images/shared/2136c9a025f3ec0920eaf9067af1f974c3edb601338b365fe3e397b4ca36614f.webp"
       },
       {
         "name": "Anniversary Pinata",
@@ -969,7 +969,7 @@
           "feet": 0
         },
         "description": "Specjalny boss pojawiajacy sie podczas urodzin APO. Po jego pokonaniu mozna zdobyc szczegolnie cenny loot. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/shared/87b5947332bf6b292af526b440dfe9319cf7a6a50b562b7ed3790bb0121e6fe1.png"
+        "image": "./images/shared/87b5947332bf6b292af526b440dfe9319cf7a6a50b562b7ed3790bb0121e6fe1.webp"
       },
       {
         "name": "Krampus",
@@ -981,7 +981,7 @@
           "feet": 76
         },
         "description": "Specjalny boss swiateczny. Po jego pokonaniu mozna zdobyc szczegolnie cenne lupy. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
-        "image": "./images/bosses/okolicznosciowe/krampus.png"
+        "image": "./images/bosses/okolicznosciowe/krampus.webp"
       },
       {
         "name": "Christmas Tree",
@@ -993,7 +993,7 @@
           "feet": 76
         },
         "description": "Specjalny boss swiateczny, za ktorego pokonanie mozna zdobyc bardzo duzo punktow doswiadczenia. Po zniszczeniu Christmas Tree w jej miejscu pojawia sie prezent z dodatkowa nagroda. Loot odbiera sie, klikajac PPM na prezencie.",
-        "image": "./images/bosses/okolicznosciowe/christmas-tree.png"
+        "image": "./images/bosses/okolicznosciowe/christmas-tree.webp"
       }
     ]
   }

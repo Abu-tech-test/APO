@@ -19,7 +19,9 @@ export function Graphic({
       {image && (
         <img
           alt=""
+          decoding="async"
           key={image}
+          loading="lazy"
           onError={(event) => {
             event.currentTarget.hidden = true;
           }}

@@ -69,7 +69,7 @@ export function InformationDetails({
             <div className="information-trivia">
               <Graphic
                 className="detail-emblem item-emblem"
-                image={`./images/items/${category.trivia.clientId}.png`}
+                image={`./images/items/${category.trivia.clientId}.webp`}
                 name={category.trivia.name}
               />
               <div>
@@ -561,6 +561,8 @@ export function NPCDetails({
           <img
             alt={`Mapa z trasą do NPC ${npc.name}`}
             className="npc-location-image"
+            decoding="async"
+            loading="lazy"
             src={npc.locationImage}
           />
           <figcaption>Trasa do Ward Robe w Capital City</figcaption>
