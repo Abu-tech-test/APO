@@ -1,14 +1,48 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import bossData from "./data/bosses.json";
 import graphics from "./data/graphics.json";
+import houseData from "./data/houses.json";
 import informationData from "./data/information.json";
 import itemCatalogData from "./data/items.json";
+import locationData from "./data/locations.json";
 import monsterData from "./data/monsters.json";
 import npcData from "./data/npcs.json";
 import systemData from "./data/systems.json";
 import type { Item, ItemZone, Monster } from "./types";
 
 const monsters: Monster[] = monsterData;
+type MapNpcLocation = {
+  floor: number;
+  x: number;
+  y: number;
+};
+type MapHouse = {
+  id: number;
+  name: string;
+  region: string;
+  position: MapNpcLocation;
+};
+type MapLocation = {
+  id: number;
+  name: string;
+  description: string;
+  position: MapNpcLocation;
+};
+type MapNpcMapRequest = {
+  npcId: number;
+  position: MapNpcLocation;
+};
+type MapMonsterMapRequest = {
+  monsterId: number;
+};
+type MonsterMapTuple = readonly [number, number, number];
+type MonsterMapCategory = {
+  id: number;
+  name: string;
+  monsterIds: number[];
+  positions: MonsterMapTuple[];
+};
+type MapMarkerLayer = "" | "npcs" | "monsters" | "houses" | "locations";
 type NPC = {
   id: number;
   name: string;
@@ -19,8 +53,13 @@ type NPC = {
   description: string;
   image: string;
   locationImage?: string;
+  mapOnly?: boolean;
+  mapPositions?: MapNpcLocation[];
 };
-const npcs: NPC[] = npcData;
+const allNpcs: NPC[] = npcData;
+const npcs = allNpcs.filter((npc) => !npc.mapOnly);
+const houses: MapHouse[] = houseData;
+const locations: MapLocation[] = locationData;
 type GameSystem = {
   name: string;
   category: string;
@@ -67,6 +106,7 @@ type BossRegionData = {
     outfitColors: { head: number; body: number; legs: number; feet: number };
     description: string;
     image?: string;
+    lootMonsterId?: number;
   }[];
 };
 type Boss = BossRegionData["bosses"][number] & { region: string };
@@ -113,6 +153,51 @@ type MapNpcPosition = {
   x: number;
   y: number;
 };
+function getMapPositionKey(position: MapNpcPosition) {
+  return `${position.npcId}:${position.floor}:${position.x}:${position.y}`;
+}
+function getMapMonsterPositionKey(categoryId: number, positionIndex: number) {
+  return `${categoryId}:${positionIndex}`;
+}
+function MapHouseIcon() {
+  return (
+    <svg aria-hidden="true" className="map-house-icon" viewBox="0 0 28 30">
+      <path
+        d="M1.5 13.2 14 2l12.5 11.2V28H1.5z"
+        fill="#2584c4"
+        stroke="#101a22"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+      />
+      <path
+        d="M10.5 28v-9h7v9"
+        fill="#d7e8f0"
+        stroke="#101a22"
+        strokeWidth="1.2"
+      />
+    </svg>
+  );
+}
+function MapNpcIcon() {
+  return (
+    <svg aria-hidden="true" className="map-npc-icon" viewBox="0 0 28 32">
+      <path
+        d="M2 2h24v18L14 30 2 20z"
+        fill="#39bd45"
+        stroke="#101a22"
+        strokeWidth="1.5"
+      />
+      <text
+        dominantBaseline="middle"
+        textAnchor="middle"
+        x="14"
+        y="11"
+      >
+        NPC
+      </text>
+    </svg>
+  );
+}
 type CatalogEntry =
   | { section: "monsters"; name: string; caption: string; monster: Monster }
   | { section: "items"; name: string; caption: string; item: Item }
@@ -120,10 +205,17 @@ type CatalogEntry =
   | { section: "npcs"; name: string; caption: string; npc: NPC };
 
 const mapNpcPositions: MapNpcPosition[] = [
-  { npcId: 78, floor: 0, x: 340, y: 260 },
+  ...allNpcs.flatMap((npc) =>
+    (npc.mapPositions ?? []).map((position) => ({
+      npcId: npc.id,
+      ...position,
+    })),
+  ),
 ];
-const mapFloors = Array.from({ length: 15 }, (_, index) => 7 - index);
-const mapDimensions = { width: 2048, height: 1280 };
+const mapFloors = Array.from({ length: 16 }, (_, index) => 7 - index);
+const mapDimensions = { width: 2112, height: 1536 };
+const defaultMapZoom = 1;
+const maxMapZoom = 16;
 
 function formatNumber(value: number) {
   return new Intl.NumberFormat("pl-PL").format(value);
@@ -242,11 +334,82 @@ function App() {
   const [selectedNpcRegion, setSelectedNpcRegion] = useState("all");
   const [selectedNpcCategory, setSelectedNpcCategory] = useState("all");
   const [selectedNpc, setSelectedNpc] = useState<NPC>();
+  const [mapNpcRequest, setMapNpcRequest] = useState<MapNpcMapRequest>();
+  const [mapMonsterRequest, setMapMonsterRequest] =
+    useState<MapMonsterMapRequest>();
+  const [monsterMapCategories, setMonsterMapCategories] = useState<
+    MonsterMapCategory[]
+  >([]);
+  const [monsterMapLoadStatus, setMonsterMapLoadStatus] = useState<
+    "idle" | "loading" | "ready" | "error"
+  >("idle");
+  const [monsterMapLoadError, setMonsterMapLoadError] = useState("");
   const [selectedInformationName, setSelectedInformationName] = useState(
     informationCategories[0].name,
   );
   const [selectedSystemName, setSelectedSystemName] = useState(systems[0]?.name ?? "");
   const skipNextPageReset = useRef(false);
+
+  function loadMonsterMapData() {
+    if (
+      monsterMapLoadStatus === "loading" ||
+      monsterMapLoadStatus === "ready"
+    ) {
+      return;
+    }
+
+    setMonsterMapLoadStatus("loading");
+    setMonsterMapLoadError("");
+    void import("./data/monsterLocations.json")
+      .then(({ default: data }) => {
+        setMonsterMapCategories(
+          data.map((category) => ({
+            ...category,
+            positions: category.positions.map(
+              ([floor, x, y]) => [floor, x, y] as const,
+            ),
+          })),
+        );
+        setMonsterMapLoadStatus("ready");
+      })
+      .catch((error: unknown) => {
+        console.error("Nie udało się załadować lokalizacji potworów.", error);
+        setMonsterMapLoadError(
+          "Nie udało się załadować lokalizacji potworów. Spróbuj ponownie.",
+        );
+        setMonsterMapLoadStatus("error");
+      });
+  }
+
+  useEffect(() => {
+    if (section === "monsters" || mapMonsterRequest) loadMonsterMapData();
+  }, [section, mapMonsterRequest]);
+
+  const monsterMapPositionCounts = useMemo(() => {
+    const counts = new Map<number, number>();
+    for (const category of monsterMapCategories) {
+      for (const monsterId of category.monsterIds) {
+        counts.set(
+          monsterId,
+          (counts.get(monsterId) ?? 0) + category.positions.length,
+        );
+      }
+    }
+    return counts;
+  }, [monsterMapCategories]);
+  const mapMonsterSearchNames = useMemo(() => {
+    const mappedMonsterIds = new Set(monsterMapPositionCounts.keys());
+    return Array.from(
+      new Set([
+        ...monsters
+          .filter((monster) => mappedMonsterIds.has(monster.id))
+          .map((monster) => monster.name),
+        ...monsterMapCategories
+          .filter((category) => category.monsterIds.length === 0)
+          .map((category) => category.name),
+      ]),
+    ).sort((a, b) => a.localeCompare(b, "pl", { sensitivity: "base" }));
+  }, [monsterMapCategories, monsterMapPositionCounts]);
 
   const items = useMemo<Item[]>(() => {
     const itemMap = new Map<string, Item>(
@@ -447,6 +610,8 @@ function App() {
   ]);
 
   function openSection(nextSection: Section) {
+    setMapNpcRequest(undefined);
+    setMapMonsterRequest(undefined);
     if (nextSection === "monsters") {
       setSelectedMonster(sortByName(monsters)[0]);
     } else if (nextSection === "items") {
@@ -479,6 +644,20 @@ function App() {
     }
 
     setSection(nextSection);
+    setQuery("");
+  }
+
+  function showNpcOnMap(npc: NPC, position: MapNpcLocation) {
+    setMapMonsterRequest(undefined);
+    setMapNpcRequest({ npcId: npc.id, position });
+    setSection("map");
+    setQuery("");
+  }
+
+  function showMonsterOnMap(monster: Monster) {
+    setMapNpcRequest(undefined);
+    setMapMonsterRequest({ monsterId: monster.id });
+    setSection("map");
     setQuery("");
   }
 
@@ -522,11 +701,15 @@ function App() {
     setQuery("");
   }
 
-  const selectedBossLootMonster = monsters.find(
-    (monster) =>
-      monster.name.toLocaleLowerCase("pl") === selectedBoss.name.toLocaleLowerCase("pl") &&
-      monster.loot.length > 0,
-  );
+  const selectedBossLootMonster =
+    selectedBoss.lootMonsterId !== undefined
+      ? monsters.find((monster) => monster.id === selectedBoss.lootMonsterId)
+      : monsters.find(
+          (monster) =>
+            monster.name.toLocaleLowerCase("pl") ===
+              selectedBoss.name.toLocaleLowerCase("pl") &&
+            monster.loot.length > 0,
+        );
   const filteredInformation = useMemo(() => {
     const normalizedQuery = query.trim().toLocaleLowerCase("pl");
     if (!normalizedQuery) return informationCategories;
@@ -644,7 +827,19 @@ function App() {
       </nav>
 
       {section === "map" ? (
-        <MapWorkspace npcs={npcs} positions={mapNpcPositions} />
+        <MapWorkspace
+          houses={houses}
+          locations={locations}
+          mapMonsterSearchNames={mapMonsterSearchNames}
+          monsterMapCategories={monsterMapCategories}
+          monsterMapLoadError={monsterMapLoadError}
+          monsterMapLoadStatus={monsterMapLoadStatus}
+          monsterMapRequest={mapMonsterRequest}
+          onLoadMonsterLocations={loadMonsterMapData}
+          npcMapRequest={mapNpcRequest}
+          npcs={allNpcs}
+          positions={mapNpcPositions}
+        />
       ) : section === "info" ? (
         <InformationWorkspace
           categories={filteredInformation}
@@ -864,7 +1059,11 @@ function App() {
           {section === "monsters" ? (
             <MonsterDetails
               image={getMonsterImage(selectedMonster)}
+              mapPositionCount={
+                monsterMapPositionCounts.get(selectedMonster.id) ?? 0
+              }
               monster={selectedMonster}
+              onShowOnMap={showMonsterOnMap}
               onOpenItem={openItem}
             />
           ) : section === "items" && selectedItem ? (
@@ -881,7 +1080,11 @@ function App() {
               onOpenMonster={openMonster}
             />
           ) : section === "npcs" && selectedNpc ? (
-            <NPCDetails image={selectedNpc.image} npc={selectedNpc} />
+            <NPCDetails
+              image={selectedNpc.image}
+              npc={selectedNpc}
+              onShowOnMap={showNpcOnMap}
+            />
           ) : (
             <div className="empty-detail">
               {section === "items" ? "Wybierz przedmiot z listy." : section === "npcs" ? "Wybierz NPC z listy." : "Wybierz bossa z listy."}
@@ -1328,11 +1531,15 @@ function InformationDetails({
 
 function MonsterDetails({
   image,
+  mapPositionCount,
   monster,
+  onShowOnMap,
   onOpenItem,
 }: {
   image?: string;
+  mapPositionCount: number;
   monster: Monster;
+  onShowOnMap: (monster: Monster) => void;
   onOpenItem: (name: string) => void;
 }) {
   const sortedLoot = [...monster.loot].sort(compareLootFrequency);
@@ -1373,6 +1580,26 @@ function MonsterDetails({
           <small>PRZEDMIOTÓW</small>
         </div>
       </div>
+
+      {mapPositionCount > 0 && (
+        <section
+          aria-label="Lokalizacje potwora na mapie"
+          className="npc-map-coordinates"
+        >
+          <span className="eyebrow">LOKALIZACJE NA MAPIE</span>
+          <div className="npc-map-coordinate-list">
+            <button
+              className="npc-map-coordinate"
+              onClick={() => onShowOnMap(monster)}
+              type="button"
+            >
+              <span>Zobacz pozycje potwora</span>
+              <strong>{formatNumber(mapPositionCount)}</strong>
+              <span aria-hidden="true">⌖</span>
+            </button>
+          </div>
+        </section>
+      )}
 
       <div className="section-heading">
         <div>
@@ -1550,7 +1777,7 @@ function BossDetails({
         <p className="eyebrow">OPIS</p>
         <p>{boss.description}</p>
       </section>
-      {lootMonster && (
+      {lootMonster?.loot.length ? (
         <button
           className="boss-loot-button"
           onClick={() => onOpenMonster(lootMonster)}
@@ -1561,12 +1788,20 @@ function BossDetails({
           <small>{lootMonster.loot.length}</small>
           <span aria-hidden="true">↗</span>
         </button>
-      )}
+      ) : null}
     </article>
   );
 }
 
-function NPCDetails({ image, npc }: { image?: string; npc: NPC }) {
+function NPCDetails({
+  image,
+  npc,
+  onShowOnMap,
+}: {
+  image?: string;
+  npc: NPC;
+  onShowOnMap: (npc: NPC, position: MapNpcLocation) => void;
+}) {
   return (
     <article>
       <div className="detail-hero">
@@ -1596,6 +1831,26 @@ function NPCDetails({ image, npc }: { image?: string; npc: NPC }) {
         )}
       </section>
 
+      {npc.mapPositions && npc.mapPositions.length > 0 && (
+        <section className="npc-map-coordinates" aria-label="Współrzędne NPC na mapie">
+          <span className="eyebrow">WSPÓŁRZĘDNE NA MAPIE</span>
+          <div className="npc-map-coordinate-list">
+            {npc.mapPositions.map((position, index) => (
+              <button
+                className="npc-map-coordinate"
+                key={`${position.floor}:${position.x}:${position.y}:${index}`}
+                onClick={() => onShowOnMap(npc, position)}
+                type="button"
+              >
+                <span>Poziom {position.floor > 0 ? `+${position.floor}` : position.floor}</span>
+                <strong>{position.x} × {position.y}</strong>
+                <span aria-hidden="true">⌖</span>
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
+
       {npc.locationImage && (
         <figure className="npc-location-figure">
           <img
@@ -1616,17 +1871,51 @@ function NPCDetails({ image, npc }: { image?: string; npc: NPC }) {
 }
 
 function MapWorkspace({
+  houses,
+  locations,
+  mapMonsterSearchNames,
+  monsterMapCategories,
+  monsterMapLoadError,
+  monsterMapLoadStatus,
+  monsterMapRequest,
+  npcMapRequest,
   npcs,
+  onLoadMonsterLocations,
   positions,
 }: {
+  houses: MapHouse[];
+  locations: MapLocation[];
+  mapMonsterSearchNames: string[];
+  monsterMapCategories: MonsterMapCategory[];
+  monsterMapLoadError: string;
+  monsterMapLoadStatus: "idle" | "loading" | "ready" | "error";
+  monsterMapRequest?: MapMonsterMapRequest;
+  npcMapRequest?: MapNpcMapRequest;
   npcs: NPC[];
+  onLoadMonsterLocations: () => void;
   positions: MapNpcPosition[];
 }) {
   const [floor, setFloor] = useState(0);
+  const [markerLayer, setMarkerLayer] = useState<MapMarkerLayer>("");
   const [searchValue, setSearchValue] = useState("");
-  const [selectedNpcId, setSelectedNpcId] = useState(78);
+  const [selectedNpcId, setSelectedNpcId] = useState<number | null>(null);
+  const [selectedPositionKey, setSelectedPositionKey] = useState<string | null>(
+    null,
+  );
+  const [selectedMonsterId, setSelectedMonsterId] = useState<number | null>(
+    null,
+  );
+  const [selectedMapOnlyMonsterCategoryId, setSelectedMapOnlyMonsterCategoryId] =
+    useState<number | null>(null);
+  const [selectedMonsterPositionKey, setSelectedMonsterPositionKey] = useState<
+    string | null
+  >(null);
+  const [selectedHouseId, setSelectedHouseId] = useState<number | null>(null);
+  const [selectedLocationId, setSelectedLocationId] = useState<number | null>(
+    null,
+  );
   const [searchMessage, setSearchMessage] = useState("");
-  const [zoom, setZoom] = useState(1);
+  const [zoom, setZoom] = useState(defaultMapZoom);
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [imageError, setImageError] = useState(false);
   const [focusRequest, setFocusRequest] = useState(0);
@@ -1642,15 +1931,209 @@ function MapWorkspace({
     panY: number;
   } | null>(null);
   const focusPendingRef = useRef(false);
-  const selectedNpc = npcs.find((npc) => npc.id === selectedNpcId);
-  const selectedPosition = positions.find(
-    (position) => position.npcId === selectedNpcId,
+  const selectedNpc =
+    selectedNpcId === null
+      ? undefined
+      : npcs.find((npc) => npc.id === selectedNpcId);
+  const selectedPosition =
+    selectedNpcId === null
+      ? undefined
+      : positions.find(
+          (position) =>
+            position.npcId === selectedNpcId &&
+            (selectedPositionKey === null ||
+              getMapPositionKey(position) === selectedPositionKey),
+        ) ?? positions.find((position) => position.npcId === selectedNpcId);
+  const activeMonsterCategories =
+    selectedMonsterId !== null
+      ? monsterMapCategories.filter(
+          (category) => category.monsterIds.includes(selectedMonsterId),
+        )
+      : selectedMapOnlyMonsterCategoryId !== null
+        ? monsterMapCategories.filter(
+            (category) => category.id === selectedMapOnlyMonsterCategoryId,
+          )
+        : [];
+  const selectedMonsterPosition = activeMonsterCategories.flatMap((category) =>
+    category.positions.map(([floor, x, y], positionIndex) => ({
+      categoryId: category.id,
+      positionIndex,
+      position: { floor, x, y },
+    })),
+  ).find(
+    (entry) =>
+      getMapMonsterPositionKey(entry.categoryId, entry.positionIndex) ===
+      selectedMonsterPositionKey,
   );
+  const selectedHouse =
+    selectedHouseId === null
+      ? undefined
+      : houses.find((house) => house.id === selectedHouseId);
+  const selectedLocation =
+    selectedLocationId === null
+      ? undefined
+      : locations.find((location) => location.id === selectedLocationId);
   const imageName =
     floor === 0 ? "level_0.png" : `level_${floor > 0 ? `+${floor}` : floor}.png`;
 
+  function clearSelectedMonster() {
+    setSelectedMonsterId(null);
+    setSelectedMapOnlyMonsterCategoryId(null);
+    setSelectedMonsterPositionKey(null);
+  }
+
+  function selectMonsterPosition(
+    category: MonsterMapCategory,
+    positionIndex: number,
+  ) {
+    const tuple = category.positions[positionIndex];
+    if (!tuple) return;
+    const [targetFloor, x, y] = tuple;
+    const categoryMonsterId = category.monsterIds[0];
+    const monster =
+      categoryMonsterId === undefined
+        ? undefined
+        : monsters.find((entry) => entry.id === categoryMonsterId);
+    const displayName = monster?.name ?? category.name;
+    setMarkerLayer("monsters");
+    setSelectedNpcId(null);
+    setSelectedPositionKey(null);
+    setSelectedHouseId(null);
+    setSelectedLocationId(null);
+    setSelectedMonsterId(categoryMonsterId ?? null);
+    setSelectedMapOnlyMonsterCategoryId(
+      categoryMonsterId === undefined ? category.id : null,
+    );
+    setSelectedMonsterPositionKey(
+      getMapMonsterPositionKey(category.id, positionIndex),
+    );
+    setSearchValue(displayName);
+    setSearchMessage(
+      `${displayName}: poziom ${targetFloor}, pozycja ${x} × ${y}.`,
+    );
+    focusPendingRef.current = true;
+    setFocusRequest((request) => request + 1);
+    setFloor(targetFloor);
+  }
+
+  function showMonsterLocations(monsterId: number) {
+    focusPendingRef.current = false;
+    const category = monsterMapCategories.find(
+      (entry) =>
+        entry.monsterIds.includes(monsterId) && entry.positions.length > 0,
+    );
+    if (!category) {
+      const monster = monsters.find((entry) => entry.id === monsterId);
+      setSearchMessage(
+        `Brak lokalizacji potwora ${monster?.name ?? ""} na mapie.`,
+      );
+      return;
+    }
+
+    const monster = monsters.find((entry) => entry.id === monsterId);
+    const positionCount = monsterMapCategories
+      .filter((entry) => entry.monsterIds.includes(monsterId))
+      .reduce((count, entry) => count + entry.positions.length, 0);
+    setMarkerLayer("monsters");
+    setSelectedNpcId(null);
+    setSelectedPositionKey(null);
+    setSelectedHouseId(null);
+    setSelectedLocationId(null);
+    setSelectedMonsterId(monsterId);
+    setSelectedMapOnlyMonsterCategoryId(null);
+    setSelectedMonsterPositionKey(null);
+    setSearchValue(monster?.name ?? category.name);
+    setSearchMessage(
+      `Pokazano ${positionCount} lokalizacji: ${monster?.name ?? category.name}. Kliknij marker, aby przejść do poziomu i przybliżyć pozycję.`,
+    );
+  }
+
+  function constrainPan(nextPan: { x: number; y: number }, nextZoom: number) {
+    const viewport = viewportRef.current;
+    const canvas = canvasRef.current;
+    if (!viewport || !canvas) return nextPan;
+
+    const canvasLeft = (viewport.clientWidth - canvas.clientWidth) / 2;
+    const canvasTop = (viewport.clientHeight - canvas.clientHeight) / 2;
+    const scaledWidth = canvas.clientWidth * nextZoom;
+    const scaledHeight = canvas.clientHeight * nextZoom;
+    const constrainAxis = (
+      offset: number,
+      canvasOffset: number,
+      scaledSize: number,
+      viewportSize: number,
+    ) => {
+      if (scaledSize <= viewportSize) return 0;
+      return Math.min(
+        -canvasOffset,
+        Math.max(viewportSize - canvasOffset - scaledSize, offset),
+      );
+    };
+
+    return {
+      x: constrainAxis(
+        nextPan.x,
+        canvasLeft,
+        scaledWidth,
+        viewport.clientWidth,
+      ),
+      y: constrainAxis(
+        nextPan.y,
+        canvasTop,
+        scaledHeight,
+        viewport.clientHeight,
+      ),
+    };
+  }
+
   useEffect(() => {
-    if (!focusPendingRef.current || selectedPosition?.floor !== floor) return;
+    if (!npcMapRequest) return;
+    const npc = npcs.find((entry) => entry.id === npcMapRequest.npcId);
+    if (!npc) {
+      setSearchMessage("Nie znaleziono NPC do pokazania na mapie.");
+      return;
+    }
+
+    setMarkerLayer("npcs");
+    setSelectedHouseId(null);
+    setSelectedLocationId(null);
+    clearSelectedMonster();
+    setSelectedNpcId(npc.id);
+    setSelectedPositionKey(
+      getMapPositionKey({ npcId: npc.id, ...npcMapRequest.position }),
+    );
+    setSearchValue(npc.name);
+    setSearchMessage(
+      `${npc.name}: poziom ${npcMapRequest.position.floor}, pozycja ${npcMapRequest.position.x} × ${npcMapRequest.position.y}.`,
+    );
+    focusPendingRef.current = true;
+    setFocusRequest((request) => request + 1);
+    setFloor(npcMapRequest.position.floor);
+  }, [npcMapRequest, npcs]);
+
+  useEffect(() => {
+    if (!monsterMapRequest) return;
+    if (monsterMapLoadStatus !== "ready") return;
+    const category = monsterMapCategories.find(
+      (entry) =>
+        entry.monsterIds.includes(monsterMapRequest.monsterId) &&
+        entry.positions.length > 0,
+    );
+    if (!category) {
+      setSearchMessage("Nie znaleziono lokalizacji tego potwora na mapie.");
+      return;
+    }
+
+    showMonsterLocations(monsterMapRequest.monsterId);
+  }, [monsterMapRequest, monsterMapCategories, monsterMapLoadStatus]);
+
+  useEffect(() => {
+    const targetPosition =
+      selectedMonsterPosition?.position ??
+      selectedLocation?.position ??
+      selectedHouse?.position ??
+      selectedPosition;
+    if (!focusPendingRef.current || targetPosition?.floor !== floor) return;
     focusPendingRef.current = false;
 
     window.requestAnimationFrame(() => {
@@ -1658,25 +2141,37 @@ function MapWorkspace({
       const canvas = canvasRef.current;
       if (!viewport || !canvas) return;
 
-      const targetZoom = 2.5;
+      const targetZoom = 5;
       const canvasWidth = canvas.clientWidth;
       const canvasHeight = canvas.clientHeight;
       const canvasLeft = (viewport.clientWidth - canvasWidth) / 2;
       const canvasTop = (viewport.clientHeight - canvasHeight) / 2;
-      const targetX = (selectedPosition.x / mapDimensions.width) * canvasWidth;
-      const targetY = (selectedPosition.y / mapDimensions.height) * canvasHeight;
+      const targetX = (targetPosition.x / mapDimensions.width) * canvasWidth;
+      const targetY = (targetPosition.y / mapDimensions.height) * canvasHeight;
 
       setZoom(targetZoom);
-      setPan({
-        x: viewport.clientWidth / 2 - canvasLeft - targetX * targetZoom,
-        y: viewport.clientHeight / 2 - canvasTop - targetY * targetZoom,
-      });
+      setPan(
+        constrainPan(
+          {
+            x: viewport.clientWidth / 2 - canvasLeft - targetX * targetZoom,
+            y: viewport.clientHeight / 2 - canvasTop - targetY * targetZoom,
+          },
+          targetZoom,
+        ),
+      );
     });
-  }, [floor, focusRequest, selectedPosition]);
+  }, [
+    floor,
+    focusRequest,
+    selectedHouse,
+    selectedLocation,
+    selectedPosition,
+    selectedMonsterPosition,
+  ]);
 
   useEffect(() => {
     function resetViewOnResize() {
-      setZoom(1);
+      setZoom(defaultMapZoom);
       setPan({ x: 0, y: 0 });
     }
 
@@ -1693,7 +2188,7 @@ function MapWorkspace({
       event.preventDefault();
       const { zoom: currentZoom, pan: currentPan } = viewRef.current;
       const nextZoom = Math.min(
-        8,
+        maxMapZoom,
         Math.max(0.5, currentZoom * (event.deltaY < 0 ? 1.15 : 1 / 1.15)),
       );
       const canvas = canvasRef.current;
@@ -1705,10 +2200,15 @@ function MapWorkspace({
       const centerY = mapViewport.clientHeight / 2;
       const mapX = (centerX - canvasLeft - currentPan.x) / currentZoom;
       const mapY = (centerY - canvasTop - currentPan.y) / currentZoom;
-      setPan({
-        x: centerX - canvasLeft - mapX * nextZoom,
-        y: centerY - canvasTop - mapY * nextZoom,
-      });
+      setPan(
+        constrainPan(
+          {
+            x: centerX - canvasLeft - mapX * nextZoom,
+            y: centerY - canvasTop - mapY * nextZoom,
+          },
+          nextZoom,
+        ),
+      );
       setZoom(nextZoom);
     }
 
@@ -1716,16 +2216,22 @@ function MapWorkspace({
     return () => mapViewport.removeEventListener("wheel", handleWheel);
   }, []);
 
-  function chooseNpc(npc: NPC) {
+  function chooseNpc(npc: NPC, targetPosition?: MapNpcPosition) {
+    setMarkerLayer("npcs");
+    setSelectedHouseId(null);
+    setSelectedLocationId(null);
+    clearSelectedMonster();
     setSelectedNpcId(npc.id);
     setSearchValue(npc.name);
-    const position = positions.find((entry) => entry.npcId === npc.id);
+    const position =
+      targetPosition ?? positions.find((entry) => entry.npcId === npc.id);
     if (!position) {
       focusPendingRef.current = false;
       setSearchMessage(`Brak współrzędnych NPC ${npc.name}.`);
       return;
     }
 
+    setSelectedPositionKey(getMapPositionKey(position));
     focusPendingRef.current = true;
     setFocusRequest((request) => request + 1);
     setFloor(position.floor);
@@ -1734,21 +2240,114 @@ function MapWorkspace({
     );
   }
 
-  function searchNpc(event: React.FormEvent<HTMLFormElement>) {
+  function searchMapMarker(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const normalizedName = searchValue.trim().toLocaleLowerCase("pl");
-    const npc = npcs.find(
-      (entry) => entry.name.toLocaleLowerCase("pl") === normalizedName,
-    );
-    if (!npc) {
-      setSearchMessage(`Nie znaleziono NPC „${searchValue.trim()}”.`);
+    if (markerLayer === "") {
+      setSearchMessage(
+        "Najpierw wybierz kategorię markerów: NPC, Potwory, Domki lub Lokalizacje.",
+      );
       return;
     }
-    chooseNpc(npc);
+    if (markerLayer === "npcs") {
+      const npc = npcs.find(
+        (entry) => entry.name.toLocaleLowerCase("pl") === normalizedName,
+      );
+      if (!npc) {
+        setSearchMessage(`Nie znaleziono NPC „${searchValue.trim()}”.`);
+        return;
+      }
+      chooseNpc(npc);
+      return;
+    }
+
+    if (markerLayer === "monsters") {
+      const monster = monsters.find(
+        (entry) => entry.name.toLocaleLowerCase("pl") === normalizedName,
+      );
+      if (monster) {
+        const category = monsterMapCategories.find(
+          (entry) =>
+            entry.monsterIds.includes(monster.id) && entry.positions.length > 0,
+        );
+        if (category) {
+          showMonsterLocations(monster.id);
+          return;
+        }
+      }
+
+      const category = monsterMapCategories.find(
+        (entry) =>
+          entry.monsterIds.length === 0 &&
+          entry.name.toLocaleLowerCase("pl") === normalizedName,
+      );
+      if (!category) {
+        setSearchMessage(
+          monster
+            ? `Brak lokalizacji potwora ${monster.name} na mapie.`
+            : `Nie znaleziono potwora „${searchValue.trim()}”.`,
+        );
+        return;
+      }
+      setMarkerLayer("monsters");
+      setSelectedNpcId(null);
+      setSelectedPositionKey(null);
+      setSelectedHouseId(null);
+      setSelectedLocationId(null);
+      setSelectedMonsterId(null);
+      setSelectedMapOnlyMonsterCategoryId(category.id);
+      setSelectedMonsterPositionKey(null);
+      setSearchValue(category.name);
+      setSearchMessage(
+        `Pokazano ${category.positions.length} lokalizacji: ${category.name}. Kliknij marker, aby przejść do poziomu i przybliżyć pozycję.`,
+      );
+      return;
+    }
+
+    if (markerLayer === "locations") {
+      const location = locations.find(
+        (entry) => entry.name.toLocaleLowerCase("pl") === normalizedName,
+      );
+      if (!location) {
+        setSearchMessage(`Nie znaleziono lokalizacji „${searchValue.trim()}”.`);
+        return;
+      }
+      setSelectedNpcId(null);
+      setSelectedPositionKey(null);
+      clearSelectedMonster();
+      setSelectedHouseId(null);
+      setSelectedLocationId(location.id);
+      focusPendingRef.current = true;
+      setFocusRequest((request) => request + 1);
+      setFloor(location.position.floor);
+      setSearchMessage(
+        `${location.name}: poziom ${location.position.floor}, pozycja ${location.position.x} × ${location.position.y}.`,
+      );
+      return;
+    }
+
+    const house = houses.find(
+      (entry) => entry.name.toLocaleLowerCase("pl") === normalizedName,
+    );
+    if (!house) {
+      setSearchMessage(`Nie znaleziono domku „${searchValue.trim()}”.`);
+      return;
+    }
+    setSelectedNpcId(null);
+    setSelectedPositionKey(null);
+    clearSelectedMonster();
+    setSelectedLocationId(null);
+    setSelectedHouseId(house.id);
+    focusPendingRef.current = true;
+    setFocusRequest((request) => request + 1);
+    setFloor(house.position.floor);
+    setSearchMessage(
+      `${house.name}: poziom ${house.position.floor}, pozycja ${house.position.x} × ${house.position.y}.`,
+    );
   }
 
   function changeZoom(nextZoom: number) {
-    const boundedZoom = Math.min(8, Math.max(0.5, nextZoom));
+    const boundedZoom = Math.min(maxMapZoom, Math.max(0.5, nextZoom));
     const viewport = viewportRef.current;
     const canvas = canvasRef.current;
     if (!viewport || !canvas) {
@@ -1762,10 +2361,15 @@ function MapWorkspace({
     const centerY = viewport.clientHeight / 2;
     const mapX = (centerX - canvasLeft - pan.x) / zoom;
     const mapY = (centerY - canvasTop - pan.y) / zoom;
-    setPan({
-      x: centerX - canvasLeft - mapX * boundedZoom,
-      y: centerY - canvasTop - mapY * boundedZoom,
-    });
+    setPan(
+      constrainPan(
+        {
+          x: centerX - canvasLeft - mapX * boundedZoom,
+          y: centerY - canvasTop - mapY * boundedZoom,
+        },
+        boundedZoom,
+      ),
+    );
     setZoom(boundedZoom);
   }
 
@@ -1789,10 +2393,15 @@ function MapWorkspace({
   function handlePointerMove(event: React.PointerEvent<HTMLDivElement>) {
     const drag = dragRef.current;
     if (!drag || drag.pointerId !== event.pointerId) return;
-    setPan({
-      x: drag.panX + event.clientX - drag.startX,
-      y: drag.panY + event.clientY - drag.startY,
-    });
+    setPan(
+      constrainPan(
+        {
+          x: drag.panX + event.clientX - drag.startX,
+          y: drag.panY + event.clientY - drag.startY,
+        },
+        zoom,
+      ),
+    );
   }
 
   function handlePointerUp(event: React.PointerEvent<HTMLDivElement>) {
@@ -1806,14 +2415,47 @@ function MapWorkspace({
       <div className="map-toolbar">
         <div className="map-heading">
           <p className="eyebrow">MAPA ŚWIATA</p>
-          <h2>Interaktywna mapa</h2>
+          <h2>Minimapa</h2>
         </div>
         <div className="map-controls">
+          <label className="map-floor-select">
+            <span>Markery</span>
+            <select
+              aria-label="Wybierz markery na mapie"
+              onChange={(event) => {
+                const nextLayer = event.target.value as MapMarkerLayer;
+                setMarkerLayer(nextLayer);
+                setSelectedNpcId(null);
+                setSelectedPositionKey(null);
+                clearSelectedMonster();
+                setSelectedHouseId(null);
+                setSelectedLocationId(null);
+                setSearchValue("");
+                setSearchMessage("");
+                if (nextLayer === "monsters") onLoadMonsterLocations();
+              }}
+              value={markerLayer}
+            >
+              <option value="">Brak</option>
+              <option value="npcs">NPC</option>
+              <option value="monsters">Potwory</option>
+              <option value="houses">Domki</option>
+              <option value="locations">Lokalizacje</option>
+            </select>
+          </label>
           <label className="map-floor-select">
             <span>Poziom</span>
             <select
               aria-label="Wybierz poziom mapy"
-              onChange={(event) => setFloor(Number(event.target.value))}
+              onChange={(event) => {
+                setFloor(Number(event.target.value));
+                setSelectedNpcId(null);
+                setSelectedPositionKey(null);
+                setSelectedMonsterPositionKey(null);
+                setSelectedHouseId(null);
+                setSelectedLocationId(null);
+                setSearchMessage("");
+              }}
               value={floor}
             >
               {mapFloors.map((level) => (
@@ -1823,24 +2465,95 @@ function MapWorkspace({
               ))}
             </select>
           </label>
-          <form className="map-search" onSubmit={searchNpc}>
+          <form className="map-search" onSubmit={searchMapMarker}>
             <label className="map-search-field">
-              <span className="eyebrow">SZUKAJ NPC</span>
+              <span className="eyebrow">
+                {markerLayer === "houses"
+                  ? "SZUKAJ DOMKU"
+                  : markerLayer === "locations"
+                    ? "SZUKAJ LOKALIZACJI"
+                    : markerLayer === "monsters"
+                      ? "SZUKAJ POTWORA"
+                    : markerLayer === "npcs"
+                      ? "SZUKAJ NPC"
+                      : "WYSZUKIWARKA"}
+              </span>
               <input
-                aria-label="Wyszukaj NPC na mapie"
-                list="map-npc-names"
+                aria-label={
+                  markerLayer === "houses"
+                    ? "Wyszukaj domek na mapie"
+                    : markerLayer === "locations"
+                      ? "Wyszukaj lokalizację na mapie"
+                      : markerLayer === "monsters"
+                        ? "Wyszukaj potwora na mapie"
+                      : "Wyszukaj NPC na mapie"
+                }
+                disabled={
+                  markerLayer === "" ||
+                  (markerLayer === "monsters" &&
+                    monsterMapLoadStatus !== "ready")
+                }
+                list={
+                  markerLayer === "houses"
+                    ? "map-house-names"
+                    : markerLayer === "locations"
+                      ? "map-location-names"
+                      : markerLayer === "monsters"
+                        ? "map-monster-names"
+                      : "map-npc-names"
+                }
                 onChange={(event) => setSearchValue(event.target.value)}
-                placeholder="Wpisz nazwę NPC..."
+                placeholder={
+                  markerLayer === "houses"
+                    ? "Wpisz nazwę domku..."
+                    : markerLayer === "npcs"
+                      ? "Wpisz nazwę NPC..."
+                      : markerLayer === "monsters"
+                        ? "Wpisz nazwę potwora..."
+                      : markerLayer === "locations"
+                        ? "Wpisz nazwę lokalizacji..."
+                        : "Najpierw wybierz markery"
+                }
                 type="search"
                 value={searchValue}
               />
-              <datalist id="map-npc-names">
-                {npcs.map((npc) => (
-                  <option key={npc.id} value={npc.name} />
-                ))}
+              <datalist
+                id={
+                  markerLayer === "houses"
+                    ? "map-house-names"
+                    : markerLayer === "locations"
+                      ? "map-location-names"
+                      : markerLayer === "monsters"
+                        ? "map-monster-names"
+                      : "map-npc-names"
+                }
+              >
+                {markerLayer === "houses"
+                  ? houses.map((house) => (
+                      <option key={house.id} value={house.name} />
+                    ))
+                  : markerLayer === "locations"
+                    ? locations.map((location) => (
+                        <option key={location.id} value={location.name} />
+                      ))
+                    : markerLayer === "monsters"
+                      ? mapMonsterSearchNames.map((name) => (
+                          <option key={name} value={name} />
+                        ))
+                    : npcs.map((npc) => (
+                        <option key={npc.id} value={npc.name} />
+                      ))}
               </datalist>
             </label>
-            <button className="map-search-button" type="submit">
+            <button
+              className="map-search-button"
+              disabled={
+                markerLayer === "" ||
+                (markerLayer === "monsters" &&
+                  monsterMapLoadStatus !== "ready")
+              }
+              type="submit"
+            >
               Pokaż
             </button>
           </form>
@@ -1863,7 +2576,7 @@ function MapWorkspace({
             <button
               className="map-reset-button"
               onClick={() => {
-                setZoom(1);
+                setZoom(defaultMapZoom);
                 setPan({ x: 0, y: 0 });
               }}
               type="button"
@@ -1874,6 +2587,17 @@ function MapWorkspace({
         </div>
       </div>
 
+      {markerLayer === "monsters" && monsterMapLoadStatus === "loading" && (
+        <p className="map-status" role="status">
+          Wczytywanie lokalizacji potworów…
+        </p>
+      )}
+      {markerLayer === "monsters" && monsterMapLoadStatus === "error" && (
+        <p className="map-error" role="alert">
+          {monsterMapLoadError}
+        </p>
+      )}
+
       {(searchMessage || (selectedNpc && selectedPosition)) && (
         <div className="map-status" aria-live="polite">
           {searchMessage ||
@@ -1883,7 +2607,7 @@ function MapWorkspace({
 
       <div
         aria-label={`Mapa poziomu ${floor > 0 ? `+${floor}` : floor}`}
-        className="map-viewport"
+        className={`map-viewport${floor === 0 ? " map-viewport-floor-zero" : ""}`}
         onPointerCancel={handlePointerUp}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
@@ -1906,31 +2630,265 @@ function MapWorkspace({
             src={`./maps/${imageName}`}
           />
           {positions
-            .filter((position) => position.floor === floor)
+            .filter(
+              (position) =>
+                markerLayer === "npcs" && position.floor === floor,
+            )
             .map((position) => {
               const npc = npcs.find((entry) => entry.id === position.npcId);
               if (!npc) return null;
+              const isSelected =
+                selectedNpcId === npc.id &&
+                selectedPositionKey === getMapPositionKey(position);
               return (
-                <button
-                  aria-label={`${npc.name}, pozycja ${position.x} × ${position.y}`}
-                  className={
-                    selectedNpcId === npc.id
-                      ? "map-marker selected"
-                      : "map-marker"
-                  }
-                  key={npc.id}
-                  onClick={() => chooseNpc(npc)}
+                <div
+                  className={`map-npc-marker${isSelected ? " selected" : ""}`}
+                  key={getMapPositionKey(position)}
                   style={{
                     left: `${(position.x / mapDimensions.width) * 100}%`,
                     top: `${(position.y / mapDimensions.height) * 100}%`,
+                    transform: `translate(-50%, -50%) scale(${1 / zoom})`,
                   }}
-                  type="button"
                 >
-                  <span className="map-marker-pin" aria-hidden="true" />
-                  <span className="map-marker-label">{npc.name}</span>
-                </button>
+                  <button
+                    aria-expanded={isSelected}
+                    aria-label={`${npc.name}, pozycja ${position.x} × ${position.y}`}
+                    className="map-npc-icon-button"
+                    onClick={() => chooseNpc(npc, position)}
+                    title={npc.name}
+                    type="button"
+                  >
+                    <MapNpcIcon />
+                  </button>
+                  {isSelected && (
+                    <div
+                      aria-label={`Informacje o NPC ${npc.name}`}
+                      className="map-npc-popup"
+                      role="dialog"
+                    >
+                      <button
+                        aria-label={`Zamknij informacje o NPC ${npc.name}`}
+                        className="map-house-popup-close"
+                        onClick={() => {
+                          setSelectedNpcId(null);
+                          setSelectedPositionKey(null);
+                          setSearchMessage("");
+                        }}
+                        type="button"
+                      >
+                        ×
+                      </button>
+                      <div className="map-house-popup-heading">
+                        <MapNpcIcon />
+                        <div>
+                          <strong>{npc.name}</strong>
+                          <button
+                            className="map-house-popup-floor"
+                            onClick={() => setFloor(position.floor)}
+                            type="button"
+                          >
+                            Poziom{" "}
+                            {position.floor > 0 ? `+${position.floor}` : position.floor}
+                          </button>
+                        </div>
+                      </div>
+                      <p className="map-npc-popup-description">{npc.description}</p>
+                    </div>
+                  )}
+                </div>
               );
             })}
+          {activeMonsterCategories.map((category) => {
+            const monster =
+              category.monsterIds.length === 0
+                ? undefined
+                : monsters.find(
+                    (entry) => entry.id === category.monsterIds[0],
+                  );
+            const displayName = monster?.name ?? category.name;
+            return category.positions.map(([markerFloor, x, y], positionIndex) => {
+              const isSelected =
+                selectedMonsterPositionKey ===
+                getMapMonsterPositionKey(category.id, positionIndex);
+              const isOtherFloor = markerFloor !== floor;
+              return (
+                <div
+                  className={`map-monster-marker${isSelected ? " selected" : ""}${isOtherFloor ? " other-floor" : ""}`}
+                  key={getMapMonsterPositionKey(category.id, positionIndex)}
+                  style={{
+                    left: `${(x / mapDimensions.width) * 100}%`,
+                    top: `${(y / mapDimensions.height) * 100}%`,
+                    transform: `translate(-50%, -50%) scale(${1 / zoom})`,
+                  }}
+                >
+                  <button
+                    aria-expanded={isSelected}
+                    aria-label={`${displayName}, poziom ${markerFloor > 0 ? `+${markerFloor}` : markerFloor}, pozycja ${x} × ${y}${isOtherFloor ? ", inny poziom" : ""}`}
+                    className="map-monster-icon-button"
+                    onClick={() => selectMonsterPosition(category, positionIndex)}
+                    title={displayName}
+                    type="button"
+                  >
+                    <span aria-hidden="true" className="map-monster-dot" />
+                  </button>
+                  {isSelected && (
+                    <div
+                      aria-label={`Informacje o potworze ${displayName}`}
+                      className="map-npc-popup map-monster-popup"
+                      role="dialog"
+                    >
+                      <button
+                        aria-label={`Zamknij informacje o potworze ${displayName}`}
+                        className="map-house-popup-close"
+                        onClick={() => {
+                          setSelectedMonsterPositionKey(null);
+                          setSearchMessage("");
+                        }}
+                        type="button"
+                      >
+                        ×
+                      </button>
+                      <div className="map-house-popup-heading">
+                        <span aria-hidden="true" className="map-monster-popup-icon" />
+                        <div>
+                          <strong>{displayName}</strong>
+                          <span className="map-monster-popup-floor">
+                            Poziom{" "}
+                            {markerFloor > 0 ? `+${markerFloor}` : markerFloor}
+                          </span>
+                        </div>
+                      </div>
+                      {category.name !== displayName && (
+                        <p className="map-monster-popup-source">
+                          {category.name}
+                        </p>
+                      )}
+                      <p className="map-npc-popup-description">
+                        {x} × {y}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              );
+            });
+          })}
+          {houses
+            .filter(
+              (house) =>
+                markerLayer === "houses" && house.position.floor === floor,
+            )
+            .map((house) => (
+              <div
+                className={`map-house-marker${
+                  selectedHouseId === house.id ? " selected" : ""
+                }`}
+                key={house.id}
+                style={{
+                  left: `${(house.position.x / mapDimensions.width) * 100}%`,
+                  top: `${(house.position.y / mapDimensions.height) * 100}%`,
+                  transform: `translate(-50%, -50%) scale(${1 / zoom})`,
+                }}
+              >
+                <button
+                  aria-expanded={selectedHouseId === house.id}
+                  aria-label={`${house.name}, domek w ${house.region}, poziom ${house.position.floor}`}
+                  className="map-house-icon-button"
+                  onClick={() => {
+                    setMarkerLayer("houses");
+                    setSelectedNpcId(null);
+                    setSelectedPositionKey(null);
+                    clearSelectedMonster();
+                    setSelectedLocationId(null);
+                    setSelectedHouseId(house.id);
+                    setSearchValue(house.name);
+                    setSearchMessage("");
+                    focusPendingRef.current = true;
+                    setFocusRequest((request) => request + 1);
+                    setFloor(house.position.floor);
+                  }}
+                  title={house.name}
+                  type="button"
+                >
+                  <MapHouseIcon />
+                </button>
+                {selectedHouseId === house.id && (
+                  <div
+                    aria-label={`Informacje o domku ${house.name}`}
+                    className="map-house-popup"
+                    role="dialog"
+                  >
+                    <button
+                      aria-label="Zamknij informacje o domku"
+                      className="map-house-popup-close"
+                      onClick={() => setSelectedHouseId(null)}
+                      type="button"
+                    >
+                      ×
+                    </button>
+                    <div className="map-house-popup-heading">
+                      <MapHouseIcon />
+                      <div>
+                        <strong>{house.name}</strong>
+                        <button
+                          className="map-house-popup-floor"
+                          onClick={() => setFloor(house.position.floor)}
+                          type="button"
+                        >
+                          Poziom{" "}
+                          {house.position.floor > 0
+                            ? `+${house.position.floor}`
+                            : house.position.floor}
+                        </button>
+                      </div>
+                    </div>
+                    <p>{house.region}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          {locations
+            .filter(
+              (location) =>
+                markerLayer === "locations" &&
+                location.position.floor === floor,
+            )
+            .map((location) => (
+              <button
+                aria-label={`${location.name}, poziom ${location.position.floor}, pozycja ${location.position.x} × ${location.position.y}`}
+                className={`map-location-marker${
+                  selectedLocationId === location.id ? " selected" : ""
+                }`}
+                key={location.id}
+                onClick={() => {
+                  setMarkerLayer("locations");
+                  setSelectedNpcId(null);
+                  setSelectedPositionKey(null);
+                  clearSelectedMonster();
+                  setSelectedHouseId(null);
+                  setSelectedLocationId(location.id);
+                  setSearchValue(location.name);
+                  focusPendingRef.current = true;
+                  setFocusRequest((request) => request + 1);
+                  setFloor(location.position.floor);
+                  setSearchMessage(
+                    `${location.name}: poziom ${location.position.floor}, pozycja ${location.position.x} × ${location.position.y}.`,
+                  );
+                }}
+                style={{
+                  left: `${(location.position.x / mapDimensions.width) * 100}%`,
+                  top: `${(location.position.y / mapDimensions.height) * 100}%`,
+                  transform: `translate(-50%, -50%) scale(${1 / zoom})`,
+                }}
+                title={
+                  location.description
+                    ? `${location.name}: ${location.description}`
+                    : location.name
+                }
+                type="button"
+              >
+                <span className="map-location-label">{location.name}</span>
+              </button>
+            ))}
         </div>
         {imageError && (
           <p className="map-error" role="alert">
@@ -1949,6 +2907,13 @@ function MapWorkspace({
           )}
       </div>
       <p className="map-help">
+        Wybierz NPC, Potwory, Domki lub Lokalizacje, aby wyświetlić oznaczenia.
+        Wyszukanie potwora pokazuje jego markery na wszystkich poziomach bez
+        przesuwania mapy; szare oznaczają inne piętra. Kliknij marker, aby
+        przejść na jego poziom i przybliżyć pozycję. Kliknij zielony znacznik
+        NPC, aby zobaczyć jego opis, lub etykietę lokalizacji, aby wyświetlić
+        pozycję.
+        Kliknij niebieską ikonę domku, aby zobaczyć jego nazwę i lokalizację.
         Przeciągnij mapę, aby ją przesunąć. Użyj kółka myszy lub przycisków,
         aby zmienić powiększenie.
       </p>

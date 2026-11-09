@@ -1,0 +1,3402 @@
+[
+  {
+    "id": 347,
+    "name": "Ankaros I",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 988,
+      "y": 711
+    }
+  },
+  {
+    "id": 349,
+    "name": "Ankaros II",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1005,
+      "y": 711
+    }
+  },
+  {
+    "id": 348,
+    "name": "Ankaros III",
+    "region": "Ankaros",
+    "position": {
+      "floor": 1,
+      "x": 997,
+      "y": 713
+    }
+  },
+  {
+    "id": 350,
+    "name": "Ankaros IV",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1004,
+      "y": 732
+    }
+  },
+  {
+    "id": 351,
+    "name": "Ankaros V",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1037,
+      "y": 710
+    }
+  },
+  {
+    "id": 352,
+    "name": "Ankaros VI",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1079,
+      "y": 706
+    }
+  },
+  {
+    "id": 353,
+    "name": "Ankaros VII",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1084,
+      "y": 706
+    }
+  },
+  {
+    "id": 360,
+    "name": "Archeo I",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1015,
+      "y": 791
+    }
+  },
+  {
+    "id": 361,
+    "name": "Archeo II",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1022,
+      "y": 791
+    }
+  },
+  {
+    "id": 362,
+    "name": "Archeo III",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1029,
+      "y": 791
+    }
+  },
+  {
+    "id": 363,
+    "name": "Archeo IV",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1036,
+      "y": 791
+    }
+  },
+  {
+    "id": 368,
+    "name": "Archeo IX",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1071,
+      "y": 791
+    }
+  },
+  {
+    "id": 364,
+    "name": "Archeo V",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1043,
+      "y": 791
+    }
+  },
+  {
+    "id": 365,
+    "name": "Archeo VI",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1050,
+      "y": 791
+    }
+  },
+  {
+    "id": 366,
+    "name": "Archeo VII",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1057,
+      "y": 791
+    }
+  },
+  {
+    "id": 367,
+    "name": "Archeo VIII",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1064,
+      "y": 791
+    }
+  },
+  {
+    "id": 369,
+    "name": "Archeo X",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1078,
+      "y": 791
+    }
+  },
+  {
+    "id": 370,
+    "name": "Archeo XI",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1085,
+      "y": 791
+    }
+  },
+  {
+    "id": 503,
+    "name": "Arena I",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1343,
+      "y": 230
+    }
+  },
+  {
+    "id": 504,
+    "name": "Arena II",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1341,
+      "y": 239
+    }
+  },
+  {
+    "id": 505,
+    "name": "Arena III",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1341,
+      "y": 244
+    }
+  },
+  {
+    "id": 506,
+    "name": "Arena IV",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 2,
+      "x": 1345,
+      "y": 239
+    }
+  },
+  {
+    "id": 507,
+    "name": "Arena V",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 2,
+      "x": 1345,
+      "y": 244
+    }
+  },
+  {
+    "id": 215,
+    "name": "Atlantic Street",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 394,
+      "y": 125
+    }
+  },
+  {
+    "id": 216,
+    "name": "Atlantic Street II",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 390,
+      "y": 123
+    }
+  },
+  {
+    "id": 217,
+    "name": "Atlantic Street III",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 387,
+      "y": 125
+    }
+  },
+  {
+    "id": 218,
+    "name": "Atlantic Street IV",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 384,
+      "y": 125
+    }
+  },
+  {
+    "id": 219,
+    "name": "Atlantic Street V",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 386,
+      "y": 123
+    }
+  },
+  {
+    "id": 405,
+    "name": "Baldurs Gate I",
+    "region": "Capital City",
+    "position": {
+      "floor": -3,
+      "x": 333,
+      "y": 258
+    }
+  },
+  {
+    "id": 406,
+    "name": "Baldurs Gate II",
+    "region": "Capital City",
+    "position": {
+      "floor": -3,
+      "x": 333,
+      "y": 261
+    }
+  },
+  {
+    "id": 407,
+    "name": "Baldurs Gate III",
+    "region": "Capital City",
+    "position": {
+      "floor": -3,
+      "x": 347,
+      "y": 276
+    }
+  },
+  {
+    "id": 408,
+    "name": "Baldurs Gate IV",
+    "region": "Capital City",
+    "position": {
+      "floor": -3,
+      "x": 350,
+      "y": 276
+    }
+  },
+  {
+    "id": 409,
+    "name": "Baldurs Gate V",
+    "region": "Capital City",
+    "position": {
+      "floor": -3,
+      "x": 365,
+      "y": 261
+    }
+  },
+  {
+    "id": 410,
+    "name": "Baldurs Gate VI",
+    "region": "Capital City",
+    "position": {
+      "floor": -3,
+      "x": 365,
+      "y": 258
+    }
+  },
+  {
+    "id": 411,
+    "name": "Baldurs Gate VII",
+    "region": "Capital City",
+    "position": {
+      "floor": -3,
+      "x": 350,
+      "y": 244
+    }
+  },
+  {
+    "id": 412,
+    "name": "Baldurs Gate VIII",
+    "region": "Capital City",
+    "position": {
+      "floor": -3,
+      "x": 347,
+      "y": 244
+    }
+  },
+  {
+    "id": 469,
+    "name": "Bamboo Camp I",
+    "region": "Bamboo Camp",
+    "position": {
+      "floor": 0,
+      "x": 381,
+      "y": 304
+    }
+  },
+  {
+    "id": 471,
+    "name": "Bamboo Camp II",
+    "region": "Bamboo Camp",
+    "position": {
+      "floor": 0,
+      "x": 371,
+      "y": 301
+    }
+  },
+  {
+    "id": 470,
+    "name": "Bamboo Camp III",
+    "region": "Bamboo Camp",
+    "position": {
+      "floor": 0,
+      "x": 376,
+      "y": 296
+    }
+  },
+  {
+    "id": 472,
+    "name": "Bamboo Camp IV",
+    "region": "Bamboo Camp",
+    "position": {
+      "floor": 0,
+      "x": 385,
+      "y": 296
+    }
+  },
+  {
+    "id": 476,
+    "name": "Bamboo Camp IX",
+    "region": "Bamboo Camp",
+    "position": {
+      "floor": 1,
+      "x": 385,
+      "y": 310
+    }
+  },
+  {
+    "id": 473,
+    "name": "Bamboo Camp V",
+    "region": "Bamboo Camp",
+    "position": {
+      "floor": 0,
+      "x": 386,
+      "y": 301
+    }
+  },
+  {
+    "id": 474,
+    "name": "Bamboo Camp VI",
+    "region": "Bamboo Camp",
+    "position": {
+      "floor": 0,
+      "x": 385,
+      "y": 306
+    }
+  },
+  {
+    "id": 475,
+    "name": "Bamboo Camp VII",
+    "region": "Bamboo Camp",
+    "position": {
+      "floor": 0,
+      "x": 396,
+      "y": 305
+    }
+  },
+  {
+    "id": 477,
+    "name": "Bamboo Camp VIII",
+    "region": "Bamboo Camp",
+    "position": {
+      "floor": 0,
+      "x": 354,
+      "y": 308
+    }
+  },
+  {
+    "id": 481,
+    "name": "Big Tree I",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1189,
+      "y": 209
+    }
+  },
+  {
+    "id": 482,
+    "name": "Big Tree II",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1190,
+      "y": 189
+    }
+  },
+  {
+    "id": 225,
+    "name": "Canyon Flat I",
+    "region": "Canyon of Damned",
+    "position": {
+      "floor": 2,
+      "x": 684,
+      "y": 513
+    }
+  },
+  {
+    "id": 226,
+    "name": "Canyon Flat II",
+    "region": "Canyon of Damned",
+    "position": {
+      "floor": 2,
+      "x": 681,
+      "y": 508
+    }
+  },
+  {
+    "id": 227,
+    "name": "Canyon Flat III",
+    "region": "Canyon of Damned",
+    "position": {
+      "floor": 2,
+      "x": 681,
+      "y": 502
+    }
+  },
+  {
+    "id": 228,
+    "name": "Canyon Flat IV",
+    "region": "Canyon of Damned",
+    "position": {
+      "floor": 3,
+      "x": 677,
+      "y": 491
+    }
+  },
+  {
+    "id": 206,
+    "name": "City House",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 418,
+      "y": 252
+    }
+  },
+  {
+    "id": 397,
+    "name": "Clan Hall I",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 331,
+      "y": 429
+    }
+  },
+  {
+    "id": 399,
+    "name": "Clan Hall II",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 332,
+      "y": 433
+    }
+  },
+  {
+    "id": 398,
+    "name": "Clan Hall III",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 326,
+      "y": 429
+    }
+  },
+  {
+    "id": 400,
+    "name": "Clan Hall IV",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 325,
+      "y": 433
+    }
+  },
+  {
+    "id": 402,
+    "name": "Clan Hall VI",
+    "region": "Expgard",
+    "position": {
+      "floor": 1,
+      "x": 326,
+      "y": 435
+    }
+  },
+  {
+    "id": 404,
+    "name": "Clan Hall VIII",
+    "region": "Expgard",
+    "position": {
+      "floor": 1,
+      "x": 332,
+      "y": 435
+    }
+  },
+  {
+    "id": 488,
+    "name": "Cod Street I",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1223,
+      "y": 199
+    }
+  },
+  {
+    "id": 489,
+    "name": "Cod Street II",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1223,
+      "y": 203
+    }
+  },
+  {
+    "id": 490,
+    "name": "Cod Street III",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1238,
+      "y": 204
+    }
+  },
+  {
+    "id": 492,
+    "name": "Cod Street IV",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1243,
+      "y": 204
+    }
+  },
+  {
+    "id": 491,
+    "name": "Cod Street V",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1238,
+      "y": 208
+    }
+  },
+  {
+    "id": 493,
+    "name": "Cod Street VI",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1243,
+      "y": 208
+    }
+  },
+  {
+    "id": 494,
+    "name": "Cod Street VII",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1259,
+      "y": 197
+    }
+  },
+  {
+    "id": 495,
+    "name": "Cod Street VIII",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1288,
+      "y": 198
+    }
+  },
+  {
+    "id": 483,
+    "name": "Cod West GH",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 0,
+      "x": 1164,
+      "y": 261
+    }
+  },
+  {
+    "id": 509,
+    "name": "Codway I",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1227,
+      "y": 273
+    }
+  },
+  {
+    "id": 510,
+    "name": "Codway II",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1248,
+      "y": 273
+    }
+  },
+  {
+    "id": 511,
+    "name": "Codway III",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1250,
+      "y": 273
+    }
+  },
+  {
+    "id": 512,
+    "name": "Codway IV",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1253,
+      "y": 273
+    }
+  },
+  {
+    "id": 513,
+    "name": "Codway V",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 0,
+      "x": 1229,
+      "y": 291
+    }
+  },
+  {
+    "id": 514,
+    "name": "Codway VI",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 0,
+      "x": 1240,
+      "y": 286
+    }
+  },
+  {
+    "id": 288,
+    "name": "Darkness",
+    "region": "Darkness Island",
+    "position": {
+      "floor": 0,
+      "x": 235,
+      "y": 565
+    }
+  },
+  {
+    "id": 450,
+    "name": "Desert Street I",
+    "region": "Desert",
+    "position": {
+      "floor": 0,
+      "x": 413,
+      "y": 277
+    }
+  },
+  {
+    "id": 451,
+    "name": "Desert Street IV",
+    "region": "Desert",
+    "position": {
+      "floor": 1,
+      "x": 412,
+      "y": 275
+    }
+  },
+  {
+    "id": 452,
+    "name": "Desert Street VI",
+    "region": "Desert",
+    "position": {
+      "floor": 1,
+      "x": 405,
+      "y": 276
+    }
+  },
+  {
+    "id": 208,
+    "name": "Evul Street",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 388,
+      "y": 154
+    }
+  },
+  {
+    "id": 258,
+    "name": "ExpStreet I",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 332,
+      "y": 450
+    }
+  },
+  {
+    "id": 259,
+    "name": "ExpStreet II",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 325,
+      "y": 450
+    }
+  },
+  {
+    "id": 260,
+    "name": "ExpStreet III",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 325,
+      "y": 469
+    }
+  },
+  {
+    "id": 261,
+    "name": "ExpStreet IV",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 332,
+      "y": 469
+    }
+  },
+  {
+    "id": 266,
+    "name": "ExpStreet IX",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 405,
+      "y": 491
+    }
+  },
+  {
+    "id": 262,
+    "name": "ExpStreet V",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 379,
+      "y": 491
+    }
+  },
+  {
+    "id": 263,
+    "name": "ExpStreet VI",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 372,
+      "y": 491
+    }
+  },
+  {
+    "id": 264,
+    "name": "ExpStreet VII",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 372,
+      "y": 510
+    }
+  },
+  {
+    "id": 265,
+    "name": "ExpStreet VIII",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 379,
+      "y": 510
+    }
+  },
+  {
+    "id": 267,
+    "name": "ExpStreet X",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 398,
+      "y": 491
+    }
+  },
+  {
+    "id": 268,
+    "name": "ExpStreet XI",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 398,
+      "y": 510
+    }
+  },
+  {
+    "id": 269,
+    "name": "ExpStreet XII",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 405,
+      "y": 510
+    }
+  },
+  {
+    "id": 270,
+    "name": "Flying Street",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 1,
+      "x": 152,
+      "y": 591
+    }
+  },
+  {
+    "id": 271,
+    "name": "Flying Street I",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 1,
+      "x": 164,
+      "y": 582
+    }
+  },
+  {
+    "id": 272,
+    "name": "Flying Street II",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 1,
+      "x": 164,
+      "y": 576
+    }
+  },
+  {
+    "id": 273,
+    "name": "Flying Street III",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 1,
+      "x": 134,
+      "y": 552
+    }
+  },
+  {
+    "id": 274,
+    "name": "Flying Street IV",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 1,
+      "x": 139,
+      "y": 552
+    }
+  },
+  {
+    "id": 275,
+    "name": "Flying Street V",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 1,
+      "x": 139,
+      "y": 566
+    }
+  },
+  {
+    "id": 276,
+    "name": "Flying Street VI",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 1,
+      "x": 154,
+      "y": 561
+    }
+  },
+  {
+    "id": 223,
+    "name": "Gate Street",
+    "region": "Capital City",
+    "position": {
+      "floor": 1,
+      "x": 328,
+      "y": 220
+    }
+  },
+  {
+    "id": 221,
+    "name": "Gate Street I",
+    "region": "Capital City",
+    "position": {
+      "floor": 1,
+      "x": 328,
+      "y": 210
+    }
+  },
+  {
+    "id": 222,
+    "name": "Gate Street II",
+    "region": "Capital City",
+    "position": {
+      "floor": 1,
+      "x": 314,
+      "y": 207
+    }
+  },
+  {
+    "id": 224,
+    "name": "Gate Street III",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 314,
+      "y": 213
+    }
+  },
+  {
+    "id": 185666,
+    "name": "Git House",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 289,
+      "y": 515
+    }
+  },
+  {
+    "id": 429,
+    "name": "Great Street I",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 340,
+      "y": 232
+    }
+  },
+  {
+    "id": 430,
+    "name": "Great Street II",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 348,
+      "y": 232
+    }
+  },
+  {
+    "id": 431,
+    "name": "Great Street III",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 357,
+      "y": 233
+    }
+  },
+  {
+    "id": 432,
+    "name": "Great Street IV",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 367,
+      "y": 233
+    }
+  },
+  {
+    "id": 441,
+    "name": "Green Street I",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 377,
+      "y": 236
+    }
+  },
+  {
+    "id": 443,
+    "name": "Green Street II",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 380,
+      "y": 232
+    }
+  },
+  {
+    "id": 442,
+    "name": "Green Street III",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 376,
+      "y": 232
+    }
+  },
+  {
+    "id": 444,
+    "name": "Green Street V",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 381,
+      "y": 243
+    }
+  },
+  {
+    "id": 413,
+    "name": "Ground Street",
+    "region": "Capital City",
+    "position": {
+      "floor": -1,
+      "x": 376,
+      "y": 235
+    }
+  },
+  {
+    "id": 414,
+    "name": "Ground Street I",
+    "region": "Capital City",
+    "position": {
+      "floor": -1,
+      "x": 387,
+      "y": 235
+    }
+  },
+  {
+    "id": 415,
+    "name": "Ground Street II",
+    "region": "Capital City",
+    "position": {
+      "floor": -1,
+      "x": 384,
+      "y": 238
+    }
+  },
+  {
+    "id": 416,
+    "name": "Ground Street III",
+    "region": "Capital City",
+    "position": {
+      "floor": -1,
+      "x": 389,
+      "y": 238
+    }
+  },
+  {
+    "id": 417,
+    "name": "Ground Street IV",
+    "region": "Capital City",
+    "position": {
+      "floor": -1,
+      "x": 394,
+      "y": 238
+    }
+  },
+  {
+    "id": 422,
+    "name": "Ground Street IX",
+    "region": "Capital City",
+    "position": {
+      "floor": -2,
+      "x": 402,
+      "y": 227
+    }
+  },
+  {
+    "id": 418,
+    "name": "Ground Street V",
+    "region": "Capital City",
+    "position": {
+      "floor": -1,
+      "x": 399,
+      "y": 238
+    }
+  },
+  {
+    "id": 419,
+    "name": "Ground Street VI",
+    "region": "Capital City",
+    "position": {
+      "floor": -2,
+      "x": 374,
+      "y": 231
+    }
+  },
+  {
+    "id": 420,
+    "name": "Ground Street VII",
+    "region": "Capital City",
+    "position": {
+      "floor": -2,
+      "x": 379,
+      "y": 231
+    }
+  },
+  {
+    "id": 421,
+    "name": "Ground Street VIII",
+    "region": "Capital City",
+    "position": {
+      "floor": -2,
+      "x": 384,
+      "y": 231
+    }
+  },
+  {
+    "id": 423,
+    "name": "Ground Street XI",
+    "region": "Capital City",
+    "position": {
+      "floor": -2,
+      "x": 400,
+      "y": 235
+    }
+  },
+  {
+    "id": 517,
+    "name": "Hidden Street I",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 0,
+      "x": 1335,
+      "y": 256
+    }
+  },
+  {
+    "id": 518,
+    "name": "Hidden Street II",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 0,
+      "x": 1336,
+      "y": 267
+    }
+  },
+  {
+    "id": 207,
+    "name": "House of POH",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 332,
+      "y": 340
+    }
+  },
+  {
+    "id": 231,
+    "name": "Ice House",
+    "region": "Senja",
+    "position": {
+      "floor": 0,
+      "x": 453,
+      "y": 223
+    }
+  },
+  {
+    "id": 484,
+    "name": "Interior Depo I",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 0,
+      "x": 1209,
+      "y": 233
+    }
+  },
+  {
+    "id": 486,
+    "name": "Interior Depo II",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 0,
+      "x": 1209,
+      "y": 226
+    }
+  },
+  {
+    "id": 485,
+    "name": "Interior Depo III",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 0,
+      "x": 1212,
+      "y": 229
+    }
+  },
+  {
+    "id": 230,
+    "name": "Kanciapa nad Redakcja",
+    "region": "Capital City",
+    "position": {
+      "floor": 1,
+      "x": 324,
+      "y": 236
+    }
+  },
+  {
+    "id": 210,
+    "name": "Kings Street",
+    "region": "Magic Island",
+    "position": {
+      "floor": 0,
+      "x": 981,
+      "y": 401
+    }
+  },
+  {
+    "id": 468,
+    "name": "Lane Street",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 315,
+      "y": 283
+    }
+  },
+  {
+    "id": 466,
+    "name": "Lane Street II",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 297,
+      "y": 284
+    }
+  },
+  {
+    "id": 467,
+    "name": "Lane Street III",
+    "region": "Capital City",
+    "position": {
+      "floor": 1,
+      "x": 294,
+      "y": 278
+    }
+  },
+  {
+    "id": 465,
+    "name": "Lane Street IV",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 286,
+      "y": 286
+    }
+  },
+  {
+    "id": 304,
+    "name": "Main Street I",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 362,
+      "y": 139
+    }
+  },
+  {
+    "id": 305,
+    "name": "Main Street II",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 369,
+      "y": 139
+    }
+  },
+  {
+    "id": 306,
+    "name": "Main Street III",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 382,
+      "y": 140
+    }
+  },
+  {
+    "id": 426,
+    "name": "Mana Street I",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 378,
+      "y": 449
+    }
+  },
+  {
+    "id": 427,
+    "name": "Mana Street II",
+    "region": "Expgard",
+    "position": {
+      "floor": 1,
+      "x": 376,
+      "y": 451
+    }
+  },
+  {
+    "id": 428,
+    "name": "Mana Street III",
+    "region": "Expgard",
+    "position": {
+      "floor": 1,
+      "x": 363,
+      "y": 454
+    }
+  },
+  {
+    "id": 487,
+    "name": "Midway",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 0,
+      "x": 1191,
+      "y": 257
+    }
+  },
+  {
+    "id": 185667,
+    "name": "Mini One",
+    "region": "Expgard",
+    "position": {
+      "floor": 1,
+      "x": 294,
+      "y": 526
+    }
+  },
+  {
+    "id": 211,
+    "name": "Monumental Castle",
+    "region": "Capital City",
+    "position": {
+      "floor": 1,
+      "x": 228,
+      "y": 238
+    }
+  },
+  {
+    "id": 508,
+    "name": "Mount of Fire",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1272,
+      "y": 97
+    }
+  },
+  {
+    "id": 209,
+    "name": "Nice House",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1083,
+      "y": 811
+    }
+  },
+  {
+    "id": 461,
+    "name": "Nook Street",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 295,
+      "y": 268
+    }
+  },
+  {
+    "id": 460,
+    "name": "Nook Street II",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 293,
+      "y": 266
+    }
+  },
+  {
+    "id": 459,
+    "name": "Nook Street III",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 293,
+      "y": 262
+    }
+  },
+  {
+    "id": 462,
+    "name": "Nook Street IV",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 286,
+      "y": 260
+    }
+  },
+  {
+    "id": 463,
+    "name": "Nook Street V",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 282,
+      "y": 271
+    }
+  },
+  {
+    "id": 464,
+    "name": "Nook Street VI",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 283,
+      "y": 280
+    }
+  },
+  {
+    "id": 335,
+    "name": "North Camp I",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 356,
+      "y": 202
+    }
+  },
+  {
+    "id": 337,
+    "name": "North Camp II",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 356,
+      "y": 213
+    }
+  },
+  {
+    "id": 336,
+    "name": "North Camp III",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 369,
+      "y": 202
+    }
+  },
+  {
+    "id": 338,
+    "name": "North Camp IV",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 369,
+      "y": 213
+    }
+  },
+  {
+    "id": 341,
+    "name": "North Camp V",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 344,
+      "y": 223
+    }
+  },
+  {
+    "id": 340,
+    "name": "North Camp VI",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 352,
+      "y": 223
+    }
+  },
+  {
+    "id": 339,
+    "name": "North Camp VII",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 374,
+      "y": 223
+    }
+  },
+  {
+    "id": 342,
+    "name": "North Camp VIII",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 384,
+      "y": 213
+    }
+  },
+  {
+    "id": 344,
+    "name": "Park Street I",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 349,
+      "y": 270
+    }
+  },
+  {
+    "id": 345,
+    "name": "Park Street II",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 355,
+      "y": 270
+    }
+  },
+  {
+    "id": 346,
+    "name": "Park Street III",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 376,
+      "y": 272
+    }
+  },
+  {
+    "id": 238189,
+    "name": "Park Street IV",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 370,
+      "y": 286
+    }
+  },
+  {
+    "id": 445,
+    "name": "Pirate Street",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 376,
+      "y": 256
+    }
+  },
+  {
+    "id": 446,
+    "name": "Pirate Street II",
+    "region": "Capital City",
+    "position": {
+      "floor": 1,
+      "x": 379,
+      "y": 267
+    }
+  },
+  {
+    "id": 447,
+    "name": "River Street IV",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 348,
+      "y": 260
+    }
+  },
+  {
+    "id": 448,
+    "name": "River Street V",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 358,
+      "y": 260
+    }
+  },
+  {
+    "id": 449,
+    "name": "River Street VI",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 362,
+      "y": 260
+    }
+  },
+  {
+    "id": 250,
+    "name": "Rook Premium I",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 196,
+      "y": 153
+    }
+  },
+  {
+    "id": 251,
+    "name": "Rook Premium II",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 197,
+      "y": 152
+    }
+  },
+  {
+    "id": 252,
+    "name": "Rook Premium III",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 197,
+      "y": 154
+    }
+  },
+  {
+    "id": 253,
+    "name": "Rook Premium IV",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 202,
+      "y": 153
+    }
+  },
+  {
+    "id": 213,
+    "name": "Rook Premium IX",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 194,
+      "y": 169
+    }
+  },
+  {
+    "id": 254,
+    "name": "Rook Premium V",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 212,
+      "y": 152
+    }
+  },
+  {
+    "id": 255,
+    "name": "Rook Premium VI",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 201,
+      "y": 146
+    }
+  },
+  {
+    "id": 256,
+    "name": "Rook Premium VII",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 190,
+      "y": 146
+    }
+  },
+  {
+    "id": 257,
+    "name": "Rook Premium VIII",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 194,
+      "y": 144
+    }
+  },
+  {
+    "id": 214,
+    "name": "Rook Premium X",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 192,
+      "y": 176
+    }
+  },
+  {
+    "id": 238203,
+    "name": "Rook Premium XI",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 189,
+      "y": 169
+    }
+  },
+  {
+    "id": 238201,
+    "name": "Rook Premium XII",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 171,
+      "y": 180
+    }
+  },
+  {
+    "id": 238202,
+    "name": "Rook Premium XIII",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 168,
+      "y": 184
+    }
+  },
+  {
+    "id": 212,
+    "name": "Rook Residence",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 259,
+      "y": 117
+    }
+  },
+  {
+    "id": 293,
+    "name": "Rook Street I",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 249,
+      "y": 128
+    }
+  },
+  {
+    "id": 294,
+    "name": "Rook Street II",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 254,
+      "y": 128
+    }
+  },
+  {
+    "id": 295,
+    "name": "Rook Street III",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 249,
+      "y": 128
+    }
+  },
+  {
+    "id": 297,
+    "name": "Rook Street IV",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 254,
+      "y": 128
+    }
+  },
+  {
+    "id": 301,
+    "name": "Rook Street IX",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 253,
+      "y": 168
+    }
+  },
+  {
+    "id": 296,
+    "name": "Rook Street V",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 252,
+      "y": 130
+    }
+  },
+  {
+    "id": 298,
+    "name": "Rook Street VI",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 218,
+      "y": 153
+    }
+  },
+  {
+    "id": 299,
+    "name": "Rook Street VII",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 254,
+      "y": 151
+    }
+  },
+  {
+    "id": 300,
+    "name": "Rook Street VIII",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 254,
+      "y": 156
+    }
+  },
+  {
+    "id": 302,
+    "name": "Rook Street X",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 255,
+      "y": 155
+    }
+  },
+  {
+    "id": 303,
+    "name": "Rook Street XI",
+    "region": "Rookgard",
+    "position": {
+      "floor": -2,
+      "x": 282,
+      "y": 132
+    }
+  },
+  {
+    "id": 238198,
+    "name": "Rooker I",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 257,
+      "y": 167
+    }
+  },
+  {
+    "id": 238200,
+    "name": "Rooker II",
+    "region": "Rookgard",
+    "position": {
+      "floor": 2,
+      "x": 254,
+      "y": 154
+    }
+  },
+  {
+    "id": 238199,
+    "name": "Rooker III",
+    "region": "Rookgard",
+    "position": {
+      "floor": 2,
+      "x": 253,
+      "y": 151
+    }
+  },
+  {
+    "id": 238196,
+    "name": "Rooker IV",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 249,
+      "y": 132
+    }
+  },
+  {
+    "id": 238197,
+    "name": "Rooker V",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 254,
+      "y": 132
+    }
+  },
+  {
+    "id": 343,
+    "name": "Salam Alejkum",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 340,
+      "y": 273
+    }
+  },
+  {
+    "id": 238209,
+    "name": "Salik Street I",
+    "region": "Soran",
+    "position": {
+      "floor": 1,
+      "x": 196,
+      "y": 645
+    }
+  },
+  {
+    "id": 238208,
+    "name": "Salik Street II",
+    "region": "Soran",
+    "position": {
+      "floor": 0,
+      "x": 190,
+      "y": 661
+    }
+  },
+  {
+    "id": 238206,
+    "name": "Salik Street III",
+    "region": "Soran",
+    "position": {
+      "floor": 0,
+      "x": 165,
+      "y": 663
+    }
+  },
+  {
+    "id": 238205,
+    "name": "Salik Street IV",
+    "region": "Soran",
+    "position": {
+      "floor": 0,
+      "x": 157,
+      "y": 663
+    }
+  },
+  {
+    "id": 238204,
+    "name": "Salik Street V",
+    "region": "Soran",
+    "position": {
+      "floor": 0,
+      "x": 158,
+      "y": 651
+    }
+  },
+  {
+    "id": 238210,
+    "name": "Salik Street VI",
+    "region": "Soran",
+    "position": {
+      "floor": 1,
+      "x": 160,
+      "y": 650
+    }
+  },
+  {
+    "id": 238207,
+    "name": "Salik Street VII",
+    "region": "Soran",
+    "position": {
+      "floor": 1,
+      "x": 166,
+      "y": 664
+    }
+  },
+  {
+    "id": 238211,
+    "name": "Salik Street VIII",
+    "region": "Soran",
+    "position": {
+      "floor": 1,
+      "x": 189,
+      "y": 665
+    }
+  },
+  {
+    "id": 515,
+    "name": "Sandman Street I",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 0,
+      "x": 1290,
+      "y": 273
+    }
+  },
+  {
+    "id": 516,
+    "name": "Sandman Street II",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 0,
+      "x": 1294,
+      "y": 280
+    }
+  },
+  {
+    "id": 307,
+    "name": "Seceret Cove I",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 356,
+      "y": 151
+    }
+  },
+  {
+    "id": 308,
+    "name": "Seceret Cove II",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 351,
+      "y": 151
+    }
+  },
+  {
+    "id": 309,
+    "name": "Seceret Cove III",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 346,
+      "y": 151
+    }
+  },
+  {
+    "id": 310,
+    "name": "Seceret Cove IV",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 341,
+      "y": 151
+    }
+  },
+  {
+    "id": 315,
+    "name": "Seceret Cove IX",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 343,
+      "y": 163
+    }
+  },
+  {
+    "id": 311,
+    "name": "Seceret Cove V",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 331,
+      "y": 150
+    }
+  },
+  {
+    "id": 312,
+    "name": "Seceret Cove VI",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 331,
+      "y": 157
+    }
+  },
+  {
+    "id": 313,
+    "name": "Seceret Cove VII",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 331,
+      "y": 162
+    }
+  },
+  {
+    "id": 314,
+    "name": "Seceret Cove VIII",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 336,
+      "y": 163
+    }
+  },
+  {
+    "id": 316,
+    "name": "Seceret Cove X",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 350,
+      "y": 163
+    }
+  },
+  {
+    "id": 382,
+    "name": "Senja",
+    "region": "Senja",
+    "position": {
+      "floor": 1,
+      "x": 404,
+      "y": 188
+    }
+  },
+  {
+    "id": 392,
+    "name": "Senja Flat I",
+    "region": "Senja",
+    "position": {
+      "floor": 0,
+      "x": 446,
+      "y": 188
+    }
+  },
+  {
+    "id": 393,
+    "name": "Senja Flat II",
+    "region": "Senja",
+    "position": {
+      "floor": -1,
+      "x": 446,
+      "y": 188
+    }
+  },
+  {
+    "id": 394,
+    "name": "Senja Flat III",
+    "region": "Senja",
+    "position": {
+      "floor": -1,
+      "x": 444,
+      "y": 190
+    }
+  },
+  {
+    "id": 395,
+    "name": "Senja Flat IV",
+    "region": "Senja",
+    "position": {
+      "floor": 1,
+      "x": 444,
+      "y": 190
+    }
+  },
+  {
+    "id": 396,
+    "name": "Senja Flat V",
+    "region": "Senja",
+    "position": {
+      "floor": 1,
+      "x": 446,
+      "y": 188
+    }
+  },
+  {
+    "id": 383,
+    "name": "Senja I",
+    "region": "Senja",
+    "position": {
+      "floor": 0,
+      "x": 406,
+      "y": 200
+    }
+  },
+  {
+    "id": 384,
+    "name": "Senja II",
+    "region": "Senja",
+    "position": {
+      "floor": 0,
+      "x": 410,
+      "y": 194
+    }
+  },
+  {
+    "id": 385,
+    "name": "Senja III",
+    "region": "Senja",
+    "position": {
+      "floor": 0,
+      "x": 417,
+      "y": 187
+    }
+  },
+  {
+    "id": 386,
+    "name": "Senja IV",
+    "region": "Senja",
+    "position": {
+      "floor": 0,
+      "x": 415,
+      "y": 205
+    }
+  },
+  {
+    "id": 391,
+    "name": "Senja IX",
+    "region": "Senja",
+    "position": {
+      "floor": 1,
+      "x": 435,
+      "y": 187
+    }
+  },
+  {
+    "id": 387,
+    "name": "Senja V",
+    "region": "Senja",
+    "position": {
+      "floor": 0,
+      "x": 419,
+      "y": 203
+    }
+  },
+  {
+    "id": 388,
+    "name": "Senja VI",
+    "region": "Senja",
+    "position": {
+      "floor": 0,
+      "x": 430,
+      "y": 194
+    }
+  },
+  {
+    "id": 389,
+    "name": "Senja VII",
+    "region": "Senja",
+    "position": {
+      "floor": 0,
+      "x": 433,
+      "y": 190
+    }
+  },
+  {
+    "id": 390,
+    "name": "Senja VIII",
+    "region": "Senja",
+    "position": {
+      "floor": 0,
+      "x": 425,
+      "y": 183
+    }
+  },
+  {
+    "id": 498,
+    "name": "Shrine I",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 2,
+      "x": 1258,
+      "y": 241
+    }
+  },
+  {
+    "id": 499,
+    "name": "Shrine II",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 2,
+      "x": 1256,
+      "y": 243
+    }
+  },
+  {
+    "id": 500,
+    "name": "Shrine III",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 2,
+      "x": 1258,
+      "y": 245
+    }
+  },
+  {
+    "id": 501,
+    "name": "Shrine IV",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1267,
+      "y": 246
+    }
+  },
+  {
+    "id": 502,
+    "name": "Shrine V",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 0,
+      "x": 1264,
+      "y": 253
+    }
+  },
+  {
+    "id": 277,
+    "name": "Sky",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 1,
+      "x": 107,
+      "y": 573
+    }
+  },
+  {
+    "id": 278,
+    "name": "Sky I",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 1,
+      "x": 131,
+      "y": 595
+    }
+  },
+  {
+    "id": 279,
+    "name": "Sky II",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 1,
+      "x": 131,
+      "y": 598
+    }
+  },
+  {
+    "id": 280,
+    "name": "Sky III",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 1,
+      "x": 145,
+      "y": 595
+    }
+  },
+  {
+    "id": 281,
+    "name": "Sky IV",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 1,
+      "x": 145,
+      "y": 598
+    }
+  },
+  {
+    "id": 286,
+    "name": "Sky IX",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 3,
+      "x": 131,
+      "y": 595
+    }
+  },
+  {
+    "id": 282,
+    "name": "Sky V",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 2,
+      "x": 131,
+      "y": 595
+    }
+  },
+  {
+    "id": 283,
+    "name": "Sky VI",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 2,
+      "x": 131,
+      "y": 598
+    }
+  },
+  {
+    "id": 284,
+    "name": "Sky VII",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 2,
+      "x": 145,
+      "y": 595
+    }
+  },
+  {
+    "id": 285,
+    "name": "Sky VIII",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 2,
+      "x": 145,
+      "y": 598
+    }
+  },
+  {
+    "id": 287,
+    "name": "Sky X",
+    "region": "City of the Sky",
+    "position": {
+      "floor": 3,
+      "x": 145,
+      "y": 595
+    }
+  },
+  {
+    "id": 478,
+    "name": "Small Street I",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 344,
+      "y": 242
+    }
+  },
+  {
+    "id": 479,
+    "name": "Small Street II",
+    "region": "Capital City",
+    "position": {
+      "floor": 2,
+      "x": 344,
+      "y": 242
+    }
+  },
+  {
+    "id": 480,
+    "name": "Small Street III",
+    "region": "Capital City",
+    "position": {
+      "floor": 2,
+      "x": 343,
+      "y": 232
+    }
+  },
+  {
+    "id": 371,
+    "name": "Speleo I",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1015,
+      "y": 796
+    }
+  },
+  {
+    "id": 372,
+    "name": "Speleo II",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1022,
+      "y": 796
+    }
+  },
+  {
+    "id": 373,
+    "name": "Speleo III",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1029,
+      "y": 796
+    }
+  },
+  {
+    "id": 374,
+    "name": "Speleo IV",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1036,
+      "y": 796
+    }
+  },
+  {
+    "id": 379,
+    "name": "Speleo IX",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1071,
+      "y": 796
+    }
+  },
+  {
+    "id": 375,
+    "name": "Speleo V",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1043,
+      "y": 796
+    }
+  },
+  {
+    "id": 376,
+    "name": "Speleo VI",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1050,
+      "y": 796
+    }
+  },
+  {
+    "id": 377,
+    "name": "Speleo VII",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1057,
+      "y": 796
+    }
+  },
+  {
+    "id": 378,
+    "name": "Speleo VIII",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1064,
+      "y": 796
+    }
+  },
+  {
+    "id": 380,
+    "name": "Speleo X",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1078,
+      "y": 796
+    }
+  },
+  {
+    "id": 381,
+    "name": "Speleo XI",
+    "region": "Ankaros",
+    "position": {
+      "floor": 0,
+      "x": 1085,
+      "y": 796
+    }
+  },
+  {
+    "id": 229,
+    "name": "Stara Redakcja",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 330,
+      "y": 233
+    }
+  },
+  {
+    "id": 185668,
+    "name": "Swamp I",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 421,
+      "y": 502
+    }
+  },
+  {
+    "id": 185669,
+    "name": "Swamp II",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 421,
+      "y": 505
+    }
+  },
+  {
+    "id": 496,
+    "name": "Temple Street I",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1267,
+      "y": 216
+    }
+  },
+  {
+    "id": 497,
+    "name": "Temple Street II",
+    "region": "City of Dreams",
+    "position": {
+      "floor": 1,
+      "x": 1287,
+      "y": 216
+    }
+  },
+  {
+    "id": 424,
+    "name": "Train Street I",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 405,
+      "y": 445
+    }
+  },
+  {
+    "id": 425,
+    "name": "Train Street II",
+    "region": "Expgard",
+    "position": {
+      "floor": 0,
+      "x": 408,
+      "y": 445
+    }
+  },
+  {
+    "id": 220,
+    "name": "Trainers Street",
+    "region": "Evul",
+    "position": {
+      "floor": 0,
+      "x": 368,
+      "y": 115
+    }
+  },
+  {
+    "id": 317,
+    "name": "TransAtlantic",
+    "region": "Evul",
+    "position": {
+      "floor": 2,
+      "x": 408,
+      "y": 139
+    }
+  },
+  {
+    "id": 238190,
+    "name": "Underground Street I",
+    "region": "Capital City",
+    "position": {
+      "floor": -1,
+      "x": 342,
+      "y": 248
+    }
+  },
+  {
+    "id": 238191,
+    "name": "Underground Street II",
+    "region": "Capital City",
+    "position": {
+      "floor": -1,
+      "x": 354,
+      "y": 248
+    }
+  },
+  {
+    "id": 238192,
+    "name": "Underground Street III",
+    "region": "Capital City",
+    "position": {
+      "floor": -1,
+      "x": 356,
+      "y": 246
+    }
+  },
+  {
+    "id": 238193,
+    "name": "Underground Street IV",
+    "region": "Capital City",
+    "position": {
+      "floor": -1,
+      "x": 364,
+      "y": 247
+    }
+  },
+  {
+    "id": 238194,
+    "name": "Underground Street V",
+    "region": "Capital City",
+    "position": {
+      "floor": -1,
+      "x": 366,
+      "y": 251
+    }
+  },
+  {
+    "id": 238195,
+    "name": "Underground Street VI",
+    "region": "Capital City",
+    "position": {
+      "floor": -1,
+      "x": 374,
+      "y": 251
+    }
+  },
+  {
+    "id": 354,
+    "name": "Upper Ank I",
+    "region": "Ankaros",
+    "position": {
+      "floor": 3,
+      "x": 1066,
+      "y": 706
+    }
+  },
+  {
+    "id": 355,
+    "name": "Upper Ank II",
+    "region": "Ankaros",
+    "position": {
+      "floor": 3,
+      "x": 1072,
+      "y": 706
+    }
+  },
+  {
+    "id": 356,
+    "name": "Upper Ank III",
+    "region": "Ankaros",
+    "position": {
+      "floor": 3,
+      "x": 1078,
+      "y": 706
+    }
+  },
+  {
+    "id": 357,
+    "name": "Upper Ank IV",
+    "region": "Ankaros",
+    "position": {
+      "floor": 3,
+      "x": 1085,
+      "y": 706
+    }
+  },
+  {
+    "id": 358,
+    "name": "Upper Ank V",
+    "region": "Ankaros",
+    "position": {
+      "floor": 3,
+      "x": 1091,
+      "y": 706
+    }
+  },
+  {
+    "id": 359,
+    "name": "Upper Ank VI",
+    "region": "Ankaros",
+    "position": {
+      "floor": 3,
+      "x": 1097,
+      "y": 706
+    }
+  },
+  {
+    "id": 318,
+    "name": "Upper City I",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 341,
+      "y": 151
+    }
+  },
+  {
+    "id": 319,
+    "name": "Upper City II",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 346,
+      "y": 151
+    }
+  },
+  {
+    "id": 320,
+    "name": "Upper City III",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 353,
+      "y": 150
+    }
+  },
+  {
+    "id": 327,
+    "name": "Upper City IV",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 373,
+      "y": 160
+    }
+  },
+  {
+    "id": 325,
+    "name": "Upper City IX",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 331,
+      "y": 157
+    }
+  },
+  {
+    "id": 328,
+    "name": "Upper City V",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 371,
+      "y": 161
+    }
+  },
+  {
+    "id": 329,
+    "name": "Upper City VI",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 368,
+      "y": 160
+    }
+  },
+  {
+    "id": 330,
+    "name": "Upper City VII",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 381,
+      "y": 153
+    }
+  },
+  {
+    "id": 326,
+    "name": "Upper City VIII",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 331,
+      "y": 150
+    }
+  },
+  {
+    "id": 324,
+    "name": "Upper City X",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 331,
+      "y": 162
+    }
+  },
+  {
+    "id": 323,
+    "name": "Upper City XI",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 336,
+      "y": 163
+    }
+  },
+  {
+    "id": 322,
+    "name": "Upper City XII",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 343,
+      "y": 163
+    }
+  },
+  {
+    "id": 321,
+    "name": "Upper City XIII",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 350,
+      "y": 163
+    }
+  },
+  {
+    "id": 331,
+    "name": "Upper House I",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 372,
+      "y": 124
+    }
+  },
+  {
+    "id": 332,
+    "name": "Upper House II",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 369,
+      "y": 122
+    }
+  },
+  {
+    "id": 333,
+    "name": "Upper House III",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 365,
+      "y": 122
+    }
+  },
+  {
+    "id": 334,
+    "name": "Upper House IV",
+    "region": "Evul",
+    "position": {
+      "floor": 1,
+      "x": 361,
+      "y": 122
+    }
+  },
+  {
+    "id": 433,
+    "name": "Upper Street I",
+    "region": "Capital City",
+    "position": {
+      "floor": 1,
+      "x": 364,
+      "y": 231
+    }
+  },
+  {
+    "id": 434,
+    "name": "Upper Street II",
+    "region": "Capital City",
+    "position": {
+      "floor": 1,
+      "x": 365,
+      "y": 234
+    }
+  },
+  {
+    "id": 435,
+    "name": "Upper Street IV",
+    "region": "Capital City",
+    "position": {
+      "floor": 2,
+      "x": 367,
+      "y": 231
+    }
+  },
+  {
+    "id": 436,
+    "name": "Upper Street V",
+    "region": "Capital City",
+    "position": {
+      "floor": 2,
+      "x": 368,
+      "y": 234
+    }
+  },
+  {
+    "id": 437,
+    "name": "Upper Street VI",
+    "region": "Capital City",
+    "position": {
+      "floor": 3,
+      "x": 366,
+      "y": 230
+    }
+  },
+  {
+    "id": 438,
+    "name": "Upper Street VII",
+    "region": "Capital City",
+    "position": {
+      "floor": 3,
+      "x": 368,
+      "y": 233
+    }
+  },
+  {
+    "id": 439,
+    "name": "Upper Street VIII",
+    "region": "Capital City",
+    "position": {
+      "floor": 4,
+      "x": 366,
+      "y": 231
+    }
+  },
+  {
+    "id": 440,
+    "name": "Upper Street X",
+    "region": "Capital City",
+    "position": {
+      "floor": 5,
+      "x": 369,
+      "y": 231
+    }
+  },
+  {
+    "id": 289,
+    "name": "Villa I",
+    "region": "Villa",
+    "position": {
+      "floor": 0,
+      "x": 512,
+      "y": 230
+    }
+  },
+  {
+    "id": 290,
+    "name": "Villa II",
+    "region": "Villa",
+    "position": {
+      "floor": 0,
+      "x": 540,
+      "y": 219
+    }
+  },
+  {
+    "id": 291,
+    "name": "Villa III",
+    "region": "Villa",
+    "position": {
+      "floor": 0,
+      "x": 541,
+      "y": 219
+    }
+  },
+  {
+    "id": 292,
+    "name": "Villa IV",
+    "region": "Villa",
+    "position": {
+      "floor": 0,
+      "x": 539,
+      "y": 230
+    }
+  },
+  {
+    "id": 401,
+    "name": "Waterfall I",
+    "region": "Expgard",
+    "position": {
+      "floor": 1,
+      "x": 374,
+      "y": 431
+    }
+  },
+  {
+    "id": 403,
+    "name": "Waterfall II",
+    "region": "Expgard",
+    "position": {
+      "floor": 2,
+      "x": 378,
+      "y": 433
+    }
+  },
+  {
+    "id": 453,
+    "name": "West Park",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 306,
+      "y": 249
+    }
+  },
+  {
+    "id": 455,
+    "name": "West Park II",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 308,
+      "y": 261
+    }
+  },
+  {
+    "id": 454,
+    "name": "West Park III",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 291,
+      "y": 251
+    }
+  },
+  {
+    "id": 456,
+    "name": "West Park IV",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 296,
+      "y": 225
+    }
+  },
+  {
+    "id": 457,
+    "name": "West Park V",
+    "region": "Capital City",
+    "position": {
+      "floor": 1,
+      "x": 290,
+      "y": 222
+    }
+  },
+  {
+    "id": 458,
+    "name": "West Park VI",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 313,
+      "y": 223
+    }
+  },
+  {
+    "id": 232,
+    "name": "Wooden Camp I",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 218,
+      "y": 375
+    }
+  },
+  {
+    "id": 233,
+    "name": "Wooden Camp II",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 213,
+      "y": 379
+    }
+  },
+  {
+    "id": 234,
+    "name": "Wooden Camp III",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 218,
+      "y": 382
+    }
+  },
+  {
+    "id": 235,
+    "name": "Wooden Camp IV",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 196,
+      "y": 390
+    }
+  },
+  {
+    "id": 240,
+    "name": "Wooden Camp IX",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 166,
+      "y": 406
+    }
+  },
+  {
+    "id": 236,
+    "name": "Wooden Camp V",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 201,
+      "y": 396
+    }
+  },
+  {
+    "id": 237,
+    "name": "Wooden Camp VI",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 192,
+      "y": 404
+    }
+  },
+  {
+    "id": 238,
+    "name": "Wooden Camp VII",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 201,
+      "y": 408
+    }
+  },
+  {
+    "id": 239,
+    "name": "Wooden Camp VIII",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 184,
+      "y": 415
+    }
+  },
+  {
+    "id": 241,
+    "name": "Wooden Camp X",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 161,
+      "y": 396
+    }
+  },
+  {
+    "id": 242,
+    "name": "Wooden Camp XI",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 170,
+      "y": 396
+    }
+  },
+  {
+    "id": 243,
+    "name": "Wooden Camp XII",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 170,
+      "y": 392
+    }
+  },
+  {
+    "id": 244,
+    "name": "Wooden Camp XIII",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 163,
+      "y": 388
+    }
+  },
+  {
+    "id": 245,
+    "name": "Wooden Camp XIV",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 154,
+      "y": 385
+    }
+  },
+  {
+    "id": 246,
+    "name": "Wooden Camp XV",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 158,
+      "y": 376
+    }
+  },
+  {
+    "id": 247,
+    "name": "Wooden Camp XVI",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 166,
+      "y": 366
+    }
+  },
+  {
+    "id": 248,
+    "name": "Wooden Camp XVII",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 178,
+      "y": 363
+    }
+  },
+  {
+    "id": 249,
+    "name": "Wooden Camp XVIII",
+    "region": "Cyclopolis",
+    "position": {
+      "floor": 0,
+      "x": 176,
+      "y": 369
+    }
+  }
+]

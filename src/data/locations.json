@@ -1,0 +1,752 @@
+[
+  {
+    "id": 185560,
+    "name": "Amazon Camp",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 487,
+      "y": 269
+    }
+  },
+  {
+    "id": 185498,
+    "name": "Ankaros",
+    "description": "Mistyczne miasto.",
+    "position": {
+      "floor": 0,
+      "x": 1065,
+      "y": 756
+    }
+  },
+  {
+    "id": 185558,
+    "name": "Area Dragons",
+    "description": "",
+    "position": {
+      "floor": 1,
+      "x": 286,
+      "y": 342
+    }
+  },
+  {
+    "id": 185566,
+    "name": "Arena PvP",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 1149,
+      "y": 191
+    }
+  },
+  {
+    "id": 185554,
+    "name": "Bamboo Camp",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 385,
+      "y": 301
+    }
+  },
+  {
+    "id": 185536,
+    "name": "Behemoth Camp",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 609,
+      "y": 837
+    }
+  },
+  {
+    "id": 185517,
+    "name": "Behemoth 's Mountains",
+    "description": "",
+    "position": {
+      "floor": 1,
+      "x": 472,
+      "y": 68
+    }
+  },
+  {
+    "id": 185541,
+    "name": "Canyon",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 683,
+      "y": 367
+    }
+  },
+  {
+    "id": 185501,
+    "name": "Capital City",
+    "description": "Stolica APO.",
+    "position": {
+      "floor": 0,
+      "x": 337,
+      "y": 253
+    }
+  },
+  {
+    "id": 185562,
+    "name": "Castle",
+    "description": "",
+    "position": {
+      "floor": 5,
+      "x": 528,
+      "y": 323
+    }
+  },
+  {
+    "id": 185515,
+    "name": "Castle of 1000 Corpses",
+    "description": "",
+    "position": {
+      "floor": 7,
+      "x": 360,
+      "y": 55
+    }
+  },
+  {
+    "id": 185532,
+    "name": "Cave of Death",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 902,
+      "y": 812
+    }
+  },
+  {
+    "id": 185526,
+    "name": "Cave of Secrets",
+    "description": "",
+    "position": {
+      "floor": 1,
+      "x": 1397,
+      "y": 213
+    }
+  },
+  {
+    "id": 185567,
+    "name": "Cavity of Mad Dogs",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 1413,
+      "y": 314
+    }
+  },
+  {
+    "id": 185504,
+    "name": "City of Dreams",
+    "description": "Miasto marzeń.",
+    "position": {
+      "floor": 0,
+      "x": 1259,
+      "y": 258
+    }
+  },
+  {
+    "id": 185506,
+    "name": "City of The Sky",
+    "description": "Miasto w chmurach - dostępne dla osób posiadających PACC.",
+    "position": {
+      "floor": 1,
+      "x": 142,
+      "y": 583
+    }
+  },
+  {
+    "id": 185511,
+    "name": "Cliff of Giant Spiders",
+    "description": "",
+    "position": {
+      "floor": 1,
+      "x": 98,
+      "y": 83
+    }
+  },
+  {
+    "id": 185525,
+    "name": "Cod Port",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 1346,
+      "y": 53
+    }
+  },
+  {
+    "id": 185519,
+    "name": "Cursed plain",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 715,
+      "y": 94
+    }
+  },
+  {
+    "id": 185546,
+    "name": "Cyclopolis",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 173,
+      "y": 434
+    }
+  },
+  {
+    "id": 185557,
+    "name": "Cyklop 's Highland",
+    "description": "",
+    "position": {
+      "floor": 4,
+      "x": 284,
+      "y": 300
+    }
+  },
+  {
+    "id": 185555,
+    "name": "Dark Mountain",
+    "description": "",
+    "position": {
+      "floor": 2,
+      "x": 594,
+      "y": 160
+    }
+  },
+  {
+    "id": 185543,
+    "name": "Darkness Island",
+    "description": "",
+    "position": {
+      "floor": 2,
+      "x": 305,
+      "y": 614
+    }
+  },
+  {
+    "id": 185552,
+    "name": "Death Castle",
+    "description": "",
+    "position": {
+      "floor": 6,
+      "x": 299,
+      "y": 381
+    }
+  },
+  {
+    "id": 185548,
+    "name": "Demon Cave",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 93,
+      "y": 358
+    }
+  },
+  {
+    "id": 185542,
+    "name": "Demon Land",
+    "description": "",
+    "position": {
+      "floor": 1,
+      "x": 698,
+      "y": 229
+    }
+  },
+  {
+    "id": 185544,
+    "name": "Demonic Mountain",
+    "description": "",
+    "position": {
+      "floor": 2,
+      "x": 137,
+      "y": 501
+    }
+  },
+  {
+    "id": 185569,
+    "name": "Demon 's Plateau",
+    "description": "",
+    "position": {
+      "floor": 4,
+      "x": 848,
+      "y": 683
+    }
+  },
+  {
+    "id": 185571,
+    "name": "Dens of Wards",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 1293,
+      "y": 136
+    }
+  },
+  {
+    "id": 185503,
+    "name": "Desert City",
+    "description": "Miasteczko pustynne.",
+    "position": {
+      "floor": 0,
+      "x": 410,
+      "y": 284
+    }
+  },
+  {
+    "id": 185545,
+    "name": "Dragon Cave",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 77,
+      "y": 438
+    }
+  },
+  {
+    "id": 185534,
+    "name": "Dworc 's Camp",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 653,
+      "y": 696
+    }
+  },
+  {
+    "id": 185500,
+    "name": "Evul",
+    "description": "Ogólnodostępne miasto.",
+    "position": {
+      "floor": 0,
+      "x": 364,
+      "y": 136
+    }
+  },
+  {
+    "id": 185505,
+    "name": "Expgard",
+    "description": "Miasto dostępne dla osób posiadających PACC.",
+    "position": {
+      "floor": 0,
+      "x": 379,
+      "y": 469
+    }
+  },
+  {
+    "id": 185529,
+    "name": "Faraon 's Land",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 1115,
+      "y": 560
+    }
+  },
+  {
+    "id": 185528,
+    "name": "Forsaken City",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 1293,
+      "y": 437
+    }
+  },
+  {
+    "id": 185556,
+    "name": "Giant Spider 's Plateau",
+    "description": "",
+    "position": {
+      "floor": 3,
+      "x": 239,
+      "y": 331
+    }
+  },
+  {
+    "id": 185524,
+    "name": "Gloomy Building",
+    "description": "",
+    "position": {
+      "floor": 2,
+      "x": 1076,
+      "y": 111
+    }
+  },
+  {
+    "id": 185549,
+    "name": "Hell",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 76,
+      "y": 321
+    }
+  },
+  {
+    "id": 185538,
+    "name": "Island of Kings",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 450,
+      "y": 764
+    }
+  },
+  {
+    "id": 185523,
+    "name": "Island of Wise Men",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 1049,
+      "y": 237
+    }
+  },
+  {
+    "id": 185508,
+    "name": "Kanion",
+    "description": "Miasteczko na skraju kanionu.",
+    "position": {
+      "floor": 1,
+      "x": 685,
+      "y": 525
+    }
+  },
+  {
+    "id": 185539,
+    "name": "Lizard Camp",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 510,
+      "y": 666
+    }
+  },
+  {
+    "id": 185516,
+    "name": "Lizard Fortress",
+    "description": "",
+    "position": {
+      "floor": 1,
+      "x": 418,
+      "y": 86
+    }
+  },
+  {
+    "id": 185540,
+    "name": "Magic Islands",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 994,
+      "y": 378
+    }
+  },
+  {
+    "id": 185561,
+    "name": "Medley Building",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 534,
+      "y": 268
+    }
+  },
+  {
+    "id": 185565,
+    "name": "Meshland",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 978,
+      "y": 183
+    }
+  },
+  {
+    "id": 185530,
+    "name": "Minotaur Fortress",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 1166,
+      "y": 598
+    }
+  },
+  {
+    "id": 185535,
+    "name": "Monkey Camp",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 657,
+      "y": 799
+    }
+  },
+  {
+    "id": 185520,
+    "name": "Mountain Orshabaals",
+    "description": "",
+    "position": {
+      "floor": 1,
+      "x": 772,
+      "y": 134
+    }
+  },
+  {
+    "id": 185570,
+    "name": "Mystic Place",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 945,
+      "y": 574
+    }
+  },
+  {
+    "id": 185563,
+    "name": "Olimp",
+    "description": "",
+    "position": {
+      "floor": 1,
+      "x": 87,
+      "y": 722
+    }
+  },
+  {
+    "id": 185518,
+    "name": "Orc Fortress",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 554,
+      "y": 115
+    }
+  },
+  {
+    "id": 185521,
+    "name": "Ots King 's Cave",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 748,
+      "y": 52
+    }
+  },
+  {
+    "id": 185550,
+    "name": "Pandemonium",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 166,
+      "y": 305
+    }
+  },
+  {
+    "id": 185572,
+    "name": "POH",
+    "description": "Place of Havoc.",
+    "position": {
+      "floor": 0,
+      "x": 309,
+      "y": 392
+    }
+  },
+  {
+    "id": 185499,
+    "name": "Rookgard",
+    "description": "Pierwsze miasto jakie będziesz miał okazję poznać.",
+    "position": {
+      "floor": 0,
+      "x": 262,
+      "y": 152
+    }
+  },
+  {
+    "id": 185564,
+    "name": "Santorr 's Island",
+    "description": "",
+    "position": {
+      "floor": 1,
+      "x": 725,
+      "y": 184
+    }
+  },
+  {
+    "id": 185502,
+    "name": "Senja",
+    "description": "Lodowe miasteczko - 6 grudnia odwiedzane przez Świętego Mikołaja.",
+    "position": {
+      "floor": 0,
+      "x": 430,
+      "y": 192
+    }
+  },
+  {
+    "id": 185537,
+    "name": "Serpent 's Mountain",
+    "description": "",
+    "position": {
+      "floor": 2,
+      "x": 546,
+      "y": 777
+    }
+  },
+  {
+    "id": 185551,
+    "name": "Skull Skeleton",
+    "description": "",
+    "position": {
+      "floor": 1,
+      "x": 79,
+      "y": 181
+    }
+  },
+  {
+    "id": 185512,
+    "name": "Slime Peninsula",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 59,
+      "y": 105
+    }
+  },
+  {
+    "id": 185531,
+    "name": "Slit of Death",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 804,
+      "y": 582
+    }
+  },
+  {
+    "id": 185507,
+    "name": "Soran",
+    "description": "Miasteczko, które odegrało wielką rolę w ocaleniu świata.",
+    "position": {
+      "floor": 0,
+      "x": 185,
+      "y": 652
+    }
+  },
+  {
+    "id": 185509,
+    "name": "Territory of the Dark Lords",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 111,
+      "y": 50
+    }
+  },
+  {
+    "id": 185553,
+    "name": "Tiquanda",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 454,
+      "y": 378
+    }
+  },
+  {
+    "id": 185568,
+    "name": "Tombs",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 1165,
+      "y": 840
+    }
+  },
+  {
+    "id": 185510,
+    "name": "Troll Camp",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 189,
+      "y": 46
+    }
+  },
+  {
+    "id": 185527,
+    "name": "Undead Cave",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 1321,
+      "y": 372
+    }
+  },
+  {
+    "id": 185514,
+    "name": "Vampire Castle",
+    "description": "",
+    "position": {
+      "floor": 6,
+      "x": 302,
+      "y": 52
+    }
+  },
+  {
+    "id": 185559,
+    "name": "Villa Island",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 520,
+      "y": 225
+    }
+  },
+  {
+    "id": 185533,
+    "name": "Volcano",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 618,
+      "y": 738
+    }
+  },
+  {
+    "id": 185522,
+    "name": "Warlock ' Towers",
+    "description": "",
+    "position": {
+      "floor": 5,
+      "x": 806,
+      "y": 91
+    }
+  },
+  {
+    "id": 185513,
+    "name": "Western Fort",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 148,
+      "y": 99
+    }
+  },
+  {
+    "id": 185547,
+    "name": "Wooden Camp",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 175,
+      "y": 385
+    }
+  }
+]

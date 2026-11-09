@@ -124,6 +124,7 @@
       },
       {
         "name": "Ahmed",
+        "lootMonsterId": 336,
         "lookType": 132,
         "outfitColors": {
           "head": 79,
@@ -235,6 +236,7 @@
       },
       {
         "name": "Ahmed",
+        "lootMonsterId": 343,
         "lookType": 132,
         "outfitColors": {
           "head": 79,

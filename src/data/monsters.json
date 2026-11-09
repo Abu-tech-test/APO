@@ -10386,6 +10386,11 @@
         "name": "Wooden Shield",
         "frequency": "Czesto",
         "amount": 1
+      },
+      {
+        "name": "Bottle of Blue Liquid",
+        "frequency": "Unknown",
+        "amount": 1
       }
     ],
     "id": 138
@@ -10725,6 +10730,11 @@
       {
         "name": "Sword Ring",
         "frequency": "Czesto",
+        "amount": 1
+      },
+      {
+        "name": "Bottle of Blue Liquid",
+        "frequency": "Unknown",
         "amount": 1
       }
     ],
@@ -12859,6 +12869,11 @@
         "name": "War Hammer",
         "frequency": "Czesto",
         "amount": 1
+      },
+      {
+        "name": "Bottle of Blue Liquid",
+        "frequency": "Unknown",
+        "amount": 1
       }
     ],
     "id": 173
@@ -13050,6 +13065,11 @@
       {
         "name": "Yellow Bag",
         "frequency": "Zawsze",
+        "amount": 1
+      },
+      {
+        "name": "Very Old Moldy Cheese",
+        "frequency": "Unknown",
         "amount": 1
       }
     ],
@@ -14794,6 +14814,11 @@
       {
         "name": "Time Ring",
         "frequency": "Rzadko",
+        "amount": 1
+      },
+      {
+        "name": "Ancient Ring",
+        "frequency": "Unknown",
         "amount": 1
       }
     ],
@@ -19474,6 +19499,11 @@
         "name": "Ultimate Healing Rune",
         "frequency": "Srednio",
         "amount": 16
+      },
+      {
+        "name": "Bottle of Blue Liquid",
+        "frequency": "Unknown",
+        "amount": 1
       }
     ],
     "id": 263
@@ -20202,6 +20232,11 @@
       {
         "name": "Soft Boots",
         "frequency": "Bardzo rzadko",
+        "amount": 1
+      },
+      {
+        "name": "Improved Shadow Crystal",
+        "frequency": "Unknown",
         "amount": 1
       }
     ],
@@ -21447,6 +21482,11 @@
         "name": "Warlord Sword",
         "frequency": "Srednio",
         "amount": 1
+      },
+      {
+        "name": "Ancient Ring",
+        "frequency": "Unknown",
+        "amount": 1
       }
     ],
     "id": 301
@@ -22676,6 +22716,11 @@
         "name": "vial of water",
         "frequency": "Bardzo czesto",
         "amount": 1
+      },
+      {
+        "name": "Bottle of Blue Liquid",
+        "frequency": "Unknown",
+        "amount": 1
       }
     ],
     "id": 316
@@ -23297,6 +23342,11 @@
       },
       {
         "name": "Blue Exotic Butterfly",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Blue Bale of Material",
         "frequency": "Unknown",
         "amount": 1
       }
@@ -25120,5 +25170,23 @@
       }
     ],
     "id": 412
+  },
+  {
+    "name": "Leiurus",
+    "hp": 0,
+    "exp": 0,
+    "loot": [
+      {
+        "name": "Natural Fibre",
+        "frequency": "Unknown",
+        "amount": 1
+      },
+      {
+        "name": "Rotten Meat",
+        "frequency": "Unknown",
+        "amount": 1
+      }
+    ],
+    "id": 413
   }
 ]
