@@ -1,4 +1,11 @@
-import { useEffect, useRef, useState, type CSSProperties } from "react";
+import {
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+  type CSSProperties,
+} from "react";
 import {
   defaultMapZoom,
   getMapMonsterPositionKey,
@@ -58,6 +65,38 @@ function MapNpcIcon() {
     </svg>
   );
 }
+
+type MapMarkerPoint = { x: number; y: number };
+type MapMarkerOffset = { x: number; y: number };
+
+function getMapMarkerOffsets(points: MapMarkerPoint[]): MapMarkerOffset[] {
+  const offsets = points.map(() => ({ x: 0, y: 0 }));
+  const groups = new Map<string, number[]>();
+
+  points.forEach((point, index) => {
+    const key = `${point.x}:${point.y}`;
+    const group = groups.get(key);
+    if (group) group.push(index);
+    else groups.set(key, [index]);
+  });
+
+  groups.forEach((indices) => {
+    if (indices.length < 2) return;
+    indices.forEach((markerIndex, index) => {
+      const angle = (2 * Math.PI * index) / indices.length - Math.PI / 2;
+      offsets[markerIndex] = {
+        x: Math.cos(angle) * 16,
+        y: Math.sin(angle) * 16,
+      };
+    });
+  });
+
+  return offsets;
+}
+
+const noMapMarkerOffset = { x: 0, y: 0 };
+const emptyMapMarkerList: never[] = [];
+
 function MapWorkspace({
   houses,
   locations,
@@ -127,6 +166,13 @@ function MapWorkspace({
     selectedNpcId === null
       ? undefined
       : npcs.find((npc) => npc.id === selectedNpcId);
+  const selectedNpcPositions = useMemo(
+    () =>
+      selectedNpcId === null
+        ? []
+        : positions.filter((position) => position.npcId === selectedNpcId),
+    [positions, selectedNpcId],
+  );
   const selectedPosition =
     selectedNpcId === null
       ? undefined
@@ -136,16 +182,36 @@ function MapWorkspace({
             (selectedPositionKey === null ||
               getMapPositionKey(position) === selectedPositionKey),
         ) ?? positions.find((position) => position.npcId === selectedNpcId);
-  const activeMonsterCategories =
-    selectedMonsterId !== null
-      ? monsterMapCategories.filter(
-          (category) => category.monsterIds.includes(selectedMonsterId),
-        )
-      : selectedMonsterCategoryId !== null
-        ? monsterMapCategories.filter(
-            (category) => category.id === selectedMonsterCategoryId,
+  const activeMonsterCategories = useMemo(
+    () =>
+      selectedMonsterId !== null
+        ? monsterMapCategories.filter((category) =>
+            category.monsterIds.includes(selectedMonsterId),
           )
-        : [];
+        : selectedMonsterCategoryId !== null
+          ? monsterMapCategories.filter(
+              (category) => category.id === selectedMonsterCategoryId,
+            )
+          : [],
+    [selectedMonsterId, selectedMonsterCategoryId, monsterMapCategories],
+  );
+  const visibleNpcPositions =
+    markerLayer === "npcs" ? positions : emptyMapMarkerList;
+  const npcMarkerOffsets = useMemo(
+    () => getMapMarkerOffsets(visibleNpcPositions),
+    [visibleNpcPositions],
+  );
+  const visibleHouses = markerLayer === "houses" ? houses : emptyMapMarkerList;
+  const houseMarkerOffsets = useMemo(
+    () => getMapMarkerOffsets(visibleHouses.map((house) => house.position)),
+    [visibleHouses],
+  );
+  const visibleLocations =
+    markerLayer === "locations" ? locations : emptyMapMarkerList;
+  const locationMarkerOffsets = useMemo(
+    () => getMapMarkerOffsets(visibleLocations.map((location) => location.position)),
+    [visibleLocations],
+  );
   const selectedMonsterPosition = activeMonsterCategories.flatMap((category) =>
     category.positions.map(([floor, x, y], positionIndex) => ({
       categoryId: category.id,
@@ -336,7 +402,9 @@ function MapWorkspace({
       scaledSize: number,
       viewportSize: number,
     ) => {
-      if (scaledSize <= viewportSize) return 0;
+      if (scaledSize <= viewportSize) {
+        return (viewportSize - scaledSize) / 2 - canvasOffset;
+      }
       return Math.min(
         -canvasOffset,
         Math.max(viewportSize - canvasOffset - scaledSize, offset),
@@ -358,6 +426,19 @@ function MapWorkspace({
       ),
     };
   }
+
+  function getInitialPan(nextZoom: number) {
+    const viewport = viewportRef.current;
+    const canvas = canvasRef.current;
+    if (!viewport || !canvas) return { x: 0, y: 0 };
+
+    const canvasTop = (viewport.clientHeight - canvas.clientHeight) / 2;
+    return constrainPan({ x: 0, y: -canvasTop }, nextZoom);
+  }
+
+  useLayoutEffect(() => {
+    setPan(getInitialPan(defaultMapZoom));
+  }, []);
 
   useEffect(() => {
     if (!npcMapRequest) return;
@@ -483,7 +564,7 @@ function MapWorkspace({
   useEffect(() => {
     function resetViewOnResize() {
       setZoom(defaultMapZoom);
-      setPan({ x: 0, y: 0 });
+      setPan(getInitialPan(defaultMapZoom));
     }
 
     window.addEventListener("resize", resetViewOnResize);
@@ -547,7 +628,7 @@ function MapWorkspace({
     setFocusRequest((request) => request + 1);
     setFloor(position.floor);
     setSearchMessage(
-      `${npc.name}: poziom ${position.floor}, pozycja ${position.x} × ${position.y}.`,
+      `${npc.name}: poziom ${position.floor > 0 ? `+${position.floor}` : position.floor}, pozycja ${position.x} × ${position.y}.`,
     );
   }
 
@@ -889,7 +970,7 @@ function MapWorkspace({
               className="map-reset-button"
               onClick={() => {
                 setZoom(defaultMapZoom);
-                setPan({ x: 0, y: 0 });
+                setPan(getInitialPan(defaultMapZoom));
               }}
               type="button"
             >
@@ -915,6 +996,40 @@ function MapWorkspace({
           {searchMessage ||
             `Testowa pozycja ${selectedNpc?.name}: poziom ${selectedPosition?.floor}, ${selectedPosition?.x} × ${selectedPosition?.y}.`}
         </div>
+      )}
+      {selectedNpc && selectedNpcPositions.length > 1 && (
+        <section
+          aria-label={`Lokalizacje NPC ${selectedNpc.name}`}
+          className="map-npc-locations"
+        >
+          <div className="map-npc-locations-heading">
+            <strong>{selectedNpc.name}</strong>
+            <span>{selectedNpcPositions.length} lokalizacji na mapie</span>
+          </div>
+          <ul>
+            {selectedNpcPositions.map((position, index) => {
+              const isSelected =
+                selectedPositionKey === getMapPositionKey(position);
+              const positionFloor =
+                position.floor > 0 ? `+${position.floor}` : position.floor;
+              return (
+                <li key={getMapPositionKey(position)}>
+                  <button
+                    aria-pressed={isSelected}
+                    className={isSelected ? "selected" : ""}
+                    onClick={() => chooseNpc(selectedNpc, position)}
+                    type="button"
+                  >
+                    <span>Lokalizacja {index + 1}</span>
+                    <span>
+                      Poziom {positionFloor} · {position.x} × {position.y}
+                    </span>
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
       )}
 
       <div
@@ -942,40 +1057,38 @@ function MapWorkspace({
             onLoad={() => setImageError(false)}
             src={`./maps/${imageName}`}
           />
-          {positions
-            .filter(
-              (position) =>
-                markerLayer === "npcs" && position.floor === floor,
-            )
-            .map((position) => {
-              const npc = npcs.find((entry) => entry.id === position.npcId);
-              if (!npc) return null;
-              const isSelected =
-                selectedNpcId === npc.id &&
-                selectedPositionKey === getMapPositionKey(position);
-              return (
-                <div
-                  className={`map-npc-marker${isSelected ? " selected" : ""}`}
-                  key={getMapPositionKey(position)}
-                  style={{
-                    left: `${(position.x / mapDimensions.width) * 100}%`,
-                    top: `${(position.y / mapDimensions.height) * 100}%`,
-                    transform: `translate(-50%, -50%) scale(${1 / zoom})`,
-                  }}
+          {visibleNpcPositions.map((position, markerIndex) => {
+            const npc = npcs.find((entry) => entry.id === position.npcId);
+            if (!npc) return null;
+            const isOtherFloor = position.floor !== floor;
+            const offset = npcMarkerOffsets[markerIndex] ?? noMapMarkerOffset;
+            const isSelected =
+              selectedNpcId === npc.id &&
+              selectedPositionKey === getMapPositionKey(position);
+            const isSameNpc = selectedNpcId === npc.id;
+            return (
+              <div
+                className={`map-npc-marker${isSelected ? " selected" : ""}${isOtherFloor ? " other-floor" : ""}${isSameNpc ? " same-npc" : ""}`}
+                key={getMapPositionKey(position)}
+                style={{
+                  left: `calc(${(position.x / mapDimensions.width) * 100}% + ${offset.x / zoom}px)`,
+                  top: `calc(${(position.y / mapDimensions.height) * 100}% + ${offset.y / zoom}px)`,
+                  transform: `translate(-50%, -50%) scale(${1 / zoom})`,
+                }}
+              >
+                <button
+                  aria-expanded={isSelected}
+                  aria-label={`${npc.name}, poziom ${position.floor > 0 ? `+${position.floor}` : position.floor}, pozycja ${position.x} × ${position.y}${isOtherFloor ? ", inny poziom" : ""}`}
+                  className="map-npc-icon-button"
+                  onClick={() => chooseNpc(npc, position)}
+                  title={npc.name}
+                  type="button"
                 >
-                  <button
-                    aria-expanded={isSelected}
-                    aria-label={`${npc.name}, pozycja ${position.x} × ${position.y}`}
-                    className="map-npc-icon-button"
-                    onClick={() => chooseNpc(npc, position)}
-                    title={npc.name}
-                    type="button"
-                  >
-                    <MapNpcIcon />
-                  </button>
-                </div>
-              );
-            })}
+                  <MapNpcIcon />
+                </button>
+              </div>
+            );
+          })}
           {activeMonsterCategories.map((category) => {
             const monster =
               category.monsterIds.length === 0
@@ -986,53 +1099,53 @@ function MapWorkspace({
             const displayName = monster?.name ?? category.name;
             return category.positions.map(([markerFloor, x, y], positionIndex) => {
               const isSelected =
-                selectedMonsterPositionKey ===
-                getMapMonsterPositionKey(category.id, positionIndex);
+                  selectedMonsterPositionKey ===
+                  getMapMonsterPositionKey(category.id, positionIndex);
               const isOtherFloor = markerFloor !== floor;
               return (
-                <div
-                  className={`map-monster-marker${isSelected ? " selected" : ""}${isOtherFloor ? " other-floor" : ""}`}
-                  key={getMapMonsterPositionKey(category.id, positionIndex)}
-                  style={{
-                    left: `${(x / mapDimensions.width) * 100}%`,
-                    top: `${(y / mapDimensions.height) * 100}%`,
-                    transform: `translate(-50%, -50%) scale(${1 / zoom})`,
-                  }}
-                >
-                  <button
-                    aria-expanded={isSelected}
-                    aria-label={`${displayName}, poziom ${markerFloor > 0 ? `+${markerFloor}` : markerFloor}, pozycja ${x} × ${y}${isOtherFloor ? ", inny poziom" : ""}`}
-                    className="map-monster-icon-button"
-                    onClick={() => selectMonsterPosition(category, positionIndex)}
-                    title={displayName}
-                    type="button"
+                  <div
+                    className={`map-monster-marker${isSelected ? " selected" : ""}${isOtherFloor ? " other-floor" : ""}`}
+                    key={getMapMonsterPositionKey(category.id, positionIndex)}
+                    style={{
+                      left: `${(x / mapDimensions.width) * 100}%`,
+                      top: `${(y / mapDimensions.height) * 100}%`,
+                      transform: `translate(-50%, -50%) scale(${1 / zoom})`,
+                    }}
                   >
-                    <span aria-hidden="true" className="map-monster-dot" />
-                  </button>
-                </div>
+                    <button
+                      aria-expanded={isSelected}
+                      aria-label={`${displayName}, poziom ${markerFloor > 0 ? `+${markerFloor}` : markerFloor}, pozycja ${x} × ${y}${isOtherFloor ? ", inny poziom" : ""}`}
+                      className="map-monster-icon-button"
+                      onClick={() => selectMonsterPosition(category, positionIndex)}
+                      title={displayName}
+                      type="button"
+                    >
+                      <span aria-hidden="true" className="map-monster-dot" />
+                    </button>
+                  </div>
               );
             });
           })}
-          {houses
-            .filter(
-              (house) =>
-                markerLayer === "houses" && house.position.floor === floor,
-            )
-            .map((house) => (
+          {visibleHouses.map((house, markerIndex) => {
+            const isOtherFloor = house.position.floor !== floor;
+            const offset = houseMarkerOffsets[markerIndex] ?? noMapMarkerOffset;
+            const floorLabel =
+              house.position.floor > 0
+                ? `+${house.position.floor}`
+                : house.position.floor;
+            return (
               <div
-                className={`map-house-marker${
-                  selectedHouseId === house.id ? " selected" : ""
-                }`}
+                className={`map-house-marker${selectedHouseId === house.id ? " selected" : ""}${isOtherFloor ? " other-floor" : ""}`}
                 key={house.id}
                 style={{
-                  left: `${(house.position.x / mapDimensions.width) * 100}%`,
-                  top: `${(house.position.y / mapDimensions.height) * 100}%`,
+                  left: `calc(${(house.position.x / mapDimensions.width) * 100}% + ${offset.x / zoom}px)`,
+                  top: `calc(${(house.position.y / mapDimensions.height) * 100}% + ${offset.y / zoom}px)`,
                   transform: `translate(-50%, -50%) scale(${1 / zoom})`,
                 }}
               >
                 <button
                   aria-expanded={selectedHouseId === house.id}
-                  aria-label={`${house.name}, domek w ${house.region}, poziom ${house.position.floor}`}
+                  aria-label={`${house.name}, domek w ${house.region}, poziom ${floorLabel}${isOtherFloor ? ", inny poziom" : ""}`}
                   className="map-house-icon-button"
                   onClick={() => {
                     setMarkerLayer("houses");
@@ -1053,19 +1166,19 @@ function MapWorkspace({
                   <MapHouseIcon />
                 </button>
               </div>
-            ))}
-          {locations
-            .filter(
-              (location) =>
-                markerLayer === "locations" &&
-                location.position.floor === floor,
-            )
-            .map((location) => (
+            );
+          })}
+          {visibleLocations.map((location, markerIndex) => {
+            const isOtherFloor = location.position.floor !== floor;
+            const offset = locationMarkerOffsets[markerIndex] ?? noMapMarkerOffset;
+            const floorLabel =
+              location.position.floor > 0
+                ? `+${location.position.floor}`
+                : location.position.floor;
+            return (
               <button
-                aria-label={`${location.name}, poziom ${location.position.floor}, pozycja ${location.position.x} × ${location.position.y}`}
-                className={`map-location-marker${
-                  selectedLocationId === location.id ? " selected" : ""
-                }`}
+                aria-label={`${location.name}, poziom ${floorLabel}, pozycja ${location.position.x} × ${location.position.y}${isOtherFloor ? ", inny poziom" : ""}`}
+                className={`map-location-marker${selectedLocationId === location.id ? " selected" : ""}${isOtherFloor ? " other-floor" : ""}`}
                 key={location.id}
                 onClick={() => {
                   setMarkerLayer("locations");
@@ -1083,8 +1196,8 @@ function MapWorkspace({
                   );
                 }}
                 style={{
-                  left: `${(location.position.x / mapDimensions.width) * 100}%`,
-                  top: `${(location.position.y / mapDimensions.height) * 100}%`,
+                  left: `calc(${(location.position.x / mapDimensions.width) * 100}% + ${offset.x / zoom}px)`,
+                  top: `calc(${(location.position.y / mapDimensions.height) * 100}% + ${offset.y / zoom}px)`,
                   transform: `translate(-50%, -50%) scale(${1 / zoom})`,
                 }}
                 title={
@@ -1096,7 +1209,8 @@ function MapWorkspace({
               >
                 <span className="map-location-label">{location.name}</span>
               </button>
-            ))}
+            );
+          })}
         </div>
         {popupPlacement && (
           <div className="map-popup-overlay">

@@ -315,6 +315,64 @@ select:focus-visible {
   font-size: 12px;
 }
 
+.map-npc-locations {
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: rgba(17, 20, 17, 0.75);
+}
+
+.map-npc-locations-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 5px 10px;
+  margin-bottom: 8px;
+  color: #e8e9df;
+  font-size: 12px;
+}
+
+.map-npc-locations-heading span {
+  color: var(--muted);
+}
+
+.map-npc-locations ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.map-npc-locations button {
+  display: grid;
+  gap: 2px;
+  min-height: 38px;
+  padding: 5px 9px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: #20241f;
+  color: #c9cbbb;
+  cursor: pointer;
+  font: inherit;
+  font-size: 11px;
+  text-align: left;
+}
+
+.map-npc-locations button:hover,
+.map-npc-locations button:focus-visible {
+  border-color: rgba(211, 182, 94, 0.7);
+  color: #f0df9e;
+}
+
+.map-npc-locations button.selected {
+  border-color: var(--accent);
+  background: rgba(211, 182, 94, 0.12);
+  color: var(--accent-bright);
+}
+
 .map-viewport {
   position: relative;
   display: flex;
@@ -361,8 +419,36 @@ select:focus-visible {
   transform-origin: center;
 }
 
+.map-npc-marker:not(.other-floor) {
+  z-index: 5;
+}
+
 .map-npc-marker.selected {
   z-index: 6;
+}
+
+.map-npc-marker.other-floor .map-npc-icon {
+  filter: grayscale(1) brightness(0.75);
+  opacity: 0.8;
+}
+
+.map-npc-marker.other-floor .map-npc-icon-button:hover .map-npc-icon,
+.map-npc-marker.other-floor .map-npc-icon-button:focus-visible .map-npc-icon {
+  filter: grayscale(1) brightness(1.05) drop-shadow(0 0 3px #fff);
+  opacity: 1;
+}
+
+.map-npc-marker.same-npc:not(.other-floor):not(.selected) .map-npc-icon {
+  filter: drop-shadow(0 0 4px #f0d477);
+}
+
+.map-npc-marker.same-npc.other-floor .map-npc-icon {
+  filter: grayscale(1) brightness(0.75) drop-shadow(0 0 4px #f0d477);
+  opacity: 0.95;
+}
+
+.map-npc-marker.same-npc.selected .map-npc-icon {
+  filter: drop-shadow(0 0 5px #ffe58a);
 }
 
 .map-npc-icon-button {
@@ -496,6 +582,19 @@ select:focus-visible {
   transform-origin: center;
 }
 
+.map-location-marker:not(.other-floor) {
+  z-index: 5;
+}
+
+.map-location-marker.selected {
+  z-index: 6;
+}
+
+.map-location-marker.other-floor .map-location-label {
+  filter: grayscale(1);
+  opacity: 0.72;
+}
+
 .map-location-label {
   display: block;
   padding: 1px 3px;
@@ -529,8 +628,23 @@ select:focus-visible {
   transform-origin: center;
 }
 
+.map-house-marker:not(.other-floor) {
+  z-index: 4;
+}
+
 .map-house-marker.selected {
   z-index: 5;
+}
+
+.map-house-marker.other-floor .map-house-icon {
+  filter: grayscale(1) brightness(0.75);
+  opacity: 0.8;
+}
+
+.map-house-marker.other-floor .map-house-icon-button:hover .map-house-icon,
+.map-house-marker.other-floor .map-house-icon-button:focus-visible .map-house-icon {
+  filter: grayscale(1) brightness(1.05) drop-shadow(0 0 3px #fff);
+  opacity: 1;
 }
 
 .map-house-icon-button {
