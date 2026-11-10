@@ -182,6 +182,24 @@ function MapWorkspace({
             (selectedPositionKey === null ||
               getMapPositionKey(position) === selectedPositionKey),
         ) ?? positions.find((position) => position.npcId === selectedNpcId);
+  const npcMapSearchOptions = useMemo(() => {
+    const regionsByName = new Map<string, Set<string>>();
+    for (const npc of npcs) {
+      const nameKey = npc.name.toLocaleLowerCase("pl");
+      const regions = regionsByName.get(nameKey) ?? new Set<string>();
+      regions.add(npc.region);
+      regionsByName.set(nameKey, regions);
+    }
+
+    return npcs.map((npc) => {
+      const regions = regionsByName.get(npc.name.toLocaleLowerCase("pl"));
+      const hasMainAndRook = regions?.has("MAIN") && regions.has("ROOK");
+      return {
+        npc,
+        label: hasMainAndRook ? `${npc.name} (${npc.region})` : npc.name,
+      };
+    });
+  }, [npcs]);
   const activeMonsterCategories = useMemo(
     () =>
       selectedMonsterId !== null
@@ -614,7 +632,10 @@ function MapWorkspace({
     setSelectedLocationId(null);
     clearSelectedMonster();
     setSelectedNpcId(npc.id);
-    setSearchValue(npc.name);
+    const searchOption = npcMapSearchOptions.find(
+      (option) => option.npc.id === npc.id,
+    );
+    setSearchValue(searchOption?.label ?? npc.name);
     const position =
       targetPosition ?? positions.find((entry) => entry.npcId === npc.id);
     if (!position) {
@@ -642,9 +663,13 @@ function MapWorkspace({
       return;
     }
     if (markerLayer === "npcs") {
-      const npc = npcs.find(
-        (entry) => entry.name.toLocaleLowerCase("pl") === normalizedName,
-      );
+      const npc =
+        npcMapSearchOptions.find(
+          (option) => option.label.toLocaleLowerCase("pl") === normalizedName,
+        )?.npc ??
+        npcs.find(
+          (entry) => entry.name.toLocaleLowerCase("pl") === normalizedName,
+        );
       if (!npc) {
         setSearchMessage(`Nie znaleziono NPC „${searchValue.trim()}”.`);
         return;
@@ -933,8 +958,8 @@ function MapWorkspace({
                       ? mapMonsterSearchNames.map((name) => (
                           <option key={name} value={name} />
                         ))
-                    : npcs.map((npc) => (
-                        <option key={npc.id} value={npc.name} />
+                    : npcMapSearchOptions.map(({ npc, label }) => (
+                        <option key={npc.id} value={label} />
                       ))}
               </datalist>
             </label>
