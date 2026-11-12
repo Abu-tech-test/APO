@@ -8,6 +8,7 @@ import {
 } from "react";
 import {
   defaultMapZoom,
+  dailyTeleports,
   getMapMonsterPositionKey,
   getMapPositionKey,
   mapDimensions,
@@ -21,6 +22,7 @@ import type {
   MapMarkerLayer,
   MapMonsterMapRequest,
   MapNpcMapRequest,
+  MapNpcLocation,
   MapNpcPosition,
   MonsterMapCategory,
   NPC,
@@ -144,6 +146,11 @@ function MapWorkspace({
   const [selectedLocationId, setSelectedLocationId] = useState<number | null>(
     null,
   );
+  const [selectedTeleportDay, setSelectedTeleportDay] = useState<number | null>(
+    null,
+  );
+  const [mapFocusPosition, setMapFocusPosition] =
+    useState<MapNpcLocation | null>(null);
   const [searchMessage, setSearchMessage] = useState("");
   const [zoom, setZoom] = useState(defaultMapZoom);
   const [pan, setPan] = useState({ x: 0, y: 0 });
@@ -226,6 +233,8 @@ function MapWorkspace({
   );
   const visibleLocations =
     markerLayer === "locations" ? locations : emptyMapMarkerList;
+  const visibleTeleports =
+    markerLayer === "teleports" ? dailyTeleports.positions : emptyMapMarkerList;
   const locationMarkerOffsets = useMemo(
     () => getMapMarkerOffsets(visibleLocations.map((location) => location.position)),
     [visibleLocations],
@@ -542,7 +551,8 @@ function MapWorkspace({
       selectedMonsterPosition?.position ??
       selectedLocation?.position ??
       selectedHouse?.position ??
-      selectedPosition;
+      selectedPosition ??
+      mapFocusPosition;
     if (!focusPendingRef.current || targetPosition?.floor !== floor) return;
     focusPendingRef.current = false;
 
@@ -551,7 +561,7 @@ function MapWorkspace({
       const canvas = canvasRef.current;
       if (!viewport || !canvas) return;
 
-      const targetZoom = 5;
+      const targetZoom = markerLayer === "teleports" ? 8 : 5;
       const canvasWidth = canvas.clientWidth;
       const canvasHeight = canvas.clientHeight;
       const canvasLeft = (viewport.clientWidth - canvasWidth) / 2;
@@ -577,6 +587,8 @@ function MapWorkspace({
     selectedLocation,
     selectedPosition,
     selectedMonsterPosition,
+    mapFocusPosition,
+    markerLayer,
   ]);
 
   useEffect(() => {
@@ -848,8 +860,23 @@ function MapWorkspace({
                 clearSelectedMonster();
                 setSelectedHouseId(null);
                 setSelectedLocationId(null);
+                setSelectedTeleportDay(null);
                 setSearchValue("");
-                setSearchMessage("");
+                if (nextLayer === "teleports") {
+                  setMapFocusPosition({
+                    floor: dailyTeleports.floor,
+                    ...dailyTeleports.center,
+                  });
+                  setFloor(dailyTeleports.floor);
+                  setSearchMessage(
+                    "Teleport do Antycznego Miasta zmienia pozycję codziennie. Pokazano punkty dla dni 1–31.",
+                  );
+                  focusPendingRef.current = true;
+                  setFocusRequest((request) => request + 1);
+                } else {
+                  setMapFocusPosition(null);
+                  setSearchMessage("");
+                }
                 if (nextLayer === "monsters") onLoadMonsterLocations();
               }}
               value={markerLayer}
@@ -859,6 +886,7 @@ function MapWorkspace({
               <option value="monsters">Potwory</option>
               <option value="houses">Domki</option>
               <option value="locations">Lokalizacje</option>
+              <option value="teleports">Teleporty</option>
             </select>
           </label>
           <label className="map-floor-select">
@@ -894,6 +922,8 @@ function MapWorkspace({
                       ? "SZUKAJ POTWORA"
                     : markerLayer === "npcs"
                       ? "SZUKAJ NPC"
+                      : markerLayer === "teleports"
+                        ? "TELEPORTY"
                       : "WYSZUKIWARKA"}
               </span>
               <input
@@ -904,10 +934,13 @@ function MapWorkspace({
                       ? "Wyszukaj lokalizację na mapie"
                       : markerLayer === "monsters"
                         ? "Wyszukaj potwora na mapie"
+                        : markerLayer === "teleports"
+                          ? "Punkty teleportu pokazane na mapie"
                       : "Wyszukaj NPC na mapie"
                 }
                 disabled={
                   markerLayer === "" ||
+                  markerLayer === "teleports" ||
                   (markerLayer === "monsters" &&
                     monsterMapLoadStatus !== "ready")
                 }
@@ -930,6 +963,8 @@ function MapWorkspace({
                         ? "Wpisz nazwę potwora..."
                       : markerLayer === "locations"
                         ? "Wpisz nazwę lokalizacji..."
+                        : markerLayer === "teleports"
+                          ? "Punkty dla dni 1–31"
                         : "Najpierw wybierz markery"
                 }
                 type="search"
@@ -967,6 +1002,7 @@ function MapWorkspace({
               className="map-search-button"
               disabled={
                 markerLayer === "" ||
+                markerLayer === "teleports" ||
                 (markerLayer === "monsters" &&
                   monsterMapLoadStatus !== "ready")
               }
@@ -1082,6 +1118,41 @@ function MapWorkspace({
             onLoad={() => setImageError(false)}
             src={`./maps/${imageName}`}
           />
+          {visibleTeleports.map((teleport) => {
+            const isOtherFloor = dailyTeleports.floor !== floor;
+            const isSelected = selectedTeleportDay === teleport.day;
+            return (
+              <button
+                aria-label={`Teleport do Antycznego Miasta, dzień ${teleport.day}, poziom ${dailyTeleports.floor}, pozycja ${teleport.x} × ${teleport.y}${isOtherFloor ? ", inny poziom" : ""}`}
+                aria-pressed={isSelected}
+                className={`map-teleport-marker${isSelected ? " selected" : ""}${isOtherFloor ? " other-floor" : ""}`}
+                key={teleport.day}
+                onClick={() => {
+                  setSelectedTeleportDay(teleport.day);
+                  setMapFocusPosition({
+                    floor: dailyTeleports.floor,
+                    x: teleport.x,
+                    y: teleport.y,
+                  });
+                  setFloor(dailyTeleports.floor);
+                  setSearchMessage(
+                    `Dzień ${teleport.day}: teleport do Antycznego Miasta na poziomie ${dailyTeleports.floor}, pozycja ${teleport.x} × ${teleport.y}.`,
+                  );
+                  focusPendingRef.current = true;
+                  setFocusRequest((request) => request + 1);
+                }}
+                style={{
+                  left: `${(teleport.x / mapDimensions.width) * 100}%`,
+                  top: `${(teleport.y / mapDimensions.height) * 100}%`,
+                  transform: `translate(-50%, -50%) scale(${1 / zoom})`,
+                }}
+                title={`Dzień ${teleport.day}: ${teleport.x} × ${teleport.y} (poziom ${dailyTeleports.floor})`}
+                type="button"
+              >
+                {teleport.day}
+              </button>
+            );
+          })}
           {visibleNpcPositions.map((position, markerIndex) => {
             const npc = npcs.find((entry) => entry.id === position.npcId);
             if (!npc) return null;
@@ -1373,7 +1444,9 @@ function MapWorkspace({
           )}
       </div>
       <p className="map-help">
-        Wybierz NPC, Potwory, Domki lub Lokalizacje, aby wyświetlić oznaczenia.
+        Mapa otwiera się na poziomie -4 z punktami teleportu do Antycznego
+        Miasta; ich numery wskazują dzień miesiąca. Wybierz NPC, Potwory, Domki
+        lub Lokalizacje, aby zmienić warstwę oznaczeń.
         Wyszukanie potwora pokazuje jego markery na wszystkich poziomach bez
         przesuwania mapy; szare oznaczają inne piętra. Kliknij marker, aby
         przejść na jego poziom i przybliżyć pozycję. Kliknij zielony znacznik

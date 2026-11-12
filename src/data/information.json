@@ -1010,6 +1010,10 @@
     ]
   },
   {
+    "name": "Teleporty do Antycznego Miasta",
+    "kind": "teleports"
+  },
+  {
     "name": "Kostiumy",
     "kind": "costumes",
     "rules": [

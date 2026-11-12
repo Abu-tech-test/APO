@@ -3,7 +3,7 @@ import { Graphic } from "../components/Graphic";
 import type { Item, Monster } from "../types";
 import type { InformationCategory } from "../information/types";
 import type { MapNpcLocation, NPC } from "../map/mapData";
-import { monsters } from "../map/mapData";
+import { dailyTeleports, monsters } from "../map/mapData";
 import type { Boss } from "./types";
 import {
   compareLootFrequency,
@@ -135,6 +135,32 @@ export function InformationDetails({
               </div>
             ))}
         </>
+      ) : category.kind === "teleports" ? (
+        <section className="info-section">
+          <h3>Teleport do Antycznego Miasta</h3>
+          <p>
+            Miejsce pojawienia się teleportu zmienia się codziennie. Poniżej
+            podano pozycje dla kolejnych dni miesiąca; wszystkie znajdują się
+            na poziomie {dailyTeleports.floor}. Punkty są oznaczone numerami
+            dni na mapie w warstwie „Teleporty”.
+          </p>
+          <div className="information-table-wrap">
+            <table className="information-table">
+              <thead>
+                <tr><th>Dzień miesiąca</th><th>Poziom</th><th>Pozycja</th></tr>
+              </thead>
+              <tbody>
+                {dailyTeleports.positions.map(({ day, x, y }) => (
+                  <tr key={day}>
+                    <td>{day}</td>
+                    <td>{dailyTeleports.floor}</td>
+                    <td>{x} × {y}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
       ) : category.kind === "costumes" && category.entries && category.rules ? (
         <>
           <p className="costume-credit">

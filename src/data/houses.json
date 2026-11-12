@@ -1680,6 +1680,146 @@
     }
   },
   {
+    "id": 238231,
+    "name": "Rook Avenue I",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 232,
+      "y": 126
+    }
+  },
+  {
+    "id": 238233,
+    "name": "Rook Avenue II",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 239,
+      "y": 130
+    }
+  },
+  {
+    "id": 238232,
+    "name": "Rook Avenue III",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 244,
+      "y": 125
+    }
+  },
+  {
+    "id": 238225,
+    "name": "Rook Center I",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 277,
+      "y": 129
+    }
+  },
+  {
+    "id": 238224,
+    "name": "Rook Center II",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 279,
+      "y": 132
+    }
+  },
+  {
+    "id": 238229,
+    "name": "Rook Center III",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 270,
+      "y": 128
+    }
+  },
+  {
+    "id": 238227,
+    "name": "Rook Center IV",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 277,
+      "y": 129
+    }
+  },
+  {
+    "id": 238226,
+    "name": "Rook Center V",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 279,
+      "y": 131
+    }
+  },
+  {
+    "id": 238228,
+    "name": "Rook Center VI",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 277,
+      "y": 133
+    }
+  },
+  {
+    "id": 238230,
+    "name": "Rook Chancellery",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 268,
+      "y": 144
+    }
+  },
+  {
+    "id": 238236,
+    "name": "Rook Premium Avenue II",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 200,
+      "y": 163
+    }
+  },
+  {
+    "id": 238237,
+    "name": "Rook Premium Avenue III",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 199,
+      "y": 167
+    }
+  },
+  {
+    "id": 238238,
+    "name": "Rook Premium Avenue IV",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 199,
+      "y": 171
+    }
+  },
+  {
+    "id": 238239,
+    "name": "Rook Premium Avenue V",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 199,
+      "y": 175
+    }
+  },
+  {
     "id": 250,
     "name": "Rook Premium I",
     "region": "Rookgard",
@@ -1770,6 +1910,16 @@
     }
   },
   {
+    "id": 238235,
+    "name": "Rook Premium VIII Half",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 201,
+      "y": 144
+    }
+  },
+  {
     "id": 214,
     "name": "Rook Premium X",
     "region": "Rookgard",
@@ -1815,8 +1965,8 @@
     "region": "Rookgard",
     "position": {
       "floor": 0,
-      "x": 259,
-      "y": 117
+      "x": 249,
+      "y": 114
     }
   },
   {
@@ -1914,9 +2064,9 @@
     "name": "Rook Street X",
     "region": "Rookgard",
     "position": {
-      "floor": 0,
-      "x": 255,
-      "y": 155
+      "floor": 1,
+      "x": 252,
+      "y": 148
     }
   },
   {
@@ -2275,8 +2425,8 @@
     "region": "Senja",
     "position": {
       "floor": 0,
-      "x": 417,
-      "y": 187
+      "x": 424,
+      "y": 201
     }
   },
   {
@@ -2294,9 +2444,9 @@
     "name": "Senja IX",
     "region": "Senja",
     "position": {
-      "floor": 1,
-      "x": 435,
-      "y": 187
+      "floor": 0,
+      "x": 441,
+      "y": 181
     }
   },
   {
@@ -2305,8 +2455,8 @@
     "region": "Senja",
     "position": {
       "floor": 0,
-      "x": 419,
-      "y": 203
+      "x": 414,
+      "y": 205
     }
   },
   {
@@ -2326,7 +2476,7 @@
     "position": {
       "floor": 0,
       "x": 433,
-      "y": 190
+      "y": 186
     }
   },
   {
@@ -2336,7 +2486,7 @@
     "position": {
       "floor": 0,
       "x": 425,
-      "y": 183
+      "y": 181
     }
   },
   {
@@ -2690,6 +2840,26 @@
     }
   },
   {
+    "id": 238223,
+    "name": "The Great Ochrestra of Christmas Charity House",
+    "region": "Capital City",
+    "position": {
+      "floor": 0,
+      "x": 385,
+      "y": 275
+    }
+  },
+  {
+    "id": 238234,
+    "name": "The Great Ochrestra of Christmas Charity Rook House",
+    "region": "Rookgard",
+    "position": {
+      "floor": 0,
+      "x": 219,
+      "y": 140
+    }
+  },
+  {
     "id": 424,
     "name": "Train Street I",
     "region": "Expgard",
@@ -2727,6 +2897,96 @@
       "floor": 2,
       "x": 408,
       "y": 139
+    }
+  },
+  {
+    "id": 238216,
+    "name": "Tropicano Rook I",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 1659,
+      "y": 326
+    }
+  },
+  {
+    "id": 238212,
+    "name": "Tropicano Rook II",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 1704,
+      "y": 336
+    }
+  },
+  {
+    "id": 238215,
+    "name": "Tropicano Rook III",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 1697,
+      "y": 320
+    }
+  },
+  {
+    "id": 238214,
+    "name": "Tropicano Rook IV",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 1703,
+      "y": 320
+    }
+  },
+  {
+    "id": 238218,
+    "name": "Tropicano Rook IX",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 1684,
+      "y": 293
+    }
+  },
+  {
+    "id": 238213,
+    "name": "Tropicano Rook V",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 1714,
+      "y": 312
+    }
+  },
+  {
+    "id": 238217,
+    "name": "Tropicano Rook VI",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 1681,
+      "y": 310
+    }
+  },
+  {
+    "id": 238220,
+    "name": "Tropicano Rook VII",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 1672,
+      "y": 307
+    }
+  },
+  {
+    "id": 238219,
+    "name": "Tropicano Rook VIII",
+    "region": "Rookgard",
+    "position": {
+      "floor": 1,
+      "x": 1677,
+      "y": 299
     }
   },
   {
@@ -3100,6 +3360,16 @@
     }
   },
   {
+    "id": 238221,
+    "name": "Villa",
+    "region": "Villa",
+    "position": {
+      "floor": 0,
+      "x": 490,
+      "y": 197
+    }
+  },
+  {
     "id": 289,
     "name": "Villa I",
     "region": "Villa",
@@ -3115,8 +3385,8 @@
     "region": "Villa",
     "position": {
       "floor": 0,
-      "x": 540,
-      "y": 219
+      "x": 542,
+      "y": 217
     }
   },
   {
@@ -3125,8 +3395,8 @@
     "region": "Villa",
     "position": {
       "floor": 0,
-      "x": 541,
-      "y": 219
+      "x": 542,
+      "y": 229
     }
   },
   {
@@ -3135,8 +3405,18 @@
     "region": "Villa",
     "position": {
       "floor": 0,
-      "x": 539,
-      "y": 230
+      "x": 518,
+      "y": 194
+    }
+  },
+  {
+    "id": 238222,
+    "name": "Villa V",
+    "region": "Villa",
+    "position": {
+      "floor": 0,
+      "x": 545,
+      "y": 197
     }
   },
   {

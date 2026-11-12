@@ -1,5 +1,6 @@
 import houseData from "../data/houses.json";
 import locationData from "../data/locations.json";
+import dailyTeleportData from "../data/dailyTeleports.json";
 import monsterData from "../data/monsters.json";
 import npcData from "../data/npcs.json";
 import type { Monster } from "../types";
@@ -49,7 +50,13 @@ export type MonsterMapCategory = {
   positions: MonsterMapTuple[];
 };
 
-export type MapMarkerLayer = "" | "npcs" | "monsters" | "houses" | "locations";
+export type MapMarkerLayer =
+  | ""
+  | "npcs"
+  | "monsters"
+  | "houses"
+  | "locations"
+  | "teleports";
 
 export type NPC = {
   id: number;
@@ -71,6 +78,18 @@ export type MapNpcPosition = {
   x: number;
   y: number;
 };
+
+export type DailyTeleportPosition = {
+  day: number;
+  x: number;
+  y: number;
+};
+
+export const dailyTeleports: {
+  floor: number;
+  center: { x: number; y: number };
+  positions: DailyTeleportPosition[];
+} = dailyTeleportData;
 
 export const monsters: Monster[] = monsterData;
 export const allNpcs: NPC[] = npcData;

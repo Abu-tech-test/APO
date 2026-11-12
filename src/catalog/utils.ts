@@ -53,9 +53,12 @@ export function getItemImage(name: string) {
 }
 
 export function getCatalogItemImage(item: Item) {
+  const mappedImage = getItemImage(item.name);
+  if (item.clientId === 2874 && mappedImage) return mappedImage;
+
   return item.clientId
     ? `./images/items/${item.clientId}.webp`
-    : getItemImage(item.name);
+    : mappedImage;
 }
 
 export function getItemCategoryLabel(category: string) {

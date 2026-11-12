@@ -1,5 +1,15 @@
 [
   {
+    "id": 185573,
+    "name": "Ahmed's Castle Rook",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 1690,
+      "y": 160
+    }
+  },
+  {
     "id": 185560,
     "name": "Amazon Camp",
     "description": "",
@@ -37,6 +47,16 @@
       "floor": 0,
       "x": 1149,
       "y": 191
+    }
+  },
+  {
+    "id": 185574,
+    "name": "Arena Rook",
+    "description": "",
+    "position": {
+      "floor": 0,
+      "x": 184,
+      "y": 204
     }
   },
   {

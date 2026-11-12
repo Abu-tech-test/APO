@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { InformationCategory } from "./types";
+import { dailyTeleports } from "../map/mapData";
 
 function getInformationCount(category: InformationCategory) {
   if (category.stages) return category.stages.length;
@@ -10,6 +11,7 @@ function getInformationCount(category: InformationCategory) {
       0,
     );
   }
+  if (category.kind === "teleports") return dailyTeleports.positions.length;
   if (category.kind === "costumes") return category.entries?.length ?? 0;
   if (category.commands) return category.commands.length;
   return category.links?.length ?? 0;
@@ -72,7 +74,7 @@ export function InformationWorkspace({
               type="button"
             >
               <span aria-hidden="true" className="entry-icon info-entry-icon">
-                {category.kind === "expstage" ? "✦" : category.kind === "vocationgain" ? "♥" : category.kind === "spells" ? "✧" : category.kind === "commands" ? "⌘" : category.kind === "costumes" ? "♙" : "↗"}
+                {category.kind === "expstage" ? "✦" : category.kind === "vocationgain" ? "♥" : category.kind === "spells" ? "✧" : category.kind === "commands" ? "⌘" : category.kind === "costumes" ? "♙" : category.kind === "teleports" ? "⌖" : "↗"}
               </span>
               <span className="entry-text">
                 <strong>{category.name}</strong>

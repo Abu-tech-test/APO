@@ -114,7 +114,14 @@
     "location": "Evul",
     "profession": "Przewoznik",
     "description": "Captain Hash oferuje przeprawe swoim statkiem na wyspe piratow oraz powrot do evul. Podroz bez odpowiedniego wspomagania moze jednak potrwac znacznie dluzej. Aby skrocic czas podrozy, potrzebne sa 4x Dried Cannabis. Bez nich ster mozna uzywac co 15 minut..",
-    "image": "./images/shared/e6aab5744f39a5ae878a1435fa16b149d828b23be8eb928c1b1ff4fb91aeefb9.webp"
+    "image": "./images/shared/e6aab5744f39a5ae878a1435fa16b149d828b23be8eb928c1b1ff4fb91aeefb9.webp",
+    "mapPositions": [
+      {
+        "floor": 1,
+        "x": 789,
+        "y": 63
+      }
+    ]
   },
   {
     "id": 8,
@@ -192,7 +199,14 @@
     "location": "City of Dreams",
     "profession": null,
     "description": "Avar przewozi graczy magicznym statkiem na wyspe, na ktorej wykonuje sie Quest Of The Nine. Cena podrozy zalezy od poziomu postaci. Sprzedaje tez karnety jednodniowe, tygodniowe i miesieczne, ktorych cena rowniez zalezy od poziomu.",
-    "image": "./images/npcs/avar_main.webp"
+    "image": "./images/npcs/avar_main.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 1347,
+        "y": 71
+      }
+    ]
   },
   {
     "id": 13,
@@ -287,7 +301,7 @@
     "location": "POH",
     "profession": "Przewoznik",
     "description": "Hermesis oferuje rejs do Capital City.",
-    "image": "./images/shared/efc52d6912ed6c3309e96aa424ea84a06cab4ee6d13cd6296cac283f1aff3534.webp",
+    "image": "./images/monsters/226.webp?v=7",
     "mapPositions": [
       {
         "floor": 0,
@@ -327,6 +341,11 @@
         "floor": 0,
         "x": 471,
         "y": 237
+      },
+      {
+        "floor": 0,
+        "x": 471,
+        "y": 234
       }
     ]
   },
@@ -406,7 +425,14 @@
     "location": "Nieopodal Amazon Camp",
     "profession": "Skup przedmiotow",
     "description": "Alfar chetnie odkupi od graczy wartosciowe przedmioty. Ceny skupu zmieniaja sie po kazdym restarcie serwera. Aby otrzymywac od niego lepsze ceny, nalezy wykonac misje.",
-    "image": "./images/npcs/alfar_main.webp"
+    "image": "./images/npcs/alfar_main.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 545,
+        "y": 287
+      }
+    ]
   },
   {
     "id": 26,
@@ -416,7 +442,14 @@
     "location": "Canyon of damned",
     "profession": "Skup przedmiotow",
     "description": "Nordes chetnie odkupi od graczy wartosciowe przedmioty. Ceny skupu zmieniaja sie po kazdym restarcie serwera. Aby otrzymywac od niego lepsze ceny, nalezy wykonac misje.",
-    "image": "./images/npcs/nordes_main.webp"
+    "image": "./images/npcs/nordes_main.webp",
+    "mapPositions": [
+      {
+        "floor": 1,
+        "x": 673,
+        "y": 307
+      }
+    ]
   },
   {
     "id": 27,
@@ -482,6 +515,11 @@
         "floor": 0,
         "x": 178,
         "y": 649
+      },
+      {
+        "floor": 0,
+        "x": 512,
+        "y": 215
       }
     ]
   },
@@ -712,6 +750,11 @@
         "floor": -2,
         "x": 444,
         "y": 772
+      },
+      {
+        "floor": 0,
+        "x": 521,
+        "y": 209
       }
     ]
   },
@@ -754,6 +797,11 @@
         "floor": 0,
         "x": 160,
         "y": 657
+      },
+      {
+        "floor": 0,
+        "x": 513,
+        "y": 209
       }
     ]
   },
@@ -844,7 +892,14 @@
     "location": "Capital City",
     "profession": "NPC Questowy",
     "description": "U tego pirata mozemy dostac jeden z przedmiotow, ktory jest niezbedny do wykonania zadania.",
-    "image": "./images/shared/9762613a45a5b8e4361e3e71c9cee178b598659ba5de29138f143e8da9141ed9.webp"
+    "image": "./images/shared/9762613a45a5b8e4361e3e71c9cee178b598659ba5de29138f143e8da9141ed9.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 377,
+        "y": 263
+      }
+    ]
   },
   {
     "id": 37,
@@ -1174,7 +1229,7 @@
     "location": "City of Dreams",
     "profession": "Sprzedawca ekwipunku",
     "description": "Renrea sprzedaje pierscienie posiadajace ciekawe wlasciwosci magiczne.",
-    "image": "./images/shared/efc52d6912ed6c3309e96aa424ea84a06cab4ee6d13cd6296cac283f1aff3534.webp",
+    "image": "./images/monsters/226.webp?v=7",
     "mapPositions": [
       {
         "floor": 1,
@@ -1800,10 +1855,16 @@
     "region": "MAIN",
     "category": "Specjalne",
     "location": "Capital City",
-    "locationImage": "./images/npcs/ward-robe-main-location.webp",
     "profession": null,
     "description": "Ward Robe ma nam do zaoferowania calkiem obszerna garderobe w sam raz na Halloween, oferuje nam: Kostium wampira, czarownicy, nekromanty, bialego szkieletu, brazowego trolla, ducha, nieumarlaka, diabelka, czerwonego szkieletu, niebieskiego trolla, mumii oraz kaplanki. ",
-    "image": "./images/shared/05ad2f538012ef6262f5087724a06db8a966a31d57bc60757a90f8dbab0c318c.webp"
+    "image": "./images/shared/05ad2f538012ef6262f5087724a06db8a966a31d57bc60757a90f8dbab0c318c.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 252,
+        "y": 236
+      }
+    ]
   },
   {
     "id": 87,
@@ -1823,7 +1884,14 @@
     "location": "Senja",
     "profession": null,
     "description": "Stary piekarz oferuje nam ciekawa wymiane. Jesli zaoferujemy mu pysznego piernika \"gingerbread\", Staruszek przedstawi nam Swoja oferte wymiany: W zamian za 4 pierniki moge podarowac Ci pewna ksiazke! Jesli masz ich 10 to dam Ci wyjatkowy helm, natomiast jesli masz ich 15 to co Ci podaruje to bedzie niespodzianka, ale na pewno nie bedziesz zawiedziony!. No chyba, ze jestes jednym z tych gagatkow ktorzy zerwali Grinchowi szalik... Wtedy jesli go masz to jestem w stanie zrobic cos wiecej! - Komplet 23 piernikow i szalik Grincha za zostanie legenda! Pierniki zdobywamy podczas trwania eventu LEGENDY GRINCH'a w okresie Swiat Bozego Narodzenia.",
-    "image": "./images/shared/e3afcf3f21055ed22b8b5bb0d5df5191215f11d414cc59b98025764dce5e2f4e.webp"
+    "image": "./images/shared/e3afcf3f21055ed22b8b5bb0d5df5191215f11d414cc59b98025764dce5e2f4e.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 462,
+        "y": 171
+      }
+    ]
   },
   {
     "id": 89,
@@ -1877,7 +1945,14 @@
     "location": "Sky",
     "profession": "Bless",
     "description": "Blesser to specjalny NPC, u ktorego mozna kupic blessy. Chronia one przed utrata doswiadczenia oraz ekwipunku po smierci. Blessy dzialaja wylacznie dla graczy posiadajacych PACC. Maksymalnie mozna kupic 100 blessow, a cena kazdego z nich zalezy od poziomu postaci.",
-    "image": "./images/shared/f22e8d2a7dfc041ee2a9adcde7e339b0e0f3b6ccd2f6e22e3c24df4a1f2fe55b.webp"
+    "image": "./images/shared/f22e8d2a7dfc041ee2a9adcde7e339b0e0f3b6ccd2f6e22e3c24df4a1f2fe55b.webp",
+    "mapPositions": [
+      {
+        "floor": 1,
+        "x": 122,
+        "y": 556
+      }
+    ]
   },
   {
     "id": 92,
@@ -1887,7 +1962,14 @@
     "location": "Desert City",
     "profession": null,
     "description": "Ahmed oferuje nam \"potezne\" nagrody za wykonanie u niego 100 misjii. Za kazda wykonana misje, mozna odebrac nagrode. Informacja, ktora moze Wam sie przydac: Tak wiec na poczatek chce Ci powiedziec o magicznych wlasciwosciach pewnego przedmiotu. KlejNutka potrafi zwiekszyc Twoje mozliwosci oraz ulatwiac zadania. Druga wazna informacja: Do kazdego zadania mozesz uzyc 5 KlejNutek, jednak musisz ich uzyc przed zadaniem! Dlatego teraz uzyj ich jesli chcesz, jesli nie chcesz to napisz, ze jestes gotowy.",
-    "image": "./images/shared/86989795b1296c034f425a24148eb2e0ea6aa9abe9e84b28718affbc4369ef59.webp"
+    "image": "./images/shared/86989795b1296c034f425a24148eb2e0ea6aa9abe9e84b28718affbc4369ef59.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 446,
+        "y": 275
+      }
+    ]
   },
   {
     "id": 93,
@@ -1897,7 +1979,14 @@
     "location": "Cyclopolis",
     "profession": null,
     "description": "Dao zleca graczowi serie wymagajacych misji, ktore trzeba wykonac krok po kroku. Ukonczenie wszystkich zadan odblokowuje dostep do bardzo trudnego questa, ktorego nagroda jest Shaman Skirt.",
-    "image": "./images/shared/224fe34d84e1518c7ac4671cdb92bc0f8f7c682d54357ebf8d817cafd7dd48ef.webp"
+    "image": "./images/shared/224fe34d84e1518c7ac4671cdb92bc0f8f7c682d54357ebf8d817cafd7dd48ef.webp",
+    "mapPositions": [
+      {
+        "floor": -7,
+        "x": 192,
+        "y": 566
+      }
+    ]
   },
   {
     "id": 94,
@@ -1907,7 +1996,14 @@
     "location": "Magic Island",
     "profession": null,
     "description": "Old Wizard pomaga graczom przedostac sie na wyspe, na ktorej znajduja sie potwory o nazwie Returned oraz quest na Scroll of Escape. Dodatkowo pelni role tlumacza dokumentow.",
-    "image": "./images/npcs/old_wizard_main.webp"
+    "image": "./images/npcs/old_wizard_main.webp",
+    "mapPositions": [
+      {
+        "floor": 2,
+        "x": 968,
+        "y": 402
+      }
+    ]
   },
   {
     "id": 95,
@@ -1917,7 +2013,14 @@
     "location": "Wyspa Piratow",
     "profession": null,
     "description": "Daron jest bylym marynarzem, ktorego statek zostal zniszczony przez piratow. Od tamtej pory pracuje na ich wyspie, czekajac na okazje do zemsty. Zleca graczom misje zwiazane z walka z piratami, a w zamian za ich pomoc obiecuje zdradzic swoje sekrety..",
-    "image": "./images/shared/9762613a45a5b8e4361e3e71c9cee178b598659ba5de29138f143e8da9141ed9.webp"
+    "image": "./images/shared/9762613a45a5b8e4361e3e71c9cee178b598659ba5de29138f143e8da9141ed9.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 1009,
+        "y": 1100
+      }
+    ]
   },
   {
     "id": 96,
@@ -1927,7 +2030,14 @@
     "location": "Wyspa Piratow",
     "profession": null,
     "description": "Mala zajmuje sie handlem alkoholem na wyspie piratow i dostarcza rum Daronowi. Wykonujac jego misje, gracz pomaga mu zdobyc skladniki potrzebne do przygotowania nowego trunku, a w zamian Mala odwdziecza sie pomoca w dostarczeniu rumu Daronowi.",
-    "image": "./images/shared/228cc69589e423125eb98eea786119446494a540181285c4ee45c3175c28686e.webp"
+    "image": "./images/shared/228cc69589e423125eb98eea786119446494a540181285c4ee45c3175c28686e.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 1106,
+        "y": 1066
+      }
+    ]
   },
   {
     "id": 97,
@@ -1937,7 +2047,14 @@
     "location": "Wyspa Piratow",
     "profession": null,
     "description": "Kian zajmuje sie przygotowaniem graczy do regularnej walki z piratami. Wykonuje sie u niego serie coraz trudniejszych misji, ktore polegaja na eliminowaniu kolejnych grup piratow i zmniejszaniu ich liczebnosci na wyspie.",
-    "image": "./images/shared/f9f8ba08d46cd3efc04609c6e9ae9d6950bab619ff1c6096e6a9bddddd688113.webp"
+    "image": "./images/shared/f9f8ba08d46cd3efc04609c6e9ae9d6950bab619ff1c6096e6a9bddddd688113.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 1030,
+        "y": 1013
+      }
+    ]
   },
   {
     "id": 98,
@@ -1947,7 +2064,14 @@
     "location": "Wyspa Piratow",
     "profession": null,
     "description": "Stheo pilnuje przejscia i pozwala graczom korzystac z niego po rozwiazaniu przygotowanej przez niego zagadki. Wykonujac jego zadanie, gracz musi wykazac sie logicznym mysleniem, a poprawna odpowiedz zapewnia mu staly dostep do przejscia..",
-    "image": "./images/shared/228cc69589e423125eb98eea786119446494a540181285c4ee45c3175c28686e.webp"
+    "image": "./images/shared/228cc69589e423125eb98eea786119446494a540181285c4ee45c3175c28686e.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 1142,
+        "y": 999
+      }
+    ]
   },
   {
     "id": 99,
@@ -1957,7 +2081,14 @@
     "location": "Ankaros",
     "profession": null,
     "description": "Unknown Mage to tajemniczy mag, ktory posluguje sie niezrozumialym jezykiem i jest zwiazany z tajemniczym czarem Adite Asha. Rozmowa z nim wymaga znajomosci odpowiednich slow, a jego prawdziwe zamiary pozostaja niejasne.",
-    "image": "./images/shared/fba9c8bc50f2fdc84c2ceec1f9b8b63aa8e5f6668e89fd927f2701ca347fd3be.webp"
+    "image": "./images/shared/fba9c8bc50f2fdc84c2ceec1f9b8b63aa8e5f6668e89fd927f2701ca347fd3be.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 954,
+        "y": 626
+      }
+    ]
   },
   {
     "id": 100,
@@ -1967,7 +2098,14 @@
     "location": "OTS QUEST II",
     "profession": null,
     "description": "Straznik pilnuje przejscia do dalszej czesci terenu i przepuszcza jedynie osoby, ktore oddadza nalezna czesc wladcy. Aby rozpocznac rozmowe i uzyskac dostep, nalezy powiedziec do niego \"hail to the emperor\".",
-    "image": "./images/shared/d3fd89e5f16e804b0e50efddd2e9ee224da3989dc651b9595473b05019d2c663.webp"
+    "image": "./images/shared/d3fd89e5f16e804b0e50efddd2e9ee224da3989dc651b9595473b05019d2c663.webp",
+    "mapPositions": [
+      {
+        "floor": -7,
+        "x": 1368,
+        "y": 692
+      }
+    ]
   },
   {
     "id": 101,
@@ -1977,7 +2115,14 @@
     "location": "OTS QUEST II",
     "profession": null,
     "description": "Tego straznika mozna spotkac dwa razy podczas przechodzenia dalszej czesci terenu. Za pierwszym razem przepusci gracza dopiero po uiszczeniu odpowiedniej oplaty. Przy kolejnym spotkaniu, juz blizej koncowego etapu przejscia, zamiast pieniedzy oczekuje od nas piwa.",
-    "image": "./images/shared/65d524c45cff2a66926e1120c09ef25d2f11761e7899df49fea36f5a0b095ba2.webp"
+    "image": "./images/shared/65d524c45cff2a66926e1120c09ef25d2f11761e7899df49fea36f5a0b095ba2.webp",
+    "mapPositions": [
+      {
+        "floor": -7,
+        "x": 1350,
+        "y": 667
+      }
+    ]
   },
   {
     "id": 102,
@@ -1987,7 +2132,14 @@
     "location": "Siedziba elfow",
     "profession": null,
     "description": "NPC, ktory pozwala rozpoczac misje na przedmiot o nazwie Shaman Armor. Czeka nas kilka etapow misji. Musimy jednak pamietac, ze jesli zaczniemy sluzyc elfom, nie mozemy zrezygnowac z tej decyzji, az do ukonczenia wszystkich misji oraz questu na Shaman Armor.",
-    "image": "./images/npcs/jobs_main.webp"
+    "image": "./images/npcs/jobs_main.webp",
+    "mapPositions": [
+      {
+        "floor": 2,
+        "x": 558,
+        "y": 284
+      }
+    ]
   },
   {
     "id": 103,
@@ -1997,7 +2149,14 @@
     "location": "Evul - Forteca orcow",
     "profession": null,
     "description": "NPC, ktory zdradza nam, jak dostac sie do jednego z pomieszczen w siedzibie dwarfow. Kontynuuacja misji u NPC Jobs.",
-    "image": "./images/shared/c191d18820734630beacf80a6321e5d48e335dd62f0f0123dbc5ffca4a4b2ca2.webp"
+    "image": "./images/shared/c191d18820734630beacf80a6321e5d48e335dd62f0f0123dbc5ffca4a4b2ca2.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 562,
+        "y": 114
+      }
+    ]
   },
   {
     "id": 104,
@@ -2143,7 +2302,14 @@
     "location": "Darkness Island",
     "profession": "NPC Questowy",
     "description": "Demon posiadajacy wiedze niezbedna przy wykonywaniu zadania \"Winged Helmet Quest\".",
-    "image": "./images/shared/dfdf176b1598488b936fb182669e47b6b5fe99c63a78a7eb1c6bb215b84199c0.webp"
+    "image": "./images/shared/dfdf176b1598488b936fb182669e47b6b5fe99c63a78a7eb1c6bb215b84199c0.webp",
+    "mapPositions": [
+      {
+        "floor": -6,
+        "x": 332,
+        "y": 670
+      }
+    ]
   },
   {
     "id": 113,
@@ -2647,7 +2813,14 @@
     "location": "Volcano",
     "profession": "Inne",
     "description": "Double zajmuje sie wymiana motyli. Oferuje graczom wyjatkowego, martwego motyla w zamian za trzy inne motyle oraz odpowiednia ilosc Scarab Coins.",
-    "image": "./images/shared/70728661fb3822d108fa025bc4007debe62d73f16064bebd81d160f05a176f79.webp"
+    "image": "./images/shared/70728661fb3822d108fa025bc4007debe62d73f16064bebd81d160f05a176f79.webp",
+    "mapPositions": [
+      {
+        "floor": -3,
+        "x": 434,
+        "y": 1091
+      }
+    ]
   },
   {
     "id": 141,
@@ -2684,7 +2857,14 @@
     "location": "Rookgaard - Antyczne Miasto",
     "profession": "Przewoznik",
     "description": "Captain Nemo oferuje graczom mozliwosc korzystania ze swojej lodki. W zamian za dostarczenie mu jego ulubionego jedzenia odblokowuje graczowi mozliwosc podrozowania lodka..",
-    "image": "./images/npcs/captain_nemo_rook.webp"
+    "image": "./images/npcs/captain_nemo_rook.webp",
+    "mapPositions": [
+      {
+        "floor": -7,
+        "x": 1763,
+        "y": 326
+      }
+    ]
   },
   {
     "id": 144,
@@ -2694,7 +2874,14 @@
     "location": "Rookgaard - Tropicano",
     "profession": "Przewoznik",
     "description": "Daramaniano oferuje nam przeprawe na tajemnicza bagienna wyspe, gdzie czekaja potezne bestie. Za odnalezienie 4 mitycznych przedmiotow, mozna zmierzyc sie z ich wladca. Informacja, ktora moze Wam sie przydac: Tak wiec na poczatek chce Ci powiedziec o ogromnej sile kreatur, ktore nie oszczedzaja graczy z niskim poziomem. Druga wazna informacja: Aby Cie tam przeprawic, bedziesz potrzebowal daramanian waraxe w ilosci rownej polowie Twojego poziomu! Dlatego teraz idz je zdobadz i dobrze sie wyposaz, a jesli jestes gotowy, to daj mu znac.",
-    "image": "./images/npcs/daramaniano_rook.webp"
+    "image": "./images/npcs/daramaniano_rook.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 1739,
+        "y": 298
+      }
+    ]
   },
   {
     "id": 145,
@@ -2704,7 +2891,14 @@
     "location": "Rookgaard - Tropicano",
     "profession": "Przewoznik",
     "description": "Azen oferuje nam podroz jego lodzia do glownego miasta rook. Koszt podrozy rozni sie w zaleznosci od naszego poziomu doswiadczenia.",
-    "image": "./images/npcs/azen_rook.webp"
+    "image": "./images/npcs/azen_rook.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 1683,
+        "y": 347
+      }
+    ]
   },
   {
     "id": 146,
@@ -2714,7 +2908,14 @@
     "location": "Rookgaard",
     "profession": null,
     "description": "Urlich oferuje rozne zadania lowieckie. Zadania sa zalezne od poziomu postaci. Za wykonane zadanie, NPC nagradza punktami doswiadczenia oraz pieniedzmi - Nagroda rowniez jest zalezna od naszego poziomu.",
-    "image": "./images/shared/9b512929a5a784615664a966bf32daab268e5d96023f3117daea08456fd9c32e.webp"
+    "image": "./images/shared/9b512929a5a784615664a966bf32daab268e5d96023f3117daea08456fd9c32e.webp",
+    "mapPositions": [
+      {
+        "floor": 2,
+        "x": 290,
+        "y": 246
+      }
+    ]
   },
   {
     "id": 147,
@@ -2724,7 +2925,14 @@
     "location": "Rookgaard",
     "profession": null,
     "description": "Regrubmah oferuje rozne zadania lowieckie na terenie Antycznego Miasta. Za wykonane zadanie, NPC nagradza specjalnym przedmiotem, ktory mozna wykorzystac w Antycznym Miescie.",
-    "image": "./images/npcs/regrubmah_rook.webp"
+    "image": "./images/npcs/regrubmah_rook.webp",
+    "mapPositions": [
+      {
+        "floor": -7,
+        "x": 1718,
+        "y": 323
+      }
+    ]
   },
   {
     "id": 148,
@@ -2757,6 +2965,11 @@
         "floor": 0,
         "x": 281,
         "y": 156
+      },
+      {
+        "floor": 1,
+        "x": 1656,
+        "y": 341
       }
     ]
   },
@@ -2768,7 +2981,14 @@
     "location": "Rookgaard - Antyczne Miasto",
     "profession": "Sprzedawca narzedzi",
     "description": "Besomer prowadzi sklep z miotlami oraz lopatami.",
-    "image": "./images/npcs/besomer_rook.webp"
+    "image": "./images/npcs/besomer_rook.webp",
+    "mapPositions": [
+      {
+        "floor": -7,
+        "x": 1715,
+        "y": 341
+      }
+    ]
   },
   {
     "id": 151,
@@ -2778,7 +2998,14 @@
     "location": "Rookgaard - Antyczne Miasto",
     "profession": "Sprzedawca run",
     "description": "Besomer posiada w sojej ofercie runy IH (Intense Healing). Zeby moc kupowac runy, trzeba wykonac misje.",
-    "image": "./images/npcs/bazin_rook.webp"
+    "image": "./images/npcs/bazin_rook.webp",
+    "mapPositions": [
+      {
+        "floor": -7,
+        "x": 1715,
+        "y": 332
+      }
+    ]
   },
   {
     "id": 152,
@@ -2788,7 +3015,14 @@
     "location": "Rookgaard",
     "profession": "Skup przedmiotow",
     "description": "Dunia prowadzi skup elementow ekwipunku! Ta handlarka chetnie nabedzie przedmioty zdobyte przez wojownikow po bardzo rozsadnych cenach.",
-    "image": "./images/shared/95bb9a5e0dcda78d76dbd02f491facf42e1dc52a929c0bd56c208d03b81d947b.webp"
+    "image": "./images/shared/95bb9a5e0dcda78d76dbd02f491facf42e1dc52a929c0bd56c208d03b81d947b.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 240,
+        "y": 303
+      }
+    ]
   },
   {
     "id": 153,
@@ -2826,6 +3060,11 @@
         "floor": -1,
         "x": 273,
         "y": 129
+      },
+      {
+        "floor": 2,
+        "x": 1671,
+        "y": 316
       }
     ]
   },
@@ -2848,6 +3087,11 @@
         "floor": 1,
         "x": 180,
         "y": 156
+      },
+      {
+        "floor": 1,
+        "x": 1671,
+        "y": 316
       }
     ]
   },
@@ -2870,6 +3114,11 @@
         "floor": 0,
         "x": 176,
         "y": 144
+      },
+      {
+        "floor": 1,
+        "x": 1696,
+        "y": 306
       }
     ]
   },
@@ -2892,6 +3141,11 @@
         "floor": 0,
         "x": 277,
         "y": 137
+      },
+      {
+        "floor": 1,
+        "x": 1701,
+        "y": 306
       }
     ]
   },
@@ -2914,6 +3168,11 @@
         "floor": 0,
         "x": 240,
         "y": 173
+      },
+      {
+        "floor": 1,
+        "x": 1708,
+        "y": 308
       }
     ]
   },
@@ -2948,6 +3207,11 @@
         "floor": 0,
         "x": 202,
         "y": 159
+      },
+      {
+        "floor": 1,
+        "x": 1656,
+        "y": 306
       }
     ]
   },
@@ -2965,6 +3229,11 @@
         "floor": 0,
         "x": 271,
         "y": 125
+      },
+      {
+        "floor": 1,
+        "x": 1701,
+        "y": 347
       }
     ]
   },
@@ -2982,6 +3251,11 @@
         "floor": 0,
         "x": 227,
         "y": 139
+      },
+      {
+        "floor": 1,
+        "x": 1725,
+        "y": 321
       }
     ]
   },
@@ -2993,7 +3267,14 @@
     "location": "Rookgaard - Za polnocna brama",
     "profession": null,
     "description": "Ward Robe ma nam do zaoferowania calkiem obszerna garderobe w sam raz na Halloween, oferuje nam: Kostium wampira, czarownicy, nekromanty, bialego szkieletu, brazowego trolla, ducha, nieumarlaka, diabelka, czerwonego szkieletu, niebieskiego trolla, mumii oraz kaplanki. ",
-    "image": "./images/shared/05ad2f538012ef6262f5087724a06db8a966a31d57bc60757a90f8dbab0c318c.webp"
+    "image": "./images/shared/05ad2f538012ef6262f5087724a06db8a966a31d57bc60757a90f8dbab0c318c.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 233,
+        "y": 68
+      }
+    ]
   },
   {
     "id": 164,
@@ -3020,7 +3301,14 @@
     "location": "Rookgaard",
     "profession": null,
     "description": "Stary piekarz oferuje nam ciekawa wymiane. Jesli zaoferujemy mu pysznego piernika \"gingerbread\", Staruszek przedstawi nam Swoja oferte wymiany: W zamian za 4 pierniki moge podarowac Ci pewna ksiazke! Jesli masz ich 10 to dam Ci wyjatkowy helm, natomiast jesli masz ich 15 to co Ci podaruje to bedzie niespodzianka, ale na pewno nie bedziesz zawiedziony!. No chyba, ze jestes jednym z tych gagatkow ktorzy zerwali Grinchowi szalik... Wtedy jesli go masz to jestem w stanie zrobic cos wiecej! - Komplet 23 piernikow i szalik Grincha za zostanie legenda! Pierniki zdobywamy podczas trwania eventu LEGENDY GRINCH'a w okresie Swiat Bozego Narodzenia.",
-    "image": "./images/shared/e3afcf3f21055ed22b8b5bb0d5df5191215f11d414cc59b98025764dce5e2f4e.webp"
+    "image": "./images/shared/e3afcf3f21055ed22b8b5bb0d5df5191215f11d414cc59b98025764dce5e2f4e.webp",
+    "mapPositions": [
+      {
+        "floor": 2,
+        "x": 212,
+        "y": 153
+      }
+    ]
   },
   {
     "id": 166,
@@ -3047,7 +3335,14 @@
     "location": "Rookgard - PACC",
     "profession": null,
     "description": "Doktor zajmuje sie bardzo skomplikowanymi operacjami; poczynajac na zmianie plci konczac na zmianie rasy..",
-    "image": "./images/shared/526667c2ba3ad5a88c44dd4c35f105c97c7a544acb18ce35a3f0e6607c6dfe2d.webp"
+    "image": "./images/shared/526667c2ba3ad5a88c44dd4c35f105c97c7a544acb18ce35a3f0e6607c6dfe2d.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 191,
+        "y": 193
+      }
+    ]
   },
   {
     "id": 168,
@@ -3057,7 +3352,14 @@
     "location": "Rookard - Przy polnocnej bramie",
     "profession": "Mikolaj",
     "description": "Santa Claus pojawia sie tylko raz do roku - A dokladniej 6 grudnia. Jesli bylo sie grzecznym caly rok, mozna dostac od niego prezent.",
-    "image": "./images/shared/71793f0b8892eb95a0cbd4fc15f11460ee7774ea336c4d69b571ec538e20dc8f.webp"
+    "image": "./images/shared/71793f0b8892eb95a0cbd4fc15f11460ee7774ea336c4d69b571ec538e20dc8f.webp",
+    "mapPositions": [
+      {
+        "floor": 2,
+        "x": 252,
+        "y": 125
+      }
+    ]
   },
   {
     "id": 169,
@@ -3067,7 +3369,14 @@
     "location": "Rookgaard - Za polnocna brama",
     "profession": null,
     "description": "Ahmed oferuje nam \"potezne\" nagrody za wykonanie u niego 100 misjii. Za kazda wykonana misje, mozna odebrac nagrode. Informacja, ktora moze Wam sie przydac: Tak wiec na poczatek chce Ci powiedziec o magicznych wlasciwosciach pewnego przedmiotu. KlejNutka potrafi zwiekszyc Twoje mozliwosci oraz ulatwiac zadania. Druga wazna informacja: Do kazdego zadania mozesz uzyc 5 KlejNutek, jednak musisz ich uzyc przed zadaniem! Dlatego teraz uzyj ich jesli chcesz, jesli nie chcesz to napisz, ze jestes gotowy.",
-    "image": "./images/shared/86989795b1296c034f425a24148eb2e0ea6aa9abe9e84b28718affbc4369ef59.webp"
+    "image": "./images/shared/86989795b1296c034f425a24148eb2e0ea6aa9abe9e84b28718affbc4369ef59.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 309,
+        "y": 100
+      }
+    ]
   },
   {
     "id": 170,
@@ -3087,7 +3396,14 @@
     "location": "Rookgaard - Antyczne Miasto",
     "profession": null,
     "description": "Clergyman jest jednym z kluczowych NPC zwiazanych z Antycznym Miastem. Zleca graczowi serie misji, ktore trzeba wykonywac w trakcie dalszej eksploracji miasta i postepu w zadaniach prowadzacych do Ramzes Helmet Quest. Dodatkowo przyjmuje Brooches, za pomoca ktorych mozna odnawiac ladunki Perfect Amuletu.",
-    "image": "./images/shared/2849a9b4aab790959bfa277af9e7d61061a92bd02f41f415a71efbdb709b2937.webp"
+    "image": "./images/shared/2849a9b4aab790959bfa277af9e7d61061a92bd02f41f415a71efbdb709b2937.webp",
+    "mapPositions": [
+      {
+        "floor": -6,
+        "x": 1745,
+        "y": 294
+      }
+    ]
   },
   {
     "id": 172,
@@ -3097,7 +3413,14 @@
     "location": "Rookgaard",
     "profession": null,
     "description": "Epigrapher prowadzi badania archeologiczne w Antycznym Miescie i zleca graczowi pomoc przy badaniach.",
-    "image": "./images/npcs/epigrapher_rook.webp"
+    "image": "./images/npcs/epigrapher_rook.webp",
+    "mapPositions": [
+      {
+        "floor": -7,
+        "x": 1744,
+        "y": 320
+      }
+    ]
   },
   {
     "id": 173,
@@ -3107,7 +3430,14 @@
     "location": "Rookgaard - PACC",
     "profession": null,
     "description": "Excellent oferuje nam ulepszone sale treningowe. Lecz aby moc z nich korzystac, musimy wykonac u niego liste zadan.. Na liscie znajduje sie: \"jedzenie\", \"kosztownosci\", \"amunicja\", \"amulety\", \"pierscienie\", \"helmy\", \"pancerze\", \"nogawice\", \"buty\", \"tarcze\", \"bronie\", \"inne\", \"kasa\".",
-    "image": "./images/shared/a9a01927670b43ed3a1eac1ed1d69660b887c0679ba8afce4555ba20c78eeb2d.webp"
+    "image": "./images/shared/a9a01927670b43ed3a1eac1ed1d69660b887c0679ba8afce4555ba20c78eeb2d.webp",
+    "mapPositions": [
+      {
+        "floor": 1,
+        "x": 193,
+        "y": 192
+      }
+    ]
   },
   {
     "id": 174,
@@ -3127,7 +3457,14 @@
     "location": "Rookgaard - Tropicano",
     "profession": null,
     "description": "Elvo oferuje graczowi darmowa przeprawe na druga strone. Po wyrazeniu zgody NPC przenosi gracza na za kraty.",
-    "image": "./images/npcs/elvo_rook.webp"
+    "image": "./images/npcs/elvo_rook.webp",
+    "mapPositions": [
+      {
+        "floor": -1,
+        "x": 1672,
+        "y": 289
+      }
+    ]
   },
   {
     "id": 176,
@@ -3227,7 +3564,14 @@
     "location": "Rookgard",
     "profession": "Przekaznik",
     "description": "Rasin - NPC wyznaczony do przekazywania wiadomosci, dzialajacy jako posrednik, co pozwala nam efektywnie dostarczyc mu informacje od Bazina.",
-    "image": "./images/shared/f22e8d2a7dfc041ee2a9adcde7e339b0e0f3b6ccd2f6e22e3c24df4a1f2fe55b.webp"
+    "image": "./images/shared/f22e8d2a7dfc041ee2a9adcde7e339b0e0f3b6ccd2f6e22e3c24df4a1f2fe55b.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 70,
+        "y": 115
+      }
+    ]
   },
   {
     "id": 182,
@@ -3237,7 +3581,14 @@
     "location": "Rookgard",
     "profession": "Psychopata",
     "description": "Jack The Psychopath skrywa swoj sekret zwiazany z Antori Minite. W szalenczym monologu wspomina o mrowkach w mrowisku i ostrzega gracza, by sie ich bal.",
-    "image": "./images/npcs/jack_the_psychopath_rook.webp"
+    "image": "./images/npcs/jack_the_psychopath_rook.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 1575,
+        "y": 299
+      }
+    ]
   },
   {
     "id": 183,
@@ -3247,7 +3598,14 @@
     "location": "Rookgard",
     "profession": "Straznik",
     "description": "Ant Guard nie pozwala graczowi wejsc do mrowiska bez odpowiedniego przedmiotu. W zamian za przyniesienie tego, czego potrzebuje, zgadza sie wpuscic gracza do srodka..",
-    "image": "./images/shared/8bb2b369f8c6b0ec23ef51d9f294c0ee4c1594b8b23bc73d51c0963fd1fb4d5c.webp"
+    "image": "./images/shared/8bb2b369f8c6b0ec23ef51d9f294c0ee4c1594b8b23bc73d51c0963fd1fb4d5c.webp",
+    "mapPositions": [
+      {
+        "floor": -2,
+        "x": 1911,
+        "y": 98
+      }
+    ]
   },
   {
     "id": 184,
@@ -3257,7 +3615,14 @@
     "location": "Rookgard",
     "profession": "Szachista",
     "description": "Allo oferuje nam nagrode za odnalezienie jego skradzionych szachow, ktore zabralo stado groznych kreatur. Za kazdy odnaleziony element szachownicy mozna otrzymac zaplate. Informacja, ktora moze Wam sie przydac: Tak wiec na poczatek chce Ci powiedziec o sposobie zwracania zgub. Jesli znajdziesz jakis element, musisz stanac na odpowiednim polu szachownicy i go uzyc. Druga wazna informacja: Wszystkie biale krolowe zostaly wrzucone do rzeki i sa nie do odzyskania, jednak NPC Spider posiada takie same! Dlatego teraz musisz udac sie do Spidera i spytac go o te figury, a jesli jestes gotowy, to ruszaj na poszukiwania pozostalych czesci.",
-    "image": "./images/npcs/allo_rook.webp"
+    "image": "./images/npcs/allo_rook.webp",
+    "mapPositions": [
+      {
+        "floor": 1,
+        "x": 155,
+        "y": 205
+      }
+    ]
   },
   {
     "id": 185,
@@ -3267,7 +3632,14 @@
     "location": "Rookgard - PACC",
     "profession": "Inny",
     "description": "Royal Servant potrzebuje pomocy w odzyskaniu fanfary, ktora skradly mu demony. Informacja, ktora moze Wam sie przydac: Tak wiec na poczatek chce Ci powiedziec, ze przedmiot ten sluga otrzymal od samego krola. Druga wazna informacja: Musisz odnalezc te zgube i przyniesc ja sludze! Dlatego teraz sprawdz czy juz ja masz, a jesli nie to napisz, ze jestes gotowy by jej szukac.",
-    "image": "./images/npcs/royal_servant_rook.webp"
+    "image": "./images/npcs/royal_servant_rook.webp",
+    "mapPositions": [
+      {
+        "floor": 1,
+        "x": 155,
+        "y": 171
+      }
+    ]
   },
   {
     "id": 10038,
