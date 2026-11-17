@@ -14,7 +14,6 @@ import {
   mapDimensions,
   mapFloors,
   maxMapZoom,
-  monsters,
 } from "./mapData";
 import type {
   MapHouse,
@@ -27,6 +26,7 @@ import type {
   MonsterMapCategory,
   NPC,
 } from "./mapData";
+import type { Monster } from "../types";
 
 function MapHouseIcon() {
   return (
@@ -108,6 +108,7 @@ function MapWorkspace({
   monsterMapLoadStatus,
   monsterMapRequest,
   mapPointRequest,
+  monsters,
   npcMapRequest,
   npcs,
   onLoadMonsterLocations,
@@ -122,6 +123,7 @@ function MapWorkspace({
   monsterMapLoadError: string;
   monsterMapLoadStatus: "idle" | "loading" | "ready" | "error";
   monsterMapRequest?: MapMonsterMapRequest;
+  monsters: Monster[];
   mapPointRequest?:
     | { kind: "location" | "house"; id: number }
     | { kind: "teleport"; day: number };

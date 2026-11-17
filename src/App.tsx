@@ -1,20 +1,12 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import bossData from "./data/bosses.json";
 import informationData from "./data/information.json";
 import itemCatalogData from "./data/items.json";
 import systemData from "./data/systems.json";
 import type { Item, ItemZone, Monster } from "./types";
-import MapWorkspace from "./map/MapWorkspace";
-import { InformationWorkspace } from "./information/InformationWorkspace";
 import type { InformationCategory } from "./information/types";
-import { SystemsWorkspace } from "./systems/SystemsWorkspace";
 import type { GameSystem } from "./systems/types";
-import CatalogWorkspace from "./catalog/CatalogWorkspace";
-import { InformationDetails } from "./catalog/Details";
 import type { Boss, BossRegionData, CatalogEntry } from "./catalog/types";
-import {
-  GlobalSearchWorkspace,
-} from "./search/GlobalSearchWorkspace";
 import type { GlobalSearchResult } from "./search/GlobalSearchWorkspace";
 import {
   formatNumber,
@@ -28,7 +20,6 @@ import {
   locations,
   mapDimensions,
   mapNpcPositions,
-  monsters,
   npcs,
 } from "./map/mapData";
 import type {
@@ -38,6 +29,29 @@ import type {
   MonsterMapCategory,
   NPC,
 } from "./map/mapData";
+
+const MapWorkspace = lazy(() => import("./map/MapWorkspace"));
+const InformationWorkspace = lazy(() =>
+  import("./information/InformationWorkspace").then((module) => ({
+    default: module.InformationWorkspace,
+  })),
+);
+const SystemsWorkspace = lazy(() =>
+  import("./systems/SystemsWorkspace").then((module) => ({
+    default: module.SystemsWorkspace,
+  })),
+);
+const CatalogWorkspace = lazy(() => import("./catalog/CatalogWorkspace"));
+const InformationDetails = lazy(() =>
+  import("./catalog/Details").then((module) => ({
+    default: module.InformationDetails,
+  })),
+);
+const GlobalSearchWorkspace = lazy(() =>
+  import("./search/GlobalSearchWorkspace").then((module) => ({
+    default: module.GlobalSearchWorkspace,
+  })),
+);
 
 const systems: GameSystem[] = systemData;
 const informationCategories: InformationCategory[] = informationData;
@@ -112,7 +126,7 @@ const appNavigationQueryKeys = [
   "monsterX",
   "monsterY",
 ];
-function readNavigationFromUrl(): AppNavigationEntry {
+function readNavigationFromUrl(monsters: Monster[]): AppNavigationEntry {
   const params = new URL(window.location.href).searchParams;
   const sectionParam = params.get("view");
   const sections: Section[] = [
@@ -374,8 +388,8 @@ function normalizeSearchText(value: string) {
     .replace(/[\u0300-\u036f]/g, "");
 }
 
-function App() {
-  const [initialNavigation] = useState(readNavigationFromUrl);
+function App({ monsters }: { monsters: Monster[] }) {
+  const [initialNavigation] = useState(() => readNavigationFromUrl(monsters));
   const [section, setSection] = useState<Section>(initialNavigation.section);
   const [query, setQuery] = useState(initialNavigation.query);
   const [page, setPage] = useState(initialNavigation.page);
@@ -949,7 +963,11 @@ function App() {
   const selectedSystem =
     filteredSystems.find((system) => system.name === selectedSystemName) ??
     filteredSystems[0];
+  const shouldBuildGlobalSearchIndex =
+    section === "search" && query.trim().length > 0;
   const globalSearchIndex = useMemo<GlobalSearchResult[]>(() => {
+    if (!shouldBuildGlobalSearchIndex) return [];
+
     const makeResult = (
       kind: GlobalSearchResult["kind"],
       id: string,
@@ -1086,7 +1104,7 @@ function App() {
         dailyTeleports,
       ),
     ];
-  }, [items, monsterMapCategories]);
+  }, [items, monsterMapCategories, shouldBuildGlobalSearchIndex]);
   const globalSearchResults = useMemo(() => {
     const queryTerms = normalizeSearchText(query).split(/\s+/).filter(Boolean);
     if (queryTerms.length === 0) return [];
@@ -1525,6 +1543,13 @@ function App() {
         </button>
       </nav>
 
+      <Suspense
+        fallback={
+          <p className="global-search-status" role="status">
+            Ładowanie sekcji...
+          </p>
+        }
+      >
       {section === "search" ? (
         <GlobalSearchWorkspace
           loading={monsterMapLoadStatus === "loading"}
@@ -1545,6 +1570,7 @@ function App() {
           monsterMapLoadStatus={monsterMapLoadStatus}
           monsterMapRequest={mapMonsterRequest}
           mapPointRequest={mapPointRequest}
+          monsters={monsters}
           onLoadMonsterLocations={loadMonsterMapData}
           onMapPointRequestHandled={() => setMapPointRequest(undefined)}
           onSelectMonsterPosition={showMonsterPositionOnMap}
@@ -1564,6 +1590,7 @@ function App() {
               <InformationDetails
                 category={selectedInformation}
                 key={selectedInformation.name}
+                monsters={monsters}
                 onOpenItem={openItem}
                 onShowTeleportOnMap={showTeleportOnMap}
               />
@@ -1611,6 +1638,7 @@ function App() {
         selectedBossLootMonster={selectedBossLootMonster}
       />
       )}
+      </Suspense>
 
       <footer className="footer">
         <span>ApoWiki <span className="footer-divider">/</span> Wiedza o serwerze w jednym miejscu</span>

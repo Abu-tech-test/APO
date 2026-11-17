@@ -3,7 +3,7 @@ import { Graphic } from "../components/Graphic";
 import type { Item, Monster } from "../types";
 import type { InformationCategory } from "../information/types";
 import type { MapNpcLocation, NPC } from "../map/mapData";
-import { dailyTeleports, monsters } from "../map/mapData";
+import { dailyTeleports } from "../map/mapData";
 import type { Boss } from "./types";
 import {
   compareLootFrequency,
@@ -17,10 +17,12 @@ import {
 
 export function InformationDetails({
   category,
+  monsters,
   onOpenItem,
   onShowTeleportOnMap,
 }: {
   category: InformationCategory;
+  monsters: Monster[];
   onOpenItem: (name: string) => void;
   onShowTeleportOnMap: (day: number) => void;
 }) {

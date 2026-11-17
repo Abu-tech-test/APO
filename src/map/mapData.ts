@@ -1,9 +1,7 @@
 import houseData from "../data/houses.json";
 import locationData from "../data/locations.json";
 import dailyTeleportData from "../data/dailyTeleports.json";
-import monsterData from "../data/monsters.json";
 import npcData from "../data/npcs.json";
-import type { Monster } from "../types";
 
 export type MapNpcLocation = {
   floor: number;
@@ -91,7 +89,6 @@ export const dailyTeleports: {
   positions: DailyTeleportPosition[];
 } = dailyTeleportData;
 
-export const monsters: Monster[] = monsterData;
 export const allNpcs: NPC[] = npcData;
 export const npcs = allNpcs.filter((npc) => !npc.mapOnly);
 export const houses: MapHouse[] = houseData;

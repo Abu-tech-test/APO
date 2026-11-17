@@ -2609,3 +2609,220 @@ button.map-stat-card:focus-visible {
     flex-direction: column;
   }
 }
+
+.app-loader {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding: 24px;
+  gap: 20px;
+  background:
+    radial-gradient(ellipse at 50% 35%, rgba(128, 132, 87, 0.14), transparent 30rem),
+    #101210;
+}
+
+.app-loader::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(211, 182, 94, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(211, 182, 94, 0.035) 1px, transparent 1px);
+  background-size: 46px 46px;
+  content: "";
+  mask-image: radial-gradient(ellipse at center, black, transparent 72%);
+}
+
+.app-loader-card {
+  width: min(440px, 100%);
+  padding: 32px;
+  border: 1px solid rgba(211, 182, 94, 0.2);
+  border-radius: 12px;
+  background: rgba(24, 27, 24, 0.94);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
+}
+
+.app-loader-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-loader-mark {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid rgba(211, 182, 94, 0.55);
+  border-radius: 12px 4px 12px 4px;
+  color: var(--accent-bright);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  box-shadow: inset 0 0 22px rgba(211, 182, 94, 0.09);
+}
+
+.app-loader-brand strong,
+.app-loader-brand small {
+  display: block;
+}
+
+.app-loader-brand strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 17px;
+}
+
+.app-loader-brand small {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.app-loader-content {
+  margin-top: 42px;
+}
+
+.app-loader-content h1,
+.app-loader-error h1 {
+  margin: 8px 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(23px, 5vw, 29px);
+  letter-spacing: -0.035em;
+}
+
+.app-loader-description,
+.app-loader-error p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.app-loader-progress {
+  height: 4px;
+  overflow: hidden;
+  margin-top: 30px;
+  border-radius: 10px;
+  background: #30362f;
+}
+
+.app-loader-progress span {
+  display: block;
+  width: 38%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--accent), var(--accent-bright));
+  box-shadow: 0 0 14px rgba(240, 212, 122, 0.45);
+  animation: app-loader-sweep 1.8s ease-in-out infinite;
+}
+
+.app-loader-status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 14px 0 0;
+  color: #b6bcae;
+  font-size: 11px;
+}
+
+.app-loader-status::before {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px rgba(211, 182, 94, 0.65);
+  content: "";
+  animation: app-loader-pulse 1.4s ease-in-out infinite;
+}
+
+.app-loader-footer {
+  display: block;
+  color: #656c61;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-align: center;
+}
+
+.app-loader-error {
+  margin-top: 34px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.app-loader-error h1 {
+  font-size: 22px;
+}
+
+.app-loader-retry {
+  min-height: 42px;
+  margin-top: 22px;
+  padding: 0 16px;
+  border: 1px solid rgba(211, 182, 94, 0.5);
+  border-radius: 6px;
+  background: rgba(211, 182, 94, 0.1);
+  color: var(--accent-bright);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  transition: background 140ms ease, border-color 140ms ease;
+}
+
+.app-loader-retry:hover {
+  border-color: var(--accent-bright);
+  background: rgba(211, 182, 94, 0.18);
+}
+
+@keyframes app-loader-sweep {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(290%);
+  }
+}
+
+@keyframes app-loader-pulse {
+  50% {
+    opacity: 0.45;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-loader-card {
+    padding: 26px 22px;
+  }
+
+  .app-loader-content {
+    margin-top: 34px;
+  }
+}
+
+@media (max-height: 500px) {
+  .app-loader-card {
+    padding: 24px;
+  }
+
+  .app-loader-content {
+    margin-top: 24px;
+  }
+
+  .app-loader-progress {
+    margin-top: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-loader-progress span,
+  .app-loader-status::before {
+    animation: none;
+  }
+}
