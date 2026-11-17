@@ -451,8 +451,14 @@ function App() {
 
     setMonsterMapLoadStatus("loading");
     setMonsterMapLoadError("");
-    void import("./data/monsterLocations.json")
-      .then(({ default: data }) => {
+    void fetch(new URL("./data/monsterLocations.json", import.meta.url))
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        return response.json() as Promise<MonsterMapCategory[]>;
+      })
+      .then((data) => {
         setMonsterMapCategories(
           data.map((category) => ({
             ...category,
@@ -475,12 +481,12 @@ function App() {
   useEffect(() => {
     if (
       section === "monsters" ||
-      section === "search" ||
+      (section === "search" && query.trim().length > 0) ||
       mapMonsterRequest
     ) {
       loadMonsterMapData();
     }
-  }, [section, mapMonsterRequest]);
+  }, [section, mapMonsterRequest, query]);
 
   const monsterMapPositionCounts = useMemo(() => {
     const counts = new Map<number, number>();

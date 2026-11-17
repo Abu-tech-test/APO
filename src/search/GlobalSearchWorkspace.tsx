@@ -29,6 +29,22 @@ const resultLabels: Record<GlobalSearchResult["kind"], string> = {
   teleports: "Teleporty",
 };
 
+const resultGroups: {
+  id: string;
+  label: string;
+  kinds: GlobalSearchResult["kind"][];
+}[] = [
+  { id: "monsters", label: "Potwory", kinds: ["monster", "monster-location"] },
+  { id: "bosses", label: "Bossy", kinds: ["boss"] },
+  { id: "items", label: "Przedmioty", kinds: ["item"] },
+  { id: "npcs", label: "NPC", kinds: ["npc"] },
+  { id: "map-locations", label: "Miejsca na mapie", kinds: ["map-location"] },
+  { id: "houses", label: "Domy", kinds: ["house"] },
+  { id: "information", label: "Informacje", kinds: ["information"] },
+  { id: "systems", label: "Systemy", kinds: ["system"] },
+  { id: "teleports", label: "Teleporty", kinds: ["teleports"] },
+];
+
 export function GlobalSearchWorkspace({
   loading,
   onQueryChange,
@@ -46,6 +62,13 @@ export function GlobalSearchWorkspace({
   results: GlobalSearchResult[];
   searchError: string;
 }) {
+  const groupedResults = resultGroups
+    .map((group) => ({
+      ...group,
+      results: results.filter((result) => group.kinds.includes(result.kind)),
+    }))
+    .filter((group) => group.results.length > 0);
+
   return (
     <section className="global-search">
       <div className="global-search-heading">
@@ -97,23 +120,37 @@ export function GlobalSearchWorkspace({
             <span>{results.length}</span>
           </div>
           {results.length > 0 ? (
-            <div className="global-search-list">
-              {results.map((result) => (
-                <button
-                  className="global-search-result"
-                  key={result.id}
-                  onClick={() => onSelect(result)}
-                  type="button"
+            <div className="global-search-groups">
+              {groupedResults.map((group) => (
+                <section
+                  aria-labelledby={`global-search-group-${group.id}`}
+                  className="global-search-group"
+                  key={group.id}
                 >
-                  <span className="global-search-result-type">
-                    {resultLabels[result.kind]}
-                  </span>
-                  <strong>{result.name}</strong>
-                  <span className="global-search-result-summary">
-                    {result.summary}
-                  </span>
-                  <span aria-hidden="true" className="global-search-result-chevron">↗</span>
-                </button>
+                  <div className="global-search-group-heading">
+                    <h4 id={`global-search-group-${group.id}`}>{group.label}</h4>
+                    <span>{group.results.length}</span>
+                  </div>
+                  <div className="global-search-list">
+                    {group.results.map((result) => (
+                      <button
+                        className="global-search-result"
+                        key={result.id}
+                        onClick={() => onSelect(result)}
+                        type="button"
+                      >
+                        <span className="global-search-result-type">
+                          {resultLabels[result.kind]}
+                        </span>
+                        <strong>{result.name}</strong>
+                        <span className="global-search-result-summary">
+                          {result.summary}
+                        </span>
+                        <span aria-hidden="true" className="global-search-result-chevron">↗</span>
+                      </button>
+                    ))}
+                  </div>
+                </section>
               ))}
             </div>
           ) : !loading && !searchError ? (

@@ -2275,6 +2275,28 @@ button.map-stat-card:focus-visible {
   font-size: 12px;
 }
 
+.global-search-group + .global-search-group {
+  margin-top: 24px;
+}
+
+.global-search-group-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.global-search-group-heading h4 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 14px;
+}
+
+.global-search-group-heading > span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
 .global-search-list {
   display: grid;
   gap: 8px;
