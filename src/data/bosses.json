@@ -193,6 +193,19 @@
         },
         "description": "Bossa mozna spotkac podczas najazdow organizowanych przez Administracje. Mozna go takze przywolac na respie potwora \"Soul Stealer\". Potrzebny jest \"ectoplasta container\" wypelniony duszami potwora \"Undead Human\" do poziomu 100/100. Po zabiciu bossa loot moze odebrac tylko jedna osoba.",
         "image": "./images/shared/95bb9a5e0dcda78d76dbd02f491facf42e1dc52a929c0bd56c208d03b81d947b.webp"
+      },
+      {
+        "name": "Grinch",
+        "lootMonsterId": 392,
+        "lookType": 76,
+        "outfitColors": {
+          "head": 0,
+          "body": 0,
+          "legs": 0,
+          "feet": 0
+        },
+        "description": "Ostatni boss z podstawowej serii Legendy Grinch'a. Mozna z niego zdobyc \"Half of the Grinch's scarf\", ktory jest potrzebny do ukonczenia kostiumu Grinch'a. Do pelnego kostiumu wymagane sa wszystkie 23 pierniki oraz szalik. Po zabiciu bossa kazdy gracz moze odebrac loot, klikajac PPM na jego ciele.",
+        "image": "./images/shared/48551aefb402db9689a8ae3e2c694dde2cd37ebeefb855c9a20d11b93e888209.webp"
       }
     ]
   },
@@ -836,6 +849,7 @@
       },
       {
         "name": "Grinch",
+        "lootMonsterId": 392,
         "lookType": 76,
         "outfitColors": {
           "head": 0,

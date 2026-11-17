@@ -3649,6 +3649,16 @@
     ]
   },
   {
+    "id": 186,
+    "name": "Pirate Deserter",
+    "region": "ROOK",
+    "category": "Pozostali",
+    "location": "Rookgaard - lokalizacja nieznana",
+    "profession": null,
+    "description": "Znany jest jedynie jako NPC z Rooka; brak dodatkowych informacji.",
+    "image": ""
+  },
+  {
     "id": 10038,
     "name": "Ebarard",
     "region": "MAPA",

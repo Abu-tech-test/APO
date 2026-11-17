@@ -1228,7 +1228,7 @@
         "description": "Podczas wydarzenia można było codziennie zdobyć piernik od 1 do 23 grudnia i wymienić go razem z połówką szala Grincha na kostium. Wpis podaje, że kostium posiadały tylko cztery osoby.",
         "items": [
           { "amount": "1", "name": "Gingerbread", "note": "Do zdobycia każdego dnia od 1 do 23 grudnia" },
-          { "amount": "1", "name": "Half of the Grinch's Scarf" }
+          { "amount": "1", "name": "Half of the Grinch's Scarf", "note": "Do zdobycia podczas ostatniego dnia eventu Grinch" }
         ],
         "reward": "Po przebraniu się za Grincha postać staje się szybsza i zwiększa ilość łupów z potworów."
       }

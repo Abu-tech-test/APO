@@ -3719,7 +3719,7 @@
   },
   {
     "name": "broken vampire boots",
-    "clientId": 3550,
+    "clientId": 3123,
     "subType": 0,
     "categories": [
       "zadaniowe"
@@ -6997,6 +6997,17 @@
     "name": "White Pirate Pearl",
     "clientId": 5021,
     "subType": 0,
+    "categories": [
+      "pozostale"
+    ],
+    "zones": [
+      "main",
+      "rook"
+    ],
+    "descriptions": {}
+  },
+  {
+    "name": "Dead Deer",
     "categories": [
       "pozostale"
     ],
