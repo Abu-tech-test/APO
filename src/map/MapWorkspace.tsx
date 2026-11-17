@@ -107,9 +107,11 @@ function MapWorkspace({
   monsterMapLoadError,
   monsterMapLoadStatus,
   monsterMapRequest,
+  mapPointRequest,
   npcMapRequest,
   npcs,
   onLoadMonsterLocations,
+  onMapPointRequestHandled,
   onSelectMonsterPosition,
   positions,
 }: {
@@ -120,12 +122,17 @@ function MapWorkspace({
   monsterMapLoadError: string;
   monsterMapLoadStatus: "idle" | "loading" | "ready" | "error";
   monsterMapRequest?: MapMonsterMapRequest;
+  mapPointRequest?:
+    | { kind: "location" | "house"; id: number }
+    | { kind: "teleport"; day: number };
   npcMapRequest?: MapNpcMapRequest;
   npcs: NPC[];
   onLoadMonsterLocations: () => void;
+  onMapPointRequestHandled: () => void;
   onSelectMonsterPosition: (request: MapMonsterMapRequest) => void;
   positions: MapNpcPosition[];
 }) {
+  const todayDay = new Date().getDate();
   const [floor, setFloor] = useState(0);
   const [markerLayer, setMarkerLayer] = useState<MapMarkerLayer>("");
   const [searchValue, setSearchValue] = useState("");
@@ -491,6 +498,73 @@ function MapWorkspace({
     setFocusRequest((request) => request + 1);
     setFloor(npcMapRequest.position.floor);
   }, [npcMapRequest, npcs]);
+
+  useEffect(() => {
+    if (!mapPointRequest) return;
+
+    if (mapPointRequest.kind === "teleport") {
+      const teleport = dailyTeleports.positions.find(
+        (entry) => entry.day === mapPointRequest.day,
+      );
+      if (!teleport) {
+        setSearchMessage("Nie znaleziono wskazanego teleportu.");
+        onMapPointRequestHandled();
+        return;
+      }
+
+      setMarkerLayer("teleports");
+      setSelectedNpcId(null);
+      setSelectedPositionKey(null);
+      clearSelectedMonster();
+      setSelectedHouseId(null);
+      setSelectedLocationId(null);
+      setSelectedTeleportDay(teleport.day);
+      setMapFocusPosition({
+        floor: dailyTeleports.floor,
+        x: teleport.x,
+        y: teleport.y,
+      });
+      setSearchValue("");
+      setSearchMessage(
+        `Dzień ${teleport.day}: teleport do Antycznego Miasta na poziomie ${dailyTeleports.floor}, pozycja ${teleport.x} × ${teleport.y}.`,
+      );
+      focusPendingRef.current = true;
+      setFocusRequest((request) => request + 1);
+      setFloor(dailyTeleports.floor);
+      onMapPointRequestHandled();
+      return;
+    }
+
+    const isLocation = mapPointRequest.kind === "location";
+    const location = isLocation
+      ? locations.find((entry) => entry.id === mapPointRequest.id)
+      : undefined;
+    const house = isLocation
+      ? undefined
+      : houses.find((entry) => entry.id === mapPointRequest.id);
+    const target = location ?? house;
+    if (!target) {
+      setSearchMessage("Nie znaleziono wskazanego miejsca na mapie.");
+      onMapPointRequestHandled();
+      return;
+    }
+
+    setMarkerLayer(isLocation ? "locations" : "houses");
+    setSelectedNpcId(null);
+    setSelectedPositionKey(null);
+    clearSelectedMonster();
+    setSelectedHouseId(house?.id ?? null);
+    setSelectedLocationId(location?.id ?? null);
+    setSelectedTeleportDay(null);
+    setSearchValue(target.name);
+    setSearchMessage(
+      `${target.name}: poziom ${target.position.floor}, pozycja ${target.position.x} × ${target.position.y}.`,
+    );
+    focusPendingRef.current = true;
+    setFocusRequest((request) => request + 1);
+    setFloor(target.position.floor);
+    onMapPointRequestHandled();
+  }, [mapPointRequest, locations, houses, onMapPointRequestHandled]);
 
   useEffect(() => {
     if (previousMonsterMapRequestRef.current && !monsterMapRequest) {
@@ -1123,9 +1197,9 @@ function MapWorkspace({
             const isSelected = selectedTeleportDay === teleport.day;
             return (
               <button
-                aria-label={`Teleport do Antycznego Miasta, dzień ${teleport.day}, poziom ${dailyTeleports.floor}, pozycja ${teleport.x} × ${teleport.y}${isOtherFloor ? ", inny poziom" : ""}`}
+                aria-label={`Teleport do Antycznego Miasta, dzień ${teleport.day}, poziom ${dailyTeleports.floor}, pozycja ${teleport.x} × ${teleport.y}${teleport.day === todayDay ? ", dzisiaj" : ""}${isOtherFloor ? ", inny poziom" : ""}`}
                 aria-pressed={isSelected}
-                className={`map-teleport-marker${isSelected ? " selected" : ""}${isOtherFloor ? " other-floor" : ""}`}
+                className={`map-teleport-marker${isSelected ? " selected" : ""}${teleport.day === todayDay ? " today" : ""}${isOtherFloor ? " other-floor" : ""}`}
                 key={teleport.day}
                 onClick={() => {
                   setSelectedTeleportDay(teleport.day);

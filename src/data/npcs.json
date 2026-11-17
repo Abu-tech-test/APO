@@ -2830,7 +2830,14 @@
     "location": "Rook - Poludnie od swiatyni",
     "profession": null,
     "description": "Rodriguez oferuje nam podroz jego statkiem do miasta Tropicano. Koszt podrozy rozni sie w zaleznosci od naszego poziomu doswiadczenia.",
-    "image": "./images/npcs/rodriguez_rook.webp"
+    "image": "./images/npcs/rodriguez_rook.webp",
+    "mapPositions": [
+      {
+        "floor": 0,
+        "x": 284,
+        "y": 183
+      }
+    ]
   },
   {
     "id": 142,

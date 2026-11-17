@@ -18,9 +18,11 @@ import {
 export function InformationDetails({
   category,
   onOpenItem,
+  onShowTeleportOnMap,
 }: {
   category: InformationCategory;
   onOpenItem: (name: string) => void;
+  onShowTeleportOnMap: (day: number) => void;
 }) {
   const [selectedProfession, setSelectedProfession] = useState("rook");
 
@@ -141,20 +143,27 @@ export function InformationDetails({
           <p>
             Miejsce pojawienia się teleportu zmienia się codziennie. Poniżej
             podano pozycje dla kolejnych dni miesiąca; wszystkie znajdują się
-            na poziomie {dailyTeleports.floor}. Punkty są oznaczone numerami
-            dni na mapie w warstwie „Teleporty”.
+            na poziomie {dailyTeleports.floor}. Kliknij pozycję, aby zobaczyć ją
+            na mapie.
           </p>
           <div className="information-table-wrap">
             <table className="information-table">
               <thead>
-                <tr><th>Dzień miesiąca</th><th>Poziom</th><th>Pozycja</th></tr>
+                <tr><th>Dzień miesiąca</th><th>Pozycja</th></tr>
               </thead>
               <tbody>
                 {dailyTeleports.positions.map(({ day, x, y }) => (
                   <tr key={day}>
                     <td>{day}</td>
-                    <td>{dailyTeleports.floor}</td>
-                    <td>{x} × {y}</td>
+                    <td>
+                      <button
+                        className="teleport-position-button"
+                        onClick={() => onShowTeleportOnMap(day)}
+                        type="button"
+                      >
+                        {x} × {y}
+                      </button>
+                    </td>
                   </tr>
                 ))}
               </tbody>

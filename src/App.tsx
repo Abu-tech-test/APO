@@ -13,12 +13,17 @@ import CatalogWorkspace from "./catalog/CatalogWorkspace";
 import { InformationDetails } from "./catalog/Details";
 import type { Boss, BossRegionData, CatalogEntry } from "./catalog/types";
 import {
+  GlobalSearchWorkspace,
+} from "./search/GlobalSearchWorkspace";
+import type { GlobalSearchResult } from "./search/GlobalSearchWorkspace";
+import {
   formatNumber,
   getBossRegionLabel,
   itemMatchesZone,
 } from "./catalog/utils";
 import {
   allNpcs,
+  dailyTeleports,
   houses,
   locations,
   mapDimensions,
@@ -52,6 +57,7 @@ const bosses: Boss[] = bossRegions.flatMap((region) =>
 const pageSize = 10;
 
 type Section =
+  | "search"
   | "map"
   | "monsters"
   | "items"
@@ -60,6 +66,9 @@ type Section =
   | "info"
   | "systems";
 type ZoneFilter = "all" | ItemZone;
+type MapPointRequest =
+  | { kind: "location" | "house"; id: number }
+  | { kind: "teleport"; day: number };
 type AppNavigationEntry = {
   version: 1;
   section: Section;
@@ -107,6 +116,7 @@ function readNavigationFromUrl(): AppNavigationEntry {
   const params = new URL(window.location.href).searchParams;
   const sectionParam = params.get("view");
   const sections: Section[] = [
+    "search",
     "map",
     "monsters",
     "items",
@@ -117,7 +127,7 @@ function readNavigationFromUrl(): AppNavigationEntry {
   ];
   const section = sections.includes(sectionParam as Section)
     ? (sectionParam as Section)
-    : "map";
+    : "search";
   const itemZone = params.get("zone");
   const selectedItemZone: ZoneFilter =
     itemZone === "main" || itemZone === "rook" ? itemZone : "all";
@@ -357,11 +367,12 @@ function getItemSourceLabel(count: number) {
   return `${count} źródeł`;
 }
 
-
-
-
-
-
+function normalizeSearchText(value: string) {
+  return value
+    .toLocaleLowerCase("pl")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
 
 function App() {
   const [initialNavigation] = useState(readNavigationFromUrl);
@@ -407,6 +418,9 @@ function App() {
   >(
     initialNavigation.mapNpcRequest,
   );
+  const [mapPointRequest, setMapPointRequest] = useState<
+    MapPointRequest | undefined
+  >();
   const [mapMonsterRequest, setMapMonsterRequest] =
     useState<MapMonsterMapRequest | undefined>(
       initialNavigation.mapMonsterRequest,
@@ -459,7 +473,13 @@ function App() {
   }
 
   useEffect(() => {
-    if (section === "monsters" || mapMonsterRequest) loadMonsterMapData();
+    if (
+      section === "monsters" ||
+      section === "search" ||
+      mapMonsterRequest
+    ) {
+      loadMonsterMapData();
+    }
   }, [section, mapMonsterRequest]);
 
   const monsterMapPositionCounts = useMemo(() => {
@@ -774,6 +794,7 @@ function App() {
       mapMonsterRequest: undefined,
     });
     setMapMonsterRequest(undefined);
+    setMapPointRequest(undefined);
     setMapNpcRequest({ npcId: npc.id, position });
     setSection("map");
     setQuery("");
@@ -788,6 +809,7 @@ function App() {
       mapMonsterRequest: { monsterId: monster.id },
     });
     setMapNpcRequest(undefined);
+    setMapPointRequest(undefined);
     setMapMonsterRequest({ monsterId: monster.id });
     setSection("map");
     setQuery("");
@@ -802,7 +824,28 @@ function App() {
       mapMonsterRequest: request,
     });
     setMapNpcRequest(undefined);
+    setMapPointRequest(undefined);
     setMapMonsterRequest(request);
+    setSection("map");
+    setQuery("");
+  }
+
+  function showTeleportOnMap(day: number) {
+    const teleport = dailyTeleports.positions.find(
+      (position) => position.day === day,
+    );
+    if (!teleport) return;
+
+    pushNavigationEntry({
+      section: "map",
+      query: "",
+      page: 1,
+      mapNpcRequest: undefined,
+      mapMonsterRequest: undefined,
+    });
+    setMapNpcRequest(undefined);
+    setMapMonsterRequest(undefined);
+    setMapPointRequest({ kind: "teleport", day });
     setSection("map");
     setQuery("");
   }
@@ -900,6 +943,166 @@ function App() {
   const selectedSystem =
     filteredSystems.find((system) => system.name === selectedSystemName) ??
     filteredSystems[0];
+  const globalSearchIndex = useMemo<GlobalSearchResult[]>(() => {
+    const makeResult = (
+      kind: GlobalSearchResult["kind"],
+      id: string,
+      name: string,
+      summary: string,
+      data: unknown,
+    ): GlobalSearchResult => ({
+      id,
+      kind,
+      name,
+      summary,
+      searchText: normalizeSearchText(JSON.stringify(data) ?? ""),
+    });
+
+    return [
+      ...monsters.map((monster) => {
+        const mapCategories = monsterMapCategories.filter((category) =>
+          category.monsterIds.includes(monster.id),
+        );
+        const mapNames = mapCategories.map((category) => category.name);
+        const lootSummary = monster.loot.map((loot) => loot.name).join(", ");
+        return makeResult(
+          "monster",
+          `monster-${monster.id}`,
+          monster.name,
+          `${formatNumber(monster.hp)} HP · ${formatNumber(monster.exp)} EXP · Łup: ${lootSummary || "brak danych"}`,
+          { monster, mapNames },
+        );
+      }),
+      ...items.map((item) => {
+        const sources = item.drops.map(({ monster, loot }) => ({
+          name: monster.name,
+          loot: loot.name,
+          frequency: loot.frequency,
+        }));
+        const sourceNames = [...new Set(sources.map((source) => source.name))];
+        const shownSources = sourceNames.slice(0, 5).join(", ");
+        const remainingSources = sourceNames.length - 5;
+        const sourceSummary = sourceNames.length
+          ? `Źródła: ${shownSources}${remainingSources > 0 ? ` i ${remainingSources} innych` : ""}`
+          : "Brak znanych źródeł łupu";
+        const itemSummary = [
+          item.categories?.join(", "),
+          item.zones?.map((zone) => zone.toUpperCase()).join(" / "),
+          sourceSummary,
+        ].filter(Boolean).join(" · ");
+        return makeResult(
+          "item",
+          `item-${item.name.toLocaleLowerCase("pl")}`,
+          item.name,
+          itemSummary,
+          { item: { ...item, drops: undefined }, sources },
+        );
+      }),
+      ...bosses.map((boss) => {
+        const lootMonster =
+          boss.lootMonsterId !== undefined
+            ? monsters.find((monster) => monster.id === boss.lootMonsterId)
+            : undefined;
+        return makeResult(
+          "boss",
+          `boss-${boss.region}-${boss.name}`,
+          boss.name,
+          `${getBossRegionLabel(boss.region)} · ${boss.description}`,
+          { boss, lootMonster },
+        );
+      }),
+      ...allNpcs.map((npc) =>
+        makeResult(
+          "npc",
+          `npc-${npc.id}`,
+          npc.name,
+          `${npc.location} · ${npc.region} · ${npc.category} · ${npc.description}`,
+          npc,
+        ),
+      ),
+      ...monsterMapCategories.map((category) => {
+        const linkedMonsters = category.monsterIds
+          .map((id) => monsters.find((monster) => monster.id === id)?.name)
+          .filter((name): name is string => Boolean(name));
+        const firstPosition = category.positions[0];
+        const positionSummary = firstPosition
+          ? ` · poziom ${firstPosition[0]}, ${firstPosition[1]} × ${firstPosition[2]}`
+          : "";
+        return makeResult(
+          "monster-location",
+          `monster-location-${category.id}`,
+          category.name,
+          `${category.positions.length} pozycji${positionSummary}${linkedMonsters.length ? ` · ${linkedMonsters.join(", ")}` : ""}`,
+          { category, linkedMonsters },
+        );
+      }),
+      ...locations.map((location) =>
+        makeResult(
+          "map-location",
+          `map-location-${location.id}`,
+          location.name,
+          `${location.description || "Lokalizacja na mapie"} · poziom ${location.position.floor}, ${location.position.x} × ${location.position.y}`,
+          location,
+        ),
+      ),
+      ...houses.map((house) =>
+        makeResult(
+          "house",
+          `house-${house.id}`,
+          house.name,
+          `${house.region} · poziom ${house.position.floor}, ${house.position.x} × ${house.position.y}`,
+          house,
+        ),
+      ),
+      ...informationCategories.map((category) =>
+        makeResult(
+          "information",
+          `information-${category.name}`,
+          category.name,
+          `${category.kind} · ${category.entries?.length ?? category.commands?.length ?? category.links?.length ?? 0} pozycji`,
+          category,
+        ),
+      ),
+      ...systems.map((system) =>
+        makeResult(
+          "system",
+          `system-${system.name}`,
+          system.name,
+          `${system.category} · ${system.desc}`,
+          system,
+        ),
+      ),
+      makeResult(
+        "teleports",
+        "teleports-daily",
+        "Teleporty do Antycznego Miasta",
+        `${dailyTeleports.positions.length} dziennych pozycji · poziom ${dailyTeleports.floor}`,
+        dailyTeleports,
+      ),
+    ];
+  }, [items, monsterMapCategories]);
+  const globalSearchResults = useMemo(() => {
+    const queryTerms = normalizeSearchText(query).split(/\s+/).filter(Boolean);
+    if (queryTerms.length === 0) return [];
+
+    return globalSearchIndex
+      .filter((result) =>
+        queryTerms.every((term) => result.searchText.includes(term)),
+      )
+      .sort((a, b) => {
+        const getRank = (name: string) => {
+          const normalizedName = normalizeSearchText(name);
+          if (normalizedName === queryTerms.join(" ")) return 0;
+          if (normalizedName.startsWith(queryTerms[0])) return 1;
+          if (normalizedName.includes(queryTerms[0])) return 2;
+          return 3;
+        };
+        return (
+          getRank(a.name) - getRank(b.name) ||
+          a.name.localeCompare(b.name, "pl", { sensitivity: "base" })
+        );
+      });
+  }, [globalSearchIndex, query]);
 
   function getNavigationEntry(): AppNavigationEntry {
     return {
@@ -928,9 +1131,16 @@ function App() {
     const entry = value as Partial<AppNavigationEntry>;
     return (
       entry.version === 1 &&
-      ["map", "monsters", "items", "bosses", "npcs", "info", "systems"].includes(
-        entry.section ?? "",
-      ) &&
+      [
+        "search",
+        "map",
+        "monsters",
+        "items",
+        "bosses",
+        "npcs",
+        "info",
+        "systems",
+      ].includes(entry.section ?? "") &&
       typeof entry.query === "string" &&
       typeof entry.page === "number" &&
       typeof entry.selectedMonsterId === "number" &&
@@ -1056,6 +1266,123 @@ function App() {
     setSelectedSystemName(name);
   }
 
+  function selectGlobalSearchResult(result: GlobalSearchResult) {
+    if (result.kind === "monster") {
+      const monster = monsters.find(
+        (entry) => `monster-${entry.id}` === result.id,
+      );
+      if (monster) openMonster(monster);
+    } else if (result.kind === "item") {
+      openItem(result.name);
+    } else if (result.kind === "boss") {
+      const boss = bosses.find(
+        (entry) => `boss-${entry.region}-${entry.name}` === result.id,
+      );
+      if (!boss) return;
+      pushNavigationEntry({
+        section: "bosses",
+        query: "",
+        page: 1,
+        selectedBossName: boss.name,
+        selectedBossRegion: boss.region,
+        mapNpcRequest: undefined,
+        mapMonsterRequest: undefined,
+      });
+      setSelectedBoss(boss);
+      setSection("bosses");
+      setQuery("");
+    } else if (result.kind === "npc") {
+      const npc = allNpcs.find((entry) => `npc-${entry.id}` === result.id);
+      if (!npc) return;
+      const position = npc.mapPositions?.[0];
+      if (npc.mapOnly) {
+        if (position) showNpcOnMap(npc, position);
+        else openSection("map");
+        return;
+      }
+      pushNavigationEntry({
+        section: "npcs",
+        query: "",
+        page: 1,
+        selectedNpcId: npc.id,
+        selectedNpcRegion: "all",
+        selectedNpcCategory: "all",
+        mapNpcRequest: undefined,
+        mapMonsterRequest: undefined,
+      });
+      setSelectedNpc(npc);
+      setSelectedNpcRegion("all");
+      setSelectedNpcCategory("all");
+      setMapNpcRequest(undefined);
+      setMapMonsterRequest(undefined);
+      setSection("npcs");
+      setQuery("");
+    } else if (result.kind === "monster-location") {
+      const category = monsterMapCategories.find(
+        (entry) => `monster-location-${entry.id}` === result.id,
+      );
+      if (!category) return;
+      const [floor, x, y] = category.positions[0] ?? [];
+      if (floor !== undefined && x !== undefined && y !== undefined) {
+        showMonsterPositionOnMap({
+          monsterId: category.monsterIds[0],
+          marker: {
+            categoryId: category.id,
+            positionIndex: 0,
+            floor,
+            x,
+            y,
+          },
+        });
+      } else {
+        openSection("map");
+      }
+    } else if (result.kind === "map-location") {
+      const locationId = Number(result.id.replace("map-location-", ""));
+      setMapPointRequest(
+        Number.isInteger(locationId)
+          ? { kind: "location", id: locationId }
+          : undefined,
+      );
+      openSection("map");
+    } else if (result.kind === "house") {
+      const houseId = Number(result.id.replace("house-", ""));
+      setMapPointRequest(
+        Number.isInteger(houseId) ? { kind: "house", id: houseId } : undefined,
+      );
+      openSection("map");
+    } else if (result.kind === "information" || result.kind === "teleports") {
+      const category =
+        result.kind === "teleports"
+          ? informationCategories.find((entry) => entry.kind === "teleports")
+          : informationCategories.find((entry) => entry.name === result.name);
+      if (!category) return;
+      pushNavigationEntry({
+        section: "info",
+        query: "",
+        page: 1,
+        selectedInformationName: category.name,
+        mapNpcRequest: undefined,
+        mapMonsterRequest: undefined,
+      });
+      setSelectedInformationName(category.name);
+      setSection("info");
+      setQuery("");
+    } else if (result.kind === "system") {
+      pushNavigationEntry({
+        section: "systems",
+        query: "",
+        page: 1,
+        selectedSystemName: result.name,
+        mapNpcRequest: undefined,
+        mapMonsterRequest: undefined,
+      });
+      setSelectedSystemName(result.name);
+      setSection("systems");
+      setQuery("");
+    }
+  }
+
   function navigateToPage(nextPage: number) {
     const boundedPage = Math.max(1, Math.min(pageCount, nextPage));
     if (boundedPage === page) return;
@@ -1129,6 +1456,13 @@ function App() {
 
       <nav className="section-tabs" aria-label="Kategorie">
         <button
+          className={section === "search" ? "tab active" : "tab"}
+          onClick={() => openSection("search")}
+          type="button"
+        >
+          <span className="tab-icon">⌕</span> Szukaj
+        </button>
+        <button
           className={section === "map" ? "tab active" : "tab"}
           onClick={() => openSection("map")}
           type="button"
@@ -1185,7 +1519,17 @@ function App() {
         </button>
       </nav>
 
-      {section === "map" ? (
+      {section === "search" ? (
+        <GlobalSearchWorkspace
+          loading={monsterMapLoadStatus === "loading"}
+          onQueryChange={setQuery}
+          onRetry={loadMonsterMapData}
+          onSelect={selectGlobalSearchResult}
+          query={query}
+          results={globalSearchResults}
+          searchError={monsterMapLoadError}
+        />
+      ) : section === "map" ? (
         <MapWorkspace
           houses={houses}
           locations={locations}
@@ -1194,7 +1538,9 @@ function App() {
           monsterMapLoadError={monsterMapLoadError}
           monsterMapLoadStatus={monsterMapLoadStatus}
           monsterMapRequest={mapMonsterRequest}
+          mapPointRequest={mapPointRequest}
           onLoadMonsterLocations={loadMonsterMapData}
+          onMapPointRequestHandled={() => setMapPointRequest(undefined)}
           onSelectMonsterPosition={showMonsterPositionOnMap}
           npcMapRequest={mapNpcRequest}
           npcs={allNpcs}
@@ -1213,6 +1559,7 @@ function App() {
                 category={selectedInformation}
                 key={selectedInformation.name}
                 onOpenItem={openItem}
+                onShowTeleportOnMap={showTeleportOnMap}
               />
             ) : undefined
           }
