@@ -4442,6 +4442,9 @@
   },
   {
     "name": "Great Fireball Rune",
+    "alternativeNames": [
+      "adori gran flam"
+    ],
     "clientId": 3191,
     "subType": 0,
     "categories": [
@@ -4531,6 +4534,9 @@
   },
   {
     "name": "Ultimate Healing Rune",
+    "alternativeNames": [
+      "evil uh"
+    ],
     "clientId": 3157,
     "subType": 0,
     "categories": [

@@ -39,6 +39,7 @@ export default function CatalogWorkspace({
   openItem,
   openMonster,
   showNpcOnMap,
+  openInformation,
   selectedBossLootMonster,
 }: {
   section: "monsters" | "items" | "bosses" | "npcs";
@@ -69,6 +70,7 @@ export default function CatalogWorkspace({
   openItem: (name: string) => void;
   openMonster: (monster: Monster) => void;
   showNpcOnMap: (npc: NPC, position: { floor: number; x: number; y: number }) => void;
+  openInformation: (name: string) => void;
   selectedBossLootMonster?: Monster;
 }) {
   return (
@@ -290,6 +292,7 @@ export default function CatalogWorkspace({
               image={selectedNpc.image}
               npc={selectedNpc}
               onShowOnMap={showNpcOnMap}
+              onOpenInformation={openInformation}
             />
           ) : (
             <div className="empty-detail">

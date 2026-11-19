@@ -21,6 +21,7 @@ export type ItemZone = "main" | "rook";
 
 export interface Item {
   name: string;
+  alternativeNames?: string[];
   drops: ItemDrop[];
   clientId?: number;
   subType?: number;

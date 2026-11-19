@@ -160,6 +160,10 @@ function MapWorkspace({
   );
   const [mapFocusPosition, setMapFocusPosition] =
     useState<MapNpcLocation | null>(null);
+  const [cursorMapPosition, setCursorMapPosition] = useState<{
+    x: number;
+    y: number;
+  } | null>(null);
   const [searchMessage, setSearchMessage] = useState("");
   const [zoom, setZoom] = useState(defaultMapZoom);
   const [pan, setPan] = useState({ x: 0, y: 0 });
@@ -897,6 +901,30 @@ function MapWorkspace({
   }
 
   function handlePointerMove(event: React.PointerEvent<HTMLDivElement>) {
+    const canvas = canvasRef.current;
+    if (!canvas) {
+      setCursorMapPosition(null);
+    } else {
+      const bounds = canvas.getBoundingClientRect();
+      if (
+        event.clientX < bounds.left ||
+        event.clientX >= bounds.right ||
+        event.clientY < bounds.top ||
+        event.clientY >= bounds.bottom
+      ) {
+        setCursorMapPosition(null);
+      } else {
+        setCursorMapPosition({
+          x: Math.floor(
+            ((event.clientX - bounds.left) / bounds.width) * mapDimensions.width,
+          ),
+          y: Math.floor(
+            ((event.clientY - bounds.top) / bounds.height) * mapDimensions.height,
+          ),
+        });
+      }
+    }
+
     const drag = dragRef.current;
     if (!drag || drag.pointerId !== event.pointerId) return;
     setPan(
@@ -914,6 +942,10 @@ function MapWorkspace({
     if (dragRef.current?.pointerId !== event.pointerId) return;
     dragRef.current = null;
     event.currentTarget.releasePointerCapture(event.pointerId);
+  }
+
+  function handlePointerLeave() {
+    setCursorMapPosition(null);
   }
 
   return (
@@ -1174,6 +1206,7 @@ function MapWorkspace({
         className={`map-viewport${floor === 0 ? " map-viewport-floor-zero" : ""}`}
         onPointerCancel={handlePointerUp}
         onPointerDown={handlePointerDown}
+        onPointerLeave={handlePointerLeave}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
         ref={viewportRef}
@@ -1220,12 +1253,33 @@ function MapWorkspace({
                 style={{
                   left: `${(teleport.x / mapDimensions.width) * 100}%`,
                   top: `${(teleport.y / mapDimensions.height) * 100}%`,
-                  transform: `translate(-50%, -50%) scale(${1 / zoom})`,
+                  width: `${24 / zoom}px`,
+                  height: `${31 / zoom}px`,
+                  transform: "translate(-50%, -100%)",
                 }}
                 title={`Dzień ${teleport.day}: ${teleport.x} × ${teleport.y} (poziom ${dailyTeleports.floor})`}
                 type="button"
               >
-                {teleport.day}
+                <svg
+                  aria-hidden="true"
+                  className="map-teleport-pin"
+                  viewBox="0 0 24 31"
+                >
+                  <path
+                    className="map-teleport-pin-shape"
+                    d="M12 0.75C5.8 0.75 0.8 5.75 0.8 12.1c0 6 6.6 13.6 11.2 18.9 4.6-5.3 11.2-12.9 11.2-18.9C23.2 5.75 18.2 0.75 12 0.75Z"
+                  />
+                  <text
+                    dominantBaseline="middle"
+                    fontSize="8"
+                    fontWeight="800"
+                    textAnchor="middle"
+                    x="12"
+                    y="11.5"
+                  >
+                    {teleport.day}
+                  </text>
+                </svg>
               </button>
             );
           })}
@@ -1519,6 +1573,14 @@ function MapWorkspace({
           </p>
           )}
       </div>
+      <output className="map-pointer-position" aria-live="polite">
+        <span>Pozycja kursora na mapie</span>
+        <strong>
+          {cursorMapPosition
+            ? `${cursorMapPosition.x} × ${cursorMapPosition.y} · poziom ${floor > 0 ? `+${floor}` : floor}`
+            : "Najedź kursorem na mapę"}
+        </strong>
+      </output>
       <p className="map-help">
         Mapa otwiera się na poziomie -4 z punktami teleportu do Antycznego
         Miasta; ich numery wskazują dzień miesiąca. Wybierz NPC, Potwory, Domki

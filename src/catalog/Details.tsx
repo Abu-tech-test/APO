@@ -27,6 +27,7 @@ export function InformationDetails({
   onShowTeleportOnMap: (day: number) => void;
 }) {
   const [selectedProfession, setSelectedProfession] = useState("rook");
+  const todayDay = new Date().getDate();
 
   return (
     <article>
@@ -155,11 +156,16 @@ export function InformationDetails({
               </thead>
               <tbody>
                 {dailyTeleports.positions.map(({ day, x, y }) => (
-                  <tr key={day}>
-                    <td>{day}</td>
+                  <tr
+                    className={day === todayDay ? "teleport-day-current" : undefined}
+                    key={day}
+                  >
+                    <td aria-current={day === todayDay ? "date" : undefined}>
+                      {day}
+                    </td>
                     <td>
                       <button
-                        className="teleport-position-button"
+                        className={`teleport-position-button${day === todayDay ? " teleport-position-button-today" : ""}`}
                         onClick={() => onShowTeleportOnMap(day)}
                         type="button"
                       >
@@ -539,11 +545,15 @@ export function NPCDetails({
   image,
   npc,
   onShowOnMap,
+  onOpenInformation,
 }: {
   image?: string;
   npc: NPC;
   onShowOnMap: (npc: NPC, position: MapNpcLocation) => void;
+  onOpenInformation: (name: string) => void;
 }) {
+  const informationLink = npc.informationLink;
+
   return (
     <article>
       <div className="detail-hero">
@@ -604,6 +614,21 @@ export function NPCDetails({
           />
           <figcaption>Trasa do Ward Robe w Capital City</figcaption>
         </figure>
+      )}
+
+      {informationLink && (
+        <section className="npc-meta" aria-label="Teleport do Antycznego Miasta">
+          <div>
+            <span className="eyebrow">INFORMACJE</span>
+            <button
+              className="teleport-position-button"
+              onClick={() => onOpenInformation(informationLink)}
+              type="button"
+            >
+              Teleport do Antycznego Miasta
+            </button>
+          </div>
+        </section>
       )}
 
       <section className="boss-description npc-description">

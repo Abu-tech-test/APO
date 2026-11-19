@@ -62,6 +62,14 @@ const itemCatalog: ItemCatalogRecord[] = itemCatalogData.map((item) => ({
     (zone): zone is ItemZone => zone === "main" || zone === "rook",
   ),
 }));
+const itemAliases = new Map(
+  itemCatalog.flatMap((item) =>
+    (item.alternativeNames ?? []).map((name) => [
+      name.toLocaleLowerCase("pl"),
+      item.name.toLocaleLowerCase("pl"),
+    ] as const),
+  ),
+);
 
 const bossRegions: BossRegionData[] = bossData;
 const bosses: Boss[] = bossRegions.flatMap((region) =>
@@ -359,6 +367,23 @@ function sortByName<T extends { name: string }>(entries: T[]) {
   );
 }
 
+function getMonsterMapCategoryName(
+  category: MonsterMapCategory,
+  monsters: Monster[],
+) {
+  const normalizedName = category.name.toLocaleLowerCase("pl");
+  const matchingMonster = monsters.find(
+    (monster) =>
+      category.monsterIds.includes(monster.id) &&
+      monster.name.toLocaleLowerCase("pl") === normalizedName,
+  );
+  if (matchingMonster) return matchingMonster.name;
+
+  return (
+    category.name.charAt(0).toLocaleUpperCase("pl") + category.name.slice(1)
+  );
+}
+
 
 
 
@@ -476,6 +501,7 @@ function App({ monsters }: { monsters: Monster[] }) {
         setMonsterMapCategories(
           data.map((category) => ({
             ...category,
+            name: getMonsterMapCategoryName(category, monsters),
             positions: category.positions.map(
               ([floor, x, y]) => [floor, x, y] as const,
             ),
@@ -539,7 +565,7 @@ function App({ monsters }: { monsters: Monster[] }) {
     for (const monster of monsters) {
       for (const loot of monster.loot) {
         const key = loot.name.toLocaleLowerCase("pl");
-        const item = itemMap.get(key);
+        const item = itemMap.get(itemAliases.get(key) ?? key);
 
         if (item) {
           item.drops.push({ monster, loot });
@@ -573,7 +599,13 @@ function App({ monsters }: { monsters: Monster[] }) {
   const selectedItem =
     items
       .filter((item) => itemMatchesZone(item, selectedItemZone))
-      .find((item) => item.name.toLocaleLowerCase("pl") === selectedItemName) ??
+      .find(
+        (item) =>
+          item.name.toLocaleLowerCase("pl") === selectedItemName ||
+          item.alternativeNames?.some(
+            (name) => name.toLocaleLowerCase("pl") === selectedItemName,
+          ),
+      ) ??
     items.find((item) => itemMatchesZone(item, selectedItemZone));
   const visibleItems = useMemo(
     () => items.filter((item) => itemMatchesZone(item, selectedItemZone)),
@@ -642,7 +674,11 @@ function App({ monsters }: { monsters: Monster[] }) {
     const normalizedQuery = query.trim().toLocaleLowerCase("pl");
     const matches = normalizedQuery
       ? sourceList.filter((entry) =>
-          entry.name.toLocaleLowerCase("pl").includes(normalizedQuery),
+          entry.name.toLocaleLowerCase("pl").includes(normalizedQuery) ||
+          (entry.section === "items" &&
+            entry.item.alternativeNames?.some((name) =>
+              name.toLocaleLowerCase("pl").includes(normalizedQuery),
+            )),
         )
       : sourceList;
     return sortByName(matches);
@@ -895,9 +931,15 @@ function App({ monsters }: { monsters: Monster[] }) {
   function openItem(name: string) {
     const normalizedName = name.toLocaleLowerCase("pl");
     const item = items.find(
-      (candidate) => candidate.name.toLocaleLowerCase("pl") === normalizedName,
+      (candidate) =>
+        candidate.name.toLocaleLowerCase("pl") === normalizedName ||
+        candidate.alternativeNames?.some(
+          (alternativeName) =>
+            alternativeName.toLocaleLowerCase("pl") === normalizedName,
+        ),
     );
     if (!item) return;
+    const canonicalName = item.name.toLocaleLowerCase("pl");
     const targetZone =
       item.zones?.length &&
       selectedItemZone !== "all" &&
@@ -908,7 +950,7 @@ function App({ monsters }: { monsters: Monster[] }) {
       .filter((candidate) => itemMatchesZone(candidate, targetZone))
       .findIndex(
         (candidate) =>
-          candidate.name.toLocaleLowerCase("pl") === normalizedName,
+          candidate.name.toLocaleLowerCase("pl") === canonicalName,
       );
 
     skipNextPageReset.current = itemIndex >= 0;
@@ -917,14 +959,14 @@ function App({ monsters }: { monsters: Monster[] }) {
       section: "items",
       query: "",
       page: targetPage,
-      selectedItemName: normalizedName,
+      selectedItemName: canonicalName,
       selectedItemZone: targetZone,
       mapNpcRequest: undefined,
       mapMonsterRequest: undefined,
     });
     setPage(targetPage);
     if (targetZone !== selectedItemZone) setSelectedItemZone(targetZone);
-    setSelectedItemName(normalizedName);
+    setSelectedItemName(canonicalName);
     setSection("items");
     setQuery("");
   }
@@ -1011,6 +1053,9 @@ function App({ monsters }: { monsters: Monster[] }) {
           : "Brak znanych źródeł łupu";
         const itemSummary = [
           item.categories?.join(", "),
+          item.alternativeNames?.length
+            ? `Alternatywne nazwy: ${item.alternativeNames.join(", ")}`
+            : undefined,
           item.zones?.map((zone) => zone.toUpperCase()).join(" / "),
           sourceSummary,
         ].filter(Boolean).join(" · ");
@@ -1283,6 +1328,25 @@ function App({ monsters }: { monsters: Monster[] }) {
   function selectInformation(name: string) {
     pushNavigationEntry({ section: "info", selectedInformationName: name });
     setSelectedInformationName(name);
+  }
+
+  function openInformation(name: string) {
+    const category = informationCategories.find((entry) => entry.name === name);
+    if (!category) return;
+    pushNavigationEntry({
+      section: "info",
+      query: "",
+      page: 1,
+      selectedInformationName: category.name,
+      mapNpcRequest: undefined,
+      mapMonsterRequest: undefined,
+    });
+    setMapNpcRequest(undefined);
+    setMapMonsterRequest(undefined);
+    setMapPointRequest(undefined);
+    setSelectedInformationName(category.name);
+    setSection("info");
+    setQuery("");
   }
 
   function selectSystem(name: string) {
@@ -1635,6 +1699,7 @@ function App({ monsters }: { monsters: Monster[] }) {
         openItem={openItem}
         openMonster={openMonster}
         showNpcOnMap={showNpcOnMap}
+        openInformation={openInformation}
         selectedBossLootMonster={selectedBossLootMonster}
       />
       )}

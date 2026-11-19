@@ -63,6 +63,7 @@ export type NPC = {
   category: string;
   location: string;
   profession?: string | null;
+  informationLink?: string;
   description: string;
   image: string;
   locationImage?: string;
