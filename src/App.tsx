@@ -532,9 +532,6 @@ function App({ monsters }: { monsters: Monster[] }) {
           data.map((category) => ({
             ...category,
             name: getMonsterMapCategoryName(category, monsters),
-            positions: category.positions.map(
-              ([floor, x, y]) => [floor, x, y] as const,
-            ),
           })),
         );
         setMonsterMapLoadStatus("ready");
@@ -1126,7 +1123,7 @@ function App({ monsters }: { monsters: Monster[] }) {
           .filter((name): name is string => Boolean(name));
         const firstPosition = category.positions[0];
         const positionSummary = firstPosition
-          ? ` · poziom ${firstPosition[0]}, ${firstPosition[1]} × ${firstPosition[2]}`
+          ? ` · poziom ${firstPosition.floor}, ${firstPosition.x} × ${firstPosition.y}`
           : "";
         return makeResult(
           "monster-location",
@@ -1441,16 +1438,14 @@ function App({ monsters }: { monsters: Monster[] }) {
         (entry) => `monster-location-${entry.id}` === result.id,
       );
       if (!category) return;
-      const [floor, x, y] = category.positions[0] ?? [];
-      if (floor !== undefined && x !== undefined && y !== undefined) {
+      const position = category.positions[0];
+      if (position) {
         showMonsterPositionOnMap({
           monsterId: category.monsterIds[0],
           marker: {
             categoryId: category.id,
             positionIndex: 0,
-            floor,
-            x,
-            y,
+            ...position,
           },
         });
       } else {

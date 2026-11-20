@@ -255,10 +255,10 @@ function MapWorkspace({
     [visibleLocations],
   );
   const selectedMonsterPosition = activeMonsterCategories.flatMap((category) =>
-    category.positions.map(([floor, x, y], positionIndex) => ({
+    category.positions.map((position, positionIndex) => ({
       categoryId: category.id,
       positionIndex,
-      position: { floor, x, y },
+      position,
     })),
   ).find(
     (entry) =>
@@ -355,9 +355,9 @@ function MapWorkspace({
     positionIndex: number,
     updateNavigation = true,
   ) {
-    const tuple = category.positions[positionIndex];
-    if (!tuple) return;
-    const [targetFloor, x, y] = tuple;
+    const position = category.positions[positionIndex];
+    if (!position) return;
+    const { floor: targetFloor, x, y } = position;
     const categoryMonsterId = category.monsterIds[0];
     const monster =
       categoryMonsterId === undefined
@@ -595,9 +595,9 @@ function MapWorkspace({
       if (
         !category ||
         !marker ||
-        marker[0] !== floor ||
-        marker[1] !== x ||
-        marker[2] !== y
+        marker.floor !== floor ||
+        marker.x !== x ||
+        marker.y !== y
       ) {
         setSearchMessage("Nie znaleziono wskazanego markera potwora na mapie.");
         if (monsterMapRequest.monsterId !== undefined) {
@@ -1465,12 +1465,13 @@ function MapWorkspace({
                     (entry) => entry.id === category.monsterIds[0],
                   );
             const displayName = monster?.name ?? category.name;
-            return category.positions.map(([markerFloor, x, y], positionIndex) => {
-              const isSelected =
+            return category.positions.map(
+              ({ floor: markerFloor, x, y }, positionIndex) => {
+                const isSelected =
                   selectedMonsterPositionKey ===
                   getMapMonsterPositionKey(category.id, positionIndex);
-              const isOtherFloor = markerFloor !== floor;
-              return (
+                const isOtherFloor = markerFloor !== floor;
+                return (
                   <div
                     className={`map-monster-marker${isSelected ? " selected" : ""}${isOtherFloor ? " other-floor" : ""}`}
                     key={getMapMonsterPositionKey(category.id, positionIndex)}
@@ -1491,8 +1492,9 @@ function MapWorkspace({
                       <span aria-hidden="true" className="map-monster-dot" />
                     </button>
                   </div>
-              );
-            });
+                );
+              },
+            );
           })}
           {visibleHouses.map((house, markerIndex) => {
             const isOtherFloor = house.position.floor !== floor;

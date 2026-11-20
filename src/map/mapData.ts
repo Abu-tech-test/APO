@@ -39,13 +39,11 @@ export type MapMonsterMapRequest = {
   };
 };
 
-export type MonsterMapTuple = readonly [number, number, number];
-
 export type MonsterMapCategory = {
   id: number;
   name: string;
   monsterIds: number[];
-  positions: MonsterMapTuple[];
+  positions: MapNpcLocation[];
 };
 
 export type MapMarkerLayer =
