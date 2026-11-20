@@ -87,6 +87,9 @@ type Section =
   | "npcs"
   | "info"
   | "systems";
+type NavigationMenu = "world" | "information" | null;
+const worldSections: Section[] = ["map", "monsters", "items", "bosses", "npcs"];
+const informationSections: Section[] = ["info", "systems"];
 type ZoneFilter = "all" | ItemZone;
 type MapPointRequest =
   | { kind: "location" | "house"; id: number }
@@ -416,6 +419,9 @@ function normalizeSearchText(value: string) {
 function App({ monsters }: { monsters: Monster[] }) {
   const [initialNavigation] = useState(() => readNavigationFromUrl(monsters));
   const [section, setSection] = useState<Section>(initialNavigation.section);
+  const [openNavigationMenu, setOpenNavigationMenu] =
+    useState<NavigationMenu>(null);
+  const sectionTabsRef = useRef<HTMLElement>(null);
   const [query, setQuery] = useState(initialNavigation.query);
   const [page, setPage] = useState(initialNavigation.page);
   const [selectedMonster, setSelectedMonster] = useState<Monster>(
@@ -479,6 +485,30 @@ function App({ monsters }: { monsters: Monster[] }) {
   );
   const skipNextPageReset = useRef(true);
   const currentNavigationEntryRef = useRef<AppNavigationEntry | null>(null);
+
+  useEffect(() => {
+    if (!openNavigationMenu) return;
+
+    function closeOnOutsidePointer(event: PointerEvent) {
+      if (
+        event.target instanceof Node &&
+        !sectionTabsRef.current?.contains(event.target)
+      ) {
+        setOpenNavigationMenu(null);
+      }
+    }
+
+    function closeOnEscape(event: KeyboardEvent) {
+      if (event.key === "Escape") setOpenNavigationMenu(null);
+    }
+
+    document.addEventListener("pointerdown", closeOnOutsidePointer);
+    document.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.removeEventListener("pointerdown", closeOnOutsidePointer);
+      document.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [openNavigationMenu]);
 
   function loadMonsterMapData() {
     if (
@@ -763,6 +793,7 @@ function App({ monsters }: { monsters: Monster[] }) {
   ]);
 
   function openSection(nextSection: Section) {
+    setOpenNavigationMenu(null);
     const navigationOverrides: Partial<AppNavigationEntry> = {
       section: nextSection,
       query: "",
@@ -1542,69 +1573,135 @@ function App({ monsters }: { monsters: Monster[] }) {
         </div>
       </section>
 
-      <nav className="section-tabs" aria-label="Kategorie">
+      <nav className="section-tabs" aria-label="Sekcje" ref={sectionTabsRef}>
         <button
+          aria-current={section === "search" ? "page" : undefined}
           className={section === "search" ? "tab active" : "tab"}
           onClick={() => openSection("search")}
           type="button"
         >
           <span className="tab-icon">⌕</span> Szukaj
         </button>
-        <button
-          className={section === "map" ? "tab active" : "tab"}
-          onClick={() => openSection("map")}
-          type="button"
-        >
-          <span className="tab-icon">⌖</span> Mapa
-        </button>
-        <button
-          className={section === "monsters" ? "tab active" : "tab"}
-          onClick={() => openSection("monsters")}
-          type="button"
-        >
-          <span className="tab-icon">♟</span> Potwory
-          <span className="tab-count">{monsters.length}</span>
-        </button>
-        <button
-          className={section === "items" ? "tab active" : "tab"}
-          onClick={() => openSection("items")}
-          type="button"
-        >
-          <span className="tab-icon">◆</span> Przedmioty
-          <span className="tab-count">{items.length}</span>
-        </button>
-        <button
-          className={section === "bosses" ? "tab active" : "tab"}
-          onClick={() => openSection("bosses")}
-          type="button"
-        >
-          <span className="tab-icon">☠</span> Bossy
-          <span className="tab-count">{bosses.length}</span>
-        </button>
-        <button
-          className={section === "npcs" ? "tab active" : "tab"}
-          onClick={() => openSection("npcs")}
-          type="button"
-        >
-          <span className="tab-icon">♙</span> NPC
-          <span className="tab-count">{npcs.length}</span>
-        </button>
-        <button
-          className={section === "info" ? "tab active" : "tab"}
-          onClick={() => openSection("info")}
-          type="button"
-        >
-          <span className="tab-icon">ⓘ</span> Informacje
-          <span className="tab-count">{informationCategories.length}</span>
-        </button>
-        <button
-          className={section === "systems" ? "tab active" : "tab"}
-          onClick={() => openSection("systems")}
-          type="button"
-        >
-          <span className="tab-icon">⚙</span> Systemy
-          <span className="tab-count">{systems.length}</span>
-        </button>
+        <div className="section-menu section-menu-world">
+          <button
+            aria-controls="world-menu"
+            aria-expanded={openNavigationMenu === "world"}
+            className={`tab${worldSections.includes(section) || openNavigationMenu === "world" ? " active" : ""}`}
+            onClick={() =>
+              setOpenNavigationMenu((current) =>
+                current === "world" ? null : "world",
+              )
+            }
+            type="button"
+          >
+            <span className="section-menu-label">
+              <span className="tab-icon">⌖</span> Świat
+            </span>
+            <span aria-hidden="true" className="tab-chevron">
+              {openNavigationMenu === "world" ? "▴" : "▾"}
+            </span>
+          </button>
+          {openNavigationMenu === "world" && (
+            <div
+              aria-label="Świat"
+              className="section-menu-dropdown"
+              id="world-menu"
+              role="group"
+            >
+              <button
+                aria-current={section === "map" ? "page" : undefined}
+                className={section === "map" ? "tab active" : "tab"}
+                onClick={() => openSection("map")}
+                type="button"
+              >
+                <span className="tab-icon">⌖</span> Mapa
+              </button>
+              <button
+                aria-current={section === "monsters" ? "page" : undefined}
+                className={section === "monsters" ? "tab active" : "tab"}
+                onClick={() => openSection("monsters")}
+                type="button"
+              >
+                <span className="tab-icon">♟</span> Potwory
+                <span className="tab-count">{monsters.length}</span>
+              </button>
+              <button
+                aria-current={section === "items" ? "page" : undefined}
+                className={section === "items" ? "tab active" : "tab"}
+                onClick={() => openSection("items")}
+                type="button"
+              >
+                <span className="tab-icon">◆</span> Przedmioty
+                <span className="tab-count">{items.length}</span>
+              </button>
+              <button
+                aria-current={section === "bosses" ? "page" : undefined}
+                className={section === "bosses" ? "tab active" : "tab"}
+                onClick={() => openSection("bosses")}
+                type="button"
+              >
+                <span className="tab-icon">☠</span> Bossy
+                <span className="tab-count">{bosses.length}</span>
+              </button>
+              <button
+                aria-current={section === "npcs" ? "page" : undefined}
+                className={section === "npcs" ? "tab active" : "tab"}
+                onClick={() => openSection("npcs")}
+                type="button"
+              >
+                <span className="tab-icon">♙</span> NPC
+                <span className="tab-count">{npcs.length}</span>
+              </button>
+            </div>
+          )}
+        </div>
+        <div className="section-menu section-menu-information">
+          <button
+            aria-controls="information-menu"
+            aria-expanded={openNavigationMenu === "information"}
+            className={`tab${informationSections.includes(section) || openNavigationMenu === "information" ? " active" : ""}`}
+            onClick={() =>
+              setOpenNavigationMenu((current) =>
+                current === "information" ? null : "information",
+              )
+            }
+            type="button"
+          >
+            <span className="section-menu-label">
+              <span className="tab-icon">ⓘ</span> Informacje
+            </span>
+            <span aria-hidden="true" className="tab-chevron">
+              {openNavigationMenu === "information" ? "▴" : "▾"}
+            </span>
+          </button>
+          {openNavigationMenu === "information" && (
+            <div
+              aria-label="Informacje"
+              className="section-menu-dropdown"
+              id="information-menu"
+              role="group"
+            >
+              <button
+                aria-current={section === "info" ? "page" : undefined}
+                className={section === "info" ? "tab active" : "tab"}
+                onClick={() => openSection("info")}
+                type="button"
+              >
+                <span className="tab-icon">ⓘ</span> Ogólne
+                <span className="tab-count">{informationCategories.length}</span>
+              </button>
+              <button
+                aria-current={section === "systems" ? "page" : undefined}
+                className={section === "systems" ? "tab active" : "tab"}
+                onClick={() => openSection("systems")}
+                type="button"
+              >
+                <span className="tab-icon">⚙</span> Systemy
+                <span className="tab-count">{systems.length}</span>
+              </button>
+            </div>
+          )}
+        </div>
       </nav>
 
       <Suspense

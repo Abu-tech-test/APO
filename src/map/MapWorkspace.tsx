@@ -168,6 +168,8 @@ function MapWorkspace({
   const [zoom, setZoom] = useState(defaultMapZoom);
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [imageError, setImageError] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const [fullscreenError, setFullscreenError] = useState("");
   const [focusRequest, setFocusRequest] = useState(0);
   const viewRef = useRef({ zoom, pan });
   viewRef.current = { zoom, pan };
@@ -672,13 +674,98 @@ function MapWorkspace({
   ]);
 
   useEffect(() => {
-    function resetViewOnResize() {
-      setZoom(defaultMapZoom);
-      setPan(getInitialPan(defaultMapZoom));
+    const viewport = viewportRef.current;
+    const canvas = canvasRef.current;
+    if (!viewport || !canvas) return;
+
+    let previousSize = {
+      viewportWidth: viewport.clientWidth,
+      viewportHeight: viewport.clientHeight,
+      canvasWidth: canvas.clientWidth,
+      canvasHeight: canvas.clientHeight,
+    };
+    const resizeObserver = new ResizeObserver(() => {
+      const nextSize = {
+        viewportWidth: viewport.clientWidth,
+        viewportHeight: viewport.clientHeight,
+        canvasWidth: canvas.clientWidth,
+        canvasHeight: canvas.clientHeight,
+      };
+      if (
+        !nextSize.viewportWidth ||
+        !nextSize.viewportHeight ||
+        !nextSize.canvasWidth ||
+        !nextSize.canvasHeight
+      ) {
+        return;
+      }
+      if (
+        !previousSize.viewportWidth ||
+        !previousSize.viewportHeight ||
+        !previousSize.canvasWidth ||
+        !previousSize.canvasHeight
+      ) {
+        previousSize = nextSize;
+        return;
+      }
+      if (
+        nextSize.viewportWidth === previousSize.viewportWidth &&
+        nextSize.viewportHeight === previousSize.viewportHeight &&
+        nextSize.canvasWidth === previousSize.canvasWidth &&
+        nextSize.canvasHeight === previousSize.canvasHeight
+      ) {
+        return;
+      }
+
+      const { zoom: currentZoom, pan: currentPan } = viewRef.current;
+      const previousCanvasLeft =
+        (previousSize.viewportWidth - previousSize.canvasWidth) / 2;
+      const previousCanvasTop =
+        (previousSize.viewportHeight - previousSize.canvasHeight) / 2;
+      const mapCenterX =
+        (previousSize.viewportWidth / 2 -
+          previousCanvasLeft -
+          currentPan.x) /
+        (previousSize.canvasWidth * currentZoom);
+      const mapCenterY =
+        (previousSize.viewportHeight / 2 -
+          previousCanvasTop -
+          currentPan.y) /
+        (previousSize.canvasHeight * currentZoom);
+      const canvasLeft = (nextSize.viewportWidth - nextSize.canvasWidth) / 2;
+      const canvasTop = (nextSize.viewportHeight - nextSize.canvasHeight) / 2;
+      const nextPan = constrainPan(
+        {
+          x:
+            nextSize.viewportWidth / 2 -
+            canvasLeft -
+            mapCenterX * nextSize.canvasWidth * currentZoom,
+          y:
+            nextSize.viewportHeight / 2 -
+            canvasTop -
+            mapCenterY * nextSize.canvasHeight * currentZoom,
+        },
+        currentZoom,
+      );
+
+      previousSize = nextSize;
+      viewRef.current = { zoom: currentZoom, pan: nextPan };
+      setPan(nextPan);
+    });
+
+    resizeObserver.observe(viewport);
+    return () => resizeObserver.disconnect();
+  }, []);
+
+  useEffect(() => {
+    function syncFullscreenState() {
+      setIsFullscreen(document.fullscreenElement === viewportRef.current);
+      setFullscreenError("");
     }
 
-    window.addEventListener("resize", resetViewOnResize);
-    return () => window.removeEventListener("resize", resetViewOnResize);
+    document.addEventListener("fullscreenchange", syncFullscreenState);
+    return () =>
+      document.removeEventListener("fullscreenchange", syncFullscreenState);
   }, []);
 
   useEffect(() => {
@@ -886,7 +973,9 @@ function MapWorkspace({
   function handlePointerDown(event: React.PointerEvent<HTMLDivElement>) {
     if (
       event.button !== 0 ||
-      (event.target as HTMLElement).closest("button, .map-popup-overlay")
+      (event.target as HTMLElement).closest(
+        "button, output.map-fullscreen-position, .map-popup-overlay",
+      )
     ) {
       return;
     }
@@ -946,6 +1035,25 @@ function MapWorkspace({
 
   function handlePointerLeave() {
     setCursorMapPosition(null);
+  }
+
+  async function toggleFullscreen() {
+    const viewport = viewportRef.current;
+    if (!viewport) return;
+
+    try {
+      if (document.fullscreenElement === viewport) {
+        await document.exitFullscreen();
+      } else {
+        await viewport.requestFullscreen();
+      }
+    } catch (error) {
+      setFullscreenError(
+        error instanceof Error
+          ? `Nie udało się zmienić trybu pełnoekranowego: ${error.message}`
+          : "Nie udało się zmienić trybu pełnoekranowego.",
+      );
+    }
   }
 
   return (
@@ -1145,6 +1253,20 @@ function MapWorkspace({
             >
               Reset
             </button>
+            <button
+              aria-label={
+                isFullscreen
+                  ? "Wyjdź z pełnego ekranu mapy"
+                  : "Wyświetl mapę na pełnym ekranie"
+              }
+              aria-pressed={isFullscreen}
+              className="map-fullscreen-button"
+              disabled={!document.fullscreenEnabled}
+              onClick={toggleFullscreen}
+              type="button"
+            >
+              {isFullscreen ? "Zamknij pełny ekran" : "Pełny ekran"}
+            </button>
           </div>
         </div>
       </div>
@@ -1212,6 +1334,26 @@ function MapWorkspace({
         ref={viewportRef}
         role="region"
       >
+        {isFullscreen && (
+          <button
+            aria-label="Wyjdź z pełnego ekranu mapy"
+            className="map-fullscreen-button map-fullscreen-exit"
+            onClick={toggleFullscreen}
+            type="button"
+          >
+            Zamknij pełny ekran
+          </button>
+        )}
+        {isFullscreen && (
+          <output
+            aria-live="polite"
+            className="map-fullscreen-position"
+          >
+            {cursorMapPosition
+              ? `${cursorMapPosition.x} × ${cursorMapPosition.y} · poziom ${floor > 0 ? `+${floor}` : floor}`
+              : "Najedź kursorem na mapę"}
+          </output>
+        )}
         <div
           className="map-canvas"
           ref={canvasRef}
@@ -1556,6 +1698,11 @@ function MapWorkspace({
               </div>
             </div>
           </div>
+        )}
+        {fullscreenError && (
+          <p className="map-error" role="alert">
+            {fullscreenError}
+          </p>
         )}
         {imageError && (
           <p className="map-error" role="alert">
