@@ -4361,21 +4361,6 @@
     }
   },
   {
-    "name": "Magic Wall",
-    "clientId": 3180,
-    "subType": 0,
-    "categories": [
-      "pozostale"
-    ],
-    "zones": [
-      "main",
-      "rook"
-    ],
-    "descriptions": {
-      "main": "Magiczna sciana, przez kilka sekund pozostawia na mapie energie - przez ktora nie mozna przejsc."
-    }
-  },
-  {
     "name": "PACC Runa",
     "clientId": 3162,
     "subType": 0,
@@ -4576,6 +4561,9 @@
   },
   {
     "name": "adevo grav tera",
+    "alternativeNames": [
+      "Magic Wall"
+    ],
     "clientId": 3180,
     "subType": 0,
     "categories": [
@@ -4585,7 +4573,9 @@
       "main",
       "rook"
     ],
-    "descriptions": {}
+    "descriptions": {
+      "main": "Magiczna sciana, przez kilka sekund pozostawia na mapie energie - przez ktora nie mozna przejsc."
+    }
   },
   {
     "name": "Adura Gran",
