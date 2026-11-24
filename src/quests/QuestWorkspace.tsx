@@ -41,6 +41,7 @@ type QuestQuote = {
 
 type QuestSpoiler = {
   type: "spoiler";
+  title?: string;
   blocks: QuestBlock[];
 };
 
@@ -259,8 +260,12 @@ function renderQuestBlocks(blocks: QuestBlock[], keyPrefix: string) {
       return (
         <details className="quest-spoiler" key={key}>
           <summary>
-            <span className="quest-spoiler-show">Show spoiler</span>
-            <span className="quest-spoiler-hide">Hide spoiler</span>
+            <span className="quest-spoiler-show">
+              Show spoiler{block.title ? `: ${block.title}` : ""}
+            </span>
+            <span className="quest-spoiler-hide">
+              Hide spoiler{block.title ? `: ${block.title}` : ""}
+            </span>
           </summary>
           <div className="quest-spoiler-content">
             {renderQuestBlocks(block.blocks, key)}
