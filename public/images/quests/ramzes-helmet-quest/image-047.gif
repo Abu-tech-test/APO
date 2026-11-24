@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Tibia Wiki</title>
+<script type="11158e19b51f9b109657abbe-text/javascript">document.documentElement.className=document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/,"$1client-js$2");</script>
+<script type="11158e19b51f9b109657abbe-text/javascript">(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Main_Page","wgTitle":"Main Page","wgCurRevisionId":339669,"wgRevisionId":339669,"wgArticleId":3993,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Strony zawierające wywołania szablonów z parametrami o takich samych nazwach"],"wgBreakFrames":false,"wgPageContentLanguage":"pl","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","styczeń","luty","marzec","kwiecień","maj","czerwiec","lipiec","sierpień","wrzesień","październik","listopad","grudzień"],"wgMonthNamesShort":["","sty","lut","mar","kwi","maj","cze","lip","sie","wrz","paź","lis","gru"],"wgRelevantPageName":"Main_Page","wgRelevantArticleId":3993,"wgRequestId":"731035cc08f2e8ba7bb6af48","wgIsProbablyEditable":false,"wgRestrictionEdit":["sysop"],"wgRestrictionMove":["sysop"],"wgIsMainPage":true,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":true,"publish":true}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"pl"});});mw.loader.implement("user.tokens",function($,jQuery,require,module){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});;});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="/A.load.php,qdebug=false,alang=pl,amodules=mediawiki.legacy.commonPrint,P2Cshared,P7Cmediawiki.sectionAnchor,aonly=styles,askin=bootstrapskin.pagespeed.cf.3H4odm4g96.css" />
+<link rel="stylesheet" href="/skins/bootstrap/bootstrap/css/A.menu.css,,q303+menu-blue.css,,q303+bootstrap.css,,q303,Mcc.DPCG7Q0g70.css.pagespeed.cf.njd9f-E0i0.css" media="screen" /><link rel="stylesheet" href="/skins/bootstrap/bootstrap/css/A.bootstrap.css.map,q303.pagespeed.cf.cyALfUJmfG.css" media="screen" /><link rel="stylesheet" href="/skins/bootstrap/A.screen.css,q303.pagespeed.cf.u5aGYzK6BW.css" media="screen" /><style media="screen">@-ms-viewport       { width: device-width; }.dropdown-submenu{position:relative}.dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px;border-radius:0 6px 6px 6px}.dropdown-submenu:hover>.dropdown-menu{display:block}.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#ccc;margin-top:5px;margin-right:-10px}.dropdown-submenu:hover>a:after{border-left-color:#fff}.dropdown-submenu.pull-left{float:none}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px}.menu-large{position:static!important;list-style:outside none none;padding:10px 15px;text-decoration:none}.megamenu{padding:20px 0px;width:100%}.megamenu>li>ul{padding:0;margin:0}.megamenu>li>ul>li{list-style:none}.megamenu>li>ul>li>a{display:block;padding:3px 20px;clear:both;font-weight:normal;line-height:1.428571429;color:#333;white-space:normal}.megamenu>li ul>li>a:hover,.megamenu>li ul>li>a:focus{text-decoration:none;color:#262626}.megamenu.disabled>a,.megamenu.disabled>a:hover,.megamenu.disabled>a:focus{color:#999}.megamenu.disabled>a:hover,.megamenu.disabled>a:focus{text-decoration:none;background-color:transparent;background-image:none;filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);cursor:not-allowed}.megamenu.dropdown-header{color:#428bca;font-size:18px}@media (max-width:768px){.megamenu{margin-left:0;margin-right:0}.megamenu>li{margin-bottom:30px;position:relative;display:block;padding:10px 15px}.megamenu>li:last-child{margin-bottom:0}.megamenu.dropdown-header{padding:3px 15px!important}.navbar-nav .open .dropdown-menu .dropdown-header{color:#fff}}</style><link rel="stylesheet" href="/skins/bootstrap/bootstrap/css/A.docs.css,q303.pagespeed.cf.DlQru6E8HU.css" media="screen" /><link rel="stylesheet" href="/skins/bootstrap/bootstrap/awesome/css/A.font-awesome.css,q303.pagespeed.cf.4PwTQUmPgn.css" media="screen" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<style>.toc{float:right;border:1px solid #262626 padding:2rem }.toc ul{list-style:none}.bs-callout-default{border-left-color:#777}.bs-callout-default h4{color:#777}.bs-callout-primary{border-left-color:#428bca}.bs-callout-primary h4{color:#428bca}.bs-callout-success{border-left-color:#5cb85c}.bs-callout-success h4{color:#5cb85c}.bs-callout-danger{border-left-color:#d9534f}.bs-callout-danger h4{color:#d9534f}.bs-callout-warning{border-left-color:#f0ad4e}.bs-callout-warning h4{color:#f0ad4e}.bs-callout-info{border-left-color:#5bc0de}.bs-callout-info h4{color:#5bc0de}</style>
+<script async="" src="/load.php,qdebug=false,alang=pl,amodules=startup,aonly=scripts,askin=bootstrapskin.pagespeed.jm.LghPQ_ZGCY.js" type="11158e19b51f9b109657abbe-text/javascript"></script>
+<meta name="generator" content="MediaWiki 1.27.1" />
+<meta name="description" content="Polska wikipedia gry Tibia, którą każdy może redagować i poszerzać o nowe informacje o grze." />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Tibia Wiki (pl)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://www.tibia-wiki.net/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="Kanał Atom Tibia Wiki" href="/index.php?title=Specjalna:Ostatnie_zmiany&amp;feed=atom" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/bootstrapskin/csshover.min.htc")}</style><![endif]-->
+<script type="11158e19b51f9b109657abbe-text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-377460-18','auto');ga('send','pageview');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Main_Page rootpage-Main_Page skin-bootstrapskin action-view">
+<div id="userbar" class="bg-cyan">
+<div class="body">
+<div class="col-md-12 hidden-xs hidden-sm">
+<ul class="nex-menu nex-menu-response-to-icons nex-menu-anim-slide">
+<li><a href="/wiki/Main_Page"><i class="fa fa-home"></i> Strona główna</a></li>
+<li class="right search">
+<form class="navbar-search" action="/index.php" id="searchform">
+<div class="input">
+<button type="submit" class="button">Go</button>
+<input id="searchInput" type="search" accesskey="f" title="Specjalna:Szukaj" placeholder="Szukaj" name="search" value="">
+</div>
+</form>
+</li>
+<li style="margin-top:7px;">
+
+
+</li>
+<li aria-haspopup="true">
+
+<a href="#"><i class="fa fa-github-alt"></i> Profil</a>
+<div class="grid-container3">
+<ul>
+<li id="pt-login"><a href="/index.php?title=Specjalna:Zaloguj&amp;returnto=Main+Page" title="Zachęcamy do zalogowania się, choć nie jest to obowiązkowe. [o]" accesskey="o">Zaloguj się</a></li> </ul>
+</div>
+
+</li>
+<li aria-haspopup="true">
+
+
+</li>
+<li aria-haspopup="true">
+
+<a href="#"><i class="fa fa-wrench"></i> Narzędzia</a>
+<div class="grid-container3">
+<ul>
+
+</li>
+<li aria-haspopup="true">
+
+<li id="t-info"><a href="/index.php?title=Main_Page&amp;action=info" title="Więcej informacji na temat tej strony">Informacje o tej stronie</a></li><li id="t-permalink"><a href="/index.php?title=Main_Page&amp;oldid=339669" title="Stały link do tej wersji strony">Link stały</a></li><li id="t-print"><a href="/index.php?title=Main_Page&amp;printable=yes" rel="alternate" title="Wersja do wydruku [p]" accesskey="p">Wersja do druku</a></li><li class="divider"></li><li id="t-specialpages"><a href="/wiki/Specjalna:Strony_specjalne" title="Lista wszystkich specjalnych stron [q]" accesskey="q">Strony specjalne</a></li><li id="t-recentchangeslinked"><a href="/wiki/Specjalna:Zmiany_w_linkowanych/Main_Page" title="Ostatnie zmiany w stronach, do których ta strona linkuje [k]" accesskey="k">Zmiany w linkowanych</a></li><li class="divider"></li><li id="t-whatlinkshere"><a href="/wiki/Specjalna:Linkuj%C4%85ce/Main_Page" title="Pokaż listę wszystkich stron linkujących do tej strony [j]" accesskey="j">Linkujące</a></li>
+
+</li>
+</ul>
+
+</li>
+</ul></ul>
+
+</div>
+</div>
+<div class="pull-right">
+</div>
+</div>
+</div>
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+
+<div id="page-header" class="container-fluid signed-out">
+<div class="pull-left">
+<ul class="nav logo-container" role="navigation"><li id="p-logo"><a href="/wiki/Main_Page" title="Strona główna"><script pagespeed_no_defer="" type="11158e19b51f9b109657abbe-text/javascript">//<![CDATA[
+(function(){var g=this,h=function(b,d){var a=b.split("."),c=g;a[0]in c||!c.execScript||c.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===d?c[e]?c=c[e]:c=c[e]={}:c[e]=d};var l=function(b){var d=b.length;if(0<d){for(var a=Array(d),c=0;c<d;c++)a[c]=b[c];return a}return[]};var m=function(b){var d=window;if(d.addEventListener)d.addEventListener("load",b,!1);else if(d.attachEvent)d.attachEvent("onload",b);else{var a=d.onload;d.onload=function(){b.call(this);a&&a.call(this)}}};var n,p=function(b,d,a,c,e){this.f=b;this.h=d;this.i=a;this.c=e;this.e={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.g=c;this.b={};this.a=[];this.d={}},q=function(b,d){var a,c,e=d.getAttribute("pagespeed_url_hash");if(a=e&&!(e in b.d))if(0>=d.offsetWidth&&0>=d.offsetHeight)a=!1;else{c=d.getBoundingClientRect();var f=document.body;a=c.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);c=c.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+c;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.e.height&&c<=b.e.width)}a&&(b.a.push(e),b.d[e]=!0)};p.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&q(this,b)};h("pagespeed.CriticalImages.checkImageForCriticality",function(b){n.checkImageForCriticality(b)});h("pagespeed.CriticalImages.checkCriticalImages",function(){r(n)});var r=function(b){b.b={};for(var d=["IMG","INPUT"],a=[],c=0;c<d.length;++c)a=a.concat(l(document.getElementsByTagName(d[c])));if(0!=a.length&&a[0].getBoundingClientRect){for(c=0;d=a[c];++c)q(b,d);a="oh="+b.i;b.c&&(a+="&n="+b.c);if(d=0!=b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),c=1;c<b.a.length;++c){var e=","+encodeURIComponent(b.a[c]);131072>=a.length+e.length&&(a+=e)}b.g&&(e="&rd="+encodeURIComponent(JSON.stringify(s())),131072>=a.length+e.length&&(a+=e),d=!0);t=a;if(d){c=b.f;b=b.h;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(k){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(u){}}f&&(f.open("POST",c+(-1==c.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}},s=function(){var b={},d=document.getElementsByTagName("IMG");if(0==d.length)return{};var a=d[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var c=0;a=d[c];++c){var e=a.getAttribute("pagespeed_url_hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].k&&a.height>=b[e].j)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b},t="";h("pagespeed.CriticalImages.getBeaconData",function(){return t});h("pagespeed.CriticalImages.Run",function(b,d,a,c,e,f){var k=new p(b,d,a,e,f);n=k;c&&m(function(){window.setTimeout(function(){r(k)},0)})});})();pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','http://www.tibia-wiki.net/wiki/Main_Page','YddRYU7ik1',true,false,'RcysJIrPOXU');
+//]]></script><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="11158e19b51f9b109657abbe-|49"></script><img src="/resources/assets/Logo.png.pagespeed.ce.C_LEj5OumE.png" alt="Tibia Wiki" style="width:90%" pagespeed_url_hash="2147815297" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a><li></ul>
+</div>
+<div class="pull-right">
+
+<div id="siteNotice"><div id="localNotice" lang="pl" dir="ltr"><p>
+</p></div></div>
+
+</div>
+</div>
+
+<section id="content" class="mw-body container-fluid 0">
+<div id="mw-js-message" style="display:none;"></div>
+
+<div id="top">
+<div class="pull-right">
+<ul class="navigation nav push-right nav-pills searchform-disabled">
+
+<li class="dropdown">
+<a data-toggle="dropdown" class="dropdown-toggle" role="button">Inne popularne<b class="caret"></b></a>
+<ul aria-labelledby="Inne popularne" role="menu" class="dropdown-menu">
+<li class=""><a href="/wiki/NPC" id="n-NPC">NPC</a></li>
+<li class=""><a href="/wiki/Osi%C4%85gni%C4%99cia" id="n-Osi.C4.85gni.C4.99cia">Osiągnięcia</a></li>
+<li class=""><a href="/wiki/Kategoria:Poradniki" id="n-Poradniki">Poradniki</a></li>
+<li class=""><a href="/wiki/Biblioteki" id="n-Biblioteki">Biblioteki</a></li>
+<li class=""><a href="/wiki/Klucze" id="n-Klucze">Klucze</a></li>
+<li class=""><a href="/wiki/Premium_Account" id="n-Premium">Premium</a></li>
+<li class=""><a href="/wiki/Update" id="n-Aktualizacje">Aktualizacje</a></li>
+<li class=""><a href="/wiki/SCAM" id="n-Oszustwa">Oszustwa</a></li> </ul> </li>
+
+</ul>
+</div>
+<div class="text-align:center;">
+<div class="btn btn-default"><a href="https://www.tibia-wiki.net/wiki/Quest">Questy</a></div>
+<div class="btn btn-default"><a href="https://www.tibia-wiki.net/wiki/Przedmioty">Przedmioty</a></div>
+<div class="btn-group">
+<div class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><a href="#">Miejsca</a> <span class="caret"></span></div>
+<ul class="dropdown-menu" role="menu">
+<li><a href="https://www.tibia-wiki.net/wiki/Lokacje">Lokacje</a></li>
+<li><a href="https://www.tibia-wiki.net/wiki/Miasta">Miasta</a></li>
+</ul>
+</div>
+<div class="btn btn-default"><a href="https://www.tibia-wiki.net/wiki/Potwory">Potwory</a></div>
+<div class="btn-group">
+<div class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><a href="#">Zaklęcia</a> <span class="caret"></span></div>
+<ul class="dropdown-menu" role="menu">
+<li><a href="https://www.tibia-wiki.net/wiki/Czary">Czary</a></li>
+<li><a href="https://www.tibia-wiki.net/wiki/Czary_runiczne">Runy</a></li>
+</ul>
+</div>
+<div class="btn btn-default"><a href="https://www.tibia-wiki.net/wiki/Outfit">Outfity</a></div>
+<div class="btn btn-default"><a href="https://www.tibia-wiki.net/wiki/Mount">Mounty</a></div>
+<div class="btn btn-danger"><a href="https://brokenranks.com/?campaign=tibia.pl"><span style="color:#ffffff;">Zagraj w Broken Ranks</span></a></div>
+</div>
+</div>
+
+<div id="bodyContent">
+
+<div id="jump-to-nav" class="mw-jump">
+Skocz do: <a href="#mw-head">Nawigacja</a>,
+<a href="#p-search">szukaj</a>
+</div>
+
+
+<div id="innerbodycontent" class="row nolayout"><div class="offset1 span10">
+<div class="col-md-12" style="padding-top:20px;">
+<div class="text-center">
+<a href="https://brokenranks.com/?campaign=tibia.pl"><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="11158e19b51f9b109657abbe-|49"></script><img width="100%" src="https://www.tibia-wiki.net/images/f/fb/Br_set_1_970x90.jpg" pagespeed_url_hash="2667845953" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a>
+</div>
+<div class="page-header" style="margin-bottom:45px;margin-top:20px;">
+<h1>Strona główna<span style="display: none"></span><small> </small></h1>
+</div>
+<ol class="breadcrumb pull-right" style="padding: 10px;margin: -45px 0px 10px 0px;">
+<li><a href="/wiki/Main_Page" title="Zobacz stronę treści [c]" accesskey="c" tabindex="-1">Strona główna</a></li><li><a href="/wiki/Dyskusja:Main_Page" title="Dyskusja o zawartości tej strony [t]" accesskey="t" tabindex="-1">Dyskusja</a></li><li><a href="/index.php?title=Main_Page&amp;action=edit" title="Ta strona jest zabezpieczona. Możesz zobaczyć tekst źródłowy. [e]" accesskey="e" tabindex="-1">Tekst źródłowy</a></li><li><a href="/index.php?title=Main_Page&amp;action=history" title="Starsze wersje tej strony. [h]" accesskey="h" tabindex="-1">Historia</a></li> </ol>
+
+
+
+
+
+<div id="mw-content-text" lang="pl" dir="ltr" class="mw-content-ltr"><p>
+</p>
+<div class="col-md-12" style="padding-right: 0px;padding-left: 0px;">
+<div class="jumbotron jumbotron-blue">
+<h1><span class="mw-headline" id="Witaj.2C_na_Tibia_Wiki.21">Witaj, na Tibia Wiki!</span></h1>
+<p>Encyklopedia gry <b><a href="/wiki/Tibia" title="Tibia">Tibia</a></b>, tworzonej przez <b>23 787</b> użytkowników. Stworzyliśmy już <a href="/wiki/Specjalna:Wszystkie_strony" title="Specjalna:Wszystkie strony">6244</a> stron. Również Ty możesz dodać lub aktualizować każdą z nich.</p>
+<p> <div class="btn btn-default btn-lg"><a href="/wiki/Specjalna:Utw%C3%B3rz_konto" title="Specjalna:Utwórz konto">dołącz do nas</a></div> <div class="btn btn-info btn-lg"><a href="/wiki/Specjalna:Losowa_strona" title="Specjalna:Losowa strona">losuj stronę</a></div></p>
+</div></div>
+<div class="clearfix visible-xs-block"></div>
+<div class="col-md-6">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><span class="mw-headline" id="Losowy_przedmiot">Losowy przedmiot</span></h3>
+</div>
+<div class="panel-body"><p><div class="panel panel-primary">
+<div class="panel-body">
+<div class="bs-docs-section">
+<div style="border: 1px solid #e0d097; font-size: 100%; color: #000; background-color: #fffae8; margin-left:0px; margin-right:0px; margin-top:0; margin-bottom:0px; padding-left:10px; padding-right:10px; padding-top:5px; padding-bottom:5px">
+<table border="0" cellpadding="0" cellspacing="2" style="border: 1px solid #aaaaaa; font-size: 100%; color: #000; background-color: #fffdf8; margin-left:0px; margin-right:0px; margin-top:0; margin-bottom:0px; padding-left:10px; padding-right:10px; padding-top:5px; padding-bottom:5px" width="100%">
+<tr>
+<td width="20%" style="width: 10%; text-align: right"><a href="/wiki/Plik:Bricklayers%27_Kit.gif" class="image"><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="11158e19b51f9b109657abbe-|49"></script><img alt="Bricklayers&#39; Kit.gif" src="data:image/gif;base64,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" pagespeed_url_hash="2797599174" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a></td>
+<td><span style="font-size: 160%">Bricklayers' Kit</span><br /><span style="font-style: italic">Use it on destroyed brick walls to repair them.</span></td>
+</tr><tr>
+<td valign="top" style="text-align: right"><b>Waga:</b></td>
+<td colspan="2">18.00 <a href="/wiki/Oz" title="Oz">oz</a>.</td>
+</tr><tr>
+<td width="20%" valign="top" style="text-align: right"><b>Atrybuty:</b></td>
+<td colspan="2"></td>
+</tr><tr>
+<td width="20%" valign="top" style="text-align: right"><b>Wypada z:</b></td>
+<td colspan="2" style="font-size:0.8em">?
+</td>
+</tr><tr>
+<td colspan="2" width="10%" valign="top" style="text-align: left; padding-top: 0.5em"><span style="font-size: 80%"><b><a href="/wiki/Bricklayers%27_Kit" title="Bricklayers' Kit">Więcej o Bricklayers' Kit</a>.</b></span></td>
+<td colspan="2">
+</td>
+</tr>
+</table>
+</div>
+</div></div></div></p></div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><span class="mw-headline" id="Losowy_potw.C3.B3r">Losowy potwór</span></h3>
+</div>
+<div class="panel-body"><p><div style="border: 1px solid #e0d097; font-size: 100%; color: #000; background-color: #fffae8; margin-left:0px; margin-right:0px; margin-top:0; margin-bottom:0px; padding-left:10px; padding-right:10px; padding-top:5px; padding-bottom:5px">
+<table border="0" cellpadding="0" cellspacing="2" style="border: 1px solid #aaaaaa; font-size: 100%; color: #000; background-color: #fffdf8; margin-left:0px; margin-right:0px; margin-top:0; margin-bottom:0px; padding-left:10px; padding-right:10px; padding-top:5px; padding-bottom:5px" width="100%">
+<tr>
+<td align="right"><a href="/wiki/Plik:Boreth.gif" class="image"><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="11158e19b51f9b109657abbe-|49"></script><img alt="Boreth.gif" src="/images/c/ca/Boreth.gif.pagespeed.ce.guBSHcT-Yx.gif" width="64" height="64" pagespeed_url_hash="18695199" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a></td>
+<td align="left"><span style="font-size: 160%">Boreth</span><br />1400 Hp<br />1800 Exp</td></tr>
+<tr>
+<td align="right" valign="top" width="22%"><b><a href="/wiki/Summon" title="Summon" class="mw-redirect">Summon</a>/<a href="/wiki/Convince" title="Convince">Convince</a>:</b></td>
+<td align="left" valign="bottom">--/--</td>
+</tr>
+<tr>
+<td align="right" valign="top"><b>Specjalne:</b></td>
+<td align="left" valign="bottom" style="font-size: 0.95em">Przywołuje do 4 <a href="/wiki/Vampire" title="Vampire">wampirów</a>, <a href="/wiki/Self_Healing" title="Self Healing">Leczy się</a></td>
+</tr><tr>
+<td align="right" valign="top"><b>Sposób ataku:</b></td>
+<td align="left" valign="bottom"></td>
+</tr>
+<tr>
+<td width="1%" class="dark" nowrap="" valign="top" style="text-align: right"><b>Występowanie:</b></td>
+<td style="text-align: justify" colspan="2"><a href="/wiki/Vengoth" title="Vengoth">Vengoth</a></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left; padding-top: 0.5em"><span style="font-size: 80%"><b><a href="/wiki/Boreth" title="Boreth">Więcej o Boreth</a>.</b></span></td>
+<td colspan="2">
+</td>
+</tr>
+</table>
+</div></p></div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="text-center" style="margin-bottom:20px;"><a href="https://brokenranks.com/?campaign=tibia.pl"><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="11158e19b51f9b109657abbe-|49"></script><img src="https://www.tibia-wiki.net/images/f/fe/Brokenranks.gif" width="100%" pagespeed_url_hash="3469015522" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a></div>
+<div class="panel panel-primary">
+<div class="panel-body">
+<div class="bs-docs-section">
+<h1 id="dropdowns" class="page-header"><span class="mw-headline" id="Przy.C5.82.C4.85cz_si.C4.99">Przyłącz się</span></h1>
+<p class="lead">Na wiki każdy może edytować materiały. Dzięki temu zwykle są tu najświeższe informacje, ale zawsze jest coś do uzupełnienia. Możesz naprawić to własnoręcznie! Wystarczy, że się zarejestrujesz i rozpoczniesz edycji. Nie jest to takie trudne, jakie się wydaje.
+<div class="btn btn-default"><a href="/wiki/Specjalna:Moja_strona/Brudnopis" title="Specjalna:Moja strona/Brudnopis">Twój budnopis</a></div>
+<div class="btn btn-default"><a href="/wiki/Pomoc:Spis_tre%C5%9Bci" title="Pomoc:Spis treści">podstawy edycji</a></div>
+</p>
+</div></div></div></div>
+
+
+</div>
+</div></div>
+</div>
+
+
+<div class="printfooter">
+Źródło: „<a dir="ltr" href="https://www.tibia-wiki.net/index.php?title=Main_Page&amp;oldid=339669">http://www.tibia-wiki.net/index.php?title=Main_Page&amp;oldid=339669</a>” </div>
+
+
+<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Specjalna:Kategorie" title="Specjalna:Kategorie">Kategoria</a>: <ul><li><a href="/index.php?title=Kategoria:Strony_zawieraj%C4%85ce_wywo%C5%82ania_szablon%C3%B3w_z_parametrami_o_takich_samych_nazwach&amp;action=edit&amp;redlink=1" class="new" title="Kategoria:Strony zawierające wywołania szablonów z parametrami o takich samych nazwach (strona nie istnieje)">Strony zawierające wywołania szablonów z parametrami o takich samych nazwach</a></li></ul></div></div> 
+<div class="visualClear"></div>
+
+
+</div>
+
+</section>
+
+
+<div id="footer" class="footer container-fluid custom-footer">
+<div id="footer" class="footer container-fluid text-center">
+<a href="https://brokenranks.com/?campaign=tibia.pl"><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="11158e19b51f9b109657abbe-|49"></script><img width="100%" src="https://www.tibia-wiki.net/images/f/fb/Br_set_1_970x90.jpg" pagespeed_url_hash="2667845953" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a>
+<div class="row">
+
+<ul>
+<li><a href="https://www.tibia-wiki.net/wiki/Specjalna:Nowe_strony">Nowe strony</a></li>
+<li><a href="https://www.tibia-wiki.net/wiki/Specjalna:Losowa_strona">Losowa strona</a></li>
+<li><a href="https://www.tibia-wiki.net/wiki/Specjalna:Ostatnie_zmiany">Ostatnie zmiany</a></li>
+<li><a href="https://www.tibia-wiki.net/wiki/Pomoc:Spis_treści">Pomoc</a></li>
+</ul>
+
+</div>
+</div>
+<footer>
+<div id="social" class="text-center">
+</div>
+<div class="alert alert-info" role="alert"><strong>Użytkowniku!</strong> Zwracaj uwagę na to, gdzie przekierowuje dany link zewnętrzny. Tibia Wiki nie wymaga pobierania <u>CZEGOKOLWIEK</u>, jeśli widzisz komunikat zalecający coś ściągać - to na pewno dzieło wandala. Wszelkie takie działania możesz cofać samodzielnie, a Tibia Wiki nie odpowiada za ew. szkody niecnych ludzi.</div>
+</ul>
+<p class="text-center no-margins push-up">
+<a href="https://www.tibia-wiki.net" class="color-hover-white">Tibia Wiki</a> &copy; All Rights Reserved</p>
+</footer>
+</div>
+<script type="11158e19b51f9b109657abbe-text/javascript">(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"skins.bootstrapskin":"loading","user":"ready","user.groups":"ready"});mw.loader.load("/load.php?debug=false\u0026lang=pl\u0026modules=skins.bootstrapskin\u0026only=scripts\u0026skin=bootstrapskin");mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"]);});</script><script type="11158e19b51f9b109657abbe-text/javascript">(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":187});});</script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="11158e19b51f9b109657abbe-|49" defer=""></script></body>
+</html>

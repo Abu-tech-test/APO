@@ -52,6 +52,7 @@ const GlobalSearchWorkspace = lazy(() =>
     default: module.GlobalSearchWorkspace,
   })),
 );
+const QuestWorkspace = lazy(() => import("./quests/QuestWorkspace"));
 
 const systems: GameSystem[] = systemData;
 const informationCategories: InformationCategory[] = informationData;
@@ -85,10 +86,18 @@ type Section =
   | "items"
   | "bosses"
   | "npcs"
+  | "quests"
   | "info"
   | "systems";
 type NavigationMenu = "world" | "information" | null;
-const worldSections: Section[] = ["map", "monsters", "items", "bosses", "npcs"];
+const worldSections: Section[] = [
+  "map",
+  "monsters",
+  "items",
+  "bosses",
+  "npcs",
+  "quests",
+];
 const informationSections: Section[] = ["info", "systems"];
 type ZoneFilter = "all" | ItemZone;
 type MapPointRequest =
@@ -147,6 +156,7 @@ function readNavigationFromUrl(monsters: Monster[]): AppNavigationEntry {
     "items",
     "bosses",
     "npcs",
+    "quests",
     "info",
     "systems",
   ];
@@ -1557,7 +1567,8 @@ function App({ monsters }: { monsters: Monster[] }) {
           <p className="eyebrow">Wszystko o świecie Apo</p>
           <h1>Odkrywaj. Poluj. Zbieraj.</h1>
           <p className="intro-copy">
-            Przeglądaj mapę świata, bestiariusz, przedmioty i postacie NPC.
+            Przeglądaj mapę, bestiariusz, przedmioty, postacie NPC i poradniki
+            questów.
           </p>
         </div>
         <div className="intro-stats" aria-label="Zawartość bazy">
@@ -1646,6 +1657,14 @@ function App({ monsters }: { monsters: Monster[] }) {
               >
                 <span className="tab-icon">♙</span> NPC
                 <span className="tab-count">{npcs.length}</span>
+              </button>
+              <button
+                aria-current={section === "quests" ? "page" : undefined}
+                className={section === "quests" ? "tab active" : "tab"}
+                onClick={() => openSection("quests")}
+                type="button"
+              >
+                <span className="tab-icon">▤</span> Questy
               </button>
             </div>
           )}
@@ -1761,6 +1780,8 @@ function App({ monsters }: { monsters: Monster[] }) {
           selectedSystem={selectedSystem}
           systems={filteredSystems}
         />
+      ) : section === "quests" ? (
+        <QuestWorkspace />
       ) : (
       <CatalogWorkspace
         section={section}
