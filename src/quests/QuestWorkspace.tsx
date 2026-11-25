@@ -4,6 +4,8 @@ import questData from "../data/quests.json";
 type QuestTextSegment = {
   type: "text";
   text: string;
+  strong?: boolean;
+  strike?: boolean;
 };
 
 type QuestLinkSegment = {
@@ -38,7 +40,7 @@ type QuestImageRow = {
 
 type QuestQuote = {
   type: "quote";
-  lines: string[];
+  lines: (string | QuestParagraph["segments"])[];
 };
 
 type QuestSpoiler = {
@@ -185,7 +187,12 @@ function renderQuestSegments(segments: QuestParagraph["segments"]) {
       );
     }
 
-    return <span key={segmentIndex}>{segment.text}</span>;
+    const text = segment.strike ? <s>{segment.text}</s> : segment.text;
+    return segment.strong ? (
+      <strong key={segmentIndex}>{text}</strong>
+    ) : (
+      <span key={segmentIndex}>{text}</span>
+    );
   });
 }
 
@@ -300,6 +307,14 @@ function renderQuestBlocks(blocks: QuestBlock[], keyPrefix: string) {
       return (
         <blockquote className="quest-quote" key={key}>
           {block.lines.map((line, lineIndex) => {
+            if (typeof line !== "string") {
+              return (
+                <p className="quest-quote-line" key={lineIndex}>
+                  {renderQuestSegments(line)}
+                </p>
+              );
+            }
+
             const separatorIndex = line.indexOf(":");
             const hasSpeaker =
               separatorIndex > 0 && separatorIndex < 60;
