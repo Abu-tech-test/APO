@@ -12592,8 +12592,17 @@
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na arenę Nan Tsao"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Etap 1: Nagrody które możemy zdobyć z questu to",
         "blocks": [
           {
             "type": "paragraph",
@@ -12689,13 +12698,7 @@
                 "text": "Na Cyc idziemy dokładnie tak na jak ssach."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 2: Dalej mapa APO jest nie zaktualizowana lecz",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Arena Nan Tsao -adite mana",
@@ -12769,15 +12772,24 @@
     "author": "MichaS",
     "blocks": [
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na Dark Lordy COD"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Zaczynamy w mieście Capital City.",
         "blocks": [
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "1. Musimy się udać na Zachodnią bramę."
+                "text": "1. Zaczynamy w mieście Capital City. Musimy się udać na Zachodnią bramę."
               }
             ]
           },
@@ -12898,142 +12910,136 @@
     "author": "MichaS",
     "blocks": [
       {
+        "type": "table",
+        "fit": true,
+        "headers": [
+          [
+            {
+              "type": "text",
+              "text": "Wygląd"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": "Nazwa"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": "Ilość Hp"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": "Ilość Exp'a"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "type": "image",
+                "alt": "Demonic Sheep Hunter",
+                "src": "./images/quests/demonicsheephunter/Demonic_Sheep_Hunter.gif"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Demonic Sheep Hunter"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "2420"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "20000"
+              }
+            ]
+          ]
+        ]
+      },
+      {
         "type": "paragraph",
         "segments": [
           {
             "type": "text",
-            "text": "Potwór"
+            "text": "Loot"
           }
-        ]
+        ],
+        "align": "center"
       },
       {
-        "type": "spoiler",
-        "title": "Etap 1: Ilość Hp Ilość Exp'a",
-        "blocks": [
-          {
-            "type": "table",
-            "headers": [
-              [
-                {
-                  "type": "link",
-                  "text": "Wygląd",
-                  "url": "http://www.forum.toproste.pl/showthread.php?t=138776#"
-                }
-              ],
-              [
-                {
-                  "type": "link",
-                  "text": "Nazwa",
-                  "url": "http://www.forum.toproste.pl/showthread.php?t=138776#"
-                }
-              ],
-              [
-                {
-                  "type": "link",
-                  "text": "Ilość Hp",
-                  "url": "http://www.forum.toproste.pl/showthread.php?t=138776#"
-                }
-              ],
-              [
-                {
-                  "type": "link",
-                  "text": "Ilość Exp'a",
-                  "url": "http://www.forum.toproste.pl/showthread.php?t=138776#"
-                }
-              ]
+        "type": "table",
+        "fit": true,
+        "headers": [
+          [
+            {
+              "type": "text",
+              "text": "Wygląd"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": "Nazwa"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "type": "image",
+                "alt": "Demonic Sheep Hunter",
+                "src": "./images/quests/demonicsheephunter/P7iKszV.png"
+              }
             ],
-            "rows": [
-              [
-                [
-                  {
-                    "type": "image",
-                    "alt": "Demonic Sheep Hunter",
-                    "src": "./images/quests/demonicsheephunter/Demonic_Sheep_Hunter.gif"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "Demonic Sheep Hunter"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "2420"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "20000"
-                  }
-                ]
-              ]
+            [
+              {
+                "type": "text",
+                "text": "dead white demonic sheep"
+              }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Loot",
-        "blocks": [
-          {
-            "type": "table",
-            "headers": [
-              [
-                {
-                  "type": "link",
-                  "text": "Wygląd",
-                  "url": "http://www.forum.toproste.pl/showthread.php?t=138776#"
-                }
-              ],
-              [
-                {
-                  "type": "link",
-                  "text": "Nazwa",
-                  "url": "http://www.forum.toproste.pl/showthread.php?t=138776#"
-                }
-              ]
+          ],
+          [
+            [
+              {
+                "type": "image",
+                "alt": "Demonic Sheep Hunter",
+                "src": "./images/quests/demonicsheephunter/FaRxmA5.png"
+              }
             ],
-            "rows": [
-              [
-                [
-                  {
-                    "type": "image",
-                    "alt": "Demonic Sheep Hunter",
-                    "src": "./images/quests/demonicsheephunter/P7iKszV.png"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "dead white demonic sheep"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "image",
-                    "alt": "Demonic Sheep Hunter",
-                    "src": "./images/quests/demonicsheephunter/FaRxmA5.png"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "dead black demonic sheep"
-                  }
-                ]
-              ]
+            [
+              {
+                "type": "text",
+                "text": "dead black demonic sheep"
+              }
             ]
-          }
+          ]
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na Demonic Sheep Hunter"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Dodatkowe informacje",
         "blocks": [
           {
             "type": "paragraph",
@@ -14453,7 +14459,8 @@
           {
             "type": "image",
             "alt": "Droga na Lizard Templar i Kongra [Rook]",
-            "src": "./images/quests/droganalizardtemplarikongrarook/Lizard_Templar.gif"
+            "src": "./images/quests/droganalizardtemplarikongrarook/Lizard_Templar.gif",
+            "size": "icon"
           },
           {
             "type": "table",
@@ -14682,7 +14689,8 @@
           {
             "type": "image",
             "alt": "Droga na Lizard Templar i Kongra [Rook]",
-            "src": "./images/quests/droganalizardtemplarikongrarook/Kongra.gif"
+            "src": "./images/quests/droganalizardtemplarikongrarook/Kongra.gif",
+            "size": "icon"
           },
           {
             "type": "table",
@@ -16290,7 +16298,8 @@
           {
             "type": "image",
             "alt": "Jak dojść na Demented Dwarf_",
-            "src": "./images/quests/jakdojscnadementeddwarf/dwarfgeomancer.gif"
+            "src": "./images/quests/jakdojscnadementeddwarf/dwarfgeomancer.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -16486,7 +16495,8 @@
           {
             "type": "image",
             "alt": "Jak dojść na Demented Dwarf_",
-            "src": "./images/quests/jakdojscnadementeddwarf/vampire.gif"
+            "src": "./images/quests/jakdojscnadementeddwarf/vampire.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -16880,7 +16890,8 @@
           {
             "type": "image",
             "alt": "Jak dojść na Dracule COD [FACC]",
-            "src": "./images/quests/jakdojscnadraculecodfacc/vampire.gif"
+            "src": "./images/quests/jakdojscnadraculecodfacc/vampire.gif",
+            "size": "icon"
           }
         ]
       },
@@ -21611,27 +21622,32 @@
           {
             "type": "image",
             "alt": "Poprawiony OTS Quest II - Shield of Empire",
-            "src": "./images/quests/poprawionyotsquestiishieldofempire/shovel.gif"
+            "src": "./images/quests/poprawionyotsquestiishieldofempire/shovel.gif",
+            "size": "icon"
           },
           {
             "type": "image",
             "alt": "Poprawiony OTS Quest II - Shield of Empire",
-            "src": "./images/quests/poprawionyotsquestiishieldofempire/shovel.gif"
+            "src": "./images/quests/poprawionyotsquestiishieldofempire/shovel.gif",
+            "size": "icon"
           },
           {
             "type": "image",
             "alt": "Poprawiony OTS Quest II - Shield of Empire",
-            "src": "./images/quests/poprawionyotsquestiishieldofempire/shovel.gif"
+            "src": "./images/quests/poprawionyotsquestiishieldofempire/shovel.gif",
+            "size": "icon"
           },
           {
             "type": "image",
             "alt": "Poprawiony OTS Quest II - Shield of Empire",
-            "src": "./images/quests/poprawionyotsquestiishieldofempire/shovel.gif"
+            "src": "./images/quests/poprawionyotsquestiishieldofempire/shovel.gif",
+            "size": "icon"
           },
           {
             "type": "image",
             "alt": "Poprawiony OTS Quest II - Shield of Empire",
-            "src": "./images/quests/poprawionyotsquestiishieldofempire/shovel.gif"
+            "src": "./images/quests/poprawionyotsquestiishieldofempire/shovel.gif",
+            "size": "icon"
           },
           {
             "type": "image",
@@ -21721,27 +21737,32 @@
           {
             "type": "image",
             "alt": "Poprawiony OTS Quest II - Shield of Empire",
-            "src": "./images/quests/poprawionyotsquestiishieldofempire/pick.gif"
+            "src": "./images/quests/poprawionyotsquestiishieldofempire/pick.gif",
+            "size": "icon"
           },
           {
             "type": "image",
             "alt": "Poprawiony OTS Quest II - Shield of Empire",
-            "src": "./images/quests/poprawionyotsquestiishieldofempire/pick.gif"
+            "src": "./images/quests/poprawionyotsquestiishieldofempire/pick.gif",
+            "size": "icon"
           },
           {
             "type": "image",
             "alt": "Poprawiony OTS Quest II - Shield of Empire",
-            "src": "./images/quests/poprawionyotsquestiishieldofempire/pick.gif"
+            "src": "./images/quests/poprawionyotsquestiishieldofempire/pick.gif",
+            "size": "icon"
           },
           {
             "type": "image",
             "alt": "Poprawiony OTS Quest II - Shield of Empire",
-            "src": "./images/quests/poprawionyotsquestiishieldofempire/pick.gif"
+            "src": "./images/quests/poprawionyotsquestiishieldofempire/pick.gif",
+            "size": "icon"
           },
           {
             "type": "image",
             "alt": "Poprawiony OTS Quest II - Shield of Empire",
-            "src": "./images/quests/poprawionyotsquestiishieldofempire/pick.gif"
+            "src": "./images/quests/poprawionyotsquestiishieldofempire/pick.gif",
+            "size": "icon"
           },
           {
             "type": "image",
@@ -21760,7 +21781,8 @@
           {
             "type": "image",
             "alt": "Poprawiony OTS Quest II - Shield of Empire",
-            "src": "./images/quests/poprawionyotsquestiishieldofempire/UgatSV5.gif"
+            "src": "./images/quests/poprawionyotsquestiishieldofempire/UgatSV5.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -22169,7 +22191,8 @@
           {
             "type": "image",
             "alt": "Poprawiony OTS Quest II - Shield of Empire",
-            "src": "./images/quests/poprawionyotsquestiishieldofempire/DeadHuman.gif"
+            "src": "./images/quests/poprawionyotsquestiishieldofempire/DeadHuman.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -22630,7 +22653,8 @@
           {
             "type": "image",
             "alt": "Poprawiony OTS Quest II - Shield of Empire",
-            "src": "./images/quests/poprawionyotsquestiishieldofempire/Ots_Emperor.gif"
+            "src": "./images/quests/poprawionyotsquestiishieldofempire/Ots_Emperor.gif",
+            "size": "icon"
           },
           {
             "type": "image",
@@ -22861,7 +22885,8 @@
           {
             "type": "image",
             "alt": "Pandemonium Armor Quest",
-            "src": "./images/quests/pandemoniumarmorquest/3968_1.gif"
+            "src": "./images/quests/pandemoniumarmorquest/3968_1.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -24301,7 +24326,8 @@
           {
             "type": "image",
             "alt": "Purgatory",
-            "src": "./images/quests/purgatory/ectoplasm_container.gif"
+            "src": "./images/quests/purgatory/ectoplasm_container.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -25463,7 +25489,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Bat.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Bat.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -25579,7 +25606,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -25602,7 +25630,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -25625,7 +25654,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif",
+            "size": "icon"
           }
         ]
       },
@@ -25654,7 +25684,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -25677,7 +25708,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -25700,7 +25732,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -25723,7 +25756,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -25746,7 +25780,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -25769,7 +25804,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -25792,7 +25828,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/book_black.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -25842,7 +25879,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Bat.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Bat.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -25954,7 +25992,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Ant-Hill.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Ant-Hill.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -26037,7 +26076,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Asian_Hornet.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Asian_Hornet.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -26144,7 +26184,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Ancient_Skeleton.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Ancient_Skeleton.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -26263,7 +26304,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Ancient_Demon.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Ancient_Demon.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -26375,42 +26417,50 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Dwarf_Executioner.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Dwarf_Executioner.gif",
+            "size": "icon"
           },
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Goblin.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Goblin.gif",
+            "size": "icon"
           },
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Angry_Gargoyle.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Angry_Gargoyle.gif",
+            "size": "icon"
           },
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Mini_Minos.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Mini_Minos.gif",
+            "size": "icon"
           },
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Mini_Minos.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Mini_Minos.gif",
+            "size": "icon"
           },
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Angry_Gargoyle.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Angry_Gargoyle.gif",
+            "size": "icon"
           },
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Goblin.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Goblin.gif",
+            "size": "icon"
           },
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Dwarf_Executioner.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Dwarf_Executioner.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -26543,7 +26593,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Fire_Elemental.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Fire_Elemental.gif",
+            "size": "icon"
           }
         ]
       },
@@ -26682,7 +26733,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Energy_Elemental_.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Energy_Elemental_.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -26830,7 +26882,8 @@
           {
             "type": "image",
             "alt": "Quest of The Nine - ARMIA Podkarpacki OTS -NOWY",
-            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Water_Elemental.gif"
+            "src": "./images/quests/questoftheninearmiapodkarpackiotsnowy/Water_Elemental.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -29937,7 +29990,8 @@
           {
             "type": "image",
             "alt": "Santorr Quest - Aktualizacja",
-            "src": "./images/quests/santorrquestaktualizacja/Smuggler.gif"
+            "src": "./images/quests/santorrquestaktualizacja/Smuggler.gif",
+            "size": "icon"
           },
           {
             "type": "quote",
@@ -35146,7 +35200,8 @@
           {
             "type": "image",
             "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/3967_1.gif"
+            "src": "./images/quests/shamanmaskaktualizacja/3967_1.gif",
+            "size": "icon"
           },
           {
             "type": "image",
@@ -36875,7 +36930,8 @@
           {
             "type": "image",
             "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/Magic_Forcefield.gif"
+            "src": "./images/quests/shamanmaskaktualizacja/Magic_Forcefield.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -36988,7 +37044,8 @@
           {
             "type": "image",
             "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/Magic_Forcefield.gif"
+            "src": "./images/quests/shamanmaskaktualizacja/Magic_Forcefield.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
@@ -37101,7 +37158,8 @@
           {
             "type": "image",
             "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/Magic_Forcefield.gif"
+            "src": "./images/quests/shamanmaskaktualizacja/Magic_Forcefield.gif",
+            "size": "icon"
           },
           {
             "type": "paragraph",
