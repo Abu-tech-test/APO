@@ -1443,6 +1443,22 @@ select:focus-visible {
   white-space: pre-line;
 }
 
+.quest-paragraph-center {
+  text-align: center;
+}
+
+.quest-content-pirate-quest > .quest-paragraph-center {
+  margin-bottom: 8px;
+}
+
+.quest-content-pirate-quest > .quest-spoiler {
+  margin-bottom: 8px;
+}
+
+.quest-content-pirate-quest > .quest-image-icon {
+  margin: 4px 0;
+}
+
 .quest-inline-image {
   display: inline-block;
   max-width: 3.5em;
@@ -1465,6 +1481,27 @@ select:focus-visible {
   color: #d2d5cb;
   font-size: 13px;
   line-height: 1.5;
+}
+
+.quest-table-fit {
+  overflow-x: visible;
+}
+
+.quest-table-fit .quest-table {
+  min-width: 0;
+  table-layout: fixed;
+}
+
+.quest-table-fit .quest-table td {
+  white-space: normal;
+}
+
+.quest-table .quest-inline-image {
+  width: 32px;
+  height: 32px;
+  max-width: 32px;
+  max-height: 32px;
+  object-fit: contain;
 }
 
 .quest-table th,
@@ -1651,6 +1688,16 @@ select:focus-visible {
   border: 1px solid #343a32;
   border-radius: 6px;
   background: #111411;
+}
+
+.quest-image-icon img {
+  display: inline-block;
+  width: auto;
+  max-width: 64px;
+  max-height: 64px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .quest-image-row {

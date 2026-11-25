@@ -20,12 +20,14 @@ type QuestInlineImageSegment = {
 
 type QuestParagraph = {
   type: "paragraph";
+  align?: "center";
   segments: (QuestTextSegment | QuestLinkSegment | QuestInlineImageSegment)[];
 };
 
 type QuestImage = {
   type: "image";
   alt: string;
+  size?: "icon";
   src: string;
 };
 
@@ -56,6 +58,7 @@ type QuestOrderedList = {
 
 type QuestTable = {
   type: "table";
+  fit?: boolean;
   headers: QuestParagraph["segments"][];
   rows: QuestParagraph["segments"][][];
 };
@@ -231,7 +234,10 @@ function renderQuestBlocks(blocks: QuestBlock[], keyPrefix: string) {
 
     if (block.type === "table") {
       return (
-        <div className="quest-table-scroll" key={key}>
+        <div
+          className={`quest-table-scroll${block.fit ? " quest-table-fit" : ""}`}
+          key={key}
+        >
           <table className="quest-table">
             <thead>
               <tr>
@@ -276,7 +282,10 @@ function renderQuestBlocks(blocks: QuestBlock[], keyPrefix: string) {
 
     if (block.type === "image") {
       return (
-        <figure className="quest-image" key={key}>
+        <figure
+          className={`quest-image${block.size === "icon" ? " quest-image-icon" : ""}`}
+          key={key}
+        >
           <img
             alt={block.alt}
             decoding="async"
@@ -312,7 +321,10 @@ function renderQuestBlocks(blocks: QuestBlock[], keyPrefix: string) {
     }
 
     return (
-      <p className="quest-paragraph" key={key}>
+      <p
+        className={`quest-paragraph${block.align ? ` quest-paragraph-${block.align}` : ""}`}
+        key={key}
+      >
         {renderQuestSegments(block.segments)}
       </p>
     );
@@ -389,7 +401,7 @@ export default function QuestWorkspace() {
               Przygotował: <strong>{selectedQuest.author}</strong>
             </p>
           </header>
-          <div className="quest-content">
+          <div className={`quest-content quest-content-${selectedQuest.id}`}>
             {renderQuestBlocks(selectedQuest.blocks, selectedQuest.id)}
           </div>
         </article>
