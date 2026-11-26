@@ -13168,8 +13168,17 @@
     "author": "MichaS",
     "blocks": [
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na Dracule bez najazdu"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Zaczynamy w mieście Capital City. — część 1",
         "blocks": [
           {
             "type": "paragraph",
@@ -13272,8 +13281,17 @@
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na Dracule podczas najazdu"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Zaczynamy w mieście Capital City. — część 2",
         "blocks": [
           {
             "type": "paragraph",
@@ -13372,8 +13390,17 @@
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na Dark Lordy - Rook (Pacc)"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Etap 1: Droga na Dark Lordy",
         "blocks": [
           {
             "type": "image",
@@ -13404,13 +13431,7 @@
             "type": "image",
             "alt": "Droga na Dark Lordy - Rook (Pacc)",
             "src": "./images/quests/droganadarklordyrookpacc/i19cgtA.jpg"
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 2: Pierwszy odcinek trasy",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Droga na Dark Lordy - Rook (Pacc)",
@@ -13440,13 +13461,7 @@
             "type": "image",
             "alt": "Droga na Dark Lordy - Rook (Pacc)",
             "src": "./images/quests/droganadarklordyrookpacc/d6oAEa6.png"
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 3: Końcowy odcinek trasy",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Droga na Dark Lordy - Rook (Pacc)",
@@ -13476,13 +13491,7 @@
             "type": "image",
             "alt": "Droga na Dark Lordy - Rook (Pacc)",
             "src": "./images/quests/droganadarklordyrookpacc/18YMA0F.jpg"
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 4: Możemy się udać szybszą drogą lecz będzie",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Droga na Dark Lordy - Rook (Pacc)",
@@ -13537,7 +13546,7 @@
             "segments": [
               {
                 "type": "link",
-                "text": "Tu",
+                "text": "Tu ",
                 "url": "http://www.forum.toproste.pl/showthread.php?t=136913"
               },
               {
@@ -13592,18 +13601,18 @@
         ]
       },
       {
-        "type": "spoiler",
-        "title": "Etap 1: Cytat",
-        "blocks": [
+        "type": "paragraph",
+        "segments": [
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
-            ]
-          },
+            "type": "text",
+            "text": "Droga na Devil Atoma COD"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -13624,15 +13633,6 @@
               {
                 "type": "text",
                 "text": "I jestemy na sky. Teraz kierujemy się w stronę depo i wchodzimy na samą górę depo i mam npc Jin piszemy do niego."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
               }
             ]
           },
@@ -13677,13 +13677,7 @@
                 "text": "Idziemy według obrazka schodzimy po schodach w dol i kierujemy się mapką wchodzimy po schodach na górę i mamy do zabicia tam Potwory o nazwie Behemoth i lecimy na południe."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 2: Gdy już dojdziemy do elder demonów idziemy",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Droga na Devil Atom (odnowiony)",
@@ -13751,13 +13745,7 @@
                 "text": "I jesteśmy na Devil Atomie dodam ze nad nim jest teleport który prowadzi nas do wyjścia."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 3: Tu daje link do oryginalnego tematu",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Droga na Devil Atom (odnowiony)",
@@ -13768,7 +13756,7 @@
             "segments": [
               {
                 "type": "link",
-                "text": "Tu",
+                "text": "Tu ",
                 "url": "http://www.forum.toproste.pl/showthread.php?t=128612"
               },
               {
@@ -13805,25 +13793,23 @@
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na Flubbery w City of The Sky"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Etap 1: Cytat",
         "blocks": [
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Piszemy hi npc nam odpisuje 10:53 ShaShaSha: Ahoooj Przyjacielu! Moge Cie zabrac moim magicznym statkiem do latajacego miasta City of the Sky [10k] lub do Canyon of damned [500gp] lub do Ankaros [1k], gdzie chcesz sie udac? wpisujemy City of The Sky (można też skrótem \"sky\")"
-              }
+            "type": "quote",
+            "lines": [
+              "Me: hi",
+              "ShaShaSha: Ahoooj Przyjacielu! Moge Cie zabrac moim magicznym statkiem do latajacego miasta City of the Sky [10k] lub do Canyon of damned [500gp] lub do Ankaros [1k], gdzie chcesz sie udac? wpisujemy City of The Sky (można też skrótem \"sky\")"
             ]
           },
           {
@@ -13891,13 +13877,7 @@
                 "text": "I o to resp Flubberów."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 2: Dodam jeszcze loot z flubberów dla tych",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Droga na Flubbery w City of The Sky (odnowiony)",
@@ -13914,26 +13894,24 @@
           },
           {
             "type": "table",
+            "fit": true,
             "headers": [
               [
                 {
-                  "type": "link",
-                  "text": "Nazwa",
-                  "url": "http://www.forum.toproste.pl/showthread.php?t=140576#"
+                  "type": "text",
+                  "text": "Nazwa"
                 }
               ],
               [
                 {
-                  "type": "link",
-                  "text": "Częśtość",
-                  "url": "http://www.forum.toproste.pl/showthread.php?t=140576#"
+                  "type": "text",
+                  "text": "Częśtość"
                 }
               ],
               [
                 {
-                  "type": "link",
-                  "text": "Ilość Max",
-                  "url": "http://www.forum.toproste.pl/showthread.php?t=140576#"
+                  "type": "text",
+                  "text": "Ilość Max"
                 }
               ]
             ],
@@ -14425,7 +14403,7 @@
             "segments": [
               {
                 "type": "link",
-                "text": "Tu",
+                "text": "Tu ",
                 "url": "http://www.forum.toproste.pl/showthread.php?t=128615"
               },
               {
@@ -14448,130 +14426,133 @@
         "segments": [
           {
             "type": "text",
-            "text": "Lizard Templar."
+            "text": "Lizard Templar"
           }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "image",
+        "alt": "Droga na Lizard Templar i Kongra [Rook]",
+        "src": "./images/quests/droganalizardtemplarikongrarook/Lizard_Templar.gif",
+        "size": "icon"
+      },
+      {
+        "type": "table",
+        "fit": true,
+        "headers": [
+          [
+            {
+              "type": "text",
+              "text": "Ilość Hp"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": "Ilość Expa"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "type": "text",
+                "text": "451"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "3750"
+              }
+            ]
+          ]
         ]
       },
       {
-        "type": "spoiler",
-        "title": "Etap 1: Droga i przygotowanie",
-        "blocks": [
-          {
-            "type": "image",
-            "alt": "Droga na Lizard Templar i Kongra [Rook]",
-            "src": "./images/quests/droganalizardtemplarikongrarook/Lizard_Templar.gif",
-            "size": "icon"
-          },
-          {
-            "type": "table",
-            "headers": [
-              [
-                {
-                  "type": "link",
-                  "text": "Ilość Hp",
-                  "url": "http://www.forum.toproste.pl/showthread.php?t=138340#"
-                }
-              ],
-              [
-                {
-                  "type": "link",
-                  "text": "Ilość Expa",
-                  "url": "http://www.forum.toproste.pl/showthread.php?t=138340#"
-                }
-              ]
-            ],
-            "rows": [
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "451"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "3750"
-                  }
-                ]
-              ]
+        "type": "table",
+        "fit": true,
+        "headers": [
+          [
+            {
+              "type": "text",
+              "text": "Loot"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "type": "text",
+                "text": "Bone Club"
+              }
             ]
-          },
-          {
-            "type": "table",
-            "headers": [
-              [
-                {
-                  "type": "link",
-                  "text": "Loot",
-                  "url": "http://www.forum.toproste.pl/showthread.php?t=138340#"
-                }
-              ]
-            ],
-            "rows": [
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "Bone Club"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "Gold Coin"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "Hatchet Lizard"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "Plate Legs"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "Steel Helmet"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "Two-handed Sword"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "War Hammer"
-                  }
-                ]
-              ]
+          ],
+          [
+            [
+              {
+                "type": "text",
+                "text": "Gold Coin"
+              }
             ]
-          }
+          ],
+          [
+            [
+              {
+                "type": "text",
+                "text": "Hatchet Lizard"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "text",
+                "text": "Plate Legs"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "text",
+                "text": "Steel Helmet"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "text",
+                "text": "Two-handed Sword"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "text",
+                "text": "War Hammer"
+              }
+            ]
+          ]
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga do Lizard Templar"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Dodatkowe informacje",
         "blocks": [
           {
             "type": "paragraph",
@@ -14676,140 +14657,139 @@
             "type": "image",
             "alt": "Droga na Lizard Templar i Kongra [Rook]",
             "src": "./images/quests/droganalizardtemplarikongrarook/kufljN4.png"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Kongra."
-              }
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Droga na Lizard Templar i Kongra [Rook]",
-            "src": "./images/quests/droganalizardtemplarikongrarook/Kongra.gif",
-            "size": "icon"
-          },
-          {
-            "type": "table",
-            "headers": [
-              [
-                {
-                  "type": "link",
-                  "text": "Ilość Hp",
-                  "url": "http://www.forum.toproste.pl/showthread.php?t=138340#"
-                }
-              ],
-              [
-                {
-                  "type": "link",
-                  "text": "Ilość Expa",
-                  "url": "http://www.forum.toproste.pl/showthread.php?t=138340#"
-                }
-              ]
-            ],
-            "rows": [
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "374"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "3100"
-                  }
-                ]
-              ]
-            ]
-          },
-          {
-            "type": "table",
-            "headers": [
-              [
-                {
-                  "type": "link",
-                  "text": "Loot",
-                  "url": "http://www.forum.toproste.pl/showthread.php?t=138340#"
-                }
-              ]
-            ],
-            "rows": [
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "Cocount"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "Double Axe"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "Gold Coin"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "Ape Fur"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "Plate Armor"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "Scale Armor"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "Steel Helmet"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "War Hammer"
-                  }
-                ]
-              ]
-            ]
           }
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Kongra"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "image",
+        "alt": "Droga na Lizard Templar i Kongra [Rook]",
+        "src": "./images/quests/droganalizardtemplarikongrarook/Kongra.gif",
+        "size": "icon"
+      },
+      {
+        "type": "table",
+        "fit": true,
+        "headers": [
+          [
+            {
+              "type": "text",
+              "text": "Ilość Hp"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": "Ilość Expa"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "type": "text",
+                "text": "374"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "3100"
+              }
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "table",
+        "fit": true,
+        "headers": [
+          [
+            {
+              "type": "text",
+              "text": "Loot"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "type": "text",
+                "text": "Cocount"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "text",
+                "text": "Double Axe"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "text",
+                "text": "Gold Coin"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "text",
+                "text": "Ape Fur"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "text",
+                "text": "Plate Armor"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "text",
+                "text": "Scale Armor"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "text",
+                "text": "Steel Helmet"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "text",
+                "text": "War Hammer"
+              }
+            ]
+          ]
+        ]
+      },
+      {
         "type": "spoiler",
-        "title": "Dodatkowe informacje",
         "blocks": [
           {
             "type": "paragraph",
@@ -14966,27 +14946,27 @@
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Będzie nam potrzebna lina, łopata oraz Pacc."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Lucky Rat'y na terenie Facc."
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Etap 1: Będzie nam potrzebna lina, łopata oraz Pacc",
         "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Będzie nam potrzebna lina, łopata oraz Pacc."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Lucky Rat'y na terenie Facc."
-              }
-            ]
-          },
           {
             "type": "image",
             "alt": "Droga na Lucky Rat'y - ROOK",
@@ -15006,13 +14986,7 @@
             "type": "image",
             "alt": "Droga na Lucky Rat'y - ROOK",
             "src": "./images/quests/droganaluckyratyrook/7Ha2o8P.jpg"
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 2: Lucky Rat'y na terenie Pacc",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Droga na Lucky Rat'y - ROOK",
@@ -15057,21 +15031,21 @@
             "type": "image",
             "alt": "Droga na Lucky Rat'y - ROOK",
             "src": "./images/quests/droganaluckyratyrook/hAsNaBB.jpg"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Lucky Rat'y na terenie Pacc."
-              }
-            ]
           }
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Lucky Rat'y na terenie Pacc."
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Etap 3: Lucky Rat na terenie Pacc",
         "blocks": [
           {
             "type": "image",
@@ -15102,13 +15076,7 @@
             "type": "image",
             "alt": "Droga na Lucky Rat'y - ROOK",
             "src": "./images/quests/droganaluckyratyrook/LCOVRtL.jpg"
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 4: Lucky Rat'y na terenie Tropicano",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Droga na Lucky Rat'y - ROOK",
@@ -15153,21 +15121,21 @@
             "type": "image",
             "alt": "Droga na Lucky Rat'y - ROOK",
             "src": "./images/quests/droganaluckyratyrook/9Awo6uR.jpg"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Lucky Rat'y na terenie Tropicano."
-              }
-            ]
           }
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Lucky Rat'y na terenie Tropicano."
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Etap 5: Myślę że troszeczkę pomogłem w odnalezieniu Lucky",
         "blocks": [
           {
             "type": "image",
@@ -15245,71 +15213,77 @@
         ]
       },
       {
-        "type": "spoiler",
-        "title": "Etap 1: Ilość Hp Ilość Exp'a",
-        "blocks": [
-          {
-            "type": "table",
-            "headers": [
-              [
-                {
-                  "type": "link",
-                  "text": "Nazwa",
-                  "url": "http://www.forum.toproste.pl/showthread.php?p=1209188#"
-                }
-              ],
-              [
-                {
-                  "type": "link",
-                  "text": "Wygląd",
-                  "url": "http://www.forum.toproste.pl/showthread.php?p=1209188#"
-                }
-              ],
-              [
-                {
-                  "type": "link",
-                  "text": "Ilość Hp",
-                  "url": "http://www.forum.toproste.pl/showthread.php?p=1209188#"
-                }
-              ],
-              [
-                {
-                  "type": "link",
-                  "text": "Ilość Exp'a",
-                  "url": "http://www.forum.toproste.pl/showthread.php?p=1209188#"
-                }
-              ]
+        "type": "table",
+        "fit": true,
+        "headers": [
+          [
+            {
+              "type": "text",
+              "text": "Nazwa"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": "Wygląd"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": "Ilość Hp"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": "Ilość Exp'a"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "type": "text",
+                "text": "Priestess of Death"
+              }
             ],
-            "rows": [
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "Priestess of Death"
-                  }
-                ],
-                [
-                  {
-                    "type": "image",
-                    "alt": "Droga na Priestess of Death.",
-                    "src": "./images/quests/droganapriestessofdeath/Priestess_of_Death.gif"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "75975"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "452100"
-                  }
-                ]
-              ]
+            [
+              {
+                "type": "image",
+                "alt": "Droga na Priestess of Death.",
+                "src": "./images/quests/droganapriestessofdeath/Priestess_of_Death.gif"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "75975"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "452100"
+              }
             ]
-          },
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na Priestess of Death"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -15384,13 +15358,7 @@
                 "text": "6. Po wejściu do dziury, podążamy na południowy zachód i wchodzimy w kolejną dziurę."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 2: Teraz naszym zadaniem będzie odnalezienie schodów, znajduj",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Droga na Priestess of Death.",
@@ -15470,103 +15438,104 @@
         ]
       },
       {
-        "type": "spoiler",
-        "title": "Etap 1: Potwory",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
+        "type": "table",
+        "fit": true,
+        "headers": [
+          [
+            {
+              "type": "text",
+              "text": "Nazwa"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": "Wygląd"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": "Ilość Hp"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": "Ilość Exp'a"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
               {
                 "type": "text",
-                "text": "Potwory:"
+                "text": "Fiber Flower"
+              }
+            ],
+            [
+              {
+                "type": "image",
+                "alt": "Droga na Toxic Plant i Fiber Flower.",
+                "src": "./images/quests/droganatoxicplantifiberflower/Fiber_Flower.gif"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "1100"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "5000"
               }
             ]
-          },
-          {
-            "type": "table",
-            "headers": [
-              [
-                {
-                  "type": "text",
-                  "text": "Nazwa"
-                }
-              ],
-              [
-                {
-                  "type": "text",
-                  "text": "Wygląd"
-                }
-              ],
-              [
-                {
-                  "type": "text",
-                  "text": "Ilość Hp"
-                }
-              ],
-              [
-                {
-                  "type": "text",
-                  "text": "Ilość Exp'a"
-                }
-              ]
+          ],
+          [
+            [
+              {
+                "type": "text",
+                "text": "Toxic Plant"
+              }
             ],
-            "rows": [
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "Fiber Flower"
-                  }
-                ],
-                [
-                  {
-                    "type": "image",
-                    "alt": "Droga na Toxic Plant i Fiber Flower.",
-                    "src": "./images/quests/droganatoxicplantifiberflower/Fiber_Flower.gif"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "1100"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "5000"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "Toxic Plant"
-                  }
-                ],
-                [
-                  {
-                    "type": "image",
-                    "alt": "Droga na Toxic Plant i Fiber Flower.",
-                    "src": "./images/quests/droganatoxicplantifiberflower/Fiber_Flower.gif"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "1650"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "12500"
-                  }
-                ]
-              ]
+            [
+              {
+                "type": "image",
+                "alt": "Droga na Toxic Plant i Fiber Flower.",
+                "src": "./images/quests/droganatoxicplantifiberflower/Fiber_Flower.gif"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "1650"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "12500"
+              }
             ]
-          },
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na Toxic Plant i Fiber Flower"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -15605,21 +15574,12 @@
             ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "23:16 Lord Boonek : hi 23:16 Fargum : Witam Cie, od wielu lat przeprawiam odwaznych przez morza i oceany. Czy zechcesz odwiedzic inne krainy? 23:16 Lord Boonek : sor 23:16 Fargum : Plyniemy!"
-              }
+            "type": "quote",
+            "lines": [
+              "Lord Boonek : hi",
+              "Fargum : Witam Cie, od wielu lat przeprawiam odwaznych przez morza i oceany. Czy zechcesz odwiedzic inne krainy?",
+              "Lord Boonek : sor",
+              "Fargum : Plyniemy!"
             ]
           },
           {
@@ -15644,29 +15604,14 @@
                 "text": "Rozmawiamy z Npc Sorlan:"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 2: Cytat",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
-            ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "23:16 Lord Boonek : hi 23:16 Sorlan : Siema Lord Boonek! Moge Cie zabrac do Miasta (Capital City), Amazon Camp, Senja, POH, Expgard, Evul lub Cyclopolis. Podroz kosztuje [100gp]. Gdzie chcesz sie udac? 23:16 Lord Boonek : cyc 23:16 Sorlan : Plyniemy!"
-              }
+            "type": "quote",
+            "lines": [
+              "Lord Boonek : hi",
+              "Fargum : Witam Cie, od wielu lat przeprawiam odwaznych przez morza i oceany. Czy zechcesz odwiedzic inne krainy?",
+              "Lord Boonek : sor",
+              "Fargum : Plyniemy!"
             ]
           },
           {
@@ -15698,21 +15643,12 @@
             ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "23:17 Lord Boonek : hi 23:17 Voolco : Witaj Lord Boonek! Moge Cie zabrac na Volcano Island za jedyne [1k]. Chcesz sie tam udac? 23:17 Lord Boonek : yes 23:17 Voolco : Plyniemy!"
-              }
+            "type": "quote",
+            "lines": [
+              "Lord Boonek : hi",
+              "Voolco : Witaj Lord Boonek! Moge Cie zabrac na Volcano Island za jedyne [1k]. Chcesz sie tam udac?",
+              "Lord Boonek : yes",
+              "Voolco : Plyniemy!"
             ]
           },
           {
@@ -15741,13 +15677,7 @@
                 "text": "Następnie kierujemy się w stronę wyspy Jaszczuroludzi, która znajduje się na zachód."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 3: Po dojściu do obrzeży wyspy Jaszczuroludzi kierujemy",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Droga na Toxic Plant i Fiber Flower.",
@@ -15819,7 +15749,6 @@
       },
       {
         "type": "spoiler",
-        "title": "Etap 1: Aby zacząć wykonywać taski musimy wcześniej porozmawiać",
         "blocks": [
           {
             "type": "image",
@@ -15861,21 +15790,18 @@
             ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Misiu Kozaczek Rook: Hi Hunter Urlich: Witaj przybyszu! Co Cie do mnie sprowadza?! Misiu Kozaczek Rook: Misja Hunter Urlich: Dobrze wiec, ze sie do mnie zglosiles. Poszukuje ludzi do kola lowieckiego. Jestes zainteresowany dolaczeniem? Misiu Kozaczek Rook: Tak Hunter Urlich: Cudownie. Moge Cie wiec dopisac do mojego kola? Misiu Kozaczek Rook: Tak Hunter Urlich: Musisz jednak pamietac, ze dolaczenie do kola zobowiazuje. Nie bedziesz mogl juz nigdy go opuscic! Zgadzasz sie?! Misiu Kozaczek Rook: Tak Hunter Urlich: Swietnie! Od tej pory jestes czlonkiem kola mysliwych. Za zdobycie stu punktow dostaniesz ode mnie czarna krolowa! Jesli bedziesz chcial rozpoczac swoja pierwsza misje, napisz znowu!"
-              }
+            "type": "quote",
+            "lines": [
+              "Misiu Kozaczek Rook: Hi",
+              "Hunter Urlich: Witaj przybyszu! Co Cie do mnie sprowadza?!",
+              "Misiu Kozaczek Rook: Misja",
+              "Hunter Urlich: Dobrze wiec, ze sie do mnie zglosiles. Poszukuje ludzi do kola lowieckiego. Jestes zainteresowany dolaczeniem?",
+              "Misiu Kozaczek Rook: Tak",
+              "Hunter Urlich: Cudownie. Moge Cie wiec dopisac do mojego kola?",
+              "Misiu Kozaczek Rook: Tak",
+              "Hunter Urlich: Musisz jednak pamietac, ze dolaczenie do kola zobowiazuje. Nie bedziesz mogl juz nigdy go opuscic! Zgadzasz sie?!",
+              "Misiu Kozaczek Rook: Tak",
+              "Hunter Urlich: Swietnie! Od tej pory jestes czlonkiem kola mysliwych. Za zdobycie stu punktow dostaniesz ode mnie czarna krolowa! Jesli bedziesz chcial rozpoczac swoja pierwsza misje, napisz znowu!"
             ]
           },
           {
@@ -15924,77 +15850,86 @@
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "-pacc"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "-lvl umożliwiający nam dobiegnięcie na czas od Psychola do Zinaba (ok 80+)"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "-łopata"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "-lina"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Dla Psychola będziemy potrzebować -100 jagód (zbieramy je w mieście z krzaczków)"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "-3x ogniste grzybki (wypadają np z Lucky Rata)"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "-3x ciało zmarłej osy (znajdziecie je np na prawo od dp facc)"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "alt": "IH Quest Rook",
+        "src": "./images/quests/ihquestrook/8CmwjK3.jpg"
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Misja 1"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Etap 1: pacc",
         "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "-pacc"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "-lvl umożliwiający nam dobiegnięcie na czas od Psychola do Zinaba (ok 80+)"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "-łopata"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "-lina"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Dla Psychola będziemy potrzebować -100 jagód (zbieramy je w mieście z krzaczków)"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "-3x ogniste grzybki (wypadają np z Lucky Rata)"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "-3x ciało zmarłej osy (znajdziecie je np na prawo od dp facc)"
-              }
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "IH Quest Rook",
-            "src": "./images/quests/ihquestrook/8CmwjK3.jpg"
-          },
           {
             "type": "paragraph",
             "segments": [
@@ -16015,9 +15950,13 @@
             "src": "./images/quests/ihquestrook/QG2qSfX.jpg"
           },
           {
-            "type": "image",
-            "alt": "IH Quest Rook",
-            "src": "./images/quests/ihquestrook/SS3Pnbe.jpg"
+            "type": "quote",
+            "lines": [
+              "Matsujun: hi",
+              "Psychol: Ahoooj Matsujun! Skupuja martwe zajace (rabbit) [2gp], szczury (rat) [3gp] i wilki (wolf) [4gp].",
+              "Matsujun: quest",
+              "Psychol: Jezeli jestes gotowy cos dla mnie zrobic, to prosze zbierz dla mnie 100 jagod."
+            ]
           },
           {
             "type": "paragraph",
@@ -16032,24 +15971,46 @@
                 "src": "./images/quests/ihquestrook/smile.gif"
               }
             ]
+          },
+          {
+            "type": "quote",
+            "lines": [
+              "Matsujun: hi",
+              "Psychol: Ahoooj Matsujun! Skupuja martwe zajace (rabbit) [2gp], szczury (rat) [3gp] i wilki (wolf) [4gp].",
+              "Matsujun: jagody",
+              "Psychol: Dziekuje!"
+            ]
           }
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Misja 2"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Etap 2: Grzybki zdobywamy np z Lucky Rata jak",
         "blocks": [
           {
-            "type": "image",
-            "alt": "IH Quest Rook",
-            "src": "./images/quests/ihquestrook/wREuCGt.jpg"
+            "type": "quote",
+            "lines": [
+              "Matsujun: hi",
+              "Psychol: Witaj Matsujun! Skupuja martwe zajace (rabbit) [2gp], szczury (rat) [3gp] i wilki (wolf) [4gp].",
+              "Matsujun: misja",
+              "Psychol: Jezeli jestes gotowy cos dla mnie zrobic, to prosze zbierz dla mnie 3 ogniste grzybki."
+            ]
           },
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "Grzybki zdobywamy np z Lucky Rata jak na nie trafić ? Pomoże wam poradnik:"
+                "text": "Grzybki zdobywamy np z Lucky Rata jak na nie trafić ? Pomoże wam poradnik: "
               },
               {
                 "type": "link",
@@ -16059,10 +16020,29 @@
             ]
           },
           {
-            "type": "image",
-            "alt": "IH Quest Rook",
-            "src": "./images/quests/ihquestrook/xN5im1m.jpg"
-          },
+            "type": "quote",
+            "lines": [
+              "Matsujun: hi",
+              "Psychol: Waazzuup Matsujun! Skupuja martwe zajace (rabbit) [2gp], szczury (rat) [3gp] i wilki (wolf) [4gp].",
+              "Matsujun: ogniste grzybki",
+              "Psychol: Dziekuje!"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Misja 3"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -16073,10 +16053,33 @@
             ]
           },
           {
-            "type": "image",
-            "alt": "IH Quest Rook",
-            "src": "./images/quests/ihquestrook/qcPMKb2.jpg"
-          },
+            "type": "quote",
+            "lines": [
+              "Matsujun: hi",
+              "Psychol: Siema Matsujun! Skupuja martwe zajace (rabbit) [2gp], szczury (rat) [3gp] i wilki (wolf) [4gp].",
+              "Matsujun: misja",
+              "Psychol: Jezeli jestes gotowy cos dla mnie zrobic, to prosze przynies mi 3 martwe osy.",
+              "Matsujun: hi",
+              "Psychol: Czesc Matsujun! Skupuja martwe zajace (rabbit) [2gp], szczury (rat) [3gp] i wilki (wolf) [4gp].",
+              "Matsujun: osy",
+              "Psychol: Dzieki Ci wielkie! przyjdz do mnie za 2 godziny, dane wtedy bedzie gotowe! Tylko sie nie spoznij!"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Misja 4"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -16087,9 +16090,13 @@
             ]
           },
           {
-            "type": "image",
-            "alt": "IH Quest Rook",
-            "src": "./images/quests/ihquestrook/51L2uyh.jpg"
+            "type": "quote",
+            "lines": [
+              "Matsujun: hi",
+              "Psychol: Siema Matsujun! Skupuja martwe zajace (rabbit) [2gp], szczury (rat) [3gp] i wilki (wolf) [4gp].",
+              "Matsujun: danie",
+              "Psychol: Jestes w sama pore, prosze Cie udaj sie teraz do mojego brata Zinaba i zanies mu danie (masz 10 min)."
+            ]
           },
           {
             "type": "paragraph",
@@ -16110,11 +16117,11 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Jeżeli mamy 150 lvl w chwili wykonywania misji możemy udać się do Zinaba skrótem oto poradnik:"
+                "text": "Jeżeli mamy 150 lvl w chwili wykonywania misji możemy udać się do Zinaba skrótem oto poradnik: "
               },
               {
                 "type": "link",
-                "text": "http://www.forum.toproste.pl/showthread.php?t=136913",
+                "text": "http://www.forum.toproste.pl/showthread.php?t=136913. ",
                 "url": "http://www.forum.toproste.pl/showthread.php?t=136913"
               },
               {
@@ -16154,13 +16161,7 @@
                 "text": "Idziemy tak jak prowadzi nas niebieski znacznik, na końcu drogi kopiemy łopatą."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 3: I dalej za niebieskim znacznikiem",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "IH Quest Rook",
@@ -16237,13 +16238,7 @@
                 "text": "Tam go szukamy."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 4: Od tej pory możemy kupować u Zinaba",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "IH Quest Rook",
@@ -16292,29 +16287,32 @@
     "author": "Sasha Banned",
     "blocks": [
       {
-        "type": "spoiler",
-        "title": "Panuje błędne przekonanie, że krasnoludy nie tolerują",
-        "blocks": [
+        "type": "image",
+        "alt": "Jak dojść na Demented Dwarf_",
+        "src": "./images/quests/jakdojscnadementeddwarf/dwarfgeomancer.gif",
+        "size": "icon"
+      },
+      {
+        "type": "paragraph",
+        "segments": [
           {
-            "type": "image",
-            "alt": "Jak dojść na Demented Dwarf_",
-            "src": "./images/quests/jakdojscnadementeddwarf/dwarfgeomancer.gif",
-            "size": "icon"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Panuje błędne przekonanie, że krasnoludy nie tolerują żadnego rodzaju magii. Doceniają siłę żywiołów, a najbardziej utalentowani pośród nich opanowali pierwotne moce ziemi i ognia. Tak jak reszta rasy, są silni i wytrzymali jednak zamiast walczyć toporem przyzywają moce ziemi do zniszczenia wrogów, miotając kule roztopionej skały jak i również niebieskiej gwiazdy. Co gorsza, ziemia oraz lawa zapewnia im potężne zdolności paraliżowania i uciekania, co czyni ich trudnymi do pokonania. Masowe wybijanie tych potworów jest zdecydowanie nieopłacalne, tym bardziej, że pewne ogniste stworzenia pomagają krasnoludom w walce z nieznajomymi wojownikami!"
-              }
-            ]
+            "type": "text",
+            "text": "Panuje błędne przekonanie, że krasnoludy nie tolerują żadnego rodzaju magii. Doceniają siłę żywiołów, a najbardziej utalentowani pośród nich opanowali pierwotne moce ziemi i ognia. Tak jak reszta rasy, są silni i wytrzymali jednak zamiast walczyć toporem przyzywają moce ziemi do zniszczenia wrogów, miotając kule roztopionej skały jak i również niebieskiej gwiazdy. Co gorsza, ziemia oraz lawa zapewnia im potężne zdolności paraliżowania i uciekania, co czyni ich trudnymi do pokonania. Masowe wybijanie tych potworów jest zdecydowanie nieopłacalne, tym bardziej, że pewne ogniste stworzenia pomagają krasnoludom w walce z nieznajomymi wojownikami!"
           }
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na Demented Dwarfy"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Zaczynamy w świątyni, a następnie udajemy się na Bamboo do kapitana ShaShaSha.",
         "blocks": [
           {
             "type": "image",
@@ -16376,13 +16374,7 @@
                 "text": "Jeżeli występuje automatyczny najazd to polecam skrót do danego miejsca."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Jak dojść na Demented Dwarf_",
@@ -16517,7 +16509,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Jak zdobyć kostium wampira?"
+                "text": "Jak zdobyć kostium wampira? "
               },
               {
                 "type": "link",
@@ -16534,155 +16526,29 @@
                 "text": "Trzeba wykonać 10 zadań u NPC Ward Robe:"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Misja 1:",
-        "blocks": [
+          },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Przynieść Strange Helmet."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Misja 2:",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Przynieść Left Horn of Vampire's Cap."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Misja 3:",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Przynieść Right Horn of Vampire's Cap."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Misja 4:",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Przynieść Vampire's Rotten Cape."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Misja 5:",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Przynieść 100x Natural Fibre."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Misja 6:",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Przynieść 100x Black Demonic Sheeps."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Misja 7:",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Przynieść Vampire's Boots."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Misja 8:",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Przynieść 30x Pieces of Iron."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Misja 9:",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Przynieść 10x Skeleton Bone."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Misja 10:",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Przynieść Vial of Virging Blood."
-              }
+            "type": "table",
+            "fit": true,
+            "headers": [
+              [
+                {
+                  "type": "text",
+                  "text": "Zadanie"
+                }
+              ]
+            ],
+            "rows": [
+              [[{"type": "text", "text": "Przynieść Strange Helmet."}]],
+              [[{"type": "text", "text": "Przynieść Left Horn of Vampire's Cap."}]],
+              [[{"type": "text", "text": "Przynieść Right Horn of Vampire's Cap."}]],
+              [[{"type": "text", "text": "Przynieść Vampire's Rotten Cape."}]],
+              [[{"type": "text", "text": "Przynieść 100x Natural Fibre."}]],
+              [[{"type": "text", "text": "Przynieść 100x Black Demonic Sheeps."}]],
+              [[{"type": "text", "text": "Przynieść Vampire's Boots."}]],
+              [[{"type": "text", "text": "Przynieść 30x Pieces of Iron."}]],
+              [[{"type": "text", "text": "Przynieść 10x Skeleton Bone."}]],
+              [[{"type": "text", "text": "Przynieść Vial of Virging Blood."}]]
             ]
           },
           {
@@ -16715,12 +16581,12 @@
           },
           {
             "type": "table",
+            "fit": true,
             "headers": [
               [
                 {
-                  "type": "link",
-                  "text": "Zdobycz z danego potwora:",
-                  "url": "http://www.forum.toproste.pl/showthread.php?t=135271#"
+                  "type": "text",
+                  "text": "Zdobycz z danego potwora:"
                 }
               ]
             ],
@@ -16869,77 +16735,71 @@
     "author": "Karpiu",
     "blocks": [
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Wymagany jest 90 poziom doświadczenia aby przejść przez bramkę."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Informacje na temat Draculi"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "alt": "Jak dojść na Dracule COD [FACC]",
+        "src": "./images/quests/jakdojscnadraculecodfacc/vampire.gif",
+        "size": "icon"
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Punkty Życia: 14850"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Punkty Doświadczenia: 71500"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "alt": "Jak dojść na Dracule COD [FACC]",
+        "src": "./images/quests/jakdojscnadraculecodfacc/llgIpGT.png"
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na Dracule COD (FACC)"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Wymagany jest 90 poziom doświadczenia aby przejść przez bramkę.",
         "blocks": [
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "Informacje na temat Draculi"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dracula:",
-        "blocks": [
-          {
-            "type": "image",
-            "alt": "Jak dojść na Dracule COD [FACC]",
-            "src": "./images/quests/jakdojscnadraculecodfacc/vampire.gif",
-            "size": "icon"
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Punkty Życia:",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "14850"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Punkty Doświadczenia: 71500"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Loot:",
-        "blocks": [
-          {
-            "type": "image",
-            "alt": "Jak dojść na Dracule COD [FACC]",
-            "src": "./images/quests/jakdojscnadraculecodfacc/llgIpGT.png"
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Zaczynamy w Capital City — część 1",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "1. Udajemy się na zachodnią brame."
+                "text": "1. Zaczynamy w Capital City. Udajemy się na zachodnią brame."
               }
             ]
           },
@@ -16972,22 +16832,12 @@
             ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Gracz: hi Capitan Delgrin: Czesc Rilisek! Tak dawno nikt tu nie zagladal... Moge cie zabrac moim magicznym statkiem do City of Dreams... czy tego chcesz? Jezeli tak to musisz wiedziec ze koszt podrozy nie bedzie maly: [1k]! Gracz: tak Capitan Delgrin: Plyniemy!"
-              }
-            ]
+            "type": "quote",
+            "lines": [
+              "Gracz: hi",
+              "Capitan Delgrin: Czesc Rilisek! Tak dawno nikt tu nie zagladal... Moge cie zabrac moim magicznym statkiem do City of Dreams... czy tego chcesz? Jezeli tak to musisz wiedziec ze koszt podrozy nie bedzie maly: [1k]!", 
+              "Gracz: tak",
+              "Capitan Delgrin: Plyniemy!"]
           },
           {
             "type": "image",
@@ -17035,13 +16885,7 @@
             "type": "image",
             "alt": "Jak dojść na Dracule COD [FACC]",
             "src": "./images/quests/jakdojscnadraculecodfacc/EbBGYfC.png"
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Zaczynamy w Capital City — część 2",
-        "blocks": [
+          },
           {
             "type": "paragraph",
             "segments": [
@@ -17131,13 +16975,7 @@
             "type": "image",
             "alt": "Jak dojść na Dracule COD [FACC]",
             "src": "./images/quests/jakdojscnadraculecodfacc/cS374Pj.png"
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Zaczynamy w Capital City — część 3",
-        "blocks": [
+          },
           {
             "type": "paragraph",
             "segments": [
@@ -17239,8 +17077,17 @@
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na Ice Golemy"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Etap 1: Zaczynamy od Ice Golemów resp jest od",
         "blocks": [
           {
             "type": "paragraph",
@@ -17314,7 +17161,22 @@
                 "text": "Dodatkowo można zbierać loot do mada i sprzedawać go graczom."
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na płatne respy Monster Skieletonów i Bally"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -17330,22 +17192,12 @@
             "src": "./images/quests/jakdojscnaicegolemyorazpatnemsyorazbally/s1rUxj.jpg"
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "21:23 Herato : hi 21:23 ShaShaSha: Ahoooj Herato! Moge Cie zabrac moim magicznym statkiem do latajacego miasta City of the Sky [10k] lub do Canyon of damned [500gp] lub do Ankaros [1k], gdzie chcesz sie udac? 21:23 Herato : Ankaros 21:23 ShaShaSha: Plyniemy!"
-              }
-            ]
+            "type": "quote",
+            "lines": [
+              "Herato : hi",
+              "ShaShaSha: Ahoooj Herato! Moge Cie zabrac moim magicznym statkiem do latajacego miasta City of the Sky [10k] lub do Canyon of damned [500gp] lub do Ankaros [1k], gdzie chcesz sie udac?",
+              "Herato : Ankaros",
+              "ShaShaSha: Plyniemy!"]
           },
           {
             "type": "paragraph",
@@ -17406,8 +17258,17 @@
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga podczas najazdu Ank"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "UWAGA",
         "blocks": [
           {
             "type": "paragraph",
@@ -17451,45 +17312,54 @@
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Nagroda:"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Możliwość wykonywania tasków. Oraz możliwość używania komendy \"!task\" dzięki, której możemy sprawdzić ilość potworków do zabicia."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Potwory z którymi musimy się zmierzyć:"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "- Bug - Larva - Hyaena - Lion - Tarantula - Centipede - Terror Bird - Elephant - Kongra - Sibang - Tiger - Panda -Merlkin"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga do NPC Erdo"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Etap 1: Nagroda",
         "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Nagroda:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Możliwość wykonywania tasków. Oraz możliwość używania komendy \"!task\" dzięki, której możemy sprawdzić ilość potworków do zabicia."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Potwory z którymi musimy się zmierzyć:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "- Bug - Larva - Hyaena - Lion - Tarantula - Centipede - Terror Bird - Elephant - Kongra - Sibang - Tiger - Panda -Merlkin"
-              }
-            ]
-          },
           {
             "type": "paragraph",
             "segments": [
@@ -17514,21 +17384,12 @@
             ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "14:03 Magazyn Mielonki : hi 14:03 Fargum : Witam Cie, od wielu lat przeprawiam odwaznych przez morza i oceany. Czy zechcesz odwiedzic inne krainy? 14:03 Magazyn Mielonki : sor 14:03 Fargum : Plyniemy!"
-              }
+            "type": "quote",
+            "lines": [
+              "Magazyn Mielonki : hi",
+              "Fargum : Witam Cie, od wielu lat przeprawiam odwaznych przez morza i oceany. Czy zechcesz odwiedzic inne krainy?",
+              "Magazyn Mielonki : sor",
+              "Fargum : Plyniemy!"
             ]
           },
           {
@@ -17553,13 +17414,7 @@
                 "text": "Po dojściu do wyznaczonego celu, schodzimy piętro -1 ."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 2: Teraz czeka nas rozmowa z Npc Erdo",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Jak rozpocząć taski {Npc Popi}",
@@ -17575,23 +17430,31 @@
             ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
+            "type": "quote",
+            "lines": [
+              "Magazyn Mielonki : hi",
+              "Erdo : Witaj, Magazyn Mielonki! Witaj! Co Cie do mnie sprowadza?",
+              "Magazyn Mielonki : misja",
+              "Erdo : Mam pewna bron, ktora przyda sie kazdemu wojownikowi! Jest tak wspaniala, ze energia z niej uderzajaca nawet nie pozwala jej zobaczyc! Jej nazwa to bron ostateczna! Pomoge ci ja zdobyc. Najpierw jednak ty musisz mi pomoc. Zgadzasz sie?",
+              "Magazyn Mielonki : tak",
+              "Erdo : Wspaniale! Zdobadz dla mnie krzyz! Nie wiem niestety jak go mozesz zdobyc, ale slyszalem, ze pewien mlody rycerz zyjacy w niewielkiej chatce w srodku dzungli cos o nim wie. Znajdz go!"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "14:12 Magazyn Mielonki : hi 14:12 Erdo : Witaj, Magazyn Mielonki! Witaj! Co Cie do mnie sprowadza? 14:12 Magazyn Mielonki : misja 14:12 Erdo : Mam pewna bron, ktora przyda sie kazdemu wojownikowi! Jest tak wspaniala, ze energia z niej uderzajaca nawet nie pozwala jej zobaczyc! Jej nazwa to bron ostateczna! Pomoge ci ja zdobyc. Najpierw jednak ty musisz mi pomoc. Zgadzasz sie? 14:12 Magazyn Mielonki : tak 14:12 Erdo : Wspaniale! Zdobadz dla mnie krzyz! Nie wiem niestety jak go mozesz zdobyc, ale slyszalem, ze pewien mlody rycerz zyjacy w niewielkiej chatce w srodku dzungli cos o nim wie. Znajdz go!"
-              }
-            ]
-          },
+            "type": "text",
+            "text": "Droga do NPC Popi"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -17623,13 +17486,7 @@
                 "text": "Po dotarciu na Desert musimy się udać na Tiquande gdzie przesiaduje Npc Popi."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 3: Po dojściu pod jego siedzibę wchodzimy na",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Jak rozpocząć taski {Npc Popi}",
@@ -17674,21 +17531,20 @@
             ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "14:50 Magazyn Mielonki : hi 14:50 Popi : Dlaczego tu przyszedles?! Tu jest niebezpiecznie! 14:50 Magazyn Mielonki : krzyz 14:50 Popi : Skad o nim wiesz?! Jestes tu zeby mi go zabrac?! Nie! Tylko MYSLIWY moze go miec!!! To moj najcenniejszy skarb! Idz! Idz! 14:50 Magazyn Mielonki : mysliwy 14:50 Popi : Ale ty chcesz mi zabrac krzyz! Moj krzyz! Nie mozesz byc mysliwym!!! Idz! 14:51 Magazyn Mielonki : nie 14:51 Popi : Na pewno?! Wiec chcesz byc mysliwym?! 14:51 Magazyn Mielonki : tak 14:51 Popi : O! Fajnie!!! Wiec dopisuje cie do spisu mysliwych! Mysliwi dostaja punkty! Jak dostaniesz 100 to powiem ci gdzie ukrylem moj krzyz, oki?! 14:51 Magazyn Mielonki : tak 14:51 Popi : Papa! Jak bedziesz chcial zaczac swoja pierwsza misje to przyjdz znowu!"
-              }
+            "type": "quote",
+            "lines": [
+              "Magazyn Mielonki : hi",
+              "Popi : Dlaczego tu przyszedles?! Tu jest niebezpiecznie!",
+              "Magazyn Mielonki : krzyz",
+              "Popi : Skad o nim wiesz?! Jestes tu zeby mi go zabrac?! Nie! Tylko MYSLIWY moze go miec!!! To moj najcenniejszy skarb! Idz! Idz!",
+              "Magazyn Mielonki : mysliwy",
+              "Popi : Ale ty chcesz mi zabrac krzyz! Moj krzyz! Nie mozesz byc mysliwym!!! Idz!",
+              "Magazyn Mielonki : nie",
+              "Popi : Na pewno?! Wiec chcesz byc mysliwym?!",
+              "Magazyn Mielonki : tak",
+              "Popi : O! Fajnie!!! Wiec dopisuje cie do spisu mysliwych! Mysliwi dostaja punkty! Jak dostaniesz 100 to powiem ci gdzie ukrylem moj krzyz, oki?!",
+              "Magazyn Mielonki : tak",
+              "Popi : Papa! Jak bedziesz chcial zaczac swoja pierwsza misje to przyjdz znowu!"
             ]
           },
           {
@@ -17701,29 +17557,18 @@
             ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
+            "type": "quote",
+            "lines": [
+              "Magazyn Mielonki : hi",
+              "Popi : O! Jestes! Siema! Chcesz wykonac zadanie?! Teraz?!",
+              "Magazyn Mielonki : tak",
+              "Popi : Na razie masz 0 punktow! A ja mam kilka misji na twoj poziom, ale moga byc trudne! Chcesz posluchac?!",
+              "Magazyn Mielonki : tak",
+              "Popi : Mam dla ciebie zadania! Takie: 300 Elder Demonow!! 200 Skeleton Lordow!! 100 Monster Skeletonow!! 350 Elf Soldierow!! 100 Pitilessow!! 250 Dracul!! 180 Demon Lordow!! Wszystkie za 2 punkty!! Ktore chcesz?!",
+              "Magazyn Mielonki : 100 Pitilessow",
+              "Popi : Idz wiec i zabij 100 Pitilessow! Gdy wrocisz, dostaniesz 2 punkty!!!! Powodzenia!"
             ]
           },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "14:52 Magazyn Mielonki : hi 14:52 Popi : O! Jestes! Siema! Chcesz wykonac zadanie?! Teraz?! 14:52 Magazyn Mielonki : tak 14:52 Popi : Na razie masz 0 punktow! A ja mam kilka misji na twoj poziom, ale moga byc trudne! Chcesz posluchac?! 14:52 Magazyn Mielonki : tak 14:52 Popi : Mam dla ciebie zadania! Takie: 300 Elder Demonow!! 200 Skeleton Lordow!! 100 Monster Skeletonow!! 350 Elf Soldierow!! 100 Pitilessow!! 250 Dracul!! 180 Demon Lordow!! Wszystkie za 2 punkty!! Ktore chcesz?! 14:52 Magazyn Mielonki : 100 Pitilessow 14:52 Popi : Idz wiec i zabij 100 Pitilessow! Gdy wrocisz, dostaniesz 2 punkty!!!! Powodzenia!"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 4: Po zabiciu odpowiedniej ilości potworów udajemy się",
-        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -17734,21 +17579,10 @@
             ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "15:14 Magazyn Mielonki : hi 15:14 Popi : Skonczyles misje! Gratuluje!!!!!! Oto twoja nagroda! Otrzymujesz tez punkty!! Fajnie prawda?! Jak chcesz nastepna to napisz! Papa!"
-              }
+            "type": "quote",
+            "lines": [
+              "Magazyn Mielonki : hi",
+              "Popi : Skonczyles misje! Gratuluje!!!!!! Oto twoja nagroda! Otrzymujesz tez punkty!! Fajnie prawda?! Jak chcesz nastepna to napisz! Papa!"
             ]
           },
           {
@@ -17801,16 +17635,16 @@
         "segments": [
           {
             "type": "text",
-            "text": "Na wzór poradnika użytkownika"
+            "text": "Na wzór poradnika użytkownika "
           },
           {
             "type": "link",
-            "text": "Kapitan Alkohol",
+            "text": "Kapitan Alkohol ",
             "url": "http://www.forum.toproste.pl/member.php?u=15822"
           },
           {
             "type": "link",
-            "text": "Jak zdobyć krzyż i uratować Soran ?",
+            "text": "Jak zdobyć krzyż i uratować Soran ? ",
             "url": "http://www.forum.toproste.pl/showthread.php?t=92244"
           }
         ]
@@ -17820,7 +17654,7 @@
         "segments": [
           {
             "type": "text",
-            "text": "Na wstępie odsyłam do poradnika"
+            "text": "Na wstępie odsyłam do poradnika "
           },
           {
             "type": "link",
@@ -17830,74 +17664,80 @@
         ]
       },
       {
-        "type": "spoiler",
-        "title": "Nagroda:",
-        "blocks": [
+        "type": "paragraph",
+        "segments": [
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "3 Misje NPC"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "* The world is safe now"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "* Nothing happened"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "* Bad Boy"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Czerwona książeczka opisująca wszystkie misje UW!"
-              }
-            ]
+            "type": "text",
+            "text": "Nagroda:"
           }
         ]
       },
       {
-        "type": "spoiler",
-        "title": "Dostęp do pokoju w którym wykonuje się Finał Room UW",
-        "blocks": [
+        "type": "paragraph",
+        "segments": [
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Rozmowa z Npc Popy"
-              }
-            ]
+            "type": "text",
+            "text": "3 Misje NPC"
           }
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "* The world is safe now"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "* Nothing happened"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "* Bad Boy"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Czerwona książeczka opisująca wszystkie misje UW!"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Dostęp do pokoju w którym wykonuje się Finał Room UW"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Rozmowa z NPC Popy"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Dodatkowe informacje",
         "blocks": [
           {
             "type": "image",
@@ -17908,21 +17748,21 @@
             "type": "image",
             "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
             "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/7zlz9DN.png"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Punisher"
-              }
-            ]
           }
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Misje u Punishera"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Dodatkowe informacje",
         "blocks": [
           {
             "type": "image",
@@ -17939,7 +17779,31 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Rozmowa z Npc Punisher"
+                "text": "Misja 1"
+              }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "segments": [
+                  {
+                    "type": "text",
+                    "text": "Hi > gdzie jest krzyz > tak"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "segments": [
+                  {
+                    "type": "text",
+                    "text": "* Dostajemy zadanie zabicia 50 graczy o danym poziomie!"
+                  }
+                ]
               }
             ]
           },
@@ -17948,87 +17812,84 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Cytat:"
+                "text": "Misja 2"
               }
-            ]
+            ],
+            "align": "center"
           },
           {
-            "type": "paragraph",
-            "segments": [
+            "type": "spoiler",
+            "blocks": [
               {
-                "type": "text",
-                "text": "Hi > gdzie jest krzyz > tak"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+                "type": "paragraph",
+                "segments": [
+                  {
+                    "type": "text",
+                    "text": "Walka z Bestia"
+                  }
+                ]
+              },
               {
-                "type": "text",
-                "text": "* Dostajemy zadanie zabicia 50 graczy o danym poziomie!"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+                "type": "paragraph",
+                "segments": [
+                  {
+                    "type": "text",
+                    "text": "Po zabiciu 50 graczy wracamy do Npc Punisher i zaczynamy rozmowe"
+                  }
+                ]
+              },
               {
-                "type": "text",
-                "text": "Walka z Bestia"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+                "type": "image",
+                "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
+                "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/V7CrlWq.png"
+              },
               {
-                "type": "text",
-                "text": "Po zabiciu 50 graczy wracamy do Npc Punisher i zaczynamy rozmowe"
+                "type": "image",
+                "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
+                "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/Dy5YFlb.png"
+              },
+              {
+                "type": "image",
+                "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
+                "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/woofzgC.png"
+              },
+              {
+                "type": "image",
+                "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
+                "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/Ikypqaj.png"
+              },
+              {
+                "type": "image",
+                "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
+                "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/G9aUQLx.png"
+              },
+              {
+                "type": "image",
+                "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
+                "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/o3SfvK6.png"
+              },
+              {
+                "type": "image",
+                "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
+                "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/mGTPg8b.png"
               }
             ]
           }
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Uratuj Soran!"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Dodatkowe informacje",
         "blocks": [
-          {
-            "type": "image",
-            "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
-            "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/V7CrlWq.png"
-          },
-          {
-            "type": "image",
-            "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
-            "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/Dy5YFlb.png"
-          },
-          {
-            "type": "image",
-            "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
-            "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/woofzgC.png"
-          },
-          {
-            "type": "image",
-            "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
-            "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/Ikypqaj.png"
-          },
-          {
-            "type": "image",
-            "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
-            "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/G9aUQLx.png"
-          },
-          {
-            "type": "image",
-            "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
-            "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/o3SfvK6.png"
-          },
-          {
-            "type": "image",
-            "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
-            "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/mGTPg8b.png"
-          },
           {
             "type": "paragraph",
             "segments": [
@@ -18043,25 +17904,10 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Cytat:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
                 "text": "UWAGA ! Bardzo ważne – musimy wyposażyć się w vialke wody !"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
@@ -18072,21 +17918,6 @@
             "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
             "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/xEd4FmR.png"
           },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Erdo"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje",
-        "blocks": [
           {
             "type": "image",
             "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
@@ -18108,21 +17939,14 @@
             "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/4jlPYuJ.png"
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "22:32 Perfect: hi 22:32 Erdo: Witaj! Masz dla mnie krzyz? 22:33 Perfect: tak 22:33 Erdo: Wspaniale! Bedzie mi on bardzo potrzebny! Daj mi go, a od razu dostaniesz bron ostateczna! Zgadzasz sie? 22:33 Perfect: tak 22:33 Erdo: Naiwny wiesniak! Hahaha!"
-              }
+            "type": "quote",
+            "lines": [
+              "Perfect: hi",
+              "Erdo: Witaj! Masz dla mnie krzyz?",
+              "Perfect: tak",
+              "Erdo: Wspaniale! Bedzie mi on bardzo potrzebny! Daj mi go, a od razu dostaniesz bron ostateczna! Zgadzasz sie?",
+              "Perfect: tak",
+              "Erdo: Naiwny wiesniak! Hahaha!"
             ]
           },
           {
@@ -18131,21 +17955,6 @@
               {
                 "type": "text",
                 "text": "Zniszczone Miasto"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
               }
             ]
           },
@@ -18169,21 +17978,11 @@
             "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/1bHd4m0.png"
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "22:41 Perfect: hi 22:41 Marthen: Slyszales ten huk?! Patrz, tu obok - to moja corka! Ona nie zyje! To wszystko wina Erdo! Zabil wszystkich.. Zimno mi... Czary Erdo mozna odwrocic tylko w jeden sposob.. Jest bardzo potezny, ale zniszczenie wszystkiego zabralo mu bardzo wiele mocy.. mimo to, mysle, ze bedzie z Toba walczyl.. 22:41 Marthen: Wyzwij go na pojedynek! ZABIJ GO! Ratuj swiat! Ja tu zawsze bede! Wroc tu kiedys.. Mam nadzieje.. ze bedziesz wiedzial.. co zrobic.. gdy wygrasz.. Zimno mi.... Chwala... Ci... Dzie... Dzielny.... Wojo...wniku.... Wroc tu z krzyzem..."
-              }
+            "type": "quote",
+            "lines": [
+              "Perfect: hi",
+              "Marthen: Slyszales ten huk?! Patrz, tu obok - to moja corka! Ona nie zyje! To wszystko wina Erdo! Zabil wszystkich.. Zimno mi... Czary Erdo mozna odwrocic tylko w jeden sposob.. Jest bardzo potezny, ale zniszczenie wszystkiego zabralo mu bardzo wiele mocy.. mimo to, mysle, ze bedzie z Toba walczyl..",
+              "Marthen: Wyzwij go na pojedynek! ZABIJ GO! Ratuj swiat! Ja tu zawsze bede! Wroc tu kiedys.. Mam nadzieje.. ze bedziesz wiedzial.. co zrobic.. gdy wygrasz.. Zimno mi.... Chwala... Ci... Dzie... Dzielny.... Wojo...wniku.... Wroc tu z krzyzem..."
             ]
           },
           {
@@ -18192,21 +17991,14 @@
             "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/v4Gt6P4.png"
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "23:16 Perfect: hi 23:16 Erdo: Czego?! Nedzny smieciu! 23:16 Perfect: Walka 23:16 Erdo: Ty chcesz mnie pokonac?! Chyba zartujesz!!! 23:16 Perfect: tak 23:16 Erdo: Walczmy! I tak nie wygrasz!"
-              }
+            "type": "quote",
+            "lines": [
+              "Perfect: hi",
+              "Erdo: Czego?! Nedzny smieciu!",
+              "Perfect: Walka",
+              "Erdo: Ty chcesz mnie pokonac?! Chyba zartujesz!!!",
+              "Perfect: tak",
+              "Erdo: Walczmy! I tak nie wygrasz!"
             ]
           },
           {
@@ -18224,21 +18016,15 @@
             ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Cytat:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "23:19 Perfect: hi 23:19 Marthen: Uzyj krzyza.. tutaj.. obok.. ocalisz swiat! 23:19 Udalo sie! 23:19 Perfect: hi 23:19 Marthen: To Ty uratowales swiat! Dzieki Tobie moja corka zyje! Gratuluje! Jestes wspanialym wojownikiem! Chcesz otrzymac nagrode? 23:20 Perfect: tak 23:20 Marthen: Bedziesz mogl wejsc do mojego pokoju ktory skrywa pewna tajemnice."
-              }
+            "type": "quote",
+            "lines": [
+              "Perfect: hi",
+              "Marthen: Uzyj krzyza.. tutaj.. obok.. ocalisz swiat!",
+              "Udalo sie!",
+              "Perfect: hi",
+              "Marthen: To Ty uratowales swiat! Dzieki Tobie moja corka zyje! Gratuluje! Jestes wspanialym wojownikiem! Chcesz otrzymac nagrode?",
+              "Perfect: tak",
+              "Marthen: Bedziesz mogl wejsc do mojego pokoju ktory skrywa pewna tajemnice."
             ]
           },
           {
@@ -18254,8 +18040,17 @@
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Dla zapominalskich"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Droga do ....",
         "blocks": [
           {
             "type": "paragraph",
@@ -18270,13 +18065,7 @@
                 "src": "./images/quests/jakzdobyckrzyziuratowacsoranaktualizacja/smile.gif"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Jak zdobyc krzyż i uratowac Soran- Aktualizacja",
