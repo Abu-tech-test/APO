@@ -17,6 +17,7 @@ type QuestLinkSegment = {
 type QuestInlineImageSegment = {
   type: "image";
   alt: string;
+  size?: "cell";
   src: string;
 };
 
@@ -178,7 +179,7 @@ function renderQuestSegments(segments: QuestParagraph["segments"]) {
       return (
         <img
           alt={segment.alt}
-          className="quest-inline-image"
+          className={`quest-inline-image${segment.size === "cell" ? " quest-inline-image-cell" : ""}`}
           decoding="async"
           key={segmentIndex}
           loading="lazy"
@@ -259,7 +260,20 @@ function renderQuestBlocks(blocks: QuestBlock[], keyPrefix: string) {
               {block.rows.map((row, rowIndex) => (
                 <tr key={rowIndex}>
                   {row.map((cell, cellIndex) => (
-                    <td key={cellIndex}>{renderQuestSegments(cell)}</td>
+                    <td
+                      className={
+                        cell.some(
+                          (segment) =>
+                            segment.type === "image" &&
+                            segment.size === "cell",
+                        )
+                          ? "quest-table-cell-image"
+                          : undefined
+                      }
+                      key={cellIndex}
+                    >
+                      {renderQuestSegments(cell)}
+                    </td>
                   ))}
                 </tr>
               ))}

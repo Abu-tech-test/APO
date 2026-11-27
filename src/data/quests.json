@@ -33181,42 +33181,41 @@
         ],
         "align": "center"
       },
-
+      {
+        "type": "paragraph",
+        "segments": [
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Po każdej misji musimy wracać do npc z raportem!"
-              }
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Armor - Aktualizacja",
-            "src": "./images/quests/shamanarmoraktualizacja/y1mcUdz.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Armor - Aktualizacja",
-            "src": "./images/quests/shamanarmoraktualizacja/tJ4iNsu.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Armor - Aktualizacja",
-            "src": "./images/quests/shamanarmoraktualizacja/3TboZbb.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Armor - Aktualizacja",
-            "src": "./images/quests/shamanarmoraktualizacja/7zHda7g.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Armor - Aktualizacja",
-            "src": "./images/quests/shamanarmoraktualizacja/Kf66kqu.png"
-          },
-                {
+            "type": "text",
+            "text": "Po każdej misji musimy wracać do npc z raportem!"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "alt": "Shaman Armor - Aktualizacja",
+        "src": "./images/quests/shamanarmoraktualizacja/y1mcUdz.png"
+      },
+      {
+        "type": "image",
+        "alt": "Shaman Armor - Aktualizacja",
+        "src": "./images/quests/shamanarmoraktualizacja/tJ4iNsu.png"
+      },
+      {
+        "type": "image",
+        "alt": "Shaman Armor - Aktualizacja",
+        "src": "./images/quests/shamanarmoraktualizacja/3TboZbb.png"
+      },
+      {
+        "type": "image",
+        "alt": "Shaman Armor - Aktualizacja",
+        "src": "./images/quests/shamanarmoraktualizacja/7zHda7g.png"
+      },
+      {
+        "type": "image",
+        "alt": "Shaman Armor - Aktualizacja",
+        "src": "./images/quests/shamanarmoraktualizacja/Kf66kqu.png"
+      },
+      {
         "type": "paragraph",
         "segments": [
           {
@@ -34664,7 +34663,7 @@
                 "segments": [
                   {
                     "type": "text",
-                    "text": "Poradnik z dedykacją dla"
+                    "text": "Poradnik z dedykacją dla "
                   },
                   {
                     "type": "link",
@@ -34728,61 +34727,89 @@
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Na wzór poradnika użytkownika"
+          },
+          {
+            "type": "link",
+            "text": "Sokol from West",
+            "url": "http://www.forum.toproste.pl/member.php?u=3842"
+          },
+          {
+            "type": "link",
+            "text": "Shaman Mask bez tajemnic by Sokol!",
+            "url": "http://www.forum.toproste.pl/showthread.php?t=122322"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "image",
+            "alt": "Shaman Mask - Aktualizacja",
+            "src": "./images/quests/shamanmaskaktualizacja/list.gif"
+          },
+          {
+            "type": "text",
+            "text": "Stroh"
+          },
+          {
+            "type": "image",
+            "alt": "Shaman Mask - Aktualizacja",
+            "src": "./images/quests/shamanmaskaktualizacja/czytaj.gif"
+          },
+          {
+            "type": "text",
+            "text": "Sir Mastah"
+          },
+          {
+            "type": "image",
+            "alt": "Shaman Mask - Aktualizacja",
+            "src": "./images/quests/shamanmaskaktualizacja/glaszcze.gif"
+          },
+          {
+            "type": "text",
+            "text": "Jeru Tanker"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Zwiększenie cen za sprzedane przedmioty w sklepach Elf / Dwarf"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "alt": "Shaman Mask - Aktualizacja",
+        "src": "./images/quests/shamanmaskaktualizacja/3967_1.gif",
+        "size": "icon"
+      },
+      {
+        "type": "image",
+        "alt": "Shaman Mask - Aktualizacja",
+        "src": "./images/quests/shamanmaskaktualizacja/hjqq05Q.png"
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Rozmowa z Triv"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Pozdrowienia i podziekowania dla : — część 1",
         "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "image",
-                "alt": "Shaman Mask - Aktualizacja",
-                "src": "./images/quests/shamanmaskaktualizacja/list.gif"
-              },
-              {
-                "type": "text",
-                "text": "Stroh"
-              },
-              {
-                "type": "image",
-                "alt": "Shaman Mask - Aktualizacja",
-                "src": "./images/quests/shamanmaskaktualizacja/czytaj.gif"
-              },
-              {
-                "type": "text",
-                "text": "Sir Mastah"
-              },
-              {
-                "type": "image",
-                "alt": "Shaman Mask - Aktualizacja",
-                "src": "./images/quests/shamanmaskaktualizacja/glaszcze.gif"
-              },
-              {
-                "type": "text",
-                "text": "Jeru Tanker"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Zwiększenie cen za sprzedane przedmioty w sklepach Elf / Dwarf"
-              }
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/3967_1.gif",
-            "size": "icon"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/hjqq05Q.png"
-          },
           {
             "type": "paragraph",
             "segments": [
@@ -34805,13 +34832,7 @@
                 "src": "./images/quests/shamanmaskaktualizacja/wykrzyknik.gif"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 2",
-        "blocks": [
+          },
           {
             "type": "quote",
             "lines": [
@@ -35063,7 +35084,8 @@
                   }
                 ]
               ]
-            ]
+            ],
+            "fit": true
           },
           {
             "type": "paragraph",
@@ -35082,7 +35104,22 @@
                 "text": "* Oznacza stratę, lub możliwość straty danego przedmiotu!"
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Misje od NPC Rurik"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -35114,39 +35151,45 @@
                 "type": "text",
                 "text": "Misja 1 Siedziba Wroga"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Rurik: Ty.. coz za okropne imie.. Perfect, Nedzny... czlowieku! Czego?",
+                  "Perfect: misja",
+                  "Rurik: Chcesz sluzyc mi, krasnoludowi?! Jestes pewny?!",
+                  "Perfect: tak",
+                  "Rurik: Zdajesz sobie sprawe, ze ta decyzja bedzie nieodwolalna?! TY NIGDY NIE BEDZIESZ MOGL JEJ ZMIENIC, A ONA ZMIENI TWOJE ZYCIE!",
+                  "Perfect: tak",
+                  "Rurik: Chcesz wiec uczestniczyc w odwiecznej walce krasnoludow z elfami?! Jestes pewien? Od tego nie ma odwrotu.",
+                  "Perfect: tak",
+                  "Rurik: Tak wiec od tej pory mozesz czuc sie jednym z nas. Jesli bedziesz chcial rozpoczac sluzenie zjednoczonym silom krasnoludow, napisz ponownie.",
+                  "Perfect: hi",
+                  "Rurik: Jestes! To dobrze! Musisz znac siedzibe wroga, moj towarzyszu. Teraz nawet nie wiesz, gdzie ona jest! IDZ, ZNAJDZ JA, WEJDZ DO NIEJ! A POTEM TU WROC!"
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/nw3OJfu.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/RJOSQdi.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/mURhm9r.png"
+              }
             ]
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Rurik: Ty.. coz za okropne imie.. Perfect, Nedzny... czlowieku! Czego?",
-              "Perfect: misja",
-              "Rurik: Chcesz sluzyc mi, krasnoludowi?! Jestes pewny?!",
-              "Perfect: tak",
-              "Rurik: Zdajesz sobie sprawe, ze ta decyzja bedzie nieodwolalna?! TY NIGDY NIE BEDZIESZ MOGL JEJ ZMIENIC, A ONA ZMIENI TWOJE ZYCIE!",
-              "Perfect: tak",
-              "Rurik: Chcesz wiec uczestniczyc w odwiecznej walce krasnoludow z elfami?! Jestes pewien? Od tego nie ma odwrotu.",
-              "Perfect: tak",
-              "Rurik: Tak wiec od tej pory mozesz czuc sie jednym z nas. Jesli bedziesz chcial rozpoczac sluzenie zjednoczonym silom krasnoludow, napisz ponownie.",
-              "Perfect: hi",
-              "Rurik: Jestes! To dobrze! Musisz znac siedzibe wroga, moj towarzyszu. Teraz nawet nie wiesz, gdzie ona jest! IDZ, ZNAJDZ JA, WEJDZ DO NIEJ! A POTEM TU WROC!"
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/nw3OJfu.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/RJOSQdi.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/mURhm9r.png"
           },
           {
             "type": "paragraph",
@@ -35155,27 +35198,27 @@
                 "type": "text",
                 "text": "Misja 2 100 porcji Łososia"
               }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 3",
-        "blocks": [
+            ],
+            "align": "center"
+          },
           {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Rurik: Witaj! To Ciebie przyslal do mnie moj brat?!",
-              "Perfect: tak",
-              "Rurik: Sprawdze, czy jestes wystarczajaco sprawny i silny, aby zostac krasnoludem. Zgadzasz sie?",
-              "Perfect: tak",
-              "Rurik: Wiec zacznijmy od prostej czynnosci. Przynies mi 100 porcji lososia (salmon)! Bede tu czekal!",
-              "Perfect: hi",
-              "Rurik: Czy masz dla mnie 100 porcji lososia?",
-              "Perfect: tak",
-              "Rurik: Dzieki! Jak bedziesz chcial kolejne zadanie, napisz ponownie!"
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Rurik: Witaj! To Ciebie przyslal do mnie moj brat?!",
+                  "Perfect: tak",
+                  "Rurik: Sprawdze, czy jestes wystarczajaco sprawny i silny, aby zostac krasnoludem. Zgadzasz sie?",
+                  "Perfect: tak",
+                  "Rurik: Wiec zacznijmy od prostej czynnosci. Przynies mi 100 porcji lososia (salmon)! Bede tu czekal!",
+                  "Perfect: hi",
+                  "Rurik: Czy masz dla mnie 100 porcji lososia?",
+                  "Perfect: tak",
+                  "Rurik: Dzieki! Jak bedziesz chcial kolejne zadanie, napisz ponownie!"
+                ]
+              }
             ]
           },
           {
@@ -35185,29 +35228,35 @@
                 "type": "text",
                 "text": "Misja 3 Zabic 100 Elf Soldier"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Rurik: Mam dla Ciebie teraz kolejna misje. Udaj sie do siedziby wroga, a nastepnie przejdz brama na parterze. Twoim zadaniem jest zgladzenie stu elfickich zolnierzy (Elf Soldier)"
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/hMbwqIg.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/Kp5a2Kj.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/6YEuaYf.png"
+              }
             ]
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Rurik: Mam dla Ciebie teraz kolejna misje. Udaj sie do siedziby wroga, a nastepnie przejdz brama na parterze. Twoim zadaniem jest zgladzenie stu elfickich zolnierzy (Elf Soldier)"
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/hMbwqIg.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/Kp5a2Kj.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/6YEuaYf.png"
           },
           {
             "type": "paragraph",
@@ -35216,32 +35265,38 @@
                 "type": "text",
                 "text": "Misja 4 Zniszczenie pierwszej kuli"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect:",
+                  "Rurik: Witam. Mam dla Ciebie kolejne zadanie, jestes zainteresowany?",
+                  "Perfect: : tak",
+                  "Rurik: Twoim zadaniem bedzie niszczenie elfickich kul swiatla! Nie bedzie to jednak tak proste, jak sie wydaje.",
+                  "Rurik: Musisz to wiedziec, bo to bardzo wazne: w kulach zawarta jest bardzo silna magia. Magia tak potezna, ze pokonanie jej jest niemozliwe!",
+                  "Rurik: Elfy opanowaly magie, ktorej nie da sie uniknac podczas kontaktu z kula. Mozna jednak lagodzic sile kuli. Bede Ci dawal wskazowki, co robic.",
+                  "Rurik: Jestes pewny, ze chcesz sie podjac tej misji?",
+                  "Perfect: tak",
+                  "Rurik: Idz wiec na tereny w wiezy elfow, o ktorych mowil Ci moj brat, te, na ktorych niszczyles juz Elfy.",
+                  "Rurik: Znajdz kule, najslabsza z wszystkich, ktora potrafi jedynie zadawac nieznaczne obrazenia. Zniszczysz ja sila wlasnych rak, ale nie od razu. POWODZENIA!"
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/ZXc7jA2.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/45Rd9VF.png"
+              }
             ]
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "Perfect:",
-              "Rurik: Witam. Mam dla Ciebie kolejne zadanie, jestes zainteresowany?",
-              "Perfect: : tak",
-              "Rurik: Twoim zadaniem bedzie niszczenie elfickich kul swiatla! Nie bedzie to jednak tak proste, jak sie wydaje.",
-              "Rurik: Musisz to wiedziec, bo to bardzo wazne: w kulach zawarta jest bardzo silna magia. Magia tak potezna, ze pokonanie jej jest niemozliwe!",
-              "Rurik: Elfy opanowaly magie, ktorej nie da sie uniknac podczas kontaktu z kula. Mozna jednak lagodzic sile kuli. Bede Ci dawal wskazowki, co robic.",
-              "Rurik: Jestes pewny, ze chcesz sie podjac tej misji?",
-              "Perfect: tak",
-              "Rurik: Idz wiec na tereny w wiezy elfow, o ktorych mowil Ci moj brat, te, na ktorych niszczyles juz Elfy.",
-              "Rurik: Znajdz kule, najslabsza z wszystkich, ktora potrafi jedynie zadawac nieznaczne obrazenia. Zniszczysz ja sila wlasnych rak, ale nie od razu. POWODZENIA!"
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/ZXc7jA2.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/45Rd9VF.png"
           },
           {
             "type": "paragraph",
@@ -35250,34 +35305,34 @@
                 "type": "text",
                 "text": "Misja 5 Klikanie na podłogę(Białe, Czarne) Mała uwaga - radze wykonywać misje na standardowym spr - kliencie"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Rurik: Moge Cie natomiast przeniesc do miejsca, w ktorym nie ma zadnej strazy, niestety wyjscie wymaga czasu i sprytu. Aby dzwignia zadzialala, musisz poswiecic 30 minut na przyciskanie odpowiednich elementow!"
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/zxdHcZO.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/qZW4y56.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/7mzNpv7.png"
+              }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 4",
-        "blocks": [
-          {
-            "type": "quote",
-            "lines": [
-              "Rurik: Moge Cie natomiast przeniesc do miejsca, w ktorym nie ma zadnej strazy, niestety wyjscie wymaga czasu i sprytu. Aby dzwignia zadzialala, musisz poswiecic 30 minut na przyciskanie odpowiednich elementow!"
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/zxdHcZO.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/qZW4y56.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/7mzNpv7.png"
           },
           {
             "type": "paragraph",
@@ -35286,34 +35341,40 @@
                 "type": "text",
                 "text": "Misja 6 Zniszczenie drugiej kuli"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Rurik: Udalo Ci sie! Gratuluje. Wez te nagrody! Teraz udaj sie tam ponownie i zniszcz kolejna kule. Ta kule zniszczysz w taki sam sposob, z ta roznica, ze jej sila jest o wiele potezniejsza. Moze Cie zabic!"
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/7tbVdT2.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/NRhBvUg.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/eg5aK7f.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/tqU2bEE.png"
+              }
             ]
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Rurik: Udalo Ci sie! Gratuluje. Wez te nagrody! Teraz udaj sie tam ponownie i zniszcz kolejna kule. Ta kule zniszczysz w taki sam sposob, z ta roznica, ze jej sila jest o wiele potezniejsza. Moze Cie zabic!"
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/7tbVdT2.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/NRhBvUg.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/eg5aK7f.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/tqU2bEE.png"
           },
           {
             "type": "paragraph",
@@ -35322,24 +35383,30 @@
                 "type": "text",
                 "text": "Misja 7 Zniszczenie Drzwi"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Rurik: Zadziwiasz mnie! Kolejne zadanie wykonane pomyslnie! Teraz pora na cos trudniejszego! Idz na pietro wiezy elfow, i zniszcz lomem drzwi prowadzace na polnoc! Lepiej przygotuj kilka lomow!"
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/BV2Ay6u.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/8H99y1s.png"
+              }
             ]
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Rurik: Zadziwiasz mnie! Kolejne zadanie wykonane pomyslnie! Teraz pora na cos trudniejszego! Idz na pietro wiezy elfow, i zniszcz lomem drzwi prowadzace na polnoc! Lepiej przygotuj kilka lomow!"
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/BV2Ay6u.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/8H99y1s.png"
           },
           {
             "type": "paragraph",
@@ -35348,44 +35415,44 @@
                 "type": "text",
                 "text": "Misja 8 Zniszczenie trzeciej kuli"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Rurik: Kolejna misja zakonczona powodzeniem! Wspaniale! Chcesz wiedziec, jak zniszczyc nastepna kule?",
+                  "Perfect: tak",
+                  "Rurik: Zniszczenie kolejnej kuli nie bedzie proste. Nie wystarczy do tego sila rak. Aby ja zniszczyc, bedziesz potrzebowal mlota smoka.. i wiele szczescia!",
+                  "Rurik: Kula posiada moc teleportacji! Mozesz zostac wyrzucony w rozne miejsca, w przypadku niepowodzenia!",
+                  "Rurik: Znajduje sie ona na wiezy siedziby elfow, ktorej brame zniszczyles!"
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/wX0Rlxw.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/p0KAQ1M.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/cYwnXqw.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/zzHgqTW.png"
+              }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 5",
-        "blocks": [
-          {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Rurik: Kolejna misja zakonczona powodzeniem! Wspaniale! Chcesz wiedziec, jak zniszczyc nastepna kule?",
-              "Perfect: tak",
-              "Rurik: Zniszczenie kolejnej kuli nie bedzie proste. Nie wystarczy do tego sila rak. Aby ja zniszczyc, bedziesz potrzebowal mlota smoka.. i wiele szczescia!",
-              "Rurik: Kula posiada moc teleportacji! Mozesz zostac wyrzucony w rozne miejsca, w przypadku niepowodzenia!",
-              "Rurik: Znajduje sie ona na wiezy siedziby elfow, ktorej brame zniszczyles!"
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/wX0Rlxw.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/p0KAQ1M.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/cYwnXqw.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/zzHgqTW.png"
           },
           {
             "type": "paragraph",
@@ -35394,31 +35461,37 @@
                 "type": "text",
                 "text": "Misja 9 Zabicie 100 Elfów Fighter'ów"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Frurik: Witaj! Kolejne zadanie dla Ciebie wymaga szybkosci i umiejetnosci walki. Jestes gotow?",
+                  "Perfect: tak",
+                  "Frurik: Masz 60 minut liczac od tej pory, aby zniszczyc 100 elfow wojownikow! (Elf Fighter)! Ruszaj!"
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/Co5HKHj.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/PS7S05w.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/Q42vJGX.png"
+              }
             ]
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Frurik: Witaj! Kolejne zadanie dla Ciebie wymaga szybkosci i umiejetnosci walki. Jestes gotow?",
-              "Perfect: tak",
-              "Frurik: Masz 60 minut liczac od tej pory, aby zniszczyc 100 elfow wojownikow! (Elf Fighter)! Ruszaj!"
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/Co5HKHj.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/PS7S05w.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/Q42vJGX.png"
           },
           {
             "type": "paragraph",
@@ -35427,39 +35500,45 @@
                 "type": "text",
                 "text": "Misja 10 Zniszczenie czwartej kuli"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Rurik: Mam dla Ciebie kolejne zadanie. Chcesz uslyszec, co musisz zrobic?!",
+                  "Perfect: tak",
+                  "Rurik: Nastepna rzecza jaka musisz zrobic bedzie zdobycie wiezy. Znajdz wieze, do ktorej mozesz wejsc, wejdz do niej, zabij wszystko i zniszcz kule!",
+                  "Rurik: Zniszczenie tej kuli niestety jest bardzo trudne. Mozesz ja zniszczyc sila wlasnych rak, ale nie od razu.",
+                  "Rurik: Szansa na zniszczenie kuli jest rowna 1/10, a po jednym uderzeniu w nia bedziesz bardzo zmeczony. Na tyle, ze bedziesz musial czekac godzine przed kolejna proba.",
+                  "Rurik: Pomoc pokonac zmeczenie moga tylko smocze jaja! Ruszaj!"
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/AYgZr4l.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/QEQMeO3.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/CfyXKEs.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/DVcV4Gb.png"
+              }
             ]
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Rurik: Mam dla Ciebie kolejne zadanie. Chcesz uslyszec, co musisz zrobic?!",
-              "Perfect: tak",
-              "Rurik: Nastepna rzecza jaka musisz zrobic bedzie zdobycie wiezy. Znajdz wieze, do ktorej mozesz wejsc, wejdz do niej, zabij wszystko i zniszcz kule!",
-              "Rurik: Zniszczenie tej kuli niestety jest bardzo trudne. Mozesz ja zniszczyc sila wlasnych rak, ale nie od razu.",
-              "Rurik: Szansa na zniszczenie kuli jest rowna 1/10, a po jednym uderzeniu w nia bedziesz bardzo zmeczony. Na tyle, ze bedziesz musial czekac godzine przed kolejna proba.",
-              "Rurik: Pomoc pokonac zmeczenie moga tylko smocze jaja! Ruszaj!"
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/AYgZr4l.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/QEQMeO3.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/CfyXKEs.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/DVcV4Gb.png"
           },
           {
             "type": "paragraph",
@@ -35468,25 +35547,25 @@
                 "type": "text",
                 "text": "Misja 11 Oddanie Pandemonium Armor lub Burning Heart"
               }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 6",
-        "blocks": [
-          {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Rurik: Gratuluje! Dales rade, a to Twoja nagroda! Musisz tez wiedziec, ze my, krasnoludy, w ostatnim czasie zbieramy sily na ostateczna wojne z elfami. Przynies mi jeden z przedmiotow: pandemonium armor lub burning heart, a uslyszysz kolejne zadanie."
-            ]
+            ],
+            "align": "center"
           },
           {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/FYK5tN5.png"
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Rurik: Gratuluje! Dales rade, a to Twoja nagroda! Musisz tez wiedziec, ze my, krasnoludy, w ostatnim czasie zbieramy sily na ostateczna wojne z elfami. Przynies mi jeden z przedmiotow: pandemonium armor lub burning heart, a uslyszysz kolejne zadanie."
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/FYK5tN5.png"
+              }
+            ]
           },
           {
             "type": "paragraph",
@@ -35495,19 +35574,25 @@
                 "type": "text",
                 "text": "Misja 12 Zdobycie 10 poziomów doświadczenia"
               }
-            ]
+            ],
+            "align": "center"
           },
           {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Frurik: Witaj! Zadanie, ktore mam dzisiaj dla Ciebie pokaze, czy jestes w stanie polepszac siebie, zdobywac doswiadczenie! Idz! Zdobadz 10 poziomow, i wroc tutaj!."
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Frurik: Witaj! Zadanie, ktore mam dzisiaj dla Ciebie pokaze, czy jestes w stanie polepszac siebie, zdobywac doswiadczenie! Idz! Zdobadz 10 poziomow, i wroc tutaj!."
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/Fsennf1.png"
+              }
             ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/Fsennf1.png"
           },
           {
             "type": "paragraph",
@@ -35516,45 +35601,51 @@
                 "type": "text",
                 "text": "Misja 13 Wspinaczka"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Rurik: Musisz zdobyc kolejny teren elfow. Tym razem nie bedzie tak latwo, poniewaz brama wejsciowa na ten teren zostala zakleta przez elfickiego maga! Znalazlem inny sposob, mozna tam wejsc uzywajac liny. Probuj wspiac sie na teren elfow, znajdz odpowiednie miejsce niedaleko obumarlych krzewow.",
+                  "Rurik: Wlamac sie musisz na pietro respawnu, na ktorym byles juz wczesniej!"
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/CcD18j9.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/3AIzzfS.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/h3ZXCOr.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/MeCUh0V.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/NikqBKb.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/FPOGvaU.png"
+              }
             ]
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Rurik: Musisz zdobyc kolejny teren elfow. Tym razem nie bedzie tak latwo, poniewaz brama wejsciowa na ten teren zostala zakleta przez elfickiego maga! Znalazlem inny sposob, mozna tam wejsc uzywajac liny. Probuj wspiac sie na teren elfow, znajdz odpowiednie miejsce niedaleko obumarlych krzewow.",
-              "Rurik: Wlamac sie musisz na pietro respawnu, na ktorym byles juz wczesniej!"
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/CcD18j9.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/3AIzzfS.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/h3ZXCOr.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/MeCUh0V.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/NikqBKb.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/FPOGvaU.png"
           },
           {
             "type": "paragraph",
@@ -35563,53 +35654,53 @@
                 "type": "text",
                 "text": "Misja 14 Zniszczenie piątej kuli Droga do białej owcy"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/cbIvupw.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/V5zmB4a.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/s839cQg.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/HIgYPsJ.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/yyULnN6.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/h5221eR.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/tpJzlQP.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/eybZfDQ.png"
+              }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 7",
-        "blocks": [
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/cbIvupw.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/V5zmB4a.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/s839cQg.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/HIgYPsJ.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/yyULnN6.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/h5221eR.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/tpJzlQP.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/eybZfDQ.png"
           },
           {
             "type": "paragraph",
@@ -35618,35 +35709,41 @@
                 "type": "text",
                 "text": "Misja 15 Zabicie trzech zdrajców krasnoludów"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Frurik: Elitarny oddzial krasnoludow wyruszyl kiedys na wojne z elfami. Wygrywali juz walke, kiedy zjawil sie elficki general i zaproponowal zdrajcom lapowke. Zgodzili sie, pozwolili zabic osiem tysiecy niewinnych krasnoludow w zamian za ziemie.",
+                  "Frurik: Te plugawe, zdradzieckie, istoty mianujace sie tytulem wladcow krasnoludow ciagle istnieja. Oddzial ciezkozbrojny Dwarfolsow rozpadl sie, ale pojedynczy oficerowie wciaz zyja. Znajdz i zabij przynajmniej trzech z nich, niech zdrajcy wiedza, ze nie powinni z nami zadzierac!"
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/HDMait1.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/D1zNS1V.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/i1SDvNZ.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/ydUL0ex.png"
+              }
             ]
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Frurik: Elitarny oddzial krasnoludow wyruszyl kiedys na wojne z elfami. Wygrywali juz walke, kiedy zjawil sie elficki general i zaproponowal zdrajcom lapowke. Zgodzili sie, pozwolili zabic osiem tysiecy niewinnych krasnoludow w zamian za ziemie.",
-              "Frurik: Te plugawe, zdradzieckie, istoty mianujace sie tytulem wladcow krasnoludow ciagle istnieja. Oddzial ciezkozbrojny Dwarfolsow rozpadl sie, ale pojedynczy oficerowie wciaz zyja. Znajdz i zabij przynajmniej trzech z nich, niech zdrajcy wiedza, ze nie powinni z nami zadzierac!"
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/HDMait1.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/D1zNS1V.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/i1SDvNZ.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/ydUL0ex.png"
           },
           {
             "type": "paragraph",
@@ -35655,41 +35752,41 @@
                 "type": "text",
                 "text": "Misja 16 Zniszczenie szóstej kuli"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Frurik: Gratuluje. Udalo Ci sie! Tym razem to ja kaze Ci zdobyc wieze. Niestety nie wiem jak to zrobic. Bedziesz musial sam to odkryc.",
+                  "Frurik: Znajdz zaklete drzwi, ktore po uzyciu beda wymagaly czegos od Ciebie. Kule zniszczysz majac przy sobie pieniadze! Duzo pieniedzy!"
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/dRekg3D.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/bLKhZIM.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/bbQN5wB.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/tESd8fn.png"
+              }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 8",
-        "blocks": [
-          {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Frurik: Gratuluje. Udalo Ci sie! Tym razem to ja kaze Ci zdobyc wieze. Niestety nie wiem jak to zrobic. Bedziesz musial sam to odkryc.",
-              "Frurik: Znajdz zaklete drzwi, ktore po uzyciu beda wymagaly czegos od Ciebie. Kule zniszczysz majac przy sobie pieniadze! Duzo pieniedzy!"
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/dRekg3D.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/bLKhZIM.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/bbQN5wB.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/tESd8fn.png"
           },
           {
             "type": "paragraph",
@@ -35698,13 +35795,19 @@
                 "type": "text",
                 "text": "Misja 17 Oddanie Magic Sapphire Helmet"
               }
-            ]
+            ],
+            "align": "center"
           },
           {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Rurik: Dowiedzialem sie, ze jeden z elfow jest po naszej stronie. Zdecydowal sie on sprzedac nam mozliwosc wejscia do kolejnego respawnu oraz zaklecie kuli, aby zamiast niszczyc - leczyla. Zarzadal przedmiotu: magic sapphire helmet. Przynies mi go!"
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Rurik: Dowiedzialem sie, ze jeden z elfow jest po naszej stronie. Zdecydowal sie on sprzedac nam mozliwosc wejscia do kolejnego respawnu oraz zaklecie kuli, aby zamiast niszczyc - leczyla. Zarzadal przedmiotu: magic sapphire helmet. Przynies mi go!"
+                ]
+              }
             ]
           },
           {
@@ -35714,28 +35817,34 @@
                 "type": "text",
                 "text": "Misja 18 Zniszczenie siódmej kuli"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Rurik: Dziekuje! Teraz bedziesz mogl zdobyc kolejny respawn. Znajdz go oraz znajdz kule! Uzyj jej i tu wroc!"
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/pDcS4vn.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/tVf0qve.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/JKkFmOL.png"
+              }
             ]
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "Rurik: Dziekuje! Teraz bedziesz mogl zdobyc kolejny respawn. Znajdz go oraz znajdz kule! Uzyj jej i tu wroc!"
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/pDcS4vn.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/tVf0qve.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/JKkFmOL.png"
           },
           {
             "type": "paragraph",
@@ -35744,41 +35853,41 @@
                 "type": "text",
                 "text": "Misja 19 Zniszczenie ósmej kuli"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Rurik: Gratuluje! Teraz musisz zdobyc nastepna brame. Niestety nie udalo nam sie dowiedziec, jak tego dokonac. Musisz zrobic to sam..",
+                  "Czlowiek w stroj szafirowy ubrany z poziomem razy dwadziescia brame otworzy. Kule zniszczy dotknieciem z doswiadczenia przez dwa niepodzielnym wyznacznikiem tracac swego stroju czesc i ginac zabity przez ogien ciemnosci, jednak my, Elfy ucierpimy na tym bardziej. Bronmy kuli, bo ciemnosc swiat ogarnie. Kto brame otworzy, posiadzie moc kuli zniszczenia, kto kule zniszczy, brama bedzie wladac."
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/O0a6gX7.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/nXq63Pb.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/8nKOTYQ.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/d3POaAl.png"
+              }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 9",
-        "blocks": [
-          {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Rurik: Gratuluje! Teraz musisz zdobyc nastepna brame. Niestety nie udalo nam sie dowiedziec, jak tego dokonac. Musisz zrobic to sam..",
-              "Czlowiek w stroj szafirowy ubrany z poziomem razy dwadziescia brame otworzy. Kule zniszczy dotknieciem z doswiadczenia przez dwa niepodzielnym wyznacznikiem tracac swego stroju czesc i ginac zabity przez ogien ciemnosci, jednak my, Elfy ucierpimy na tym bardziej. Bronmy kuli, bo ciemnosc swiat ogarnie. Kto brame otworzy, posiadzie moc kuli zniszczenia, kto kule zniszczy, brama bedzie wladac."
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/O0a6gX7.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/nXq63Pb.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/8nKOTYQ.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/d3POaAl.png"
           },
           {
             "type": "paragraph",
@@ -35787,92 +35896,98 @@
                 "type": "text",
                 "text": "Misja 20 Bramka o równej godzinie"
               }
-            ]
+            ],
+            "align": "center"
           },
           {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/cwdhLqN.png"
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "Fargum: Witam Cie, od wielu lat przeprawiam odwaznych przez morza i oceany. Czy zechcesz odwiedzic inne krainy?",
-              "Perfect: senja"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+            "type": "spoiler",
+            "blocks": [
               {
-                "type": "text",
-                "text": "Fargum: Plyniemy!"
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/cwdhLqN.png"
+              },
+              {
+                "type": "quote",
+                "lines": [
+                  "Fargum: Witam Cie, od wielu lat przeprawiam odwaznych przez morza i oceany. Czy zechcesz odwiedzic inne krainy?",
+                  "Perfect: senja"
+                ]
+              },
+              {
+                "type": "paragraph",
+                "segments": [
+                  {
+                    "type": "text",
+                    "text": "Fargum: Plyniemy!"
+                  }
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/FBMBeHe.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/vx4KV6r.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/DEYeXlT.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/NDOksdq.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/XRJWZY8.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/txQux6h.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/kJ11Ggg.png"
+              },
+              {
+                "type": "paragraph",
+                "segments": [
+                  {
+                    "type": "text",
+                    "text": "Bramka"
+                  }
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/JgMD79K.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/2Gk5SXb.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/V8qqy3i.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/IeOP3M2.png"
               }
             ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/FBMBeHe.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/vx4KV6r.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/DEYeXlT.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/NDOksdq.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/XRJWZY8.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/txQux6h.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/kJ11Ggg.png"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Bramka"
-              }
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/JgMD79K.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/2Gk5SXb.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/V8qqy3i.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/IeOP3M2.png"
           },
           {
             "type": "paragraph",
@@ -35881,115 +35996,115 @@
                 "type": "text",
                 "text": "Misja 21 Zbieranie dusz z Elfów Executonier"
               }
-            ]
+            ],
+            "align": "center"
           },
           {
-            "type": "paragraph",
-            "segments": [
+            "type": "spoiler",
+            "blocks": [
               {
-                "type": "text",
-                "text": "Skull Staff"
+                "type": "paragraph",
+                "segments": [
+                  {
+                    "type": "text",
+                    "text": "Skull Staff"
+                  }
+                ]
+              },
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Frurik: Do kolejnej misji bedziesz potrzebowal przedmiotu - bedzie to Skull Staff. Bedziesz nim pochlanial dusze zabitych przez Ciebie elfow. Znajdz Skull Staff, uzyj go na zabitych przez Ciebie elfach executionerach! Aby sprawdzic, ile dusz elfow spoczywa w przedmiocie - uzyj go na sobie! A teraz idz do Rurika, on powie Ci jak zniszczyc kolejna kule."
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/5zWlvys.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/P6Ve8HZ.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/E5RvEam.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/AyXCCit.png"
+              },
+              {
+                "type": "paragraph",
+                "segments": [
+                  {
+                    "type": "text",
+                    "text": "Bardzo ważne informacje!"
+                  }
+                ]
+              },
+              {
+                "type": "quote",
+                "lines": [
+                  "Zeby zniszczyć kule skull staff musi miec zebrane minimum 51 dusz szansa na zniszczenie wynosci 1/3! Skull Staff nalicza dusze na określonego gracza( zdobycie przedmiotu od innego gracza nic nie zmieni) Musimy zadać końcowe obrażenia zeby zebrać dusze Po zabiciu mamy około 5 sekund na wykonanie czynności Zbieranie dusz niekompatybilne z 67 misją Ahmeda - najpierw trzeba ukończyć misje Ahmeda, dopiero później mamy odblokowaną możliwość zbierania dusz"
+                ]
+              },
+              {
+                "type": "paragraph",
+                "segments": [
+                  {
+                    "type": "text",
+                    "text": "Testowane klienty pod wzgledem działania z daną misja"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "segments": [
+                  {
+                    "type": "text",
+                    "text": "- OTClient - działa normalnie"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "segments": [
+                  {
+                    "type": "text",
+                    "text": "- Klasyczny - dziala normalnie"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "segments": [
+                  {
+                    "type": "text",
+                    "text": "- SkalaOtc v13.2 - nie działa"
+                  }
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/2mzv6Fg.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/ALolrDL.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/vMpRLN9.png"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 10",
-        "blocks": [
-          {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Frurik: Do kolejnej misji bedziesz potrzebowal przedmiotu - bedzie to Skull Staff. Bedziesz nim pochlanial dusze zabitych przez Ciebie elfow. Znajdz Skull Staff, uzyj go na zabitych przez Ciebie elfach executionerach! Aby sprawdzic, ile dusz elfow spoczywa w przedmiocie - uzyj go na sobie! A teraz idz do Rurika, on powie Ci jak zniszczyc kolejna kule."
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/5zWlvys.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/P6Ve8HZ.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/E5RvEam.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/AyXCCit.png"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Bardzo ważne informacje!"
-              }
-            ]
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "Zeby zniszczyć kule skull staff musi miec zebrane minimum 51 dusz szansa na zniszczenie wynosci 1/3! Skull Staff nalicza dusze na określonego gracza( zdobycie przedmiotu od innego gracza nic nie zmieni) Musimy zadać końcowe obrażenia zeby zebrać dusze Po zabiciu mamy około 5 sekund na wykonanie czynności Zbieranie dusz niekompatybilne z 67 misją Ahmeda - najpierw trzeba ukończyć misje Ahmeda, dopiero później mamy odblokowaną możliwość zbierania dusz"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Testowane klienty pod wzgledem działania z daną misja"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "- OTClient - działa normalnie"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "- Klasyczny - dziala normalnie"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "- SkalaOtc v13.2 - nie działa"
-              }
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/2mzv6Fg.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/ALolrDL.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/vMpRLN9.png"
           },
           {
             "type": "paragraph",
@@ -35998,43 +36113,49 @@
                 "type": "text",
                 "text": "Misja 22 Zbieranie dusz od graczy"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "strenho tekk --- strenho gimm"
+                ]
+              },
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Rurik: Kolejny punkt wiezy elfow jest punktem ostatnim, jednak zdobycie go bedzie bardzo trudne. Bedzie Cie kosztowalo wiele zdrowia, czasu i pieniedzy, a i tak nie jest pewne, ze sobie poradzisz! Chcesz sprobowac?!",
+                  "Perfect: tak",
+                  "Rurik: To wspaniale! Samo wejscie do wiezy bedzie bardzo trudne, bedziesz potrzebowal ogromnej sily od piedziesieciu roznych osob!",
+                  "Rurik: Aby posiasc czyjas sile, stan zwrocony w strone tego kogos i wymow czar \"strenho tekk\". Nastepnie ta osoba bedzie musiala dac Ci swoja moc! Wroc, jak posiadziesz sile 50 ludzi!"
+                ]
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/Cbe16RZ.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/HwbOIvM.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/IhConq8.png"
+              },
+              {
+                "type": "image",
+                "alt": "Shaman Mask - Aktualizacja",
+                "src": "./images/quests/shamanmaskaktualizacja/fBYGzPH.png"
+              }
             ]
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "strenho tekk --- strenho gimm"
-            ]
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Rurik: Kolejny punkt wiezy elfow jest punktem ostatnim, jednak zdobycie go bedzie bardzo trudne. Bedzie Cie kosztowalo wiele zdrowia, czasu i pieniedzy, a i tak nie jest pewne, ze sobie poradzisz! Chcesz sprobowac?!",
-              "Perfect: tak",
-              "Rurik: To wspaniale! Samo wejscie do wiezy bedzie bardzo trudne, bedziesz potrzebowal ogromnej sily od piedziesieciu roznych osob!",
-              "Rurik: Aby posiasc czyjas sile, stan zwrocony w strone tego kogos i wymow czar \"strenho tekk\". Nastepnie ta osoba bedzie musiala dac Ci swoja moc! Wroc, jak posiadziesz sile 50 ludzi!"
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/Cbe16RZ.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/HwbOIvM.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/IhConq8.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/fBYGzPH.png"
           },
           {
             "type": "paragraph",
@@ -36043,21 +36164,36 @@
                 "type": "text",
                 "text": "Misja 23 Labirynt - Teleporty Wymagana ilosc poziomow to 10 ( Npc nie dostał poprawki w wypowiedzi)"
               }
+            ],
+            "align": "center"
+          },
+          {
+            "type": "spoiler",
+            "blocks": [
+              {
+                "type": "quote",
+                "lines": [
+                  "Perfect: hi",
+                  "Rurik: Gratuluje, udalo Ci sie! Teraz mozesz wejsc do ostatniej wiezy! Mozesz przejsc do portalu wewnatrz kuli! Jednak sluchaj! Kazde wejscie bedzie Cie kosztowalo 50 scarab coins! Aby dostac sie do portalu musisz przekazac jej czesc swojej duszy - mysle ze wiesz jak! Jesli zginiesz, kolejny raz wejsc bedziesz mogl dopiero po zdobyciu dwudziestu pieciu poziomow , wiec uwazaj!"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 11",
-        "blocks": [
+        "type": "paragraph",
+        "segments": [
           {
-            "type": "quote",
-            "lines": [
-              "Perfect: hi",
-              "Rurik: Gratuluje, udalo Ci sie! Teraz mozesz wejsc do ostatniej wiezy! Mozesz przejsc do portalu wewnatrz kuli! Jednak sluchaj! Kazde wejscie bedzie Cie kosztowalo 50 scarab coins! Aby dostac sie do portalu musisz przekazac jej czesc swojej duszy - mysle ze wiesz jak! Jesli zginiesz, kolejny raz wejsc bedziesz mogl dopiero po zdobyciu dwudziestu pieciu poziomow , wiec uwazaj!"
-            ]
-          },
+            "type": "text",
+            "text": "Labirynt oraz teleporty"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "image",
             "alt": "Shaman Mask - Aktualizacja",
@@ -36106,11 +36242,6 @@
             "type": "image",
             "alt": "Shaman Mask - Aktualizacja",
             "src": "./images/quests/shamanmaskaktualizacja/ZnJnS5Y.png"
-          },
-          {
-            "type": "image",
-            "alt": "Shaman Mask - Aktualizacja",
-            "src": "./images/quests/shamanmaskaktualizacja/czytaj.gif"
           },
           {
             "type": "paragraph",
@@ -36167,13 +36298,7 @@
             "lines": [
               "Po prawidłowym przejściu sal został jeszcze solo room w którym musimy pokonać 1x Elf Executioner"
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Tabela Teleportów — część 12",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Shaman Mask - Aktualizacja",
@@ -36211,14 +36336,16 @@
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/PHf1Dqc.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/PHf1Dqc.png",
+                    "size": "cell"
                   }
                 ],
                 [
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/Cvbszje.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/Cvbszje.png",
+                    "size": "cell"
                   }
                 ]
               ],
@@ -36227,14 +36354,16 @@
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/ffPi0RL.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/ffPi0RL.png",
+                    "size": "cell"
                   }
                 ],
                 [
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/W9b9qld.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/W9b9qld.png",
+                    "size": "cell"
                   }
                 ]
               ],
@@ -36243,14 +36372,16 @@
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/PWGDuf6.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/PWGDuf6.png",
+                    "size": "cell"
                   }
                 ],
                 [
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/A5YLXZz.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/A5YLXZz.png",
+                    "size": "cell"
                   }
                 ]
               ],
@@ -36259,14 +36390,16 @@
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/3ancEs1.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/3ancEs1.png",
+                    "size": "cell"
                   }
                 ],
                 [
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/iAC7GA0.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/iAC7GA0.png",
+                    "size": "cell"
                   }
                 ]
               ],
@@ -36275,18 +36408,21 @@
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/a0118ou.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/a0118ou.png",
+                    "size": "cell"
                   }
                 ],
                 [
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/n8bX0YH.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/n8bX0YH.png",
+                    "size": "cell"
                   }
                 ]
               ]
-            ]
+            ],
+            "fit": true
           },
           {
             "type": "image",
@@ -36325,14 +36461,16 @@
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/MuOmCG8.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/MuOmCG8.png",
+                    "size": "cell"
                   }
                 ],
                 [
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/zBv7Trh.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/zBv7Trh.png",
+                    "size": "cell"
                   }
                 ]
               ],
@@ -36341,14 +36479,16 @@
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/HiljXPL.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/HiljXPL.png",
+                    "size": "cell"
                   }
                 ],
                 [
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/ijpr5y9.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/ijpr5y9.png",
+                    "size": "cell"
                   }
                 ]
               ],
@@ -36357,14 +36497,16 @@
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/xTvIiJJ.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/xTvIiJJ.png",
+                    "size": "cell"
                   }
                 ],
                 [
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/yVcMb3C.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/yVcMb3C.png",
+                    "size": "cell"
                   }
                 ]
               ],
@@ -36373,14 +36515,16 @@
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/cnMg6Vr.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/cnMg6Vr.png",
+                    "size": "cell"
                   }
                 ],
                 [
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/FqbBrJb.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/FqbBrJb.png",
+                    "size": "cell"
                   }
                 ]
               ],
@@ -36389,18 +36533,21 @@
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/Bn1GvuG.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/Bn1GvuG.png",
+                    "size": "cell"
                   }
                 ],
                 [
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/lMBD2tw.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/lMBD2tw.png",
+                    "size": "cell"
                   }
                 ]
               ]
-            ]
+            ],
+            "fit": true
           },
           {
             "type": "image",
@@ -36416,13 +36563,7 @@
                 "text": "Nr 21-27"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 13",
-        "blocks": [
+          },
           {
             "type": "table",
             "headers": [
@@ -36445,14 +36586,16 @@
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/K9fgL26.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/K9fgL26.png",
+                    "size": "cell"
                   }
                 ],
                 [
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/t7S0N33.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/t7S0N33.png",
+                    "size": "cell"
                   }
                 ]
               ],
@@ -36461,14 +36604,16 @@
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/QN6zXDP.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/QN6zXDP.png",
+                    "size": "cell"
                   }
                 ],
                 [
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/b1pF2AI.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/b1pF2AI.png",
+                    "size": "cell"
                   }
                 ]
               ],
@@ -36477,18 +36622,21 @@
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/G4Gv8Qr.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/G4Gv8Qr.png",
+                    "size": "cell"
                   }
                 ],
                 [
                   {
                     "type": "image",
                     "alt": "Shaman Mask - Aktualizacja",
-                    "src": "./images/quests/shamanmaskaktualizacja/mS3Oh4t.png"
+                    "src": "./images/quests/shamanmaskaktualizacja/mS3Oh4t.png",
+                    "size": "cell"
                   }
                 ]
               ]
-            ]
+            ],
+            "fit": true
           },
           {
             "type": "paragraph",
@@ -36541,52 +36689,52 @@
                 "text": "Własnie zostałes królem szamanów!"
               }
             ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Chciałbym podziekować najlepszemu ziomeczkowi , ktory poświęcił wiele godzin na pomoc w czyszczeniu i blokowaniu respów."
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Chciałbym podziekować najlepszemu ziomeczkowi , ktory poświęcił wiele godzin na pomoc w czyszczeniu i blokowaniu respów."
-              },
-              {
-                "type": "image",
-                "alt": "Shaman Mask - Aktualizacja",
-                "src": "./images/quests/shamanmaskaktualizacja/soczek.gif"
-              },
-              {
-                "type": "text",
-                "text": "Stroh moj królu MS jestes zajebiaszczy mordko"
-              },
-              {
-                "type": "image",
-                "alt": "Shaman Mask - Aktualizacja",
-                "src": "./images/quests/shamanmaskaktualizacja/list.gif"
-              },
-              {
-                "type": "text",
-                "text": "Również dziekuje graczom, ktorzy pomagali mi w misji na zbieranie dusz oraz dla mistrza Sir Mastaha za cała mase informacji i uwag, które mi przekazal"
-              },
-              {
-                "type": "image",
-                "alt": "Shaman Mask - Aktualizacja",
-                "src": "./images/quests/shamanmaskaktualizacja/czytaj.gif"
-              },
-              {
-                "type": "text",
-                "text": "Jeru Dzieki za blokowanie Elfow i SS"
-              },
-              {
-                "type": "image",
-                "alt": "Shaman Mask - Aktualizacja",
-                "src": "./images/quests/shamanmaskaktualizacja/spoko.gif"
-              },
-              {
-                "type": "image",
-                "alt": "Shaman Mask - Aktualizacja",
-                "src": "./images/quests/shamanmaskaktualizacja/piwo.gif"
-              }
-            ]
+            "type": "image",
+            "alt": "Shaman Mask - Aktualizacja",
+            "src": "./images/quests/shamanmaskaktualizacja/soczek.gif"
+          },
+          {
+            "type": "text",
+            "text": "Stroh moj królu MS jestes zajebiaszczy mordko"
+          },
+          {
+            "type": "image",
+            "alt": "Shaman Mask - Aktualizacja",
+            "src": "./images/quests/shamanmaskaktualizacja/list.gif"
+          },
+          {
+            "type": "text",
+            "text": "Również dziekuje graczom, ktorzy pomagali mi w misji na zbieranie dusz oraz dla mistrza Sir Mastaha za cała mase informacji i uwag, które mi przekazal"
+          },
+          {
+            "type": "image",
+            "alt": "Shaman Mask - Aktualizacja",
+            "src": "./images/quests/shamanmaskaktualizacja/czytaj.gif"
+          },
+          {
+            "type": "text",
+            "text": "Jeru Dzieki za blokowanie Elfow i SS"
+          },
+          {
+            "type": "image",
+            "alt": "Shaman Mask - Aktualizacja",
+            "src": "./images/quests/shamanmaskaktualizacja/spoko.gif"
+          },
+          {
+            "type": "image",
+            "alt": "Shaman Mask - Aktualizacja",
+            "src": "./images/quests/shamanmaskaktualizacja/piwo.gif"
           }
         ]
       }
@@ -40898,23 +41046,48 @@
         ]
       },
       {
-        "type": "spoiler",
-        "title": "Etap 1: Jak w temacie, chciałbym pokazać wszystkim gdzie",
-        "blocks": [
+        "type": "paragraph",
+        "segments": [
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Jak w temacie, chciałbym pokazać wszystkim gdzie prowadzą wszystkie teleporty, które mamy w roomach na Rook Quescie. Przypomnę, iż quest dostępny jest od 150 poziomu doświadczenia."
-              }
-            ]
+            "type": "text",
+            "text": "Jak w temacie, chciałbym pokazać wszystkim gdzie prowadzą wszystkie teleporty, które mamy w roomach na Rook Quescie. Przypomnę, iż quest dostępny jest od 150 poziomu doświadczenia."
           }
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Jak się tutaj dostać? Możecie zobaczyć w "
+          },
+          {
+            "type": "link",
+            "text": "poradniku",
+            "url": "http://www.forum.toproste.pl/showthread.php?t=136913"
+          },
+          {
+            "type": "text",
+            "text": " "
+          },
+          {
+            "type": "text",
+            "text": "użytkownika Sir Avengo ."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Zielony kamień:"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Zielony kamień:",
         "blocks": [
           {
             "type": "image",
@@ -40996,8 +41169,17 @@
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Różowy kamień:"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Różowy kamień:",
         "blocks": [
           {
             "type": "image",
@@ -41075,16 +41257,22 @@
                 "text": "8. Resp Behemoth."
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Niebieski kamień:"
-              }
-            ]
-          },
+            "type": "text",
+            "text": "Niebieski kamień:"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "image",
             "alt": "Teleporty na Rook Quest",
@@ -41161,33 +41349,15 @@
                 "text": "8. Resp Ratów na facc."
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Jak się tutaj dostać? Możecie zobaczyć w"
-              },
-              {
-                "type": "link",
-                "text": "poradniku",
-                "url": "http://www.forum.toproste.pl/showthread.php?t=136913"
-              },
-              {
-                "type": "text",
-                "text": "użytkownika Sir Avengo ."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Proszę o wszelkie sugestie i uwagi dotyczące poradnika."
-              }
-            ]
+            "type": "text",
+            "text": "Proszę o wszelkie sugestie i uwagi dotyczące poradnika."
           }
         ]
       }
@@ -41217,8 +41387,17 @@
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga do Vercossta"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Etap 1: Rozpoczynamy naszą przygodę w świątyni - głównym",
         "blocks": [
           {
             "type": "paragraph",
@@ -41291,13 +41470,7 @@
                 "text": "Jesteśmy na mrocznej wyspie, na której znajdziemy potwory takie jak Dragony, Dragon Lordy, Demodrasy, Dark Lordy, Behemothy oraz różnego rodzaju Demony."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 2: Udajemy się w głąb wyspy na południe",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Vercossta Island",
@@ -41368,8 +41541,17 @@
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Mapa całej wyspy"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Etap 3: Mapa całej wyspy",
         "blocks": [
           {
             "type": "image",
@@ -41416,7 +41598,22 @@
                 "text": "H - wejście na Hydry."
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga do Acolyte Of Blood"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -41454,13 +41651,7 @@
                 "text": "Już jesteśmy prawie na miejscu.."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 4: Schodzimy do dziury i mamy przed sobą",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Vercossta Island",
@@ -41521,13 +41712,7 @@
                 "text": "Gdy już otworzyliśmy kraty, schodzimy niżej i mamy wielki respawn potworów."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 5: Potwory i punkty doświadczenia",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Vercossta Island",
@@ -41606,7 +41791,8 @@
                   }
                 ]
               ]
-            ]
+            ],
+            "fit": true
           },
           {
             "type": "paragraph",
@@ -41625,7 +41811,22 @@
                 "text": "Słuchy głoszą, że dany respawn jest przeznaczony dla magicznych profesji."
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na Arachnomorph"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -41667,13 +41868,7 @@
                 "text": "Mamy wejście na Pająki. Musimy posiadać 3700 poziom doświadczenia oraz mieć ubrany kostium Ghula."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 6: Mapa całego respawnu",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Vercossta Island",
@@ -41787,7 +41982,8 @@
                   }
                 ]
               ]
-            ]
+            ],
+            "fit": true
           },
           {
             "type": "paragraph",
@@ -41806,7 +42002,22 @@
                 "text": "Dlatego polecam wycinać każde ciało!"
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na Hydrony"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -41838,13 +42049,7 @@
                 "text": "Wchodzimy do dziury."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Etap 7: Mamy wejście na Hydrony. Musimy posiadać 4200",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Vercossta Island",
@@ -41930,7 +42135,8 @@
                   }
                 ]
               ]
-            ]
+            ],
+            "fit": true
           },
           {
             "type": "paragraph",
@@ -41949,15 +42155,15 @@
                 "text": "Słuchy głoszą, że na tej wyspie kryje się jeszcze wiele więcej tajemnic, tylko jakich!?"
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Proszę o wszelkie sugestie i uwagi dotyczące poradnika."
-              }
-            ]
+            "type": "text",
+            "text": "Proszę o wszelkie sugestie i uwagi dotyczące poradnika."
           }
         ]
       }
@@ -41969,8 +42175,17 @@
     "author": "Sir Mastah",
     "blocks": [
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Teleporty oraz wyjście"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Poradnik dotyczący terenów na Volcano — część 1",
         "blocks": [
           {
             "type": "paragraph",
@@ -42085,13 +42300,7 @@
                 "text": "Pozostałe dwa wyjścia, niezwiązane bezpośrednio z respawnem Atoma oraz Apocalypto, będą nas prowadziły w to miejsce. Jedno znajduje się na Double, drugie w krypcie Creatora, co zostanie stosownie nadmienione."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Poradnik dotyczący terenów na Volcano — część 2",
-        "blocks": [
+          },
           {
             "type": "paragraph",
             "segments": [
@@ -42111,19 +42320,25 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Master Atom"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
                 "text": "Wracamy do pokoju pod npc Burnin i wybieramy którykolwiek z lewych teleportów, aby wejść na Master Atoma. Znajduje się on na samym dole respawnu, pojawia się co 20 minut oraz towarzyszy mu Renegade. Wyjście z jego części zostało opisane wyżej."
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Miejsce Master Atoma"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -42142,16 +42357,22 @@
             "type": "image",
             "alt": "Volcano - dostęp do Apocalypto, Master Atom, Double oraz Creator Quest",
             "src": "./images/quests/volcanodostepdoapocalyptomasteratomdoubleorazcreatorquest/hf9MU4G.png"
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Perfect Apocalypto, Double, Creator Quest"
-              }
-            ]
-          },
+            "type": "text",
+            "text": "Miejsce Perfect Apocalypto"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -42184,7 +42405,22 @@
             "type": "image",
             "alt": "Volcano - dostęp do Apocalypto, Master Atom, Double oraz Creator Quest",
             "src": "./images/quests/volcanodostepdoapocalyptomasteratomdoubleorazcreatorquest/LjnEFPL.png"
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na Double"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -42207,13 +42443,7 @@
                 "text": "W tej sekcji mamy wyjście trzecie, oznaczone kolorem niebieskim - wysyła nas pod npc Aqar. Idąc dalej kolorem czerwonym, docieramy do sporego respawnu potworów Double. W górnej części znajduje się wejście na Creator Quest, zaś w dolnym lewym rogu npc Double. Chcąc wyjść stąd, musimy się wrócić do podanego wyjścia numer 3 (bądź wejść na Creatora)."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Poradnik dotyczący terenów na Volcano — część 3",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Volcano - dostęp do Apocalypto, Master Atom, Double oraz Creator Quest",
@@ -42297,16 +42527,22 @@
             "type": "image",
             "alt": "Volcano - dostęp do Apocalypto, Master Atom, Double oraz Creator Quest",
             "src": "./images/quests/volcanodostepdoapocalyptomasteratomdoubleorazcreatorquest/0BtuYY7.png"
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Creator Quest"
-              }
-            ]
-          },
+            "type": "text",
+            "text": "Droga na Creator Quest"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -42320,13 +42556,7 @@
             "type": "image",
             "alt": "Volcano - dostęp do Apocalypto, Master Atom, Double oraz Creator Quest",
             "src": "./images/quests/volcanodostepdoapocalyptomasteratomdoubleorazcreatorquest/vWB4cV7.png"
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Poradnik dotyczący terenów na Volcano — część 4",
-        "blocks": [
+          },
           {
             "type": "paragraph",
             "segments": [
@@ -42438,13 +42668,7 @@
                 "url": "http://www.forum.toproste.pl/showpost.php?p=1226638&postcount=96"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Poradnik dotyczący terenów na Volcano — część 5",
-        "blocks": [
+          },
           {
             "type": "paragraph",
             "segments": [
@@ -42458,15 +42682,15 @@
                 "url": "http://www.forum.toproste.pl/showpost.php?p=1221646&postcount=94"
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Czekam na wszelkie komentarze dotyczące możliwych błędów czy dodania nowych informacji na temat poradnika (zwłaszcza Creator Quest)."
-              }
-            ]
+            "type": "text",
+            "text": "Czekam na wszelkie komentarze dotyczące możliwych błędów czy dodania nowych informacji na temat poradnika (zwłaszcza Creator Quest)."
           }
         ]
       }
@@ -42496,142 +42720,149 @@
         ]
       },
       {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje",
-        "blocks": [
-          {
-            "type": "table",
-            "headers": [
-              [
-                {
-                  "type": "link",
-                  "text": "Wygląd",
-                  "url": "http://www.forum.toproste.pl/showthread.php?p=1215662#"
-                }
-              ],
-              [
-                {
-                  "type": "link",
-                  "text": "Nazwa",
-                  "url": "http://www.forum.toproste.pl/showthread.php?p=1215662#"
-                }
-              ]
+        "type": "table",
+        "headers": [
+          [
+            {
+              "type": "text",
+              "text": "Wygląd"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": "Nazwa"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "type": "image",
+                "alt": "Whip's Wolf Quest",
+                "src": "./images/quests/whipswolfquest/4843_1.gif"
+              }
             ],
-            "rows": [
-              [
-                [
-                  {
-                    "type": "image",
-                    "alt": "Whip's Wolf Quest",
-                    "src": "./images/quests/whipswolfquest/4843_1.gif"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "Whip's Wolf"
-                  }
-                ]
-              ]
-            ]
-          },
-          {
-            "type": "table",
-            "headers": [
-              [
-                {
-                  "type": "link",
-                  "text": "Wymagania do wykonania questu",
-                  "url": "http://www.forum.toproste.pl/showthread.php?p=1215662#"
-                }
-              ]
-            ],
-            "rows": [
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "- 500 poziom doświadczenia."
-                  }
-                ]
-              ]
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+            [
               {
                 "type": "text",
-                "text": "Do pokonania:"
+                "text": "Whip's Wolf"
               }
             ]
-          },
-          {
-            "type": "table",
-            "headers": [
-              [
-                {
-                  "type": "link",
-                  "text": "Wygląd",
-                  "url": "http://www.forum.toproste.pl/showthread.php?p=1215662#"
-                }
-              ],
-              [
-                {
-                  "type": "link",
-                  "text": "Nazwa",
-                  "url": "http://www.forum.toproste.pl/showthread.php?p=1215662#"
-                }
-              ]
-            ],
-            "rows": [
-              [
-                [
-                  {
-                    "type": "image",
-                    "alt": "Whip's Wolf Quest",
-                    "src": "./images/quests/whipswolfquest/Bally.gif"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "Bally"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "image",
-                    "alt": "Whip's Wolf Quest",
-                    "src": "./images/quests/whipswolfquest/Fire_Woman.gif"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "Fire Woman"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "image",
-                    "alt": "Whip's Wolf Quest",
-                    "src": "./images/quests/whipswolfquest/Apocalypto.gif"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "Apocalypto"
-                  }
-                ]
-              ]
+          ]
+        ],
+        "fit": true
+      },
+      {
+        "type": "table",
+        "headers": [
+          [
+            {
+              "type": "text",
+              "text": "Wymagania do wykonania questu"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "type": "text",
+                "text": "- 500 poziom doświadczenia."
+              }
             ]
-          },
+          ]
+        ],
+        "fit": true
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Do pokonania:"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "headers": [
+          [
+            {
+              "type": "text",
+              "text": "Wygląd"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": "Nazwa"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "type": "image",
+                "alt": "Whip's Wolf Quest",
+                "src": "./images/quests/whipswolfquest/Bally.gif"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Bally"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "image",
+                "alt": "Whip's Wolf Quest",
+                "src": "./images/quests/whipswolfquest/Fire_Woman.gif"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Fire Woman"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "image",
+                "alt": "Whip's Wolf Quest",
+                "src": "./images/quests/whipswolfquest/Apocalypto.gif"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Apocalypto"
+              }
+            ]
+          ]
+        ],
+        "fit": true
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Droga na Questa"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -42665,12 +42896,11 @@
             ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Xibos: hi ShaShaSha: Waazzuup Xibos! Moge Cie zabrac moim magicznym statkiem do latajacego miasta City of the Sky [10k] lub do Canyon of damned [500gp] lub do Ankaros [1k], gdzie chcesz sie udac? Xibos: sky"
-              }
+            "type": "quote",
+            "lines": [
+              "Xibos: hi",
+              "ShaShaSha: Waazzuup Xibos! Moge Cie zabrac moim magicznym statkiem do latajacego miasta City of the Sky [10k] lub do Canyon of damned [500gp] lub do Ankaros [1k], gdzie chcesz sie udac?",
+              "Xibos: sky"
             ]
           },
           {
@@ -42688,12 +42918,11 @@
             ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Xibos: hi Jin: Siema Xibos! Moge Cie zabrac na Darkness Island [500gp], Ankaros [5k] lub City of Dreams [5k], gdzie chcesz sie udac? Xibos: cod"
-              }
+            "type": "quote",
+            "lines": [
+              "Xibos: hi",
+              "Jin: Siema Xibos! Moge Cie zabrac na Darkness Island [500gp], Ankaros [5k] lub City of Dreams [5k], gdzie chcesz sie udac?",
+              "Xibos: cod"
             ]
           },
           {
@@ -42709,13 +42938,7 @@
                 "src": "./images/quests/whipswolfquest/wink.gif"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Whip's Wolf Quest",
@@ -42818,21 +43041,21 @@
             "type": "image",
             "alt": "Whip's Wolf Quest",
             "src": "./images/quests/whipswolfquest/ActIa8V.jpg"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Jak użyć przedmiotu?"
-              }
-            ]
           }
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Jak użyć przedmiotu"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Dodatkowe informacje",
         "blocks": [
           {
             "type": "paragraph",
@@ -42856,24 +43079,24 @@
                 "text": "Po zdjęciu przedmiotu nasz wilk pojawi się obok nas i nie będziemy mogli wsiąść na niego kolejny raz."
               }
             ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Mam nadzieję że pomogłem"
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Mam nadzieję że pomogłem"
-              },
-              {
-                "type": "image",
-                "alt": "Whip's Wolf Quest",
-                "src": "./images/quests/whipswolfquest/smile.gif"
-              },
-              {
-                "type": "text",
-                "text": "Pozdrawiam.."
-              }
-            ]
+            "type": "image",
+            "alt": "Whip's Wolf Quest",
+            "src": "./images/quests/whipswolfquest/smile.gif"
+          },
+          {
+            "type": "text",
+            "text": "Pozdrawiam.."
           }
         ]
       }
@@ -42917,225 +43140,226 @@
         ]
       },
       {
-        "type": "spoiler",
-        "title": "Etap 1: Opis",
-        "blocks": [
+        "type": "paragraph",
+        "segments": [
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Opis:"
-              }
-            ]
+            "type": "text",
+            "text": "Opis:"
           }
         ]
       },
       {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje",
-        "blocks": [
-          {
-            "type": "table",
-            "headers": [
-              [
-                {
-                  "type": "link",
-                  "text": "Wygląd",
-                  "url": "http://www.forum.toproste.pl/showthread.php?p=1215695#"
-                }
-              ],
-              [
-                {
-                  "type": "link",
-                  "text": "Nazwa",
-                  "url": "http://www.forum.toproste.pl/showthread.php?p=1215695#"
-                }
-              ]
+        "type": "table",
+        "headers": [
+          [
+            {
+              "type": "text",
+              "text": "Wygląd"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": "Nazwa"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "type": "image",
+                "alt": "Winged Helmet Quest",
+                "src": "./images/quests/wingedhelmetquest/2474_1.gif"
+              }
             ],
-            "rows": [
-              [
-                [
-                  {
-                    "type": "image",
-                    "alt": "Winged Helmet Quest",
-                    "src": "./images/quests/wingedhelmetquest/2474_1.gif"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "Winged Helmet"
-                  }
-                ]
-              ]
-            ]
-          },
-          {
-            "type": "table",
-            "headers": [
-              [
-                {
-                  "type": "link",
-                  "text": "Wymagania do wykonania questu",
-                  "url": "http://www.forum.toproste.pl/showthread.php?p=1215695#"
-                }
-              ]
-            ],
-            "rows": [
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "- Konto premium"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "text",
-                    "text": "- 72 gold nuggets."
-                  }
-                ]
-              ]
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+            [
               {
                 "type": "text",
-                "text": "Do pokonania:"
+                "text": "Winged Helmet"
               }
             ]
-          },
-          {
-            "type": "table",
-            "headers": [
-              [
-                {
-                  "type": "link",
-                  "text": "Wygląd",
-                  "url": "http://www.forum.toproste.pl/showthread.php?p=1215695#"
-                }
-              ],
-              [
-                {
-                  "type": "link",
-                  "text": "Nazwa",
-                  "url": "http://www.forum.toproste.pl/showthread.php?p=1215695#"
-                }
-              ]
-            ],
-            "rows": [
-              [
-                [
-                  {
-                    "type": "image",
-                    "alt": "Winged Helmet Quest",
-                    "src": "./images/quests/wingedhelmetquest/Dragon.gif"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "Dragon"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "image",
-                    "alt": "Winged Helmet Quest",
-                    "src": "./images/quests/wingedhelmetquest/Dragon_Lord.gif"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "Dragon Lord"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "image",
-                    "alt": "Winged Helmet Quest",
-                    "src": "./images/quests/wingedhelmetquest/Dark_Lord.gif"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "Dark Lord"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "image",
-                    "alt": "Winged Helmet Quest",
-                    "src": "./images/quests/wingedhelmetquest/Elder_Demon.gif"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "Elder Demon"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "image",
-                    "alt": "Winged Helmet Quest",
-                    "src": "./images/quests/wingedhelmetquest/Demon_Lord.gif"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "Demon Lord"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "image",
-                    "alt": "Winged Helmet Quest",
-                    "src": "./images/quests/wingedhelmetquest/Orshabaal.gif"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "Orshabaal"
-                  }
-                ]
-              ],
-              [
-                [
-                  {
-                    "type": "image",
-                    "alt": "Winged Helmet Quest",
-                    "src": "./images/quests/wingedhelmetquest/Ots_King.gif"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "Ots King"
-                  }
-                ]
-              ]
+          ]
+        ],
+        "fit": true
+      },
+      {
+        "type": "table",
+        "headers": [
+          [
+            {
+              "type": "text",
+              "text": "Wymagania do wykonania questu"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "type": "text",
+                "text": "- Konto premium"
+              }
             ]
-          },
+          ],
+          [
+            [
+              {
+                "type": "text",
+                "text": "- 72 gold nuggets."
+              }
+            ]
+          ]
+        ],
+        "fit": true
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Do pokonania:"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "headers": [
+          [
+            {
+              "type": "text",
+              "text": "Wygląd"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": "Nazwa"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "type": "image",
+                "alt": "Winged Helmet Quest",
+                "src": "./images/quests/wingedhelmetquest/Dragon.gif"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Dragon"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "image",
+                "alt": "Winged Helmet Quest",
+                "src": "./images/quests/wingedhelmetquest/Dragon_Lord.gif"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Dragon Lord"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "image",
+                "alt": "Winged Helmet Quest",
+                "src": "./images/quests/wingedhelmetquest/Dark_Lord.gif"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Dark Lord"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "image",
+                "alt": "Winged Helmet Quest",
+                "src": "./images/quests/wingedhelmetquest/Elder_Demon.gif"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Elder Demon"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "image",
+                "alt": "Winged Helmet Quest",
+                "src": "./images/quests/wingedhelmetquest/Demon_Lord.gif"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Demon Lord"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "image",
+                "alt": "Winged Helmet Quest",
+                "src": "./images/quests/wingedhelmetquest/Orshabaal.gif"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Orshabaal"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "type": "image",
+                "alt": "Winged Helmet Quest",
+                "src": "./images/quests/wingedhelmetquest/Ots_King.gif"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Ots King"
+              }
+            ]
+          ]
+        ],
+        "fit": true
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Zadania oraz droga na Winged Helmet Quest"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -43183,12 +43407,11 @@
             ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Xibos: hi ShaShaSha: Waazzuup Xibos! Moge Cie zabrac moim magicznym statkiem do latajacego miasta City of the Sky [10k] lub do Canyon of damned [500gp] lub do Ankaros [1k], gdzie chcesz sie udac? Xibos: sky"
-              }
+            "type": "quote",
+            "lines": [
+              "Xibos: hi",
+              "ShaShaSha: Waazzuup Xibos! Moge Cie zabrac moim magicznym statkiem do latajacego miasta City of the Sky [10k] lub do Canyon of damned [500gp] lub do Ankaros [1k], gdzie chcesz sie udac?",
+              "Xibos: sky"
             ]
           },
           {
@@ -43206,12 +43429,11 @@
             ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Xibos: hi Jin: Siema Xibos! Moge Cie zabrac na Darkness Island [500gp], Ankaros [5k] lub City of Dreams [5k], gdzie chcesz sie udac? Xibos: dark"
-              }
+            "type": "quote",
+            "lines": [
+              "Xibos: hi",
+              "Jin: Siema Xibos! Moge Cie zabrac na Darkness Island [500gp], Ankaros [5k] lub City of Dreams [5k], gdzie chcesz sie udac?",
+              "Xibos: dark"
             ]
           },
           {
@@ -43222,13 +43444,7 @@
                 "text": "Następnie kierujemy się mini mapką."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 1",
-        "blocks": [
+          },
           {
             "type": "paragraph",
             "segments": [
@@ -43323,13 +43539,7 @@
                 "text": "Gdy mamy już klucz udajemy się teraz do NPC Wiezien"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 2",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Winged Helmet Quest",
@@ -43355,12 +43565,12 @@
             "src": "./images/quests/wingedhelmetquest/q11.png"
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Xibos: hi Wiezien: Yo Xibos! Czy masz dla mnie klucz? Xibos: tak Wiezien: Swietnie! Oto nagroda - haslo do kucharza obslugujacego te paskudne potwory. Oto one: Ghaarhaaz . Nie wiem, co to znaczy, ale bez niego nie bedzie chcial z Toba rozmawiac. Zapamietaj je... I zegnaj. Wracamy do miejsca gdzie braliśmy klucz ze skrzynki i piszemy z NPC Gronshar:"
-              }
+            "type": "quote",
+            "lines": [
+              "Xibos: hi",
+              "Wiezien: Yo Xibos! Czy masz dla mnie klucz?",
+              "Xibos: tak",
+              "Wiezien: Swietnie! Oto nagroda - haslo do kucharza obslugujacego te paskudne potwory. Oto one: Ghaarhaaz . Nie wiem, co to znaczy, ale bez niego nie bedzie chcial z Toba rozmawiac. Zapamietaj je... I zegnaj."
             ]
           },
           {
@@ -43368,8 +43578,19 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Xibos: hi Gronshar: Siema Xibos! Znasz haslo? Xibos: Ghaarhaaz Gronshar: Ty znac haslo, ty moc rozmawiac z Gronshar. Co ty chcesz? Gronshar znac tylko legenda. Xibos: legenda Gronshar: Wiec ja powiedziec. Zyc kiedys bardzo dobry marynarz. On plywac wszedzie. On takze doplynac tutaj. Z mnostwem grudek zlota. Pojsc do Beliar. On wrocic po trzech dniach, z helmem. I wiecej ja go nie widziec. A teraz zegnaj, mlody nieznajomy."
+                "text": "Wracamy do miejsca gdzie braliśmy klucz ze skrzynki i piszemy z NPC Gronshar:"
               }
+            ]
+          },
+          {
+            "type": "quote",
+            "lines": [
+              "Xibos: hi",
+              "Gronshar: Siema Xibos! Znasz haslo?",
+              "Xibos: Ghaarhaaz",
+              "Gronshar: Ty znac haslo, ty moc rozmawiac z Gronshar. Co ty chcesz? Gronshar znac tylko legenda.",
+              "Xibos: legenda",
+              "Gronshar: Wiec ja powiedziec. Zyc kiedys bardzo dobry marynarz. On plywac wszedzie. On takze doplynac tutaj. Z mnostwem grudek zlota. Pojsc do Beliar. On wrocic po trzech dniach, z helmem. I wiecej ja go nie widziec. A teraz zegnaj, mlody nieznajomy."
             ]
           },
           {
@@ -43382,12 +43603,24 @@
             ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Xibos: hi Pirat Jack: Siema Neris! Sprzedaje wino (wine) wlasnej roboty i browar (beer) po [10gp]. Xibos: marynarz Pirat Jack: Tak... W mlodosci dotarlem takze do ponurego zamczyska demonow... Jesli chcesz sie tam wybierac, mlodziencze, moge Ci dac jedna rade. Ale nie jest ona tania - mozesz zaplacic [500cc], lub bedziesz musial odpowiedziec mi na zagadke. Co wybierasz? Xibos: zagadka Pirat Jack: Dobrze wiec. Oto zagadka - podczas jednej z wypraw sie z nia spotkalem. Pirat Jack: Ty, Szlachetna, ponad zyciami stojaca, Pirat Jack: Bez Ciebie jego nie ma, Pirat Jack: Ty sama bezkresna. Pirat Jack: Pani, Co zlowrozbna potrafisz byc, Pirat Jack: Innym razem spokojna, Pirat Jack: W Swym uniesieniu wichrami mozesz wyc, Pirat Jack: Ty, zdrowie i dobro niosaca. Pirat Jack: O czym mowi wiersz? Xibos: woda Pirat Jack: Brawo! A wiec - rada dla Ciebie. Bedac w zamku, nie zapomnij porozmawiac z Beliarem, krolem demonow. I pamietaj, ze nade wszystko kocha on zloto... Duze ilosci zlota."
-              }
+            "type": "quote",
+            "lines": [
+              "Xibos: hi",
+              "Pirat Jack: Siema Neris! Sprzedaje wino (wine) wlasnej roboty i browar (beer) po [10gp].",
+              "Xibos: marynarz",
+              "Pirat Jack: Tak... W mlodosci dotarlem takze do ponurego zamczyska demonow... Jesli chcesz sie tam wybierac, mlodziencze, moge Ci dac jedna rade. Ale nie jest ona tania - mozesz zaplacic [500cc], lub bedziesz musial odpowiedziec mi na zagadke. Co wybierasz?",
+              "Xibos: zagadka",
+              "Pirat Jack: Dobrze wiec. Oto zagadka - podczas jednej z wypraw sie z nia spotkalem.",
+              "Pirat Jack: Ty, Szlachetna, ponad zyciami stojaca,",
+              "Pirat Jack: Bez Ciebie jego nie ma,",
+              "Pirat Jack: Ty sama bezkresna.",
+              "Pirat Jack: Pani, Co zlowrozbna potrafisz byc,",
+              "Pirat Jack: Innym razem spokojna,",
+              "Pirat Jack: W Swym uniesieniu wichrami mozesz wyc,",
+              "Pirat Jack: Ty, zdrowie i dobro niosaca.",
+              "Pirat Jack: O czym mowi wiersz?",
+              "Xibos: woda",
+              "Pirat Jack: Brawo! A wiec - rada dla Ciebie. Bedac w zamku, nie zapomnij porozmawiac z Beliarem, krolem demonow. I pamietaj, ze nade wszystko kocha on zloto... Duze ilosci zlota."
             ]
           },
           {
@@ -43405,12 +43638,12 @@
             "src": "./images/quests/wingedhelmetquest/q14.png"
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Xibos: hi Johen: Yo Neris! Jestem Johen, mag. Czego ode mnie potrzebujesz? Xibos: kros Johen: Co? Kros? Chwila... Jakas jednostka w liczebnictwie Otchlani... Poczekaj. Czy to nie jest przypadkiem liczba 72?"
-              }
+            "type": "quote",
+            "lines": [
+              "Xibos: hi",
+              "Johen: Yo Neris! Jestem Johen, mag. Czego ode mnie potrzebujesz?",
+              "Xibos: kros",
+              "Johen: Co? Kros? Chwila... Jakas jednostka w liczebnictwie Otchlani... Poczekaj. Czy to nie jest przypadkiem liczba 72?"
             ]
           },
           {
@@ -43421,13 +43654,7 @@
                 "text": "Zostaje nam ostatnia \"prosta\". Wracamy z powrotem w miejsce gdzie braliśmy klucz ze skrzynki. Tym razem idziemy schodami na górę."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje",
-        "blocks": [
+          },
           {
             "type": "paragraph",
             "segments": [
@@ -43508,12 +43735,49 @@
             ]
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Xibos: hi Sfinks: Witaj, podrozniku mlody. Sfinks: Zagadke mam dla Ciebie, Sfinks: Wielkie sa nagrody. Sfinks: Czy wezmiesz je dla siebie? Xibos: tak Sfinks: Sluchaj uwaznie, Sfinks: Opowiem Ci o przedmiotach. Sfinks: Czy wyzwaniu temu wlasnie Sfinks: Na pewno sprostasz? Sfinks: Bedziesz musial mi powiedziec, Sfinks: Co to za przedmiot, co za skarb, Sfinks: Bo jak nie, to nie przepuszcze, Sfinks: Chocbys blagal, chocbys chcial. Sfinks: Krolowa potepionych Sfinks: W czerwonej szacie chodzi. Sfinks: Rzadka jest tunika, Sfinks: O ktora tu chodzi. Xibos: red robe Sfinks: Dobrze, teraz kolejna zagadka... Sfinks: Helm szary, Sfinks: Co swa moca Sfinks: Wrogow pozwala kolcami przebijac, Sfinks: I nie boj sie - nie tylko noca. Xibos: horned helmet Sfinks: Dobrze, teraz kolejna zagadka... Sfinks: Tarcza, co przeklenstwem Sfinks: Wlasciciela strzeze. Sfinks: Dla hydr jest skarbem, Sfinks: Moze im odbierzesz? Xibos: shield of honour Sfinks: Lecz moc tych przedmiotow Sfinks: Naprawde nie jest wielka. Sfinks: Wszystkie je przewyzsza Sfinks: Helmu skrzydlatego potega. Sfinks: Wysle Cie do skarbca Sfinks: Demonow pana, Sfinks: Niech sobie glowy nie zawraca skrzynia, Sfinks: Ktora nie jest mu dana. Sfinks: Czy tego pragniesz? Xibos: tak"
-              }
+            "type": "quote",
+            "lines": [
+              "Xibos: hi",
+              "Sfinks: Witaj, podrozniku mlody.",
+              "Sfinks: Zagadke mam dla Ciebie,",
+              "Sfinks: Wielkie sa nagrody.",
+              "Sfinks: Czy wezmiesz je dla siebie?",
+              "Xibos: tak",
+              "Sfinks: Sluchaj uwaznie,",
+              "Sfinks: Opowiem Ci o przedmiotach.",
+              "Sfinks: Czy wyzwaniu temu wlasnie",
+              "Sfinks: Na pewno sprostasz?",
+              "Sfinks: Bedziesz musial mi powiedziec,",
+              "Sfinks: Co to za przedmiot, co za skarb,",
+              "Sfinks: Bo jak nie, to nie przepuszcze,",
+              "Sfinks: Chocbys blagal, chocbys chcial.",
+              "Sfinks: Krolowa potepionych",
+              "Sfinks: W czerwonej szacie chodzi.",
+              "Sfinks: Rzadka jest tunika,",
+              "Sfinks: O ktora tu chodzi.",
+              "Xibos: red robe",
+              "Sfinks: Dobrze, teraz kolejna zagadka...",
+              "Sfinks: Helm szary,",
+              "Sfinks: Co swa moca",
+              "Sfinks: Wrogow pozwala kolcami przebijac,",
+              "Sfinks: I nie boj sie - nie tylko noca.",
+              "Xibos: horned helmet",
+              "Sfinks: Dobrze, teraz kolejna zagadka...",
+              "Sfinks: Tarcza, co przeklenstwem",
+              "Sfinks: Wlasciciela strzeze.",
+              "Sfinks: Dla hydr jest skarbem,",
+              "Sfinks: Moze im odbierzesz?",
+              "Xibos: shield of honour",
+              "Sfinks: Lecz moc tych przedmiotow",
+              "Sfinks: Naprawde nie jest wielka.",
+              "Sfinks: Wszystkie je przewyzsza",
+              "Sfinks: Helmu skrzydlatego potega.",
+              "Sfinks: Wysle Cie do skarbca",
+              "Sfinks: Demonow pana,",
+              "Sfinks: Niech sobie glowy nie zawraca skrzynia,",
+              "Sfinks: Ktora nie jest mu dana.",
+              "Sfinks: Czy tego pragniesz?",
+              "Xibos: tak"
             ]
           },
           {
@@ -43534,33 +43798,33 @@
             "type": "image",
             "alt": "Winged Helmet Quest",
             "src": "./images/quests/wingedhelmetquest/q19.png"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Napisałem + wstawiłem zdjęcia w 1,5h. Mam nadzieję że o niczym nie zapomniałem"
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Napisałem + wstawiłem zdjęcia w 1,5h. Mam nadzieję że o niczym nie zapomniałem"
-              },
-              {
-                "type": "image",
-                "alt": "Winged Helmet Quest",
-                "src": "./images/quests/wingedhelmetquest/biggrin.gif"
-              },
-              {
-                "type": "text",
-                "text": "Jeżeli jednak coś mi umknęło dajcie znać to poprawię. Podziękowania dla Inpacte"
-              },
-              {
-                "type": "image",
-                "alt": "Winged Helmet Quest",
-                "src": "./images/quests/wingedhelmetquest/spoko.gif"
-              },
-              {
-                "type": "text",
-                "text": "- za pomoc w poradniku oraz że dotrzymał mi towarzystwa."
-              }
-            ]
+            "type": "image",
+            "alt": "Winged Helmet Quest",
+            "src": "./images/quests/wingedhelmetquest/biggrin.gif"
+          },
+          {
+            "type": "text",
+            "text": "Jeżeli jednak coś mi umknęło dajcie znać to poprawię. Podziękowania dla Inpacte"
+          },
+          {
+            "type": "image",
+            "alt": "Winged Helmet Quest",
+            "src": "./images/quests/wingedhelmetquest/spoko.gif"
+          },
+          {
+            "type": "text",
+            "text": "- za pomoc w poradniku oraz że dotrzymał mi towarzystwa."
           }
         ]
       }

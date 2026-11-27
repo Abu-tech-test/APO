@@ -1504,6 +1504,20 @@ select:focus-visible {
   object-fit: contain;
 }
 
+.quest-table .quest-table-cell-image {
+  padding: 0;
+}
+
+.quest-table .quest-inline-image-cell {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: none;
+  margin: 0;
+  object-fit: contain;
+}
+
 .quest-table th,
 .quest-table td {
   padding: 8px 10px;
