@@ -4602,171 +4602,6 @@
     ]
   },
   {
-    "id": "creator-quest",
-    "title": "Creator Quest!",
-    "author": "Refresh",
-    "blocks": [
-      {
-        "type": "paragraph",
-        "segments": [
-          {
-            "type": "text",
-            "text": "Poradnik na Creator Quest!"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "segments": [
-          {
-            "type": "text",
-            "text": "Potrzebny jest 1700 poziom."
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "segments": [
-          {
-            "type": "text",
-            "text": "Aby dojść do Creatora musimy wykonać dostęp do apo, mastera i double na volcano:"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "segments": [
-          {
-            "type": "link",
-            "text": "http://www.forum.toproste.pl/showthread.php?t=74243",
-            "url": "http://www.forum.toproste.pl/showthread.php?t=74243"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "segments": [
-          {
-            "type": "text",
-            "text": "Potem za pomocą tego poradnika lecimy na apocalypto:"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "segments": [
-          {
-            "type": "link",
-            "text": "http://www.forum.toproste.pl/showthread.php?t=91348",
-            "url": "http://www.forum.toproste.pl/showthread.php?t=91348"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "segments": [
-          {
-            "type": "text",
-            "text": "Potem:"
-          }
-        ]
-      },
-      {
-        "type": "image",
-        "alt": "Ilustracja do poradnika: Creator Quest!",
-        "src": "./images/quests/creator-quest/image-001.webp"
-      },
-      {
-        "type": "image",
-        "alt": "Ilustracja do poradnika: Creator Quest!",
-        "src": "./images/quests/creator-quest/image-002.webp"
-      },
-      {
-        "type": "paragraph",
-        "segments": [
-          {
-            "type": "text",
-            "text": "Tu gdzie jest czarne kółko trzeba oddać złotego motyla - można wyrobić u npc, kupić od graczy."
-          }
-        ]
-      },
-      {
-        "type": "image",
-        "alt": "Ilustracja do poradnika: Creator Quest!",
-        "src": "./images/quests/creator-quest/image-003.webp"
-      },
-      {
-        "type": "paragraph",
-        "segments": [
-          {
-            "type": "text",
-            "text": "W tym respie są same double, na niebiesko w kółko jest tam dźwignia gdzie przenosi nas na resp creatora."
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "segments": [
-          {
-            "type": "text",
-            "text": "Resp Creatora:"
-          }
-        ]
-      },
-      {
-        "type": "image",
-        "alt": "Ilustracja do poradnika: Creator Quest!",
-        "src": "./images/quests/creator-quest/image-004.webp"
-      },
-      {
-        "type": "paragraph",
-        "segments": [
-          {
-            "type": "text",
-            "text": "Tam na końcu, tam gdzie pomazane trzeba bardzo uważać bo znajduje się tam omen, minion i na końcu creator. W tym labiryncie znajdują się również potwory takie jak: devil atomy, wardy, master atom, apocalypto."
-          }
-        ]
-      },
-      {
-        "type": "image",
-        "alt": "Ilustracja do poradnika: Creator Quest!",
-        "src": "./images/quests/creator-quest/image-005.webp"
-      },
-      {
-        "type": "image",
-        "alt": "Ilustracja do poradnika: Creator Quest!",
-        "src": "./images/quests/creator-quest/image-006.webp"
-      },
-      {
-        "type": "paragraph",
-        "segments": [
-          {
-            "type": "text",
-            "text": "Żeby zabrać nagrode trzeba ubić creatora. Nagroda ze skrzyni jest losowa - możesz wylosować softy, s legi, golden bolta, kase, bh, pandemke itp."
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "segments": [
-          {
-            "type": "text",
-            "text": "Creator respi sie raz dziennie od 24.00."
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "segments": [
-          {
-            "type": "text",
-            "text": "Jak ktos po tym czasie wejdzie i wyjdzie a bedzie res to do natepnej 24.00 creatora nie ma i nie można wykonać questu. Od momentu oddania motyla nie możemy sie przelogować albo paść bo to równa sie z tp do temple"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "magiczne-klapki-zapomnienia",
     "title": "Magiczne Klapki Zapomnienia [MAIN]",
     "author": "Pan Scimex",
@@ -36746,188 +36581,185 @@
     "author": "Ektoplazma",
     "blocks": [
       {
-        "type": "spoiler",
-        "title": "Ultimate Weapon — część 1",
-        "blocks": [
+        "type": "quote",
+        "lines": [
+          "Ultimate Weapon"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
           {
-            "type": "quote",
-            "lines": [
-              "Ultimate Weapon"
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Broń ostateczna, którą posiadają jedynie nieliczni. Posiada Atk:100, Def:100 i +40% critical hit."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "image",
-                "alt": "Ultimate Weapon Quest",
-                "src": "./images/quests/ultimateweaponquest/nauka.gif"
-              },
-              {
-                "type": "text",
-                "text": "Ciekawostki o przedmiocie"
-              },
-              {
-                "type": "image",
-                "alt": "Ultimate Weapon Quest",
-                "src": "./images/quests/ultimateweaponquest/nauka.gif"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "- Broń posiada unikalny atak AoE (czar obszarowy)"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "- Dzienny limit użycia czaru wynosi 20 , a czas miedzy ponownym użyciem to 5 minut"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "- Po zdobyciu czaru duszy ,"
-              },
-              {
-                "type": "link",
-                "text": "adite ulti",
-                "url": "https://i.imgur.com/F5b2jCw.png"
-              },
-              {
-                "type": "text",
-                "text": "' - możemy przyśpieszyć czas miedzy użyciem AoE"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "- Na serwerze możemy spotkać unikatowe odmiany broni ostatecznej"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Czar obszarowy Ultimate Weapon"
-              }
-            ]
-          },
-          {
-            "type": "image",
-            "alt": "Ultimate Weapon Quest",
-            "src": "./images/quests/ultimateweaponquest/4gSimdH.jpg"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Własna nazwa"
-              }
-            ]
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "\"Możliwość nazwania przedmiotu była nagrodą za wygranie konkursów, które odbywały się na serwerze''"
-            ]
+            "type": "text",
+            "text": "Broń ostateczna, którą posiadają jedynie nieliczni. Posiada Atk:100, Def:100 i +40% critical hit."
           }
         ]
       },
       {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 2",
-        "blocks": [
+        "type": "paragraph",
+        "segments": [
           {
             "type": "image",
             "alt": "Ultimate Weapon Quest",
-            "src": "./images/quests/ultimateweaponquest/OMMTUSN.jpg"
+            "src": "./images/quests/ultimateweaponquest/nauka.gif"
           },
           {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Improved Ultimate Weapon"
-              }
-            ]
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "Jedyny egzemplarz posiadający 30 ładunków! Jest w posiadaniu gracza Asis"
-            ]
+            "type": "text",
+            "text": "Ciekawostki o przedmiocie"
           },
           {
             "type": "image",
             "alt": "Ultimate Weapon Quest",
-            "src": "./images/quests/ultimateweaponquest/ASpveQz.jpg"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "image",
-                "alt": "Ultimate Weapon Quest",
-                "src": "./images/quests/ultimateweaponquest/czytaj.gif"
-              },
-              {
-                "type": "text",
-                "text": "Ważne informacje"
-              },
-              {
-                "type": "image",
-                "alt": "Ultimate Weapon Quest",
-                "src": "./images/quests/ultimateweaponquest/czytaj.gif"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "link",
-                "text": "Kliknij by zdobyć informacje na temat wypożyczalni itemów!",
-                "url": "http://www.forum.toproste.pl/showthread.php?p=1232511#post1232511"
-              }
-            ]
-          },
-          {
-            "type": "quote",
-            "lines": [
-              "Musisz nauczyć się korzystać z mapy na stronie głównej serwera Zobacz Poradnik Wiele zadań jest ze sobą powiązanych. Wymagane będzie rozpoczynanie/ukończenie innego zadania Santorr Quest - Żeby dostać się do sklepu wystarczy ukończyć misje 15 oraz 16 Taski -Wystarczy zdobyć 100 punktów, by rozpocząć misje z ratowaniem Soran Queen Quest - Wymagane jest ukończenie całego zadania Red Tunic - przedmiot nie jest możliwy do zdobycia. Szukaj wśród innych graczy Niektóre z misji na klikanie restartują/odnawiają się po upływie kilku, lub kilkunastu minut. Np. \"Destroy the Stone\" - kamień odnawia się około 10-20min, a \"Water Info Fire\" to koło 2-5min. NPC Hotass dostępny bez dodatkowych wymogów Wszystkie misje/areny dają nam nagrody w postaci przedmiotów i doświadczenia Postęp wykonanych misji możemy zobaczyć w książeczce,którą zdobywamy po misji Uratuj Soran Misje 100/100"
-            ]
+            "src": "./images/quests/ultimateweaponquest/nauka.gif"
           }
         ]
       },
       {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "- Broń posiada unikalny atak AoE (czar obszarowy)"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "- Dzienny limit użycia czaru wynosi 20 , a czas miedzy ponownym użyciem to 5 minut"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "- Po zdobyciu czaru duszy ,"
+          },
+          {
+            "type": "link",
+            "text": "adite ulti",
+            "url": "https://i.imgur.com/F5b2jCw.png"
+          },
+          {
+            "type": "text",
+            "text": "' - możemy przyśpieszyć czas miedzy użyciem AoE"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "- Na serwerze możemy spotkać unikatowe odmiany broni ostatecznej"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Czar obszarowy Ultimate Weapon"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "alt": "Ultimate Weapon Quest",
+        "src": "./images/quests/ultimateweaponquest/4gSimdH.jpg"
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Własna nazwa"
+          }
+        ]
+      },
+      {
+        "type": "quote",
+        "lines": [
+          "\"Możliwość nazwania przedmiotu była nagrodą za wygranie konkursów, które odbywały się na serwerze''"
+        ]
+      },
+      {
+        "type": "image",
+        "alt": "Ultimate Weapon Quest",
+        "src": "./images/quests/ultimateweaponquest/OMMTUSN.jpg"
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Improved Ultimate Weapon"
+          }
+        ]
+      },
+      {
+        "type": "quote",
+        "lines": [
+          "Jedyny egzemplarz posiadający 30 ładunków! Jest w posiadaniu gracza Asis"
+        ]
+      },
+      {
+        "type": "image",
+        "alt": "Ultimate Weapon Quest",
+        "src": "./images/quests/ultimateweaponquest/ASpveQz.jpg"
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "image",
+            "alt": "Ultimate Weapon Quest",
+            "src": "./images/quests/ultimateweaponquest/czytaj.gif"
+          },
+          {
+            "type": "text",
+            "text": "Ważne informacje"
+          },
+          {
+            "type": "image",
+            "alt": "Ultimate Weapon Quest",
+            "src": "./images/quests/ultimateweaponquest/czytaj.gif"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "link",
+            "text": "Kliknij by zdobyć informacje na temat wypożyczalni itemów!",
+            "url": "http://www.forum.toproste.pl/showthread.php?p=1232511#post1232511"
+          }
+        ]
+      },
+      {
+        "type": "quote",
+        "lines": [
+          "Musisz nauczyć się korzystać z mapy na stronie głównej serwera Zobacz Poradnik Wiele zadań jest ze sobą powiązanych. Wymagane będzie rozpoczynanie/ukończenie innego zadania Santorr Quest - Żeby dostać się do sklepu wystarczy ukończyć misje 15 oraz 16 Taski -Wystarczy zdobyć 100 punktów, by rozpocząć misje z ratowaniem Soran Queen Quest - Wymagane jest ukończenie całego zadania Red Tunic - przedmiot nie jest możliwy do zdobycia. Szukaj wśród innych graczy Niektóre z misji na klikanie restartują/odnawiają się po upływie kilku, lub kilkunastu minut. Np. \"Destroy the Stone\" - kamień odnawia się około 10-20min, a \"Water Info Fire\" to koło 2-5min. NPC Hotass dostępny bez dodatkowych wymogów Wszystkie misje/areny dają nam nagrody w postaci przedmiotów i doświadczenia Postęp wykonanych misji możemy zobaczyć w książeczce,którą zdobywamy po misji Uratuj Soran Misje 100/100"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Zadania NPC"
+          }
+        ],
+        "align": "center"
+      },
+      {
         "type": "spoiler",
-        "title": "Tabela stworzona na podstawie oryginału użytkownika — część 3",
         "blocks": [
           {
             "type": "paragraph",
@@ -37981,7 +37813,8 @@
                   }
                 ]
               ]
-            ]
+            ],
+            "fit": true
           },
           {
             "type": "paragraph",
@@ -38034,13 +37867,7 @@
                 "text": "Npc Miner"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 4",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Ultimate Weapon Quest",
@@ -38136,13 +37963,7 @@
                 "text": "Volcano"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 5",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Ultimate Weapon Quest",
@@ -38192,7 +38013,22 @@
             "type": "image",
             "alt": "Ultimate Weapon Quest",
             "src": "./images/quests/ultimateweaponquest/a8zMfDj.png"
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Zadania z mapy i przedmiot?w"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -39654,7 +39490,8 @@
                   }
                 ]
               ]
-            ]
+            ],
+            "fit": true
           },
           {
             "type": "paragraph",
@@ -39664,13 +39501,7 @@
                 "text": "Kilka przykładów z wykonania zadań z map i przedmiotów *"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 6",
-        "blocks": [
+          },
           {
             "type": "paragraph",
             "segments": [
@@ -39882,13 +39713,7 @@
                 "text": "oraz posiadać poziom co najmniej 600"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 7",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Ultimate Weapon Quest",
@@ -39935,9 +39760,20 @@
             "src": "./images/quests/ultimateweaponquest/dU5ZOcv.png"
           },
           {
-            "type": "image",
-            "alt": "Ultimate Weapon Quest",
-            "src": "./images/quests/ultimateweaponquest/1XVlNd3.png"
+            "type": "quote",
+            "lines": [
+              "Perfect: hi",
+              "Gantele: Hej Perfect! Czy masz cos co by mnie interesowalo?",
+              "Perfect: tak",
+              "Gantele: Dziekuje! Czy masz aby stworzyl cos dla Ciebie?",
+              "Perfect: tak",
+              "Gantele: A wiec prosze Cie powiedz mi... Wolisz chlopca czy dziewczyne?",
+              "Perfect: chlopiec",
+              "Perfect: chlopca",
+              "Gantele: Jakie imie ma nosic ten chlopiec?",
+              "Perfect: Quest",
+              "Gantele: Prosze bardzo! Oto Twoja nagroda!"
+            ]
           },
           {
             "type": "image",
@@ -39948,7 +39784,22 @@
             "type": "image",
             "alt": "Ultimate Weapon Quest",
             "src": "./images/quests/ultimateweaponquest/e2EY9JH.png"
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Arena Expgard"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -40027,14 +39878,9 @@
                   }
                 ]
               ]
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 8",
-        "blocks": [
+            ],
+            "fit": true
+          },
           {
             "type": "image",
             "alt": "Ultimate Weapon Quest",
@@ -40084,7 +39930,8 @@
                   }
                 ]
               ]
-            ]
+            ],
+            "fit": true
           },
           {
             "type": "image",
@@ -40135,14 +39982,9 @@
                   }
                 ]
               ]
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 9",
-        "blocks": [
+            ],
+            "fit": true
+          },
           {
             "type": "image",
             "alt": "Ultimate Weapon Quest",
@@ -40192,7 +40034,8 @@
                   }
                 ]
               ]
-            ]
+            ],
+            "fit": true
           },
           {
             "type": "image",
@@ -40243,14 +40086,9 @@
                   }
                 ]
               ]
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 10",
-        "blocks": [
+            ],
+            "fit": true
+          },
           {
             "type": "image",
             "alt": "Ultimate Weapon Quest",
@@ -40300,7 +40138,8 @@
                   }
                 ]
               ]
-            ]
+            ],
+            "fit": true
           },
           {
             "type": "image",
@@ -40355,14 +40194,9 @@
                   }
                 ]
               ]
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 11",
-        "blocks": [
+            ],
+            "fit": true
+          },
           {
             "type": "image",
             "alt": "Ultimate Weapon Quest",
@@ -40412,7 +40246,8 @@
                   }
                 ]
               ]
-            ]
+            ],
+            "fit": true
           },
           {
             "type": "image",
@@ -40463,14 +40298,9 @@
                   }
                 ]
               ]
-            ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 12",
-        "blocks": [
+            ],
+            "fit": true
+          },
           {
             "type": "image",
             "alt": "Ultimate Weapon Quest",
@@ -40520,13 +40350,29 @@
                   }
                 ]
               ]
-            ]
+            ],
+            "fit": true
           },
           {
             "type": "image",
             "alt": "Ultimate Weapon Quest",
             "src": "./images/quests/ultimateweaponquest/i3NsQG7.png"
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Arena POH"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
@@ -40535,13 +40381,7 @@
                 "text": "Arena Poh Droga"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "spoiler",
-        "title": "Dodatkowe informacje — część 13",
-        "blocks": [
+          },
           {
             "type": "image",
             "alt": "Ultimate Weapon Quest",
@@ -40885,14 +40725,30 @@
                   }
                 ]
               ]
-            ]
+            ],
+            "fit": true
           },
           {
             "type": "quote",
             "lines": [
               "Przedmiot Phoenix Shield przyda nam się do Quest of The Nine"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "segments": [
+          {
+            "type": "text",
+            "text": "Final Room"
+          }
+        ],
+        "align": "center"
+      },
+      {
+        "type": "spoiler",
+        "blocks": [
           {
             "type": "paragraph",
             "segments": [
