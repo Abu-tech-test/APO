@@ -10,7 +10,8 @@ export type GlobalSearchResult = {
     | "house"
     | "information"
     | "system"
-    | "teleports";
+    | "teleports"
+    | "quest";
   name: string;
   summary: string;
   searchText: string;
@@ -27,6 +28,7 @@ const resultLabels: Record<GlobalSearchResult["kind"], string> = {
   information: "Informacje",
   system: "System",
   teleports: "Teleporty",
+  quest: "Quest",
 };
 
 const resultGroups: {
@@ -43,6 +45,7 @@ const resultGroups: {
   { id: "information", label: "Informacje", kinds: ["information"] },
   { id: "systems", label: "Systemy", kinds: ["system"] },
   { id: "teleports", label: "Teleporty", kinds: ["teleports"] },
+  { id: "quests", label: "Questy", kinds: ["quest"] },
 ];
 
 export function GlobalSearchWorkspace({
@@ -75,7 +78,7 @@ export function GlobalSearchWorkspace({
         <p className="eyebrow">JEDNA WYSZUKIWARKA · CAŁA BAZA WIEDZY</p>
         <h2>Szukaj w ApoWiki</h2>
         <p>
-          Znajdź potwory, łupy, NPC, lokalizacje, bossów i informacje o świecie.
+          Znajdź potwory, łupy, NPC, lokalizacje, questy i informacje o świecie.
         </p>
       </div>
 
@@ -85,7 +88,7 @@ export function GlobalSearchWorkspace({
           aria-label="Szukaj we wszystkich danych"
           autoFocus
           onChange={(event) => onQueryChange(event.target.value)}
-          placeholder="Np. Returned, Old Wizard, Dragon Scale..."
+          placeholder="Np. Dragon Scale, NPC Rurik, Shaman Mask..."
           type="search"
           value={query}
         />
@@ -168,6 +171,7 @@ export function GlobalSearchWorkspace({
           <strong>opisach</strong>
           <strong>loocie i jego źródłach</strong>
           <strong>lokalizacjach</strong>
+          <strong>treści questów</strong>
         </div>
       )}
     </section>

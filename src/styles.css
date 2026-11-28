@@ -1225,6 +1225,16 @@ select:focus-visible {
   padding: 0 7px;
 }
 
+.quests-catalog .entry-list {
+  flex: 0 0 auto;
+  max-height: none;
+  overflow: visible;
+}
+
+.quests-catalog .pagination {
+  margin-top: 0;
+}
+
 .entry {
   display: flex;
   width: 100%;

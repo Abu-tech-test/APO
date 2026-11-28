@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import questData from "../data/quests.json";
 
 type QuestTextSegment = {
@@ -90,7 +90,16 @@ type QuestGuide = {
 };
 
 const questGuides = questData as QuestGuide[];
+const QUESTS_PER_PAGE = 10;
 const listMarker = /^\s*[-*•]\s+/;
+
+function getQuestSearchText(quest: QuestGuide) {
+  return JSON.stringify({
+    title: quest.title,
+    author: quest.author,
+    blocks: quest.blocks,
+  }).toLocaleLowerCase("pl");
+}
 
 function asListItem(paragraph: QuestParagraph): QuestParagraph | null {
   const markerIndex = paragraph.segments.findIndex(
@@ -360,22 +369,44 @@ function renderQuestBlocks(blocks: QuestBlock[], keyPrefix: string) {
   });
 }
 
-export default function QuestWorkspace() {
+export default function QuestWorkspace({
+  initialQuestId = "",
+}: {
+  initialQuestId?: string;
+}) {
   const [query, setQuery] = useState("");
+  const [page, setPage] = useState(1);
   const [selectedQuestId, setSelectedQuestId] = useState(
-    questGuides[0]?.id ?? "",
+    initialQuestId || questGuides[0]?.id || "",
   );
   const normalizedQuery = query.trim().toLocaleLowerCase("pl");
   const filteredQuests = normalizedQuery
     ? questGuides.filter((quest) =>
-        `${quest.title} ${quest.author}`
-          .toLocaleLowerCase("pl")
-          .includes(normalizedQuery),
+        getQuestSearchText(quest).includes(normalizedQuery),
       )
     : questGuides;
+  const pageCount = Math.max(1, Math.ceil(filteredQuests.length / QUESTS_PER_PAGE));
+  const safePage = Math.min(page, pageCount);
+  const visibleQuests = filteredQuests.slice(
+    (safePage - 1) * QUESTS_PER_PAGE,
+    safePage * QUESTS_PER_PAGE,
+  );
   const selectedQuest =
     filteredQuests.find((quest) => quest.id === selectedQuestId) ??
     filteredQuests[0];
+
+  useEffect(() => {
+    setPage(1);
+  }, [query]);
+
+  useEffect(() => {
+    if (
+      initialQuestId &&
+      questGuides.some((quest) => quest.id === initialQuestId)
+    ) {
+      setSelectedQuestId(initialQuestId);
+    }
+  }, [initialQuestId]);
 
   return (
     <section aria-label="Poradniki questów" className="workspace quests-workspace">
@@ -398,7 +429,7 @@ export default function QuestWorkspace() {
           />
         </label>
         <div className="entry-list">
-          {filteredQuests.map((quest) => (
+          {visibleQuests.map((quest) => (
             <button
               aria-pressed={selectedQuest?.id === quest.id}
               className={`entry quest-entry${selectedQuest?.id === quest.id ? " selected" : ""}`}
@@ -419,6 +450,29 @@ export default function QuestWorkspace() {
             <p className="empty-state">Nie znaleziono poradnika.</p>
           )}
         </div>
+        {filteredQuests.length > 0 && (
+          <div className="pagination">
+            <button
+              aria-label="Poprzednia strona"
+              disabled={safePage <= 1}
+              onClick={() => setPage(safePage - 1)}
+              type="button"
+            >
+              ‹
+            </button>
+            <span>
+              Strona <strong>{safePage}</strong> z <strong>{pageCount}</strong>
+            </span>
+            <button
+              aria-label="Następna strona"
+              disabled={safePage >= pageCount}
+              onClick={() => setPage(safePage + 1)}
+              type="button"
+            >
+              ›
+            </button>
+          </div>
+        )}
       </aside>
 
       {selectedQuest ? (

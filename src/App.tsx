@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import bossData from "./data/bosses.json";
 import informationData from "./data/information.json";
 import itemCatalogData from "./data/items.json";
+import questData from "./data/quests.json";
 import systemData from "./data/systems.json";
 import type { Item, ItemZone, Monster } from "./types";
 import type { InformationCategory } from "./information/types";
@@ -56,6 +57,12 @@ const QuestWorkspace = lazy(() => import("./quests/QuestWorkspace"));
 
 const systems: GameSystem[] = systemData;
 const informationCategories: InformationCategory[] = informationData;
+const quests = questData as {
+  id: string;
+  title: string;
+  author: string;
+  blocks: unknown[];
+}[];
 type ItemCatalogRecord = Omit<Item, "drops">;
 const itemCatalog: ItemCatalogRecord[] = itemCatalogData.map((item) => ({
   ...item,
@@ -493,6 +500,7 @@ function App({ monsters }: { monsters: Monster[] }) {
   const [selectedSystemName, setSelectedSystemName] = useState(
     initialNavigation.selectedSystemName,
   );
+  const [selectedQuestId, setSelectedQuestId] = useState("");
   const skipNextPageReset = useRef(true);
   const currentNavigationEntryRef = useRef<AppNavigationEntry | null>(null);
 
@@ -1179,6 +1187,15 @@ function App({ monsters }: { monsters: Monster[] }) {
           system,
         ),
       ),
+      ...quests.map((quest) =>
+        makeResult(
+          "quest",
+          `quest-${quest.id}`,
+          quest.title,
+          `Quest · ${quest.author}`,
+          quest,
+        ),
+      ),
       makeResult(
         "teleports",
         "teleports-daily",
@@ -1504,6 +1521,18 @@ function App({ monsters }: { monsters: Monster[] }) {
       setSelectedSystemName(result.name);
       setSection("systems");
       setQuery("");
+    } else if (result.kind === "quest") {
+      const questId = result.id.replace("quest-", "");
+      pushNavigationEntry({
+        section: "quests",
+        query: "",
+        page: 1,
+        mapNpcRequest: undefined,
+        mapMonsterRequest: undefined,
+      });
+      setSelectedQuestId(questId);
+      setSection("quests");
+      setQuery("");
     }
   }
 
@@ -1781,7 +1810,7 @@ function App({ monsters }: { monsters: Monster[] }) {
           systems={filteredSystems}
         />
       ) : section === "quests" ? (
-        <QuestWorkspace />
+        <QuestWorkspace initialQuestId={selectedQuestId} />
       ) : (
       <CatalogWorkspace
         section={section}
